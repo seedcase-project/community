@@ -14,14 +14,14 @@ Compared to blog/website generators of the past and of many current
 ones, adding a post to this [Quarto](https://quarto.org/) website is
 relatively straight-forward. For now, I'll focus on adding a post to the
 Community section of the website, though these principles apply to any
-post/collection we use throughout this site (e.g. the [Team
-Events](/community/contribute/team/events.md) is a collection of post
-entries).
+post/collection we use throughout this site (e.g. the [Community
+Contributing Guide Entries](/community/CONTRIBUTING.md#guide-entries) is
+a collection of post entries).
 
 There are two ways to add a post:
 
 1.  Cloning the
-    [`seedcase-project`](https://github.com/steno-aarhus/seedcase-project)
+    [`seedcase-project`](https://github.com/seedcase-project/seedcase-project)
     GitHub repository to your computer
 2.  Creating and writing directly inside the GitHub repository
 
@@ -57,7 +57,7 @@ Regardless, in both routes the steps are:
     add multiple categories to the post by adding a new line starting
     with `-` below the previous category. You can write whatever topic
     word or phrase you want for this. See the YAML metadata of [this
-    post](https://github.com/steno-aarhus/seedcase-project/blob/main/community/posts/adding-posts/index.qmd)
+    post](https://github.com/seedcase-project/seedcase-project/blob/main/community/guide-entries/adding-posts/index.md)
     for an example of what it should look like.
 
 4.  Then, you can start writing the content of the post below the `---`
@@ -97,10 +97,13 @@ Regardless, in both routes the steps are:
         # Switch to the main branch
         git checkout main
         ```
-
+        
         After pushing up the GitHub, you will need to go to the
         repository and create a new Pull Request from your newly pushed
         branch.
+    
+    -   No matter if you want to add a file directly on GitHub or via the command line, you can find more guidance in the [GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
+        
 
 6.  You are all done! That's it :smile:
 
