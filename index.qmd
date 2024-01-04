@@ -14,7 +14,6 @@ listing:
     contents: guides
     type: default
     sort: "title"
-    categories: true
     fields: 
       - "title"
       - "author"
@@ -29,7 +28,7 @@ listing:
 ::: {#posts}
 :::
 
-## Want to contribute? :tada: Read these guide entries
+## Want to contribute? :tada: Read these guide entries {#contributing}
 
 ::: {.callout-note}
 This is a guide for those outside the team who are interested in
