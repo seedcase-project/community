@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
@@ -18,11 +18,6 @@ jobs:
           tinytex: false
           # uncomment below and fill to pin a version
           # version: 0.9.600
-
-      # add software dependencies here
-
-      # To publish to Netlify, RStudio Connect, or GitHub Pages, uncomment
-      # the appropriate block below
 
       - name: Publish to Netlify (and render)
         uses: quarto-dev/quarto-actions/publish@v2
