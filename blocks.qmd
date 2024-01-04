@@ -27,34 +27,6 @@ The Product only exists because of the two bottom layers and the
 supports. More details about the Product are found in its own GitHub
 repository (not created yet).
 
-```{=html}
-<!--
-Use later on when we've started building the product?
-
--   pipeline/ (automatic processes for tasks, like rebuilding changelog
-    etc)
--   api/
--   common-data-model/setup.\*
--   common-data-model/update.\*
--   build-data-model
--   update-data-model
--   build-changelog
--   update-changelog
--   generate-data-doi
--   update-
--   Matrix/Pathways
-    -   Four users
-    -   Three layers
--   Connectors
-    -   R
-    -   Python
-    -   Bash/shell
-    -   RedCap
-Installation
-
--   installing.md
--->
-```
 ## Documentation block
 
 This block contains multiple components, related to the overall project,
