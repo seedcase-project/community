@@ -100,4 +100,4 @@ organization account.
 ## Reviewing our contributing guidelines
 
 To add or modify documentation, check out the guidelines section of the
-[contributing](/community/CONTRIBUTING.md) document.
+[contributing](https://community.seedcase-project.org) documentation.

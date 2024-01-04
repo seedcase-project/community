@@ -31,10 +31,10 @@ contributor, then the second might make more sense for you.
 
 Regardless, in both routes the steps are:
 
-1.  Create a new folder/directory inside `community/posts/` with a short
+1.  Create a new folder/directory inside `posts/` with a short
     name the describes the post. For instance, this post's directory
     name is `adding-posts/`. Inside the newly created directory, create
-    a file called `index.md`.
+    a file called `index.qmd`.
 
 2.  Open up the new file and add the below metadata to the top of the
     file. This is called the YAML header.

@@ -4,7 +4,7 @@ title: Roadmap
 
 {{< include /includes/_wip.qmd >}}
 
-While the core deliverable of Seedcase is the software product described in the [design](/design/software-architecture/index.qmd) documentation, there are several deliverables that form this core Product.
+While the core deliverable of Seedcase is the software product described in the [Design Docs website](https://design.seedcase-project.org) documentation, there are several deliverables that form this core Product.
 
 Because of the evolving nature of developing software, the software product is never "completed" as it continues to be improved on and updated. So here we define deliverable for software as the first Minimally Viable Product (or prototype). After the first release of a Minimally Viable Product, the software product will continue to be tested and refined based on user feedback, identifying bugs, and adding features.
 

@@ -54,7 +54,7 @@ An alternative to a CLA is a **DCO**. The **DCO** was first employed by the Linu
 
 ## Decision Outcome
 
-It is in our stated [goals](/design/software-architecture/introduction.qmd) that the Seedcase software is available for commercial enterprises as well as academic/healthcare organizations and groups. Aligning with our stated [Guiding Principles](/design/software-architecture/introduction.qmd#guiding-principles), we will use a **permissive** license as it will be the best fit for the Seedcase project. Of the permissive license types we will go with the MIT License as it is the most permissive and easiest to understand and use.
+It is in our stated [goals](https://seedcase-project.org/about) that the Seedcase software is available for commercial enterprises as well as academic/healthcare organizations and groups. Aligning with our stated [Guiding Principles](https://seedcase-project.org/about.html#principles), we will use a **permissive** license as it will be the best fit for the Seedcase project. Of the permissive license types we will go with the MIT License as it is the most permissive and easiest to understand and use.
 
 ### Consequences
 

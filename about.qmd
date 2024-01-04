@@ -16,7 +16,7 @@ long-term by:
     minimum viable product.
 3.  Incorporating fundamental open source sustainability concepts and
     documentation such having [Contributing
-    Guidelines](CONTRIBUTING.md) and a [Code of
+    Guidelines](index.qmd#contributing) and a [Code of
     Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md),
     as well as encouraging external users to contribute.
 4.  Actively contributing back to other open source software that
