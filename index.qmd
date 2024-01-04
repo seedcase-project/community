@@ -1,33 +1,53 @@
 ---
 title: Community
+listing:
+  - id: posts
+    contents: posts
+    type: default
+    sort: "title"
+    fields: 
+      - "title"
+      - "author"
+      - "description"
+      - "date"
+  - id: guides
+    contents: guides
+    type: default
+    sort: "title"
+    categories: true
+    fields: 
+      - "title"
+      - "author"
+      - "description"
+      - "date"
 ---
 
 {{< include /includes/_wip.qmd >}}
 
-## Sustainability
+## Posts and sharing
 
-A key consideration to Seedcase is ensuring it is sustainable over the
-long-term by:
+::: {#posts}
+:::
 
-1.  Integrating the development of the framework and using it in
-    multiple projects at the host institution Steno Diabetes Center
-    Aarhus (SDCA).
-2.  Build and document maintenance procedures while prototyping the
-    minimum viable product.
-3.  Incorporating fundamental open source sustainability concepts and
-    documentation such having [Contributing
-    Guidelines](CONTRIBUTING.md) and a [Code of
-    Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md),
-    as well as encouraging external users to contribute.
-4.  Actively contributing back to other open source software that
-    Seedcase depends on or that might be used alongside.
+## Want to contribute? :tada: Read these guide entries
 
-## Training and educational development
+::: {.callout-note}
+This is a guide for those outside the team who are interested in
+contributing.
+:::
 
-How widely used Seedcase is or will be depends heavily on the quality of
-its documentation and training material. A key concept we will use
-throughout development of Seedcase is [Documentation Driven Development](guide-entries/documentation-first/index.qmd),
-where Seedcase's development is guided and informed from the development
-of its documentation. Meaning that we will place a high priority on
-documentation. We also be creating and running short workshops and
-tutorials that teach researchers how they can use Seedcase.
+These entries are small pages about specific topics for contributing.
+
+::: {#guides}
+:::
+
+For team-specific contributing guidelines, check out our
+[team.seedcase-project.org](https://team.seedcase-project.org/) website.
+
+## Code of Conduct
+
+Please note that the Seedcase project is released with a [Contributor
+Code of
+Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its
+[terms](CODE_OF_CONDUCT.md).
