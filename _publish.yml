@@ -1,0 +1,4 @@
+- source: project
+  netlify:
+    - id: ""
+      url: "https://seedcase-project-community.netlify.app"

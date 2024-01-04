@@ -1,0 +1,45 @@
+project:
+  type: seedcase-theme
+
+website:
+  title: "Seedcase Project: Community"
+  site-url: "https://community.seedcase-project.org/"
+  repo-url: "https://github.com/seedcase-project/community"
+  page-footer:
+    center:
+      - text: "License: CC-BY 4.0"
+        href: LICENSE.md
+  page-navigation: true
+  navbar:
+    pinned: true
+    search: true
+    tools:
+      - icon: house
+        href: "https://seedcase-project.org"
+      - icon: github
+        href: "https://github.com/seedcase-project/seedcase-project"
+  sidebar:
+    title: "Community"
+    pinned: true
+    style: "floating"
+    contents:
+      - index.qmd
+      - blocks.qmd
+      - roadmap.qmd
+      - auto: guides
+      - auto: posts
+      - text: "Code of Conduct"
+        href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
+
+# format:
+#   seedcase-theme-html:
+    # include-before-body:
+      # - "includes/site-counter.html"
+
+editor:
+  markdown:
+    wrap: 72
+    canonical: true
+
+execute:
+  echo: false
