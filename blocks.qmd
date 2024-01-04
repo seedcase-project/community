@@ -33,20 +33,13 @@ This block contains multiple components, related to the overall project,
 to user-friendly usage documents, and to technical details about the
 software itself.
 
-For the project itself, those are found in the [About](/about/index.md)
-pages or in the `about/` folder in the GitHub repository. This includes
-the contact, history of the project, governance, mission, and the
-purpose.
+For the project itself, those are found across several website:
 
-For the Product itself, documents describe the design and architecture,
-such as the programmatic pathways between user input to the backend of
-the infrastructure. These details are found in the
-[Design](/design/index.md) pages (or in the `design/` folder on the
-GitHub repository).
-
-In addition to the these documentation sources, there will also be
-tutorials and usage instructions in the [Usage](/usage/index.md) section
-(`/usage/` folder). More detail will be added later.
+- [Main Seedcase Project site](https://seedcase-project.org). This includes the contacts, history of the project, governance, mission, and the purpose.
+- Community site (this site). This includes content we want to share with the community, how people can get involved or participate, as well as guides on how to do things.
+- [Design documentation](https://design.seedcase-project.org). This includes documents that describe the design and architecture, such as the programmatic pathways between user input to the backend of the infrastructure. 
+- [Team-specific documentation](https://team.seedcase-project.org). This contains documents that we as a team use, such as onboarding, specifics of workflows, project management, etc.
+- [Decision records](https://decisions.seedcase-project.org). This contains records for decisions we've made and why we've made them.
 
 ## Culture and collaboration block
 
