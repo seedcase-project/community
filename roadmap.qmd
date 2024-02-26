@@ -14,15 +14,24 @@ Likewise, our non-software projects will also continue to be refined and updated
 
 <!-- TODO: Convert this into a table? -->
 
-- Software
-    - Authenticating users and managing permissions
-    - Uploading and managing research data
-        - Plugin/extension system for processing or enriching data
-    - Cataloging and browsing metadata on data in a Data Resource
-    - Managing and displaying Data Projects (`seedcase-registry`)
-    - Submitting request for accessing specific data
-    - Web portal for displaying basic details on a Data Resource
-    - Plugin/extension system for theming of User Interface elements
+### Software
+
+| General timeline | Deliverable |
+| --- | --- |
+| Mid-to-end 2024 | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Upload your research data to formally structure it for better, more reliable, and easier research. |
+| Start 2025 | Authenticating users and managing permissions |
+| | Cataloging and browsing metadata on data in a Data Resource |
+| | Managing and displaying Data Projects |
+| | Submitting request for accessing specific data |
+| | Web portal for displaying basic details on a Data Resource |
+| | Plugin/extension system for processing or enriching data |
+| | Plugin/extension system for theming of User Interface elements |
+
+
+| | [`seedcase-project/.github`](https://github.com/seedcase-project/.github): This repo contains the default community health files for the seedcase-project organisation |
+| | [`seedcase-project/seedcase-project`](https://github.com/seedcase-project/seedcase-project): Main website for the Seedcase Project |
+| | [`seedcase-project/data`](https://github.com/seedcase-project/data): Repository to store data we use for testing and demo purposes. All data is either fake, synthetically generated, or completely open. |
+| | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Quarto extension with Seedcase-specific CSS themes and HTML templates for all Seedcase websites.  |
 
 - Documentation
     - Contributing to and maintaining Seedcase software
@@ -31,6 +40,12 @@ Likewise, our non-software projects will also continue to be refined and updated
     - Software and data design and architecture for each Seedcase software
     - Installing and deploying Seedcase software
     - Using customizing Seedcase software
+
+| | [`seedcase-project/design`](https://github.com/seedcase-project/design): Overall architectural design documentation for Seedcase software. |
+
+| | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions): Repository that contains the records for most of the decisions we've made for the Seedcase Project. |
+| | [`seedcase-project/team`](https://github.com/seedcase-project/team): Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes.  |
+| | [`seedcase-project/community`](https://github.com/seedcase-project/community): Content for community building, outreach, and contributing guidelines for the Seedcase Project |
 
 - Workshops (in-person and maybe virtual as videos)
     - Installing and setting up Seedcase on a server so Data Resources can be created
@@ -43,16 +58,27 @@ Likewise, our non-software projects will also continue to be refined and updated
         - Documentation
         - Templates
 
+
 ## Secondary deliverables
 
+### In-progress
+
 - General sharing
-    - Knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management
+    - Knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management (via the [Community](https://community.seedcase-project.org/))
+
+|Timeline | Deliverable |
+| --- | --- |
+| End 2025 | [`rostools/cog-flow-intro`](https://github.com/rostools/cog-flow-intro): :gear: Collaboration with Git and GitHub: A gentle introduction to a team-based collaborative workflow using Git and GitHub. |
+| | [`rostools/r-pkg-intro`](https://github.com/rostools/r-pkg-intro): An introduction course to building R Packages |
+
+### Planned
 
 - Awareness/education
     - "What is research data engineering?"
 
 - Training and learning
     - Workshop: "Data engineering in a research environment"
+
 
 ## Major milestones
 
