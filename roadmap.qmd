@@ -79,7 +79,6 @@ Likewise, our non-software projects will also continue to be refined and updated
 - Training and learning
     - Workshop: "Data engineering in a research environment"
 
-
 ## Major milestones
 
 - First upload of documents to archive (for DOI)
