@@ -1,0 +1,4 @@
+status:
+  wip: '[{{< fa hammer size=xl title="In progress" color="Tomato">}}]{style="color: #196440"}'
+  planned: '[{{< fa circle-pause size=xl title="Planned" >}}]{style="color: #196440"}'
+  potential: '[{{< fa circle-question size=xl title="Potential" >}}]{style="color: #196440"}'
