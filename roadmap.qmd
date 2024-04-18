@@ -7,18 +7,18 @@ title: Roadmap
 While the core deliverable of Seedcase is the software product described
 in the [Design Docs website](https://design.seedcase-project.org)
 documentation, there are several deliverables that form this core
-Product.
+product.
 
 Because of the evolving nature of developing software, the software
 product is never "completed" as it continues to be improved on and
-updated. So here we define deliverable for software as the first
+updated. So here we define a **deliverable** for software as the first
 Minimally Viable Product (or prototype). After the first release of a
 Minimally Viable Product, the software product will continue to be
-tested and refined based on user feedback, identifying bugs, and adding
+tested and refined based on user feedback, identified bugs, and additional
 features.
 
-Likewise, our non-software projects will also continue to be refined and
-updated. So we define deliverable as the first time they are uploaded to
+Likewise, our documentation and training/education projects will also continue to be refined and
+updated. So we define a deliverable as the first time they are uploaded to
 an archive (like a software release) to create a DOI (digital object
 identifier).
 
@@ -48,8 +48,8 @@ progresses.
 ### Documentation
 
 While we want the software products to have a more tangible deliverable
-and timeline, we will be continually updating and refining documentation
-related. At some regular intervals, we plan on uploading the documents
+and timeline, we will be continually updating and refining related 
+documentation. At some regular intervals, we plan on uploading the documents
 to an archive for generating DOIs and for greater dissemination.
 
 | Status                     | Timeline     | Deliverable                                                                                 | Description                                                                                                                |
@@ -69,9 +69,9 @@ uploading to an archive for the first time.
 
 | Status | Timeline | Deliverable | Description |
 |--------|----------|-------------|-------------|
-| {{< var status.planned >}} | TDB | Tutorial | Installing and setting up Seedcase on a server so Data Resources can be created |
-| {{< var status.planned >}} | TDB | Tutorial | Using Seedcase to create and manage a Data Resource |
-| {{< var status.planned >}} | TDB | Tutorial | Requesting to start a data project for a Data Resource |
+| {{< var status.planned >}} | TBD | Tutorial | Installing and setting up Seedcase on a server so Data Resources can be created |
+| {{< var status.planned >}} | TBD | Tutorial | Using Seedcase to create and manage a Data Resource |
+| {{< var status.planned >}} | TBD | Tutorial | Requesting to start a data project for a Data Resource |
 
 : List of training and education deliverables with approximate timelines
 :::
