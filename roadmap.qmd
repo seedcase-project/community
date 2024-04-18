@@ -12,8 +12,8 @@ product.
 Because of the evolving nature of developing software, the software
 product is never "completed" as it continues to be improved on and
 updated. So here we define a **deliverable** for software as the first
-Minimally Viable Product (or prototype). After the first release of a
-Minimally Viable Product, the software product will continue to be
+minimum viable product (or prototype). After the first release of a
+minimum viable product, the software product will continue to be
 tested and refined based on user feedback, identified bugs, and additional
 features.
 
@@ -42,7 +42,7 @@ progresses.
 | {{< var status.planned >}} | Early 2026             | `seedcase-propogate`                                                                      | Submitting request for accessing specific data from a Data Resource                                |
 | {{< var status.planned >}} | End 2026               | `seedcase-garden`                                                                         | Tend to projects using data from a Data Resource                                                   |
 
-: Approximate timeline for completion of a Minimally Viable Product
+: Approximate timeline for completion of a minimum viable product
 (prototype).
 
 ### Documentation
@@ -54,7 +54,8 @@ to an archive for generating DOIs and for greater dissemination.
 
 | Status                     | Timeline     | Deliverable                                                                                 | Description                                                                                                                |
 |-----------------|-----------------|------------------|----------------------|
-| {{< var status.wip >}}     | End 2025     | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions)               | Records on most of the decisions made in the Seedcase Project                                                              |
+| {{< var status.wip >}}     | End 2025     | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions)               | Archival records on many of the decisions made in the Seedcase Project
+|
 | {{< var status.wip >}}     | End 2025     | [`seedcase-project/design`](https://github.com/seedcase-project/design)                     | Overall architectural design documentation for Seedcase software.                                                          |
 | {{< var status.wip >}}     | End 2026     | [`seedcase-project/team`](https://github.com/seedcase-project/team)                         | Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
 | {{< var status.wip >}}     | Not relevant | [`seedcase-project/community`](https://github.com/seedcase-project/community)               | Content for community building, outreach, and contributing guidelines for the Seedcase Project                             |
@@ -84,10 +85,10 @@ uploading to an archive for the first time.
 | Status                       | Timeline | Deliverable                    | Description                                                                             |
 |-----------------|-----------------|------------------|----------------------|
 | {{< var status.planned >}}   | TBD      | Sprout data processing plug-in | Plugin/extension system for Seedcase Sprout processing or enriching data                |
-| {{< var status.potential >}} | TBD      | Theme customization extensions | Plugin/extension system for theming of User Interface elements of all Seedcase software |
+| {{< var status.potential >}} | TBD      | Theme customization extensions | Plugin/extension system for theming of user interface elements of all Seedcase software |
 
 : Secondary software deliverables with their approximate timeline for
-completion of a Minimally Viable Product (prototype) for each.
+completion of a minimum viable product (prototype) for each.
 
 ### Documentation
 
@@ -117,17 +118,17 @@ reviewing, updating, and adding to these activities:
 
 -   Security
 -   General documentation
--   Refining the User Interface
+-   Refining the user interface
 -   Testing and re-testing of the code
 
-Once we have a Minimally Viable Product for any of the software
+Once we have a minimum viable product for any of the software
 deliverables, we aim to test and deploy them in real-world projects. We
 have several projects lined up for this:
 
--   DD2
--   ADDITION
--   Health in Central Region
--   DARTER (register-based research project at Steno)
+-   [DD2](https://dd2.dk/)
+-   [ADDITION](https://addition.au.dk/)
+-   [Health in Central Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
+-   [DARTER](https://steno-aarhus.github.io/darter-project/) (register-based research project at Steno)
 
 We also have several projects that act as infrastructural support for
 the Seedcase Project, all of which are continually developed and are not
