@@ -1,0 +1,59 @@
+---
+title: ""
+description: ""
+author: "Luke W. Johnston"
+date: "2023-07-24"
+date-modified: last-modified
+categories:
+    - contributing
+    - teaching shorts
+    - microlearning
+---
+
+```markdown
+---
+title: ""
+description: ""
+author: ""
+date: "YYYY-MM-DD"
+date-modified: last-modified
+categories:
+    - ""
+---
+
+## Motivation for this micro-lesson
+
+## Assumed knowledge of reader
+
+## Necessary software
+
+## Learning goal
+
+## Take home message
+
+## Lesson content
+
+## Summary
+```
+
+-   Motivation
+-   Assumed reader
+    -   Remind of any previous knowledge?
+-   Learning goal
+    -   Purpose: What will they gain?
+    -   Based on Bloom's Taxonomy (https://bloomstaxonomy.net/)
+-   Take home messages
+-   Content
+    -   Emphasize images/diagrams/figures
+    -   Questions?
+-   Summary
+    -   Reiterate take home messages
+
+## Teaching (instructional design)
+
+-   https://elearningindustry.com/sam-successive-approximation-model-for-rapid-instructional-design
+-   https://www.growthengineering.co.uk/instructional-design/
+-   Microlearning:
+    https://www.growthengineering.co.uk/what-is-microlearning/
+-   https://www.growthengineering.co.uk/learning-campaigns/
+-   https://pressbooks.pub/experientiallearningininstructionaldesignandtechnology/chapter/2-1-best-practices-in-online-learning/
