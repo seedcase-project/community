@@ -29,7 +29,8 @@ A learning short is based on the concept of
 ["microlearning"](https://www.growthengineering.co.uk/what-is-microlearning/),
 which is a method of teaching that breaks down learning content into
 very small, very specific bits of information. The length of a typical
-learning short is very short, only taking a few minutes to read. We aim to keep shorts concise, with a reading time under 10 minutes.
+learning short is very short, only taking a few minutes to read. We aim
+to keep shorts concise, with a reading time under 10 minutes.
 
 The concept of using microlearning for teaching arose acknowledging the
 limited time we have in our modern, busy, information-overloaded world,
@@ -44,54 +45,24 @@ persistent, longer period of time.
 
 ## Learning shorts template
 
-The `shorts/` folder of the learning section contains a template
-for writing these shorts called `_template.qmd`. The template is a
-Markdown file that contains the following structure:
-
-``` markdown
----
-title: ""
-description: ""
-author: ""
-date: "YYYY-MM-DD"
-date-modified: last-modified
-categories:
-    - ""
----
-
-## Motivation for this micro-lesson
-
-## Assumed knowledge of reader
-
-## Necessary software
-
-## Learning goal
-
-## Take home message
-
-## Lesson content
-
-### SECTIONS
-
-## Summary
-
-## Additional resources
-```
+The `shorts/` folder of the learning section contains a template for
+writing these shorts called `_template.qmd`. See the template to learn
+about the structure.
 
 You can refer to existing shorts to use as a guide and for inspiration
 for how to write the individual sections. We won't go into too much
 detail for each section, but will highlight a few:
 
 -   **Learning goal**: This is the most important part of the short,
-    aimed to inform the reader of what knowledge or skill will they gain.
-    It should be as simple and short as needed to convey the learning
-    goal. It should be written in a form based on [Bloom's
+    aimed to inform the reader of what knowledge or skill will they
+    gain. It should be as simple and short as needed to convey the
+    learning goal. It should be written in a form based on [Bloom's
     Taxonomy](https://bloomstaxonomy.net/) (or a similar structure).
 -   **Lesson content**: This is the main part of the short, where the
     core teaching content is written. It should be broken down into
-    sections (with several headers denoted by `###`). Try to make use of images, diagrams, tables, and
-    other visual aids to help explain the content. If it is code based,
-    make sure to actually show code.
+    sections (with several headers denoted by `###`). Try to make use of
+    images, diagrams, tables, and other visual aids to help explain the
+    content. If it is code based, make sure to actually show code.
 
 ## Resources used for this post
 
