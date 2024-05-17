@@ -18,7 +18,7 @@ One tool we use as part of our teaching strategy is called
 micro-learning or micro-lessons (which we call "learning shorts" or
 "shorts"). Learning shorts are short, focused lessons that are designed
 to teach a single concept or skill, with minimal or at least explicitly
-described outside knowledge.
+described prerequisite knowledge.
 
 This post describes a bit more about learning shorts and how to write
 one.
