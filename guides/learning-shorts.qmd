@@ -61,8 +61,8 @@ detail for each section, but will highlight a few:
 -   **Lesson content**: This is the main part of the short, where the
     core teaching content is written. It should be broken down into
     sections (with several headers denoted by `###`). Try to make use of
-    images, diagrams, tables, and other visual aids to help explain the
-    content. If it is code based, make sure to actually show code.
+    visual aids like images, diagrams, and tables to help explain the
+    content. If it is code based, make sure to show the actual code.
 
 ## Resources used for this post
 
