@@ -1,0 +1,80 @@
+---
+title: "The Seedcase Project: A software-based initiative to build frameworks for open and scalable infrastructures for research health data"
+author: 
+  - name: Kristiane Beicher
+    affiliation:
+      - name: Steno Diabetes Center Aarhus
+      - name: Aarhus University
+  - name: Signe K. Brødbæk
+    affiliation:
+      - name: Steno Diabetes Center Aarhus
+      - name: Aarhus University
+  - name: Luke W. Johnston
+    affiliation:
+      - name: Steno Diabetes Center Aarhus
+      - name: Aarhus University
+---
+
+::: content-hidden
+From:
+https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/
+
+Instructions:
+
+-   Title only 50 characters
+-   Abstract 1700 characters
+:::
+
+Science suffers from a lack of software and data engineering skills that
+ultimately negatively impacts the reliability of results as well as the
+effectiveness and productivity of researchers. In clinical and health
+research, especially for small- to mid-sized research groups, funding
+for building modern, open source software and data infrastructures for
+managing and using data is often limited. Combined with the low
+technical capacity for software development within research settings,
+this has led to many organizational challenges for managing, sharing,
+and using existing and new data for many research initiatives, simply
+because they don't have the funds nor expertise to adequately handle
+them. This in turn impacts our ability to follow FAIR and open science
+practices.
+
+The aim of the Seedcase Project (seedcase-project.org) is two-fold: To
+develop software to build and manage infrastructures for data designed
+by researchers, for researchers; and, to create training material to
+upskill researchers in modern software and data engineering practices to
+more effectively tackles the challenges that we face now and in the near
+future. Ultimately, we work towards helping researchers do "better
+science done faster".
+
+Our current work is on building software to assist researchers in follow
+better practices in building and storing research data, in a way that
+follows industry-standards and FAIR principles. Seedcase Sprout
+
+this gap by creating and implementing an efficient, scalable, and open
+source data infrastructure framework that connects data collectors,
+researchers, clinicians, and other stakeholders, with the data,
+documentation, and findings within the DD2 study. Furthermore, we will
+create this framework in such a way that other research groups and
+companies, who are unable to adequately invest in building
+infrastructures of this type, can relatively easily implement it, and
+modify as needed, for their own purposes.
+
+By building this framework, we have the potential to help propel
+research groups and companies across Denmark (and globally) to quickly
+getting updated on modern, scalable, and efficient approaches to working
+with data.
+
+::: callout-note
+This project receives funding from the Novo Nordisk Foundation (grant
+number NNF21OC0069462).
+:::
+
+::: content-hidden
+## Motivation for attending
+
+> Please write a short motivation for attending the Conference, 200
+> characters.
+
+Our software-based project aims at improving FAIR and open science
+practices for health data. This Symposium
+:::
