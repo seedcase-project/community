@@ -28,6 +28,7 @@ website:
       - roadmap.qmd
       - auto: guides
       - auto: posts
+      - auto: outreach/**/index.qmd
       - text: "Code of Conduct"
         href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
 
