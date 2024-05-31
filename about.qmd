@@ -26,7 +26,7 @@ long-term by:
 
 How widely used Seedcase is or will be depends heavily on the quality of
 its documentation and training material. A key concept we will use
-throughout development of Seedcase is [Documentation Driven Development](guides/documentation-first/index.qmd),
+throughout development of Seedcase is [Documentation Driven Development](/guides/documentation-first.qmd),
 where Seedcase's development is guided and informed from the development
 of its documentation. Meaning that we will place a high priority on
 documentation. We also be creating and running short workshops and
