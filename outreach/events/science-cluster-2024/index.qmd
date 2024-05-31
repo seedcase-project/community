@@ -1,0 +1,10 @@
+---
+title: "Symposium: Data Science for Planetary and Human Health - The True Life Cycle of Multi-omics Data"
+description: "Hosted by Novo Nordisk Foundation Science Cluster from June 10-12, 2024 in Copenhagen, Denmark."
+---
+
+We submitted an [abstract](abstract.qmd) to the symposium ["Data Science
+for Planetary and Human Health - The True Life Cycle of Multi-omics
+Data"](https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/)
+from the [Novo Nordisk Foundation Science
+Cluster](https://sciencecluster.dk/).
