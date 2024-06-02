@@ -1,5 +1,6 @@
 ---
-title: "The Seedcase Project: A software-based initiative to build frameworks for open and scalable infrastructures for research health data"
+
+title: "The Seedcase Project: A software- and training-based initiative to develop data engineering tools and skills for open and FAIR infrastructures of research health data"
 author: 
   - name: Kristiane Beicher
     affiliation:
@@ -25,48 +26,34 @@ Instructions:
 -   Abstract 1700 characters
 :::
 
-Science suffers from a lack of software and data engineering skills that
-ultimately negatively impacts the reliability of results as well as the
-effectiveness and productivity of researchers. In clinical and health
-research, especially for small- to mid-sized research groups, funding
-for building modern, open source software and data infrastructures for
-managing and using data is often limited. Combined with the low
-technical capacity for software development within research settings,
-this has led to many organizational challenges for managing, sharing,
-and using existing and new data for many research initiatives, simply
-because they don't have the funds nor expertise to adequately handle
-them. This in turn impacts our ability to follow FAIR and open science
+Across much of science, we suffer from a lack of software and data
+engineering resources, skills, and research-specific tools. This has
+negative impacts on our abilities to generate reliable results and be
+productive and effective as researchers. Historically, there has been no
+or limited sources of funding that allow allocating enough resources for
+personnel with these technical skills. This is especially an issue for
+small- to mid-sized clinical and health research groups. Part of the
+issue is a lack of a general awareness by researchers, funding agencies,
+and organizations on the importance of software and data engineering in
+research, as well as the lack of systemic incentive structures to
+dedicate resources and time to these practices. This has led to an
+overall low capacity for these skills within research settings. The
+consequence of which is the many organizational and technical challenges
+with managing, sharing, building, and using research data, not least of
+which is the impact on our ability to follow FAIR and open science
 practices.
 
-The aim of the Seedcase Project (seedcase-project.org) is two-fold: To
-develop software to build and manage infrastructures for data designed
-by researchers, for researchers; and, to create training material to
-upskill researchers in modern software and data engineering practices to
-more effectively tackles the challenges that we face now and in the near
-future. Ultimately, we work towards helping researchers do "better
-science done faster".
+The aim of the Seedcase Project (\<seedcase-project.org\>) is two-fold:
+To develop software to build and manage infrastructures for data
+designed by researchers, for researchers; and, to create training
+material to upskill researchers in modern software and data engineering
+practices to more effectively tackle the challenges we currently face
+and will continue to face in the future. Ultimately, we work towards
+helping researchers do "better science in less time", not only those in
+academic settings in Denmark but in industry and across the globe.
 
-Our current work is on building software to assist researchers in follow
-better practices in building and storing research data, in a way that
-follows industry-standards and FAIR principles. Seedcase Sprout
-
-this gap by creating and implementing an efficient, scalable, and open
-source data infrastructure framework that connects data collectors,
-researchers, clinicians, and other stakeholders, with the data,
-documentation, and findings within the DD2 study. Furthermore, we will
-create this framework in such a way that other research groups and
-companies, who are unable to adequately invest in building
-infrastructures of this type, can relatively easily implement it, and
-modify as needed, for their own purposes.
-
-By building this framework, we have the potential to help propel
-research groups and companies across Denmark (and globally) to quickly
-getting updated on modern, scalable, and efficient approaches to working
-with data.
-
-::: callout-note
-This project receives funding from the Novo Nordisk Foundation (grant
-number NNF21OC0069462).
+::: callout-important
+This project is funded by an NNF grant (number NNF21OC0069462).
 :::
 
 ::: content-hidden
@@ -75,6 +62,8 @@ number NNF21OC0069462).
 > Please write a short motivation for attending the Conference, 200
 > characters.
 
-Our software-based project aims at improving FAIR and open science
-practices for health data. This Symposium
+Our software- and training-based project aims at improving FAIR and open
+scientific practices for health data. This Symposium is wonderful
+opportunity to learn what others are doing in this space, network with
+likeminded people, and share our work.
 :::
