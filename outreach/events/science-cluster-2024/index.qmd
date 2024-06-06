@@ -7,4 +7,7 @@ We submitted an [abstract](abstract.qmd) to the symposium ["Data Science
 for Planetary and Human Health - The True Life Cycle of Multi-omics
 Data"](https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/)
 from the [Novo Nordisk Foundation Science
-Cluster](https://sciencecluster.dk/).
+Cluster](https://sciencecluster.dk/). The poster below is what we
+presented at the symposium.
+
+![Poster presented at the symposium.](poster.svg)
