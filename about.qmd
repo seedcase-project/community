@@ -6,8 +6,8 @@ title: About and purposes
 
 ## Sustainability
 
-A key consideration to Seedcase is ensuring it is sustainable over the
-long-term by:
+A key consideration for the Seedcase Project is ensuring it is
+sustainable over the long-term by:
 
 1.  Integrating the development of the framework and using it in
     multiple projects at the host institution Steno Diabetes Center
@@ -20,14 +20,16 @@ long-term by:
     Conduct](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md),
     as well as encouraging external users to contribute.
 4.  Actively contributing back to other open source software that
-    Seedcase depends on or that might be used alongside.
+    Seedcase software depends on or that might be used alongside.
 
 ## Training and educational development
 
-How widely used Seedcase is or will be depends heavily on the quality of
-its documentation and training material. A key concept we will use
-throughout development of Seedcase is [Documentation Driven Development](/guides/documentation-first.qmd),
-where Seedcase's development is guided and informed from the development
-of its documentation. Meaning that we will place a high priority on
+How widely used the Seedcase framework is or will be depends heavily on the
+quality of its documentation and training material. A key concept we
+will use throughout the development of Seedcase software is
+[Documentation Driven
+Development](/guides/documentation-first.qmd), where software
+development is guided and informed by the development of its
+documentation. Meaning that we will place a high priority on
 documentation. We also be creating and running short workshops and
-tutorials that teach researchers how they can use Seedcase.
+tutorials that teach researchers how they can use Seedcase software.

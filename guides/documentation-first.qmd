@@ -12,9 +12,9 @@ categories:
 ---
 
 Documentation that is easy to find, search, update, and use is crucial
-not just for the Product users, but also to the development team and to
-an organization's members. Whether it is for onboarding, general
-support, or other questions related to doing our work, there needs to be
+not just for users, but also to the development team and to an
+organization's members. Whether it is for onboarding, general support,
+or other questions related to doing our work, there needs to be
 documentation on how to do that. Often that "documentation" is
 communicated through a team or organization verbally and through its
 culture. This has a lot of consequences though, for instance, if a team
@@ -85,17 +85,6 @@ All our documentation on Seedcase, whether it is processes, workflows,
 culture, or technical, are found on our
 [`seedcase-project`](https://github.com/seedcase-project) GitHub
 organization account.
-
--   Documentation on software and data design, contributing guidelines,
-    and learning (either on usage of Seedcase or general) are found on
-    the
-    [`seedcase-project`](https://github.com/seedcase-project/seedcase-project)
-    repository.
--   "Internal" team documentation is found on our
-    [`team`](https://github.com/seedcase-project/team) repository.
--   Product specific documentation will be found on our
-    [`seedcase`](https://github.com/seedcase-project/seedcase)
-    repository.
 
 ## Reviewing our contributing guidelines
 

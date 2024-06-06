@@ -17,7 +17,7 @@ website:
       - icon: house
         href: "https://seedcase-project.org"
       - icon: github
-        href: "https://github.com/seedcase-project/seedcase-project"
+        href: "https://github.com/seedcase-project/community"
   sidebar:
     title: "Community"
     pinned: true

@@ -21,7 +21,7 @@ a collection of post entries).
 There are two ways to add a post:
 
 1.  Cloning the
-    [`seedcase-project`](https://github.com/seedcase-project/seedcase-project)
+    [`seedcase-website`](https://github.com/seedcase-project/seedcase-website)
     GitHub repository to your computer
 2.  Creating and writing directly inside the GitHub repository
 

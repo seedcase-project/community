@@ -30,7 +30,7 @@ listing:
 
 ## Want to contribute? :tada: Read these guide entries {#contributing}
 
-::: {.callout-note}
+::: callout-note
 This is a guide for those outside the team who are interested in
 contributing.
 :::
@@ -45,7 +45,7 @@ For team-specific contributing guidelines, check out our
 
 ## Code of Conduct
 
-Please note that the Seedcase project is released with a [Contributor
+Please note that the Seedcase Project is released with a [Contributor
 Code of
 Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its
