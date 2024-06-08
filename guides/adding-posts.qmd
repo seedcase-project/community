@@ -1,11 +1,9 @@
 ---
 title: "How to add post entries"
 description: "Instructions on how to add post entries to Quarto-based websites."
-author: "Luke W. Johnston"
 date: "2022-10-31"
 categories:
   - contributing
-  - blogs
   - writing
   - workflow
 ---

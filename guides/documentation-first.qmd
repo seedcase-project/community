@@ -1,13 +1,12 @@
 ---
 title: "Documentation-first culture"
 description: "Principles and reasons for building a documentation-first work culture."
-author: "Luke W. Johnston"
 date: "2023-07-03"
 date-modified: last-modified
 categories:
   - culture
   - communication
-  - teamwork
+  - collaboration
   - documentation
 ---
 
