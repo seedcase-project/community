@@ -13,13 +13,13 @@ ones, adding a post to this [Quarto](https://quarto.org/) website is
 relatively straight-forward. For now, I'll focus on adding a post to the
 Community section of the website, though these principles apply to any
 post/collection we use throughout this site (e.g. the [Community
-Contributing Guide Entries](/index.qmd#guides) is
+Contributing Guide Entries](/guides.qmd) is
 a collection of post entries).
 
 There are two ways to add a post:
 
 1.  Cloning the
-    [`seedcase-website`](https://github.com/seedcase-project/seedcase-website)
+    [`community`](https://github.com/seedcase-project/community)
     GitHub repository to your computer
 2.  Creating and writing directly inside the GitHub repository
 
@@ -29,10 +29,9 @@ contributor, then the second might make more sense for you.
 
 Regardless, in both routes the steps are:
 
-1.  Create a new folder/directory inside `posts/` with a short
-    name the describes the post. For instance, this post's directory
-    name is `adding-posts/`. Inside the newly created directory, create
-    a file called `index.qmd`.
+1.  Create a new file inside `posts/` with a short
+    name the describes the post. For instance, this post's file
+    name is `adding-posts.qmd`.
 
 2.  Open up the new file and add the below metadata to the top of the
     file. This is called the YAML header.
@@ -64,7 +63,7 @@ Regardless, in both routes the steps are:
     how to write Markdown).
 
 5.  After you are done writing, the final step is to get the post into
-    the `seedcase-project` Git history. This step depends on if you
+    the `community` Git history. This step depends on if you
     cloned the repository or if you are writing directly in GitHub.
 
     -   In GitHub, it is relatively simple. At the bottom of the page is
