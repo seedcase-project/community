@@ -2,7 +2,7 @@
 title: Posts
 listing:
   - id: posts
-    contents: posts
+    contents: .
     type: default
     sort: "title"
     fields: 
