@@ -4,7 +4,7 @@ description: "Learning shorts as a useful teaching tool when sharing knowledge a
 date: "2024-05-15"
 categories:
     - contributing
-    - teaching shorts
+    - teaching
     - microlearning
 ---
 
