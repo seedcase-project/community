@@ -1,8 +1,8 @@
 ---
-title: Community
+title: Guides
 listing:
-  - id: posts
-    contents: posts
+  - id: guides
+    contents: guides
     type: default
     sort: "title"
     fields: 
@@ -14,10 +14,20 @@ listing:
 
 {{< include /includes/_wip.qmd >}}
 
-## Posts and sharing
+## Want to contribute? :tada: Read these guide entries {#contributing}
 
-::: {#posts}
+::: callout-note
+This is a guide intended for general guidelines for both the team as well as
+outside of the team.
 :::
+
+These entries are small pages about specific topics for contributing.
+
+::: {#guides}
+:::
+
+For team-specific contributing guidelines, check out our
+[team.seedcase-project.org](https://team.seedcase-project.org/) website.
 
 ## Code of Conduct
 
