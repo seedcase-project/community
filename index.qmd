@@ -1,28 +1,5 @@
 ---
 title: Community
-listing:
-  - id: posts
-    contents: posts
-    type: default
-    sort: "title"
-    fields: 
-      - "title"
-      - "author"
-      - "description"
-      - "date"
 ---
 
 {{< include /includes/_wip.qmd >}}
-
-## Posts and sharing
-
-::: {#posts}
-:::
-
-## Code of Conduct
-
-Please note that the Seedcase Project is released with a [Contributor
-Code of
-Conduct](https://contributor-covenant.org/version/2/1/CODE_OF_CONDUCT.html).
-By contributing to this project, you agree to abide by its
-[terms](https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md).

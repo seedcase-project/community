@@ -1,0 +1,21 @@
+---
+title: Posts
+listing:
+  - id: posts
+    contents: posts
+    type: default
+    sort: "title"
+    fields: 
+      - "title"
+      - "author"
+      - "description"
+      - "date"
+---
+
+{{< include /includes/_wip.qmd >}}
+
+These short posts are on diverse topics, often things we've learned or
+experiences from attending events like a conference.
+
+::: {#posts}
+:::
