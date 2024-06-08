@@ -9,28 +9,38 @@ website:
     center:
       - text: "License: CC-BY 4.0"
         href: LICENSE.md
+      - text: "Code of Conduct"
+        href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
   page-navigation: true
   navbar:
+    title: false
+    logo: _extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-community.svg
     pinned: true
     search: true
+    left:
+      - roadmap.qmd
+      - guides/index.qmd
+      - outreach/index.qmd
+      - posts/index.qmd
     tools:
       - icon: house
         href: "https://seedcase-project.org"
       - icon: github
         href: "https://github.com/seedcase-project/community"
   sidebar:
-    title: "Community"
-    pinned: true
-    style: "floating"
-    contents:
-      - index.qmd
-      - blocks.qmd
-      - roadmap.qmd
-      - auto: guides
-      - auto: posts
-      - auto: outreach/**/index.qmd
-      - text: "Code of Conduct"
-        href: "https://github.com/seedcase-project/.github/blob/main/CODE_OF_CONDUCT.md"
+    - id: guides
+      pinned: true
+      style: "floating"
+      contents:
+        - auto: guides
+    - id: outreach
+      contents:
+        - outreach/index.qmd
+        - text: "Events"
+          auto: outreach/**/index.qmd
+    - id: posts
+      contents:
+        - auto: posts
 
 # format:
 #   seedcase-theme-html:
