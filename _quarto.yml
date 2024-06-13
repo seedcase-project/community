@@ -26,7 +26,7 @@ website:
     tools:
       - icon: house
         href: "https://seedcase-project.org"
-        aria-label: Home
+        aria-label: Home page
       - icon: github
         href: "https://github.com/seedcase-project/community"
         aria-label: GitHub
