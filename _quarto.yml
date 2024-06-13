@@ -15,6 +15,7 @@ website:
   navbar:
     title: false
     logo: _extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-community.svg
+    logo-alt: "Seedcase Community logo"
     pinned: true
     search: true
     left:
@@ -25,8 +26,10 @@ website:
     tools:
       - icon: house
         href: "https://seedcase-project.org"
+        aria-label: Home
       - icon: github
         href: "https://github.com/seedcase-project/community"
+        aria-label: GitHub
   sidebar:
     - id: guides
       pinned: true
