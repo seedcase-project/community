@@ -136,7 +136,7 @@ Seedcase Project:
 -   There are a lot of -omic based projects, so we need to consider how
     those types of -omic data like genomics or metabolomics will be input into Seedcase software.
 
--   One presentation was on tracking energy use when running analyses on
+-   One presentation by Alexander Henriksen was on tracking energy use when running analyses on
     the server. It made me consider how much energy our work will use
     and what we could potentially do to lower it.
 
