@@ -1,0 +1,189 @@
+---
+title: "Experiences from the Data Science for Planetary and Human Health Symposium"
+description: "Some thoughts and experiences I had from attending this symposium by the Novo Nordisk Foundation Science Cluster in Copenhagen, Denmark."
+author: "Luke W. Johnston"
+date: "2024-09-05"
+categories:
+  - conference
+  - learning
+  - experiences
+---
+
+::: callout-important
+While I attended this symposium on June 10-11, 2024 and I wanted to
+write this blog post earlier, I've been very busy and it was always low on
+the priority list. Hence why this post is written so late after the
+event.
+:::
+
+I attended the [*Symposium: Data Science for Planetary and Human
+Health - The True Life Cycle of Multi-omics Data Conference
+2024*](https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/)
+on June 10 to 11, 2024 in Copenhagen, Denmark. This symposium was hosted
+by the [Novo Nordisk Foundation Science
+Cluster](https://sciencecluster.dk/) as part of their efforts and
+activities to bring together different disciplines to share and discuss
+more technical work within data science that is being done in various
+fields of research. The summary they provide for the symposium on their homepage is:
+
+> "This conference aims to create a bridge between different disciplines
+> and highlight versatile technologies, methods and algorithms presented
+> by renowned researchers across academia and industry. The main topics
+> encompass the full life cycle of research data including Data
+> Management and Infrastructure, Data Analysis and Machine Learning, and
+> Data Communication. The conference will provide a unique platform for
+> the exchange of ideas, knowledge, and experiences in the field of FAIR
+> data management and data science and will foster collaborations across
+> disciplines."
+
+Since one of the main aims of the Seedcase Project is to develop
+software that simplifies doing research data engineering and building up
+data infrastructures, we felt that we fit in to the "data management and
+infrastructure" section that they list. We submitted [an
+abstract](/outreach/events/science-cluster-2024/index.qmd) and I gave a
+poster presentation about the Seedcase Project. This post shares some
+general impressions and experiences I had from attending this symposium.
+These are honest, if sometimes critical, reflections on what I saw and
+heard at the symposium (and often experience at other
+conferences too).
+
+## Issues common to most conferences
+
+To start, many of the things I experienced are very typical of most
+other scientific conferences, so in that regard these experiences aren't
+unique to this event:
+
+-   *Presentations contain too many graphs that are not explained
+    enough.* I see this so often in scientific settings, where a
+    presenter shows graphs upon graphs of results, while quickly moving
+    through them without explaining them at all. This style works well
+    when the audience is intimately familiar with these types of graphs
+    and the results that they show, but in a conference setting you
+    can't assume everyone will have that familiarity.
+
+-   *Presentations that make many assumptions about the knowledge of the
+    audience.* Some researchers (that I've personally talked to) who
+    present their work often have a fear of looking like they do not
+    know what they are talking about, so they overcompensate by
+    presenting in a very detailed, jargon-heavy way. They assume the
+    audience knows everything they are saying, but often this makes
+    their presentation completely inaccessible to anyone *outside* of
+    their narrow field of research. It often (at least in my experience)
+    gets to the point where I don't understand nearly anything in the
+    presentations nor what their points are. It makes me feel like my
+    time and presence aren't respected, since I take time out of my work
+    week to attend these events to learn and hear what others are doing.
+    The least I hope for is that the presenters respect me and the
+    audience enough to spend their own time to make sure the
+    presentation is accessible and understandable.
+
+-   *Very little of what is presented is open (publicly accessible),
+    even for projects that are more code- or methods-based*. This is a
+    general issue across nearly all of science. Collectively, we don't
+    share enough and we don't make our work open and publicly accessible
+    enough. This makes it really hard to assess the quality of what is
+    being presented and makes it hard to know how to actually make use
+    of the work that is being presented.
+
+## Unmet expectations
+
+Considering the emphasis on the overall data science lifecycle, I had
+made a few assumptions about the symposium that were not met:
+
+-   *There were very few topics or sessions on data engineering,
+    infrastructure, and management.* I felt this was a bit of a lost
+    opportunity for the symposium, since part of its stated aim was
+    barely included in the program. It highlights to me, and reinforces
+    my own personal experiences, that these topics are just not well
+    known about, the awareness of them is nearly non-existent, and the
+    value of them is very underappreciated. This is a major issue, since
+    these are the foundational aspects of data science and research, and
+    without them, the rest of the data science lifecycle is not
+    possible.
+
+-   *A lot of presentations and topics were on data in general (or
+    rather data that was collected) and on the analytics.* This is
+    fairly common in other conferences as well. This relates to the
+    previous point: so often in research, we focus on the data
+    collection and the analytics, but we don't focus on the data
+    engineering and infrastructure needed to support them. Even 
+    within grant applications, we write
+    about what data we will collect and how we'll analyze it, but we
+    don't write about how we will store, manage, organize, and share
+    (even internally with the research group) that data.
+
+-   *Discrepancy between talking about FAIR principles and adhering to
+    FAIR principles.* While there were a few talks on FAIR principles, I
+    didn't see much evidence of them being followed in the presentations
+    or in the projects themselves. This is a very common problem in
+    science (at least in health research), where we talk about the
+    importance of open science, FAIR principles, and reproducibility,
+    but as researchers we don't actually follow them.
+
+-   *Too much focus on genomics, and not other -omic fields.* I was a
+    bit surprised about this, as -omics is a huge field, but a large
+    majority of the presentations and work were in genomics. I had been
+    hoping to learn and hear more about other -omic fields (as I have
+    some experience in lipidomic and metabolomic research), but there
+    was very little of that.
+
+## Interesting insights and ideas
+
+I did get some interesting insights and ideas from the symposium that I
+think might be useful to incorporate or consider in some way in the
+Seedcase Project:
+
+-   There are a lot of -omic based projects, so we need to consider how
+    those types of -omic data like genomics or metabolomics will be input into Seedcase software.
+
+-   One presentation by Alexander Henriksen was on tracking energy use when running analyses on
+    the server. It made me consider how much energy our work will use
+    and what we could potentially do to lower it.
+
+-   Further emphasize the strong fundamental need for more data
+    engineering practices, even though the demand for these skills,
+    knowledge, and tools hasn't yet reached a conscious level in most
+    researchers' minds.
+
+-   Even projects that are doing similar work as ours towards building
+    data infrastructures are closed source or not publicly
+    accessible and it isn't obvious how they can be used in other
+    contexts. This highlights the niche that Seedcase is aiming to fill
+    in the research community (and also in small- to medium-sized companies).
+
+-   Most projects and initiatives are not guided and driven by strong
+    (or even explicit) principles, values, and designs. Building up
+    these principles and designs take time, so it can seem that we are
+    slow with producing software. But with these strong cultural and
+    engineering foundations, we establish a base to do effective,
+    rigorous, and high-quality work that we hope will last well into the future.
+
+There were a few presentations I really appreciated and enjoyed, which
+also happened to be about how to give effective presentations:
+
+-   The presentations by Eleonora Nigro and Anika Gupta on communication, specifically on accessibility via visuals
+    and on using effective graphics were particularly interesting. This
+    is especially important since they bring awareness to these issues
+    that are often overlooked or ignored in scientific conferences and
+    similar types of events. Coming from someone (me) who has difficulty
+    differentiating colors, I really appreciated the emphasis on
+    accessibility.
+
+-   One of the final presentations by Lars Juhl Jensen was especially
+    good, since he showed how to give an engaging and informative
+    presentation. His style emphasized using simple slides, mostly just
+    a few words or a single image, while keeping the entire focus on him
+    and his speaking and presence. While I've heard some say (or fear?)
+    that there isn't enough "content/results", the major advantage to
+    this style is that it is more accessible to a wider audience of
+    people from different fields of research or work, countries and
+    proficiency in English, and in neurodiverse capabilities.
+
+## Summary
+
+Overall, it was a decent conference. I had hoped for more topics on data
+engineering, more on other -omic fields, and on FAIR practices, but
+unfortunately I was a bit disappointed. I did get some interesting
+insights and ideas from the symposium that I think might be useful to
+incorporate or consider in some way in the Seedcase Project. It also further
+reinforced the importance of the work we are doing with Seedcase.
