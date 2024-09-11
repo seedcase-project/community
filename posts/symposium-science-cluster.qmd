@@ -134,7 +134,7 @@ think might be useful to incorporate or consider in some way in the
 Seedcase Project:
 
 -   There are a lot of -omic based projects, so we need to consider how
-    those types of data will be input into Seedcase software.
+    those types of -omic data like genomics or metabolomics will be input into Seedcase software.
 
 -   One presentation was on tracking energy use when running analyses on
     the server. It made me consider how much energy our work will use
@@ -149,7 +149,7 @@ Seedcase Project:
     data infrastructures are closed source or not publicly
     accessible and it isn't obvious how they can be used in other
     contexts. This highlights the niche that Seedcase is aiming to fill
-    in the research community.
+    in the research community (and also in small- to medium-sized companies).
 
 -   Most projects and initiatives are not guided and driven by strong
     (or even explicit) principles, values, and designs. Building up
@@ -161,7 +161,7 @@ Seedcase Project:
 There were a few presentations I really appreciated and enjoyed, which
 also happened to be about how to give effective presentations:
 
--   The presentations on communication, specifically on accessibility
+-   The presentations by Eleonora Nigro and Anika Gupta on communication, specifically on accessibility via visuals
     and on using effective graphics were particularly interesting. This
     is especially important since they bring awareness to these issues
     that are often overlooked or ignored in scientific conferences and
