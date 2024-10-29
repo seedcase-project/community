@@ -121,7 +121,7 @@ good comments particularly on the challenges, such as:
 -   Not enough investment and value in addressing these fundamental
     issues around data and the current state of things.
 
-Another presenter, Mareike Buss from the Copenhagen Business School,
+Another presenter, Mareike Buss from the Copenhagen Business School (CBS),
 also mentioned some challenges around the lack of skilled technical
 personnel and on the many things needed to be done but with only few
 people hired to do them.
