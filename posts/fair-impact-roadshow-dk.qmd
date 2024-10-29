@@ -126,9 +126,16 @@ also mentioned some challenges around the lack of skilled technical
 personnel and on the many things needed to be done but with only few
 people hired to do them.
 
+She pointed out that because CBS is a relatively small institution, they
+are much closer to their users than colleagues in other universities.
+This means that it is easier to have a close relationship with the
+researchers and to understand their needs. She also pointed out, that
+having the support of the senior management is crucial for the success
+of the various projects.
+
 ## Summary
 
 This webinar was overall a good insight into the current state of things
-in FAIR data around Denmark. It reinforced many expectations and personal
-experiences of ours, while also giving hope that our work has some strong
-value in moving this area along!
+in FAIR data around Denmark. It reinforced many expectations and
+personal experiences of ours, while also giving hope that our work has
+some strong value in moving this area along!
