@@ -36,15 +36,14 @@ implementation based on changing technical needs and resources. The
 timeline below is an approximation and may change as the project
 progresses.
 
-| Status                     | Timeline               | Deliverable                                                                               | Description                                                                                        |
-|-----------------|------------------|---------------------|------------------|
-| {{< var status.wip >}}     | Mid-to-end 2024        | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout) | Upload your research data to formally structure it for better, more reliable, and easier research. |
-| {{< var status.wip >}}     | Concurrent with Sprout | Built-in to Sprout                                                                        | Authenticating users and managing permissions                                                      |
-| {{< var status.planned >}} | Mid 2025               | `seedcase-flower`                                                                         | Cataloging and browsing metadata on data in a Data Resource                                        |
-| {{< var status.planned >}} | Early 2026             | `seedcase-propogate`                                                                      | Submitting request for accessing specific data from a Data Resource                                |
-| {{< var status.planned >}} | End 2026               | `seedcase-garden`                                                                         | Tend to projects using data from a Data Resource                                                   |
+| Status | Timeline | Deliverable | Description |
+|------------------|------------------|--------------------|------------------|
+| {{< var status.wip >}} | Mid-to-end 2025 | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout) | Upload your research data to formally structure it for better, more reliable, and easier research. |
+| {{< var status.planned >}} | End 2025 | `seedcase-flower` | Cataloging and browsing metadata on data in a data package. |
+| {{< var status.planned >}} | Mid 2026 | `seedcase-propogate` | Submitting request for accessing specific data from a data package. |
+| {{< var status.planned >}} | Early 2027 | `seedcase-garden` | Tend to and track projects using data from a data package. |
 
-: Approximate timeline for completion of a minimum viable product
+: Approximate timelines for completion of a minimum viable product
 (prototype).
 
 ### Documentation
