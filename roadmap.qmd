@@ -13,10 +13,14 @@ Because of the evolving nature of developing software, the software
 product is never "completed" as it continues to be improved on and
 updated. So here we define a **deliverable** for software as the first
 minimum viable product (or prototype). After the first release of a
-minimum viable product, the software product will continue to be
-tested and refined based on user feedback, identified bugs, and additional
+minimum viable product, the software product will continue to be tested
+and refined based on user feedback, identified bugs, and additional
 features.
 
+Likewise, our documentation and training/education projects will also
+continue to be refined and updated. So we define a deliverable as the
+first time they are uploaded to an archive (like a software release) to
+create a DOI (digital object identifier).
 
 ::: callout-tip
 Check out our more detailed, regularly updated, and evolving
@@ -37,7 +41,7 @@ timeline below is an approximation and may change as the project
 progresses.
 
 | Status | Timeline | Deliverable | Description |
-|------------------|------------------|--------------------|------------------|
+|------------------|------------------|-------------------|------------------|
 | {{< var status.wip >}} | Mid-to-end 2025 | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout) | Upload your research data to formally structure it for better, more reliable, and easier research. |
 | {{< var status.planned >}} | End 2025 | `seedcase-flower` | Cataloging and browsing metadata on data in a data package. |
 | {{< var status.planned >}} | Mid 2026 | `seedcase-propogate` | Submitting request for accessing specific data from a data package. |
@@ -49,13 +53,13 @@ progresses.
 ### Documentation
 
 While we want the software products to have a more tangible deliverable
-and timeline, we will be continually updating and refining related 
+and timeline, we will be continually updating and refining related
 documentation. At some regular intervals, we plan on uploading the
 documents to an archive for generating DOIs and for greater
 dissemination.
 
 | Status | Timeline | Deliverable | Description |
-|-----------------|-----------------|-----------------|---------------------|
+|------------------|------------------|------------------|--------------------|
 | {{< var status.wip >}} | Ongoing | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions) | Archival records on many of the decisions made in the Seedcase Project |
 |  |  |  |  |
 | {{< var status.wip >}} | Ongoing | [`seedcase-project/design`](https://github.com/seedcase-project/design) | Overall architectural design documentation for Seedcase software. |
@@ -73,7 +77,7 @@ uploading to an archive for the first time.
 ### Training and education
 
 | Status | Timeline | Deliverable | Description |
-|--------|----------|-------------|-------------|
+|------------------|------------------|-------------------|-------------------|
 | {{< var status.planned >}} | TBD | Tutorial | Installing and setting up Seedcase on a server so Data Resources can be created |
 | {{< var status.planned >}} | TBD | Tutorial | Using Seedcase to create and manage a Data Resource |
 | {{< var status.planned >}} | TBD | Tutorial | Requesting to start a data project for a Data Resource |
@@ -86,12 +90,12 @@ uploading to an archive for the first time.
 ::: panel-tabset
 ### Software
 
-| Status                       | Timeline | Deliverable                    | Description                                                                             |
-|-----------------|-----------------|------------------|----------------------|
-| {{< var status.planned >}}   | TBD      | Sprout data processing plug-in | Plugin/extension system for Seedcase Sprout processing or enriching data                |
-| {{< var status.potential >}} | TBD      | Theme customization extensions | Plugin/extension system for theming of user interface elements of all Seedcase software |
+| Status | Timeline | Deliverable | Description |
+|------------------|------------------|------------------|--------------------|
+| {{< var status.planned >}} | TBD | Sprout data processing plug-in | Plugin/extension system for Seedcase Sprout processing or enriching data |
+| {{< var status.potential >}} | TBD | Theme customization extensions | Plugin/extension system for theming of user interface elements of all Seedcase software |
 
-: Secondary software deliverables with their approximate timeline for
+: Secondary software deliverables with their approximate timelines for
 completion of a minimum viable product (prototype) for each.
 
 ### Documentation
@@ -134,8 +138,10 @@ have several projects lined up for this:
 
 -   [DD2](https://dd2.dk/)
 -   [ADDITION](https://addition.au.dk/)
--   [Health in Central Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
--   [DARTER](https://steno-aarhus.github.io/darter-project/) (register-based research project at Steno)
+-   [Health in Central
+    Region](https://www.stenoaarhus.dk/tvarsektoriel-forskning/helbred-i-midt/)
+-   [DARTER](https://steno-aarhus.github.io/darter-project/)
+    (register-based research project at Steno)
 
 We also have several projects that act as infrastructural support for
 the Seedcase Project, all of which are continually developed and are not
