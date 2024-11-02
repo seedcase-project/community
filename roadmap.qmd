@@ -50,19 +50,22 @@ progresses.
 
 While we want the software products to have a more tangible deliverable
 and timeline, we will be continually updating and refining related 
-documentation. At some regular intervals, we plan on uploading the documents
-to an archive for generating DOIs and for greater dissemination.
+documentation. At some regular intervals, we plan on uploading the
+documents to an archive for generating DOIs and for greater
+dissemination.
 
-| Status                     | Timeline     | Deliverable                                                                                 | Description                                                                                                                |
-|-----------------|-----------------|------------------|----------------------|
-| {{< var status.wip >}}     | End 2025     | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions)               | Archival records on many of the decisions made in the Seedcase Project
-|
-| {{< var status.wip >}}     | End 2025     | [`seedcase-project/design`](https://github.com/seedcase-project/design)                     | Overall architectural design documentation for Seedcase software.                                                          |
-| {{< var status.wip >}}     | End 2026     | [`seedcase-project/team`](https://github.com/seedcase-project/team)                         | Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
-| {{< var status.wip >}}     | Not relevant | [`seedcase-project/community`](https://github.com/seedcase-project/community)               | Content for community building, outreach, and contributing guidelines for the Seedcase Project                             |
-| {{< var status.wip >}}     | Not relevant | [`seedcase-project/seedcase-website`](https://github.com/seedcase-project/seedcase-website) | Main website for the Seedcase Project                                                                                      |
-| {{< var status.planned >}} | TBD          | Usage guides                                                                                | General guides for using and interacting with Seedcase software                                                            |
-| {{< var status.planned >}} | TBD          | Opinion paper                                                                               | Workflows and digital infrastructure for building software in a team-based research environment                            |
+| Status | Timeline | Deliverable | Description |
+|-----------------|-----------------|-----------------|---------------------|
+| {{< var status.wip >}} | Ongoing | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions) | Archival records on many of the decisions made in the Seedcase Project |
+|  |  |  |  |
+| {{< var status.wip >}} | Ongoing | [`seedcase-project/design`](https://github.com/seedcase-project/design) | Overall architectural design documentation for Seedcase software. |
+| {{< var status.wip >}} | Ongoing | [`seedcase-project/team`](https://github.com/seedcase-project/team) | Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
+| {{< var status.wip >}} | Ongoing | [`seedcase-project/community`](https://github.com/seedcase-project/community) | Content for community building, outreach, and contributing guidelines for the Seedcase Project |
+| {{< var status.wip >}} | Ongoing | [`seedcase-project/seedcase-website`](https://github.com/seedcase-project/seedcase-website) | Main website for the Seedcase Project |
+| {{< var status.wip >}} | Early-to-mid 2025 | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/guide) usage guide | Guide for using and interacting with `seedcase-sprout`. |
+| {{< var status.wip >}} | Late 2025 | Flower usage guide | Guide for using and interacting with `seedcase-flower` |
+| {{< var status.wip >}} | Mid 2026 | Propagate usage guide | Guide for using and interacting with `seedcase-propagate` |
+| {{< var status.wip >}} | Late 2026 | Garden usage guide | Guide for using and interacting with `seedcase-garden` |
 
 : List of documentation deliverables with approximate timelines for
 uploading to an archive for the first time.
