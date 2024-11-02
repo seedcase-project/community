@@ -106,13 +106,13 @@ uploading to an archive for the first time.
 
 ### Training and education
 
-| Status                       | Timeline | Deliverable                                                             | Description                                                                                                                  |
-|-----------------|-----------------|------------------|----------------------|
-| {{< var status.wip >}}       | Mid-2025 | [`rostools/r-pkg-intro`](https://github.com/rostools/r-pkg-intro)       | An introduction course to building R Packages                                                                                |
-| {{< var status.wip >}}       | Mid-2025 | [`rostools/r-cubed-ise`](https://github.com/rostools/r-cubed-ise)       | An course to do reproducible research in server environments with R                                                          |
-| {{< var status.planned >}}   | End 2025 | [`rostools/cog-flow-intro`](https://github.com/rostools/cog-flow-intro) | :gear: Collaboration with Git and GitHub: A gentle introduction to a team-based collaborative workflow using Git and GitHub. |
-| {{< var status.potential >}} | TBD      | Seminar series                                                          | What is research data engineering?                                                                                           |
-| {{< var status.potential >}} | TBD      | Workshop                                                                | Data engineering in a research environment                                                                                   |
+| Status | Timeline | Deliverable | Description |
+|------------------|------------------|------------------|--------------------|
+| {{< var status.wip >}} | Mid-2025 | [`rostools/r-pkg-intro`](https://github.com/rostools/r-pkg-intro) | An introduction course to building R Packages |
+| {{< var status.planned >}} | End 2025 | [`rostools/cog-flow-intro`](https://github.com/rostools/cog-flow-intro) | :gear: Collaboration with Git and GitHub: A gentle introduction to a team-based collaborative workflow using Git and GitHub. |
+| {{< var status.potential >}} | TBD | Course on project development | Introductory course on iterative project management and development for effective collaboration and work. |
+| {{< var status.potential >}} | TBD | Seminar series | What is research data engineering? |
+| {{< var status.potential >}} | TBD | Workshop | Data engineering in a research environment |
 
 : List of secondary deliverables with approximate timelines for running
 the first workshop or course.
