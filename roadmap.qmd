@@ -17,10 +17,12 @@ minimum viable product, the software product will continue to be
 tested and refined based on user feedback, identified bugs, and additional
 features.
 
-Likewise, our documentation and training/education projects will also continue to be refined and
-updated. So we define a deliverable as the first time they are uploaded to
-an archive (like a software release) to create a DOI (digital object
-identifier).
+
+::: callout-tip
+Check out our more detailed, regularly updated, and evolving
+[roadmap](https://github.com/orgs/seedcase-project/projects/22/views/1)
+that's organized as a GitHub Project Board.
+:::
 
 ## Primary deliverables
 
