@@ -96,10 +96,13 @@ completion of a minimum viable product (prototype) for each.
 
 ### Documentation
 
--   Knowledge and skills learned from attending conferences and
-    workshops in research software and data engineering or operational
-    management (via the
-    [Community](https://community.seedcase-project.org/))
+| Status | Timeline | Deliverable | Description |
+|------------------|------------------|------------------|--------------------|
+| {{< var status.wip >}} | Ongoing | Knowledge sharing via the [Community](https://community.seedcase-project.org/) website | Knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
+| {{< var status.planned >}} | TBD | Opinion paper | Workflows and digital infrastructure for building software in a team-based research environment |
+
+: Secondary documentation deliverables with their approximate timelines for
+uploading to an archive for the first time.
 
 ### Training and education
 
