@@ -66,7 +66,7 @@ dissemination.
 | {{< var status.wip >}} | Ongoing | [`seedcase-project/team`](https://github.com/seedcase-project/team) | Documentation specific to the Seedcase team, like onboarding, common configuration files, and meeting agendas and minutes. |
 | {{< var status.wip >}} | Ongoing | [`seedcase-project/community`](https://github.com/seedcase-project/community) | Content for community building, outreach, and contributing guidelines for the Seedcase Project |
 | {{< var status.wip >}} | Ongoing | [`seedcase-project/seedcase-website`](https://github.com/seedcase-project/seedcase-website) | Main website for the Seedcase Project |
-| {{< var status.wip >}} | Early-to-mid 2025 | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/guide) usage guide | Guide for using and interacting with `seedcase-sprout`. |
+| {{< var status.wip >}} | Early-to-mid 2025 | [`sprout.seedcase-project.org`](https://sprout.seedcase-project.org/docs/guide) usage guide | Guide for using and interacting with `seedcase-sprout`. |
 | {{< var status.wip >}} | Late 2025 | Flower usage guide | Guide for using and interacting with `seedcase-flower` |
 | {{< var status.wip >}} | Mid 2026 | Propagate usage guide | Guide for using and interacting with `seedcase-propagate` |
 | {{< var status.wip >}} | Late 2026 | Garden usage guide | Guide for using and interacting with `seedcase-garden` |
