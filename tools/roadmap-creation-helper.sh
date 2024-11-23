@@ -10,7 +10,7 @@
 
 # Get the list of repositories in the form of `repo-1 repo-2`
 repo_list=$(gh repo list seedcase-project --json name --template '{{range .}}seedcase-project/{{.name}}{{"\n"}}{{end}}')
-repo_list="${repo_list} rostools/git4cats steno-aarhus/research-ops"
+repo_list="${repo_list} rostools/r-pkg-intro rostools/git4cats steno-aarhus/research-ops"
 
 for repo in $repo_list
 do
