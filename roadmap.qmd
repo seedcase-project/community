@@ -1,5 +1,8 @@
 ---
 title: Roadmap
+format:
+    html:
+        tbl-colwidths: [20, 80]
 ---
 
 {{< include /includes/_wip.qmd >}}
