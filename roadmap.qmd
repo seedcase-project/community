@@ -150,7 +150,7 @@ decisions made, or any community contributing guidelines we have.
 : "Wishlist" of informational-type documentation products we are currently
 working on, will work on, or hope to work on.
 
-### Explanations
+#### Explanations
 
 This includes opinion pieces, explanations, theoretical or
 thought-provoking pieces, and outreach materials.
