@@ -41,17 +41,12 @@ Products are listed in the order that we would like to work on and aim
 to complete them. Beside each product is a status, which is one of the
 following:
 
--   {{< var status.done >}}: Products we have completed a minimally
-    viable product (MVP) of. As products are never truly
-    "done", the "done" status simply indicates that the product is now
-    in a usable state, but that we will continue improving and working
-    on it.
--   {{< var status.wip >}}: Products we are currently working on.
--   {{< var status.planned >}}: Products we plan to work on and aim to
-    complete within the current funding period (end of 2027).
--   {{< var status.potential >}}: Products we are very interested in
-    working on, but given the time and resources, may likely not get to
-    within the current funding period (end of 2027).
+| Status | Description |
+|------------------------------|------------------------------------------|
+| {{< var status.done >}} | Products we have completed a minimally viable product (MVP) of. As products are never truly "done", the "done" status simply indicates that the product is now in a usable state, but that we will continue improving and working on it. |
+| {{< var status.wip >}} | Products we are currently working on. |
+| {{< var status.planned >}} | Products we plan to work on and aim to complete within the current funding period (end of 2027). |
+| {{< var status.potential >}} | Products we are very interested in working on, but given the time and resources, may likely not get to within the current funding period (end of 2027). |
 
 ### Software-related
 
