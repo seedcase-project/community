@@ -50,7 +50,7 @@ following:
 | {{< var status.planned >}} | Products we plan to work on and aim to complete within the current funding period (end of 2027). |
 | {{< var status.potential >}} | Products we are very interested in working on, but given the time and resources, may likely not get to within the current funding period (end of 2027). |
 
-### Software-related
+### Software and software -related
 
 Because of the evolving nature of developing software, software products
 are rarely "complete", as they continue to be improved on and updated.
@@ -64,7 +64,7 @@ Some of these products are not strictly software, but can be used within
 a software environment, can be integrate into other workflows, or are
 used to support research software and data engineering.
 
-| Status | Software-related product |
+| Status | Software or software-related product |
 |------------------------------------------------|-----------------------|
 | {{< var status.wip >}} | [`seedcase-project/seedcase-sprout`](https://github.com/seedcase-project/seedcase-sprout): Upload your research data to formally structure it for better, more reliable, and easier research. |
 | {{< var status.wip >}} | [`seedcase-project/seedcase-theme`](https://github.com/seedcase-project/seedcase-theme): Template repository for website projects with a Seedcase-specific Quarto extension for aesthetics, helper commands, and infrastructural files. |
@@ -129,8 +129,8 @@ user manuals.
 | {{< var status.planned >}} | Using Seedcase to create and manage data packages. |
 | {{< var status.planned >}} | A guided walkthrough: Team-based collaborative practices and workflows in a research environment. |
 | {{< var status.planned >}} | A guided walkthrough: Iterative and incremental project development and management in a research environment. |
-| {{< var status.planned >}} | Using DocOps workflows and infrastructure to reduce time between writing and dissemination. |
-| {{< var status.planned >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
+| {{< var status.potential >}} | Using DocOps workflows and infrastructure to reduce time between writing and dissemination. |
+| {{< var status.potential >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
 | {{< var status.planned >}} | Improving the research software development lifecycle by integrating DevOps practices. |
 | {{< var status.potential >}} | Integrating research operations in organizations to improve quality and speed up research. |
 
