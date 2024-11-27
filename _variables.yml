@@ -3,3 +3,4 @@ status:
     wip: '[{{< fa hammer size="xl" title="In progress" >}}]{style="color: #28a167"} *In progress*'
     planned: '[{{< fa map size="xl" title="Planned" >}}]{style="color: #45d18e"} *Planned*'
     potential: '[{{< fa circle-question size="xl" title="Potential" >}}]{style="color: lightgrey"} *Potential*'
+    ongoing: '[{{< fa repeat size="xl" title="Ongoing" >}}]{style="color: darkgrey"} *Ongoing*'
