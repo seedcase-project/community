@@ -176,7 +176,7 @@ pieces, and outreach materials.
 
 | Status | Deliverable |
 |----------------------------------------------|--------------------------|
-| {{< var status.wip >}} | Knowledge sharing via the [Community](https://community.seedcase-project.org/) website: Knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
+| {{< var status.ongoing >}} | Knowledge sharing via the [Community](https://community.seedcase-project.org/) website: Knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
 | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
 | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
 
