@@ -75,7 +75,7 @@ used to support research software and data engineering.
 | {{< var status.planned >}} | `seedcase-flower`: Cataloging and browsing metadata within a data package. |
 | {{< var status.planned >}} | `seedcase-propagate`: Submitting requests for accessing specific data from a data package. |
 | {{< var status.planned >}} | `seedcase-garden`: Tend to and track projects using data from a data package. |
-| {{< var status.planned >}} | `seedcase-sprout-extensions`: Extensions to Seedcase Sprout for common data processing or enriching tasks. |
+| {{< var status.potential >}} | `seedcase-sprout-extensions`: Extensions to Seedcase Sprout for common data processing or enriching tasks. |
 
 : "Wishlist" of software-related products we are currently working on,
 will work on, or hope to work on.
@@ -126,10 +126,10 @@ user manuals.
 | {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
 | {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
 | {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
-| {{< var status.planned >}} | Sprout data extensions usage guide: Installing or creating extensions for `seedcase-sprout`. |
+| {{< var status.potential >}} | Sprout data extensions usage guide: Installing or creating extensions for `seedcase-sprout`. |
 | {{< var status.planned >}} | Improving the research software development lifecycle by integrating DevOps practices. |
 | {{< var status.planned >}} | A guided walkthrough: Team-based collaborative practices and workflows in a research environment. |
-| {{< var status.planned >}} | A guided walkthrough: Iterative and incremental project development and management in a research environment. |
+| {{< var status.potential >}} | A guided walkthrough: Iterative and incremental project development and management in a research environment. |
 | {{< var status.potential >}} | Using DocOps workflows and infrastructure to reduce time between writing and dissemination. |
 | {{< var status.potential >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
 | {{< var status.potential >}} | Integrating research operations in organizations to improve quality and speed up research. |
