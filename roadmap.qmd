@@ -126,9 +126,9 @@ user manuals.
 | {{< var status.planned >}} | Flower usage guide: Using and interacting with `seedcase-flower`. |
 | {{< var status.planned >}} | Propagate usage guide: Using and interacting with `seedcase-propagate`. |
 | {{< var status.planned >}} | Garden usage guide: Using and interacting with `seedcase-garden`. |
-| {{< var status.potential >}} | Sprout data extensions usage guide: Installing or creating extensions for `seedcase-sprout`. |
 | {{< var status.planned >}} | Improving the research software development lifecycle by integrating DevOps practices. |
 | {{< var status.planned >}} | A guided walkthrough: Team-based collaborative practices and workflows in a research environment. |
+| {{< var status.potential >}} | Sprout data extensions usage guide: Installing or creating extensions for `seedcase-sprout`. |
 | {{< var status.potential >}} | A guided walkthrough: Iterative and incremental project development and management in a research environment. |
 | {{< var status.potential >}} | Using DocOps workflows and infrastructure to reduce time between writing and dissemination. |
 | {{< var status.potential >}} | Building DataOps pipelines and infrastructure for improving research data quality and reduce time from collection to analysis. |
