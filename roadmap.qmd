@@ -176,7 +176,7 @@ pieces, and outreach materials.
 | Status | Deliverable |
 |----------------------------------------------|--------------------------|
 | {{< var status.ongoing >}} | [`seedcase-project/decisions`](https://github.com/seedcase-project/decisions): Archival records on the decisions made for tools or processes we use in the Seedcase Project. |
-| {{< var status.ongoing >}} | [`seedcase-project/community](https://community.seedcase-project.org/): Sharing knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
+| {{< var status.ongoing >}} | [`seedcase-project/community`](https://github.com/seedcase-project/community): Sharing knowledge and skills learned from attending conferences and workshops in research software and data engineering or operational management |
 | {{< var status.potential >}} | Research data engineering: What is it and why is it vital for modern research? |
 | {{< var status.potential >}} | Challenges and barriers: Workflows and digital infrastructure for building software in a team-based research environment. |
 
