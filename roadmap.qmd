@@ -51,7 +51,7 @@ following:
 | {{< var status.potential >}} | Products we are very interested in working on, but given the time and resources, may likely not get to within the current funding period (end of 2027). |
 | {{< var status.ongoing >}} | Products that we will continually work on and that don't strictly have a defined endpoint for "done" (e.g. aren't ever released or uploaded to an archive). |
 
-### Software and software -related
+### Software and software-related
 
 Because of the evolving nature of developing software, software products
 are rarely "complete", as they continue to be improved on and updated.
