@@ -1,7 +1,7 @@
 ---
 title: Roadmap
 format:
-    html:
+    seedcase-theme-html:
         tbl-colwidths: [20, 80]
 ---
 
