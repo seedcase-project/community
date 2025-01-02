@@ -13,7 +13,6 @@ website:
     pinned: true
     search: true
     left:
-      - roadmap.qmd
       - guides/index.qmd
       - outreach/index.qmd
       - posts/index.qmd
