@@ -16,6 +16,7 @@ website:
       - guides/index.qmd
       - outreach/index.qmd
       - posts/index.qmd
+      - learn/index.qmd
     tools:
       - icon: house
         href: "https://seedcase-project.org"
