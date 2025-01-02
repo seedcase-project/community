@@ -11,7 +11,7 @@ as well as better practices in data management, open science, and
 reproducible research.
 
 We share posts of experiences in [Posts](posts/index.qmd), there are [contributing
-guides](guides/index.qmd), a [roadmap](roadmap.qmd) of the project, and content for
+guides](guides/index.qmd), and content for
 our [outreach](outreach/index.qmd) activities.
 
 ## Seedcase Project components
@@ -37,7 +37,7 @@ tell "How" and "Why" things are done.
 
 The Software only exists because of the two bottom layers and the
 supports. More details about each Seedcase software product are found in
-their own GitHub repository. See the [Roadmap](roadmap.qmd) for a list the Seedcase software.
+their own GitHub repository. See the [Roadmap](https://seedcase-project.org/roadmap/) for a list the Seedcase software.
 
 ### Documentation
 
