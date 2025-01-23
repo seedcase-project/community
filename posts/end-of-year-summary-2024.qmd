@@ -1,0 +1,200 @@
+---
+title: "End of year summary for 2024"
+toc-depth: 1
+author: Luke W. Johnston
+date: 2025-01-23
+---
+
+::: callout-note
+We need to submit annual reports to Novo Nordisk Foundation as part of
+our grant agreement. Since I need to write something anyway, I might as
+well make it public and share it with anyone interested in our work over
+the years. It's also a good way to reflect on what we've done and any
+challenges, some expectations for the upcoming year, and what we've
+learned. Plus, it's easier to find when I have to make further reports
+over the years.
+:::
+
+## Changes and major activities
+
+This past year has been a pretty productive year for us and we're making
+a lot more progress now. These are some events or changes that have
+happened in 2024.
+
+### New team member!
+
+We hired another research software engineer, Marton Vago, who started in
+May, 2024. :tada: He has been a great addition to the team and has
+helped us move forward in many ways with his knowledge and experience!
+
+### End of training by software consultants
+
+At the end of 2023, we hired the software consulting company Mjølner to
+help us build our software as well as train us on some best practices
+for working together as a team that develops software. At the end of
+April, 2024, we finished our time with Henrik and Philip from Mjølner,
+both of who were wonderful to work with. We learned a lot from them, in
+both expected and unexpected ways (see the challenges below for more on
+that).
+
+There were so many things we learned that I made a separate post about
+it: [Lessons learned from working with software
+consultants](/posts/lessons-learned-software-consultants.qmd).
+
+### Re-designed how we would implement our software
+
+In the middle of 2024 before the summer vacations, I had some dedicated
+time to think deeply about our design, next steps, and general plan for
+the next few years. This resulted in several major changes in how we
+were designing and implementing software for our specific needs. In many
+ways, this has simplified our workflows and approach to building
+software. But it also meant that we had to almost entirely start from
+scratch and delete much of what we had built over the past year. I
+describe in more detail the challenges below and why this change was
+important, but I'll briefly explain the main design changes:
+
+-   Rather than build software that has a graphical user interface (as a
+    web app), we instead will build code-based software as Python
+    packages. This simplifies our deployment and development by allowing
+    us to focus on the main functionality rather than on how it looks as
+    well as the technical details of how to install and deploy the web
+    app to research servers.
+
+-   We use the open [Frictionless Data
+    Package](https://datapackage.org/) standard as the core of our
+    software. This standard is a way of describing data and metadata in
+    a machine-readable way. By adopting this standard, we can build all
+    our software around this standard and make it easier for others to
+    interact with this standard as well.
+
+### Strong team dynamics and DevOps
+
+Through a combination of the training we received from Mjølner and the
+fact that we've now worked near daily together for the last year and a
+bit, we've built a strong team dynamic. We have a good process and
+workflow for reviewing each other's contributions, discussing and
+reflecting on our work, and iteratively designing and implementing the
+software.
+
+Throughout the year, our regular retrospectives, where we reflect on how
+we work, have been steadily been on what works well and less on what to
+improve. Which is a good sign that we have worked through many issues
+and have a good team flow now.
+
+We've nearly finished our DevOps (development operations) pipelines,
+which make it much easier for us to build reliable, robust, tested, and
+well-written software that automatically deploys as releases and builds
+the documentation as websites. This means we can spend more time and
+focus writing well-designed code rather than on the repetitive tasks of
+building and deploying software. And any future software we develop, we
+will be able to develop and deploy it rapidly, with minimal manual
+input.
+
+Through these changes, we've built a strong foundation for working on
+our products in this and the upcoming years.
+
+### New collaborations
+
+Some of the more exciting news this year is two new collaborations we
+have with newly funded and large research projects. The first is the
+[DP-Next](https://dp-next.github.io/) project, which is funded under the
+Steno National Collaborative Grant from NovoNordiskFonden. This project
+aims to develop a sustainably effective strategy for prevention of type
+2 diabetes. The second is the
+[ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/) project, which is
+funded by the NovoNordiskFonden. It is a large trial to investigate the
+effects of lifestyle interventions on remission of diabetes.
+
+While our role in ON-LiMiT is still being defined and discussed, in both
+projects our main tasks will revolve: around establishing their data
+infrastructures as they collect data by using our software; and,
+training them in aspects of data engineering and iterative collaborative
+practices.
+
+## Challenges faced
+
+We've had less major challenges to deal with in 2024, but there were a
+few that impacts our progress.
+
+### Deleted all work done with software consultants
+
+The biggest challenge we faced in 2024 was that some of the design
+decisions we made in 2022 and 2023 were not the best for our needs. For
+example, we had thought about and decided on building a web app as the
+implementation choice for our needs on creating data infrastructures. We
+decided on Django, a powerful, but complex web framework, to build the
+web app. This decision was made in late 2022, so when we started working
+with the software consultants in 2023, we had already been building the
+basics of a web app.
+
+As we were working with the software consultants, we focused on writing
+code and building the app. Since the consultants regularly build web
+apps for clients, they considered this a good choice. However, after we
+finished working with the software consultants and we had some time to
+reflect on what we built, on the code, on the design, and importantly,
+what our core needs and available resources were, we realized this was
+not the best choice for us. The big challenges here were:
+
+-   We had a lot to learn for building web apps and using Django, which
+    took a lot of time away from focusing on the core design and
+    functionality.
+-   Building web apps that have user interfaces means we also have to
+    design how it looks. This is a whole other skill set that we didn't
+    have and it also takes time away from the main functionality.
+-   We regularly encountered issues with Django, like with its
+    "migrations" and timezone problems. Issues that we had no expertise
+    in solving.
+-   Django and web apps, for us, were over-engineering for our needs.
+
+All of these challenges meant that we had to switch directions and focus
+more simply on building Python packages so that we can have code-based
+approaches to building a modern research data infrastructure.
+
+### Building a custom solution because of a dependency issue
+
+When we started building our first Seedcase Python package and using the
+Frictionless Data Package standard, we encountered a problem with the
+frictionless Python package that we depended on. We had hoped to make
+use of the frictionless package to help us with creating Data Packages.
+However, we quickly realized that the package didn't do what we expected
+it to do and the code/documentation on it wasn't well developed.
+
+As a result, we had to make a major pivot to build our own solution.
+This took and is still taking a fair amount of time and effort to build.
+But while this challenge prolongs our expected time to first minimally
+viable product, it does allow us to build and publish our own solution
+as a Python package that others can make us of as well.
+
+### Research institutions are not designed for software development
+
+This is a challenge that we've been facing since the beginning of our
+work. Research institutions are just not designed to support developing
+software. We have no support, no role models, no training, and no
+infrastructure to help us build software and resolve issues that come
+up. Which means we constantly are on our own to figure things out and
+resolve issues, which takes a good chunk of time.
+
+While this does mean we struggle a lot with doing sometimes seemingly
+basic things, it also highlights a massive need within research for the
+skills and knowledge we are building up. Software for the needs of
+research is very different from the needs of industry, but we in
+academia don't have awareness or access to resources to help.
+
+As a consequence, many groups at Steno Aarhus seek out our advice,
+support, expertise, and help with their needs. For instance, we're
+helping build an [R package](https://github.com/steno-aarhus/osdc) to
+make it easier to classify diabetes status in the Danish registers. Or,
+many groups in Steno Aarhus now need to build websites to communicate
+their projects, and these
+[websites](https://steno-aarhus.github.io/research/directory.html) are
+built on GitHub using the approaches and methods we've been advocating
+for and using for our own websites.
+
+## Summary
+
+Overall, 2024 was a good year that has really laid the foundation for us
+in building our products. It looks like 2025 will be the year we start
+seeing tangible outputs to our efforts! And, even with the challenges
+and struggles, what we're seeing more and more is: There is a massive
+need for the types of skills and knowledge we have and are building,
+that is only now starting be to realized and recognized!
