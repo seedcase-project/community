@@ -1,0 +1,113 @@
+---
+title: "Lessons learned from working with software consultants"
+author: Luke W. Johnston
+date: 2025-01-23
+---
+
+From October 2023 until the end of April 2024, we hired the software
+consulting company Mjølnir to help us. Our primary aims for hiring them
+were to train us in team software development practices and to help us
+build our software.
+
+## "EventStorming" workshop
+
+The first step in our collaboration was having a workshop with them.
+This was a two-day workshop where they used a technique called
+"EventStorming" to help them and us better understand and describe our
+problem. I've wanted to eventually write a post about our experiences of
+the workshop, but wanted to give it time to see how it ultimately
+affected our work. Now that over a full year has passed since the
+workshop, I can more easily reflect back on it and see how it has
+affected our work.
+
+During the workshop, we went through a series of activities that were
+designed to help us better understand our problem. During the
+activities, each team member individually wrote down all the different
+events, actions, and barriers that we thought were need to happen or
+occur in order to solve our problem. Then we would take all those notes
+everyone wrote and put them up on a wall where we then grouped them and
+saw how much alignment we as a team had on understanding what we wanted
+to build.
+
+This particular aspect of the workshop was very insightful for me
+because I was the one who had the domain experience for the problem we
+were trying to solve. I also had a pretty clear idea for a general
+solution to the problem, given I was the one who had written the grant
+to get the funding for the project. So it was helpful for me to see what
+our alignment was and what areas I needed to describe and better
+communicate to the team. It became clear to me that we had not had good
+alignment on understanding the problem. Which meant we needed to spend
+some time as a team to converge on a shared understanding.
+
+Ultimately, a lot of what we wrote down during that workshop was close
+to what we are still aiming to build. What did change a lot since the
+workshop was that technical implementation, however, the aim of the
+workshop was not to go into that area.
+
+## Training
+
+After the workshop when Philip and Henrik (two staff working at Mjølner)
+started working with us, some of the first things we had them do was
+train us in some of the practices for building software as a team and
+using software project management techniques.
+
+We learned a lot from them in this regard. Being based in a research
+institution/university, we have no support, training, or "role models"
+to use for knowing how to build software. Much of time spent with Philip
+and Henrik was just getting into know the workflows and techniques of
+working effectively together.
+
+The tools and knowledge they gave us were incredibly helpful. We learned
+how to do iterative and incremental software development. We learned
+about project management tools and techniques, like project boards
+listing tasks and who is responsible for them. We learned to have
+regular meetings called retrospectives where the aim is to identify
+things that work well for how we collaborate together since the last
+retrospective and what we could improve.
+
+Of the things they taught us, the retrospectives and use of project
+boards in particular have been incredibly helpful. Especially the use of
+retrospectives, they have made us more effective and efficient as a
+team, but they also have built trust in each other by having this safe
+space to discuss any issues that may have come up.
+
+## Building software
+
+When we hired them, we also wanted them to help us build our software.
+Something we learned afterwards was that the needs in research settings
+are vastly different from the needs in industry. Unfortunately, software
+consulting companies work almost entirely with industry, so they are
+very familiar with the technologies and "design patterns" for building
+software that the industry needs and uses.
+
+For instance, in research, we have very limited budget and resources.
+Software teams don't really exist. So we have to figure a lot of things
+out on our own, without being able to get support from more experienced
+colleagues. In industry, you often have teams with 5-8 people that are
+only dedicated to one specific area of the business, while other teams
+dedicate to other areas in the company. So there is a lot more support
+and resources available to help you build software.
+
+In our case, what we were building, which was a web app, was something
+that Mjølner was very familiar with making, but something that was maybe
+over-engineered for us. We don't have the resources nor expertise to
+build and maintain a web app, using complex technologies, given the
+number of people on our team and our budget.
+
+Ultimately, what we built with them, we decided to delete because we
+couldn't reasonable complete it, nor did we really need it. So we
+started from scratch, focus on simpler technologies and a simpler design
+that still meets our needs.
+
+## Lessons learned
+
+At the end, we learned a few hard lessons. If we were to hire
+consultants again, I would want us to do a few things differently:
+
+-   Hire them to mainly train us in a very specific area that we as a
+    team discussed and agreed on beforehand.
+-   Hire them for shorter periods of time. We hired them for 6 months,
+    which was too long. We should have hired them for 2-3 months.
+-   Hire them to help us design rather than build a solution, something
+    that is as simple as possible and that considers our constraints
+    ands our needs.
