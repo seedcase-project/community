@@ -98,7 +98,7 @@ our products in this and the upcoming years.
 Some of the more exciting news this year is two new collaborations we
 have with newly funded and large research projects. The first is the
 [DP-Next](https://dp-next.github.io/) project, which is funded under the
-Steno National Collaborative Grant from NovoNordiskFonden. This project
+Steno National Collaborative Grant from Novo Nordisk Foundation. This project
 aims to develop a sustainably effective strategy for prevention of type
 2 diabetes. The second is the
 [ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/) project, which is
