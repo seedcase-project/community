@@ -98,18 +98,23 @@ our products in this and the upcoming years.
 Some of the more exciting news this year is two new collaborations we
 have with newly funded and large research projects. The first is the
 [DP-Next](https://dp-next.github.io/) project, which is funded under the
-Steno National Collaborative Grant from Novo Nordisk Foundation. This project
-aims to develop a sustainably effective strategy for prevention of type
-2 diabetes. The second is the
+Steno National Collaborative Grant from Novo Nordisk Foundation. This
+project aims to develop a sustainably effective strategy for prevention
+of type 2 diabetes. The second is the
 [ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/) project, which is
 funded by the NovoNordiskFonden. It is a large trial to investigate the
 effects of lifestyle interventions on remission of diabetes.
 
-While our role in ON-LiMiT is still being defined and discussed, in both
-projects our main tasks will revolve: around establishing their data
-infrastructures as they collect data by using our software; and,
-training them in aspects of data engineering and iterative collaborative
-practices.
+In these projects, our main tasks will revolve around the data
+infrastructure and engineering aspects, as well as upskilling in
+technical skills. Both projects will be collecting data, and with our
+contributions, we hope to make it easier for them to collect, manage,
+and share their data in a sustainable and effective way. As for the
+training, we'll be training them in modern iterative and collaborative
+project development practices.
+
+While our role in DP-Next was incorporated within the grant application,
+we are still discussing and defining our role in ON-LiMiT.
 
 ## Challenges faced
 
