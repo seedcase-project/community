@@ -60,10 +60,11 @@ working effectively together.
 The tools and knowledge they gave us were incredibly helpful. We learned
 how to do iterative and incremental software development. We learned
 about project management tools and techniques, like project boards
-listing tasks and who is responsible for them. We learned to have
-regular meetings called retrospectives where the aim is to identify
-things that work well for how we collaborate together since the last
-retrospective and what we could improve.
+listing tasks and who is responsible for them. We learned to split
+blocks of time up into iterations, where we plan and set goals for it at
+the start and then have a meeting at the end called retrospectives to
+identify things that worked well for how we worked together during it
+and what we could improve on.
 
 Of the things they taught us, the retrospectives and use of project
 boards in particular have been incredibly helpful. Especially the use of
@@ -98,6 +99,12 @@ Ultimately, what we built with them, we decided to delete because we
 couldn't reasonable complete it, nor did we really need it. So we
 started from scratch, focus on simpler technologies and a simpler design
 that still meets our needs.
+
+While this was a hard, and time-consuming, lesson to learn, it also
+helped us better understand the effectiveness working iteratively. Not
+just iteratively building the product, but also iteratively using
+lessons learned while implementing the product back into the design and
+vice versa.
 
 ## Lessons learned
 
