@@ -1,6 +1,6 @@
 ---
 title: "The Seedcase Project: A software- and training-based initiative to develop data engineering tools and skills for open and FAIR infrastructures of research health data"
-author: 
+author:
   - name: Kristiane Beicher
     affiliation:
       - name: Steno Diabetes Center Aarhus
@@ -13,6 +13,8 @@ author:
     affiliation:
       - name: Steno Diabetes Center Aarhus
       - name: Aarhus University
+# Prevent it from entering the post listing page.
+exclude-from-listing: true
 ---
 
 ::: content-hidden
