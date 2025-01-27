@@ -3,19 +3,21 @@ title: Posts
 listing:
   - id: posts
     contents: .
+    exclude:
+        exclude-from-listing: true
     type: default
     sort: "title"
-    fields: 
+    fields:
       - "title"
       - "author"
       - "description"
       - "date"
 ---
 
-{{< include /includes/_wip.qmd >}}
+These short posts are on diverse topics, often things we've learned, content
+we've presented at conferences, or experiences from attending events like a
+conference or course.
 
-These short posts are on diverse topics, often things we've learned or
-experiences from attending events like a conference.
 
 ::: {#posts}
 :::

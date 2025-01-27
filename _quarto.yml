@@ -14,7 +14,6 @@ website:
     search: true
     left:
       - guides/index.qmd
-      - outreach/index.qmd
       - posts/index.qmd
       - learn/index.qmd
     tools:
@@ -30,14 +29,6 @@ website:
       style: "floating"
       contents:
         - auto: guides
-    - id: outreach
-      contents:
-        - outreach/index.qmd
-        - text: "Events"
-          auto: outreach/**/index.qmd
-    - id: posts
-      contents:
-        - auto: posts
 
 # format:
 #   seedcase-theme-html:
