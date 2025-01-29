@@ -1,0 +1,34 @@
+---
+title: "Advanced Python Course at Teknologisk Institut"
+description: "Some thoughts and experiences we had about the Advanced Python Course at Teknologisk Institut in 2024."
+author: "Kristiane Beicher and Signe Kirk Brødbæk"
+date: "2024-09-20"
+categories:
+  - learning
+  - experiences
+  - programming
+---
+
+We recently attended the [Advanced Python Course](https://www.teknologisk.dk/kurser/videregaaende-python-programmering/k91467) at Teknologisk Institut in Aarhus, Denmark. In this blog post, we want to share our experiences and key takeaways from the course.
+
+## Course Overview
+
+Data structures
+Functions, lambda functions, decorators
+Classes, objects, inheritance, and exceptions
+File systems, formats and data handling
+Organizing code and testing
+
+## Experiences
+
+building on knowledge from the basic course
+exercises were challenging and did require that you had a good grasp of python
+good balance between theory and practice
+
+## Key Takeaways
+
+The jump from basic to advanced was quite big, and did from time to time feel a bit large.
+There were a number of exercises interspersed in the teaching, which made the time seem like it was flying by.
+The instructor was very experienced with python, and was able to answer our queries.
+We got confirmation that a lot of the things we are currently doing (or planning on implementing) is consistent with best practices.
+There aren't any immediate things that we want to implement in our work, but definitely things that we will keep doing and build on.
