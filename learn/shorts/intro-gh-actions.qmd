@@ -7,7 +7,7 @@ description: |
   of tasks that you'd rather have a computer handle instead of doing manually.
 author: "Luke W. Johnston"
 date: "2024-05-21"
-date-modified: last-modified
+# date-modified: ""
 categories: 
   - github actions
   - automation
@@ -46,10 +46,10 @@ Actions](https://github.com/features/actions).
 
 ## Learning goal
 
-> At the end of this, you will be able to describe what GitHub Actions
-> are, identify some basic uses of for it, explain the difference
-> between a workflow and an action, and finally create your own GitHub
-> Actions workflow.
+-   At the end of this, you will be able to describe what GitHub Actions
+    are, identify some basic uses of for it, explain the difference
+    between a workflow and an action, and finally create your own GitHub
+    Actions workflow.
 
 ## Take home messages
 

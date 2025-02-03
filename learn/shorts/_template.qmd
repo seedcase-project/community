@@ -4,7 +4,7 @@ description: |
   Text
 author: ""
 date: ""
-date-modified: last-modified
+# date-modified: ""
 categories: 
   - text
 ---
@@ -23,7 +23,7 @@ categories:
 
 ## Learning goal
 
-> GOAL
+-   GOAL
 
 ## Take home messages
 
