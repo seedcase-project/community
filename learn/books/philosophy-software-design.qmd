@@ -1,0 +1,124 @@
+---
+title: "Insights from *Philosophy of Software Design*"
+description: |
+  Text
+author: ""
+date: ""
+# date-modified: ""
+categories: 
+  - text
+---
+
+## Summary of book
+
+*Philosophy of Software Design* by John Ousterhout is a book that provides a set of principles and techniques for writing code that is easy to understand, easy to maintain, and easy to adapt. The book is based on the premise that the primary goal of software design is to reduce complexity. It provides a set of guidelines for achieving this goal, including the use of abstractions, the importance of simplicity, and the value of incremental design.
+
+Software design is the process of creating a plan for a software system that describes how the system will be structured and how it will function. Much like designs for buildings or bridges, software designs are created before the system is built and serve as a blueprint for the construction of the system. Good software design is essential for creating systems that are reliable, maintainable, and adaptable. Unlike buildings or bridges, however, software systems are not static. They are constantly changing and evolving, and their designs must be able to accommodate these changes.
+
+## Assumed knowledge of reader
+
+While this book is about software, I'll aim to write the content to be more accessible and less dependent on external technical knowledge. Even still, I need to make some assumptions:
+
+## Take home messages
+
+-   SIMPLE MESSAGE
+
+## Insights and learnings
+
+### SECTION HEADER
+
+The most fundamental problem in computer science is *problem decomposition*: taking a complex problem and dividing it up into smaller, more manageable pieces. It is the central design task that programmers face daily.
+
+The greatest limitation in writing software is our human ability to understand the systems we are creating.
+
+There are two approaches to fighting complexity: 1) eliminate complexity by making code simpler and more obvious; 2) encapsulate complexity to reduce being exposed to all of the complexity at once, which is called modular design.
+
+Software is not static. It is malleable. Because of this, design can be a continuous process that spans the full lifecycle.
+
+Part of the incremental design process, via an agile development approach, is to first design for a smaller subset of the software's functionality.
+
+Each iteration exposes problems with the design, which are then revised and improved upon for the next iteration. By addressing the problems early and when the software is still small, makes the later design and stages of development easier as we've gained experience of the problem domain.
+
+By making design a part of the lifecycle, developers can continuously seek out areas of improvement. Because design is integrated into the development process, time and effort is naturally dedicated to it.
+
+Improve your design skills by recognizing red flags.
+
+Recognizing complexity is a key design skill, so you can identify problems before you invest in a lot of effort in them.
+
+Complexity is anything related to the structure of the code that makes it hard to understand and modify.
+
+Complexity tends to be more obvious to readers than to writers. For instance, if you write code that seems simple to you, but readers find it complex, then it's complex.
+
+Change amplification: symptom of complexity is that a seemingly simple change requires code modification in many different places.
+
+One goal of good design is to reduce amount of code that is affected by each design decision, so design changes don't require many code changes.
+
+Cognitive load: symptom of complexity is higher cognitive load, which is how much a developer needs to know in order to complete a task.
+
+More lines of code doesn't necessarily mean more complexity. Sometimes, more code is actually simpler, because it reduces cognitive load.
+
+Unknown unknowns: symptom of complexity is that it isn't obvious what code needs to be changed to complete a task, or what information is needed to finish the task.
+
+Causes of complexity: dependencies and obscurities
+
+Dependency exists when a piece of code can't be understood and changed on it's own. The code connects to other code, which must also be understood and considered and/or changed if the given code is changed.
+
+Dependencies are fundamental part of software and can't be removed. We intentionally include dependencies as part of the design process. But one goal of design is to reduce the number of dependencies and make the dependencies that exist as simple and obvious as possible.
+
+Obscurity occurs when important information is hidden or not obvious.
+
+Obscurity is often related to dependencies, when it isn't obvious a dependency exists.
+
+Inconsistency is also a major contributor to obscurity. When code is inconsistent, it's harder to understand and predict. For instance, when the same variable name is used for different purposes, it isn't obvious which of these purposes the variable serves.
+
+Often, obscurity comes from not enough documentation.
+
+Complexity isn't caused by a single error, it accumulates in small chunks.
+
+Working code isn't enough.
+
+Many groups write code in a "tactical" way, and many organizations unintentionally encourage this behavior. Good design comes from "strategic" thinking.
+
+Tactical programming is when you write code to solve a problem, but don't think about how the code fits into the larger system. It's short-term and mainly focused on getting some code or functionality to work. Usually this is due to deadline pressure or a culture of getting code writing faster ("higher velocity"). It's when planning for the future isn't a priority. The consequence of this approach is that code becomes more complicated and harder to maintain over time. Technical debt very often accumulates from tactical programming. By coding tactically, you borrow time from the future to save time in the present, but you end up paying back with "interest" just like financial debt.
+
+Strategic programming is realizing that writing code that works isn't enough. Working code shouldn't be your goal, but rather, it is creating great design that also produces working code. This mindset is an investment mindset, meaning that they may slow you down in the short term but over time pay back.
+
+Some strategic programming "investments" will be proactive, such as creating multiple alternative design choices before deciding on one or such as writing good documentation. Other "investments" will be reactive, because no matter how much you plan and design, there will always be mistakes and unforeseen problems.
+
+Suggestion is to spend 10-20% of development time on strategic programming. Initial projects will probably have a bit higher strategic programming, and thus higher development time. But over time, later projects will have shorter development times and importantly, less maintenance time.
+
+It's important to be consistent in being strategic and to think of investments as something to do now not later.
+
+Modular design: ideally, each module should be completely independent from the others. Realistically, modules need to have some dependencies on other modules. The goal of modular design is to reduce dependencies.
+
+Modules have two parts: an interface and an implementation. The interface is what other developers and other code "sees" and interacts with. It is the API (like a screen on a cell phone). The interface describes "what" the module does. The implementation is the code that does what the interface describes it does. The implementation is the "how".
+
+A module is any unit of code that has an interface and an implementation. (note, this is not a Python module.)
+
+Good modules are those where the interface is much simpler than their implementation.
+
+Interface contains two bits of information: formal and informal. The formal parts are those explicitly defined in the code (its API that includes it's "signature" aka name and parameters), some of which can be checked for correctness by the language. The informal part includes the high-level behaviour. For instance, a function that deletes the file named by the parameter or if there are constraints or dependencies on how the interface is used.
+
+Abstraction is a simplified view of an entity, which omits unimportant details. The interface is an abstraction of its implementation. 
+
+Deep modules are those with powerful functionality but simple interfaces and are perfect examples of abstraction. A "deeper" module has a low cost and high benefit, where the benefit is the functionality and the cost is the interface.
+
+Shallow modules are those with a functionality is less simple (or the same as) it's interface.
+
+A shallow module is, in general, a red flag. More (user-exposed) functions and classes in a module can increase cognitive load on the user or developer. Modules should provide the functionality necessary for the needs, but as simple as possible.
+
+A deep module hides information. Information leaking is when a design decision is reflected in multiple modules. This creates a dependency between the modules. When a change happens to the design decision, multiple modules must be changed. If a piece of information about the decision is reflected in the interface, the interface must change (e.g. `read_json()` but later decide to read from YAML, so that function must change to `read_yaml()`). So simpler interfaces tend to hide information better. Information leakage is an important red flag, and requires some careful consideration about it's place in the software design.
+
+A cause of information leakage is temporal decomposition, which is the time order when operations occur. When designing modules, consider and focus on the knowledge needed to perform the task, not the order that the tasks occur in.
+
+### Limitations
+
+- Strongly influenced and written with object-oriented programming in mind (with focus on classes and methods).
+
+## Summary
+
+- BRIEF SUMMARY
+
+## Additional resources
+
+-   LINKS USED OR FOR FURTHER LEARNING
