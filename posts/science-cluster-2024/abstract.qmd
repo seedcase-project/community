@@ -1,0 +1,70 @@
+---
+title: "The Seedcase Project: A software- and training-based initiative to develop data engineering tools and skills for open and FAIR infrastructures of research health data"
+author:
+  - name: Kristiane Beicher
+    affiliation:
+      - name: Steno Diabetes Center Aarhus
+      - name: Aarhus University
+  - name: Signe K. Brødbæk
+    affiliation:
+      - name: Steno Diabetes Center Aarhus
+      - name: Aarhus University
+  - name: Luke W. Johnston
+    affiliation:
+      - name: Steno Diabetes Center Aarhus
+      - name: Aarhus University
+# Prevent it from entering the post listing page.
+exclude-from-listing: true
+---
+
+::: content-hidden
+From:
+https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/
+
+Instructions:
+
+-   Title only 50 characters
+-   Abstract 1700 characters
+:::
+
+Across much of science, we suffer from a lack of software and data
+engineering resources, skills, and research-specific tools. This has
+negative impacts on our abilities to generate reliable results and be
+productive and effective as researchers. Historically, there has been no
+or limited sources of funding that allow allocating enough resources for
+personnel with these technical skills. This is especially an issue for
+small- to mid-sized clinical and health research groups. Part of the
+issue is a lack of a general awareness by researchers, funding agencies,
+and organizations on the importance of software and data engineering in
+research, as well as the lack of systemic incentive structures to
+dedicate resources and time to these practices. This has led to an
+overall low capacity for these skills within research settings. The
+consequence of which is the many organizational and technical challenges
+with managing, sharing, building, and using research data, not least of
+which is the impact on our ability to follow FAIR and open science
+practices.
+
+The aim of the Seedcase Project (\<seedcase-project.org\>) is two-fold:
+To develop software to build and manage infrastructures for data
+designed by researchers, for researchers; and, to create training
+material to upskill researchers in modern software and data engineering
+practices to more effectively tackle the challenges we currently face
+and will continue to face in the future. Ultimately, we work towards
+helping researchers do "better science in less time", not only those in
+academic settings in Denmark but in industry and across the globe.
+
+::: callout-important
+This project is funded by an NNF grant (number NNF21OC0069462).
+:::
+
+::: content-hidden
+## Motivation for attending
+
+> Please write a short motivation for attending the Conference, 200
+> characters.
+
+Our software- and training-based project aims at improving FAIR and open
+scientific practices for health data. This Symposium is wonderful
+opportunity to learn what others are doing in this space, network with
+likeminded people, and share our work.
+:::
