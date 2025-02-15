@@ -85,66 +85,66 @@ Tactical programming
 
 Strategic programming
 
-: This approach is recognizing that writing code that works on it's own isn't enough. The goal shouldn't be only working code. "Strategic" programming is producing great design *and* working code. This is an investment mindset where you anticipate things to be a bit slower in the short term, but that it pays back in the long term.
+: This approach is recognizing that writing code that works, on it's own isn't enough. The goal shouldn't be only working code. "Strategic" programming is producing great design *and* working code. This is an investment mindset where you anticipate things to be a bit slower in the short term, but that it pays back in the long term.
 
 : Strategic programming can be proactive or reactive. An example of a proactive strategy is to create multiple, alternative design choices before deciding on one, or it might be prioritizing writing good documentation. A reactive strategy is recognizing that no matter how much you plan and design, there will always be mistakes and unforeseen problems, and so you anticipate returning to and revising the design.
 
-As you may have guessed, good software design comes from "strategic" thinking.
+: As you may have guessed, good software design comes from "strategic" thinking. But you need to consistently be strategic and think of "investing" as a task for *now*, not later.
+
+::: callout-tip
 The book suggests spending about 10-20% of development time on strategic programming. Expect that initial projects will have more strategic programming (so higher development times), but later projects will be faster and importantly have less maintenance time.
-Regardless, you need to consistently be strategic and think of "investing" as a task for *now*, not later.
+:::
 
-### Components of good design
+### Components of good design to manage complexity
 
-Abstraction is a simplified view of an entity, which omits unimportant details.
+The main goal of good design is to reduce complexity and increase abstraction, which means that an entity has a simplified "container" around it to omit unnecessary implementation details. With good design, there will be less areas in the codebase that are affected with each new or modified design decision. That way, changes in the design don't also require too extensive changes in the code. A key component to good design is having a modular design. This is such a large topic, it has it's own section [below](#modular-design). Aside from that, other components of good design are:
 
-One goal of good design is to reduce amount of code that is affected by each design decision, so design changes don't require many code changes.
+Consistency
 
-Consistency is key to good design. Names, coding style, interfaces, design patterns, etc should all be consistent and either follow existing conventions/standards, or at least internally follow the systems conventions. Always follow existing conventions rather than remake new ones, especially in existing projects/software.
+: This is a key feature of good design. Things like naming, coding style, the [interfaces](#modular-design), or design patterns should all be consistent. Ideally a good design follows existing, widely-used conventions. Even if there are issues with a particular convention, it is always better to follow one that to not use one. If you have internal conventions for your system, always follow that convention---and make sure to document that convention! Always follow existing conventions rather than remake new ones. This is especially important for existing projects or software.
 
-Code should be obvious to the reader. Code is obvious when it doesn't need to be read multiple times or doesn't require going to other locations to understand it. Obvious code is when a reader doesn't spend a lot of time or energy to understand it. If a reader who is relatively familiar with the language says your code is not obvious, it isn't obvious.
+Readability
 
-Ways to make code more obvious:
+: Good design enhances and enables readability. Software and code should be designed for ease of reading, *not writing*. Part of good readability is in how well the design abstracts away the complex and complicated details. Always design for abstractions, *not features*.
 
-- Use white space and blank lines to separate code into logical sections.
-- Use comments to describe code that isn't as obvious.
+: Code should be obvious to a relatively knowledgeable reader. It is obvious when you don't need to read code multiple times or require going to other locations in the codebase to understand. Or when a reader doesn't spend a lot of time or energy to understand a particular piece of code. If a reader who is relatively familiar with the language says your code is not obvious, *it isn't obvious*. Even if you as the writer think it is!
 
-Software should be designed for ease of reading, not writing. And design for abstractions, not features.
+: Some ways to improve readability and make the code more obvious are to:
 
-Try to make as little matter as possible (e.g. have as few parameters as possible). The less that matters, the easier it is to understand. For things that do matter, try to minimize the number of places where they do matter.
+    - Use a style guide, or even better use automatic linters and formatters.
+    - Use white space, blank lines, and comment separators to split code into logical sections.
+    - Use comments to describe code that isn't as obvious.
 
-### Modular design: Interfaces and implementations
+Simplicity
 
-Modular design: ideally, each module should be completely independent from the others. Realistically, modules need to have some dependencies on other modules. The goal of modular design is to reduce dependencies.
+: The design and code are simple when there are less things to consider or worry about when using it or modifying it. There should be less things that matter. For example, when a function has as few parameters as possible and still fulfil its functionality. The less that matters, the easier it is to understand. For things that do matter, try to minimize the number of places where they do matter, for instance by avoiding adding to global configuration options or incorporating them in other functions.
 
-A module is any unit of code that has an interface and an implementation. (note, this is not a Python module.)
+### Modular design: Interfaces and implementations {#modular-design}
 
-Modules have two parts: an interface and an implementation. The interface is what other developers and other code "sees" and interacts with. It is the API (like a screen on a cell phone). The interface describes "what" the module does. The implementation is the code that does what the interface describes it does. The implementation is the "how".
+Modular design is a core feature of good design. A module is any unit of code that has an **interface** and an **implementation**. This is not the same as a [Python module](https://docs.python.org/3/tutorial/modules.html). Ideally, but not practically, each module should be *completely independent* from the other modules. Realistically though, as with the note about dependencies above, a module will have some dependencies on other modules. But the goal of good modular design is to reduce the number of dependencies and simplify the dependencies that do exist.
 
-Good modules are those where the interface is much simpler than their implementation.
+- Interface: This is what other developers, users, and other code "sees" and interacts with. It is the API (application programming interface, like a screen on a cell phone). The interface describes the "what" and the "why" of the module. It is an abstraction of the implementation.
+
+- Implementation: This is the code that does what the interface describes it does. It is the "how" and contains the actions to achieve the goals of the interface.
+
+A well designed module are those where the interface is much simpler than their implementation.
+It is more important for a module to have a simple interface rather than having a simple implementation. Make it as easy for your users as possible, even if it's harder for you. Also known as "pulling complexity down".
 
 Interface contains two bits of information: formal and informal. The formal parts are those explicitly defined in the code (its API that includes it's "signature" aka name and parameters), some of which can be checked for correctness by the language. The informal part includes the high-level behaviour. For instance, a function that deletes the file named by the parameter or if there are constraints or dependencies on how the interface is used.
 
-The interface is an abstraction of its implementation.
 
 Deep modules are those with powerful functionality but simple interfaces and are perfect examples of abstraction. A "deeper" module has a low cost and high benefit, where the benefit is the functionality and the cost is the interface.
 
 Shallow modules are those with a functionality is less simple (or the same as) it's interface.
 
+::: callout-caution
 A shallow module is, in general, a red flag. More (user-exposed) functions and classes in a module can increase cognitive load on the user or developer. Modules should provide the functionality necessary for the needs, but as simple as possible.
+:::
 
 A deep module hides information. Information leaking is when a design decision is reflected in multiple modules. This creates a dependency between the modules. When a change happens to the design decision, multiple modules must be changed. If a piece of information about the decision is reflected in the interface, the interface must change (e.g. `read_json()` but later decide to read from YAML, so that function must change to `read_yaml()`). So simpler interfaces tend to hide information better. Information leakage is an important red flag, and requires some careful consideration about it's place in the software design.
 
 A cause of information leakage is temporal decomposition, which is the time order when operations occur. When designing modules, consider and focus on the knowledge needed to perform the task, not the order that the tasks occur in.
 
-It is more important for a module to have a simple interface rather than having a simple implementation. Make it as easy for your users as possible, even if it's harder for you. Also known as "pulling complexity down".
-
-Questions to ask:
-
-- What is the simplest interface that will cover all my current needs? What are the fewest number of interfaces?
-- In how many situations will this method be used? See if you can replace several special-purpose methods with a single general-purpose method.
-- Is this API easy to use for my current needs? You can go too far in making code simple and general-purpose... To the point that it is too simple for your needs and requires added code to actually fit your needs.
-
-This "design it twice" can be used at all levels of the software, including at the interface level and the implementation level. The goals will be different for each level, e.g. for interface it is as simple and easy to use as possible, while for implementation, it is the simplicity of the code and it's overall performance.
 
 ### Splitting up or bringing together
 
@@ -197,7 +197,13 @@ You can improve your design skills by recognizing red flags.
 
 Recognizing complexity is a key design skill, so you can identify problems before you invest in a lot of effort in them.
 
+This "design it twice" can be used at all levels of the software, including at the interface level and the implementation level. The goals will be different for each level, e.g. for interface it is as simple and easy to use as possible, while for implementation, it is the simplicity of the code and it's overall performance.
 
+Questions to ask:
+
+- What is the simplest interface that will cover all my current needs? What are the fewest number of interfaces?
+- In how many situations will this method be used? See if you can replace several special-purpose methods with a single general-purpose method.
+- Is this API easy to use for my current needs? You can go too far in making code simple and general-purpose... To the point that it is too simple for your needs and requires added code to actually fit your needs.
 
 ### Documentation-driven design and development
 
