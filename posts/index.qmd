@@ -2,6 +2,7 @@
 title: Posts
 listing:
   - id: posts
+    categories: true
     contents: .
     exclude:
         exclude-from-listing: true

@@ -39,7 +39,7 @@ that).
 
 There were so many things we learned that I made a separate post about
 it: [Lessons learned from working with software
-consultants](/posts/lessons-learned-software-consultants.qmd).
+consultants](/posts/lessons-learned-software-consultants/index.qmd).
 
 ### Re-designed how we would implement our software
 
