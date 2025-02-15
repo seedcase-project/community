@@ -4,8 +4,8 @@ listing:
   - id: shorts
     contents: shorts
     type: default
-    sort: "title"
-    fields: 
+    sort: "date desc"
+    fields:
       - "title"
       - "author"
       - "description"
@@ -23,16 +23,15 @@ what learning shorts are, what they are used for, and how to write them.
 ::: {#shorts}
 :::
 
-## Learnings and insights from books
+## Learning and insights from books
 
-Books are a fantastic source of advanced learning and inspiration. 
-These insight documents are condensed summaries of the books with
+Books are a fantastic source of advanced learning, insights, and
+inspiration. These posts are condensed summaries of the books with
 take-home messages and insights that the author has found interesting
-and useful. 
-The main motivation for these documents
-are:
+and useful. The main motivation for these documents are:
 
-1. The content of the book is interesting and useful enough to share with others, like the 
-rest of the Seedcase team.
-1. To consolidate the document author's learning and insights from the book.
-1. To have as a resource and reference for future purposes.
+1.  The content of the book is interesting and useful enough to share
+    with others, like the rest of the Seedcase team.
+2.  To consolidate the document author's learning and insights from the
+    book.
+3.  To have as a resource and reference for future purposes.
