@@ -1,0 +1,141 @@
+---
+title: "Experiences from the FAIR-IMPACT National Roadshow in Denmark"
+description: "An online event to showcase FAIR activities happening across European Union countries."
+author: 
+  - "Luke W. Johnston"
+  - "Kristiane Beicher"
+date: "2024-10-28"
+categories:
+  - webinar
+  - learning
+  - experiences
+---
+
+We attended the virtual [FAIR-IMPACT National Roadshow
+series](https://fair-impact.eu/events/national-roadshows) hosted in
+Denmark entitled [FAIR Principles in national and institutional data
+management policies in
+Denmark](https://fair-impact.eu/events/fair-impact-events/fair-principles-national-and-institutional-data-management-policies)
+on October 4th, 2024.
+
+The aim of this series is, as described on their website:
+
+> To better connect with national initiatives, ..., conceived as online
+> events with the aim of speeding up FAIR adoption by communities in
+> different European countries. The roadshows extend the network of
+> projects and initiatives that FAIR-IMPACT already collaborates with,
+> introducing another platform to promote FAIR-IMPACT recommendations,
+> good practices, and assessment tools.
+
+This post shares some thoughts and impressions we had on what was
+discussed during the event. The series could be split into these general
+themes:
+
+-   Overall impressions
+-   Introduction to general activities, particularly at the policy
+    level, within Denmark on FAIR data.
+-   Challenges faced and lessons learned on implementing (or trying to)
+    FAIR practices at more organizational levels.
+
+## Overall impressions
+
+First things first, unfortunately, most of the presentations were very
+text heavy. These type of presentations are much more difficult to read,
+understand, and connect with. Especially because often times the text is
+fairly vague as there is only so much text one can put on a slide. It
+would be amazing if more people used websites to keep their documents of
+work, and in their presentation they could link to that website for more
+information. More often than not, presenters talk about what they've
+done, but don't actually show it (more on this in the next section).
+
+Another impression we had was that a lot of these initiatives are headed
+by researchers. Which, on the one hand is great, but on the other,
+researchers rarely have the necessary technical skill or knowledge to
+adequate handle the tasks required for what is needed to be done. It
+isn't any fault of the researchers, it simply is the way academia is
+structured. We need more technical people in these positions to give
+expert input on what is needed to be designed or developed.
+
+## Introduction to general activities
+
+The first few presentations were about activities at a high level
+happening within Denmark. While it was good to get a general overview,
+we were left with the impression that lots of activities were
+discussions in working groups, but not much in more visible and tangible
+activities.
+
+For instance, we in the Seedcase Project follow the "making work
+visible" [principle](https://seedcase-project.org/about/principles),
+which we achieve by putting as much communication, tasks, and
+documentation on GitHub or websites as possible. A good example of this
+is that we put (most) major decisions as posts on a
+[website](https://decisions.seedcase-project.org/).
+
+While discussions are necessary, it helps to have *something to
+discussion on*. In this case, some design document or diagram, or some
+prototype of a workflow using explicitly described tools and methods
+would help immensely to anchor these discussions onto something tangible
+and more "visible". Something that we can directly critique or give
+feedback on. We'd love to see more sharing and disseminating of
+documents or communication activities since we believe these are just as
+legitimate sources of output.
+
+Another thing we observed was that many of the initiatives were centered
+around building up networks of researchers or encouraging them to
+collaborate on activities to improve FAIR data practices. However, some
+key things were missing:
+
+-   No mention of initiatives to provide funds for projects that have a
+    heavy software or data infrastructure component
+-   No mention of encouraging for budget items for hiring highly skilled
+    personnel who often require a higher salary than is typically seen
+    for "technical personnel" at university or research institutions.
+-   No mention of "upskilling", skill development, or training
+    initiatives to improve the capacity and competency of researchers or
+    others who want to enter into this more computationally technical
+    space.
+-   No mention of trying to improve hiring practices/policies at
+    universities or research institutions who don't seem to value or be
+    aware of the need to have *embedded* software and data engineering
+    groups within research environments.
+
+## Challenges faced and lessons learned
+
+The two presentations that went over practical examples of work trying
+to implement FAIRer data practices were quite good, especially because
+they got more into the challenges and barriers they faced and still
+face.
+
+Richard Dennis, who works at the University of Copenhagen, made lots of
+good comments particularly on the challenges, such as:
+
+-   Around the skills gaps seen within universities between researchers
+    and professionals managing the research data.
+-   The limited resources (time and funds) and of skilled personnel.
+    Often researchers will seek out or ask for advice or support for
+    their own work, which takes away the personnels' time for working
+    the improving things and working on their own projects.
+-   The lack of higher level visionary strategies to solve these issues.
+    There's a big gap between what is talked about at the policy level
+    and what researchers are actually doing.
+-   Not enough investment and value in addressing these fundamental
+    issues around data and the current state of things.
+
+Another presenter, Mareike Buss from the Copenhagen Business School (CBS),
+also mentioned some challenges around the lack of skilled technical
+personnel and on the many things needed to be done but with only few
+people hired to do them.
+
+She pointed out that because CBS is a relatively small institution, they
+are much closer to their users than colleagues in other universities.
+This means that it is easier to have a close relationship with the
+researchers and to understand their needs. She also pointed out, that
+having the support of the senior management is crucial for the success
+of the various projects.
+
+## Summary
+
+This webinar was overall a good insight into the current state of things
+in FAIR data around Denmark. It reinforced many expectations and
+personal experiences of ours, while also giving hope that our work has
+some strong value in moving this area along!

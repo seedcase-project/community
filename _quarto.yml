@@ -13,10 +13,9 @@ website:
     pinned: true
     search: true
     left:
-      - roadmap.qmd
       - guides/index.qmd
-      - outreach/index.qmd
       - posts/index.qmd
+      - learn/index.qmd
     tools:
       - icon: house
         href: "https://seedcase-project.org"
@@ -30,14 +29,6 @@ website:
       style: "floating"
       contents:
         - auto: guides
-    - id: outreach
-      contents:
-        - outreach/index.qmd
-        - text: "Events"
-          auto: outreach/**/index.qmd
-    - id: posts
-      contents:
-        - auto: posts
 
 # format:
 #   seedcase-theme-html:
