@@ -1,0 +1,121 @@
+---
+title: "Experiences from the ResearchOps Conference 2023"
+description: |
+    My experiences from attending a virtual conference about "research operations", a relatively new area
+    on user research within mainly corporate settings.
+author: "Luke W. Johnston"
+date: "2025-02-19"
+categories:
+- conference
+- learning
+- experiences
+---
+
+::: callout-important
+I attended the online [ReOps Conference](https://reopsconference.com/)
+from November 16-17, 2023. I wrote some notes from the conference that I
+had intended to wrote up and share as a post, but it was always low
+priority so never got around to it. We've been making some good
+progress, so I've gotten some time to finally write up a post on my
+experiences from this conference.
+:::
+
+[Research operations](https://researchops.community/), also abbreviated
+as ReOps or ResearchOps, is a relatively new field. It is,
+paradoxically, not about research in traditional research settings, but
+mainly about (or at least started in) user research in largely corporate
+settings. Confusingly, there is also the field of [operations
+research](https://en.wikipedia.org/wiki/Operations_research), which is
+the math and science of management and decision-making that arose during
+World War II. The community agreed on definition of ResearchOps is:
+
+> "ResearchOps is the people, mechanisms, and strategies that set user
+> research in motion. It provides the roles, tools and processes needed
+> to support researchers in delivering and scaling the impact of the
+> craft across an organisation. --- [ResearchOps
+> Community](https://researchops.community/about/)
+
+The ResearchOps Community organised an online
+[conference](https://reopsconference.com/) in November 2023.
+Unfortunately, most of the talks were heavily focused on specific
+corporate settings, needs, and experiences so I didn't get much out of
+them. However, there were a few talks that I found interesting and
+relevant to our work. Here are some notes from those talks:
+
+## Unlocking Research Operations: Implementation and impact within established UR teams
+
+This talk, by Rachel Mare of the Scottish government Research Ops team,
+went into how they integrated ResearchOps into their existing user
+research teams within the government. A few points I found interesting
+from her talk were about getting buy-in from senior management as well
+as some basic practicalities of actually implementing ResearchOps within
+the Scottish government.
+
+For getting buy-in from senior management, she suggested the following:
+
+-   Address, recognise, and emphasise any fears they may have for the
+    change.
+-   Prepare for any concerns they may have about implementation by
+    having come up with a plan or plans beforehand.
+-   Make it really clear what the purpose is and what the goals are for
+    what ResearchOps will achieve within the organisation.
+-   Do as much research as possible on the actual problem you hope to
+    solve with ResearchOps.
+-   Bring clear, tangible solutions when discussing with them, not just
+    the problems that exist.
+-   Senior management listens strongly to cost-benefit analysis, so do
+    one before meeting with them.
+
+She also described some practical challenges and considerations they had
+to face before implementing ResearchOps as well as during it:
+
+-   Deciding what software to use, as any software needs to go through
+    security clearance. If at all possible, make use of existing tools
+    that already have clearance.
+-   For any new tool or process, research into what the benefits are and
+    how they can lower the cost for doing work.
+
+## Make Work Visible: ReOps from Side Hustle to Sustainability
+
+I really enjoyed Lauren Galanter's talk on some really tangible and
+practical things to do to implement ResearchOps in an organisation. I
+liked her talk because this applies to many different topics and fields,
+not just ResearchOps. She talked about how ResearchOps is almost like
+someone's "side hustle" within an organisation. They do it sporadically,
+with limited support or resources, often on their own, and with a lot of
+resistance or lack of understanding from others. Her main points were:
+
+-   Make the work you do visible, concrete, and discrete.
+    -   Use a board or some other visualisation tool to show what you're
+        working on
+    -   Capture as much content as possible on this board or issue list,
+        including all ideas, tasks, requests.
+    -   Keep track of time spent on different tasks as data for insights
+        later on, so that you can use that later on to justify things.
+    -   Don't hide work, show it off as much as possible!
+-   Incorporate and make use of [Agile
+    principles](https://agilemanifesto.org/):
+    -   Make use of iterations, which are focused, time-bounded periods
+        of work on a specific set of tasks.
+    -   Use a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board)
+        to put work up and show what's in progress and what's done,
+        availabe in tools like
+        [JIRA](https://www.atlassian.com/software/jira) or [GitHub
+        Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
+    -   Using the Kanban board, limit the amount of items in the "work
+        in progress" column.
+    -   Focus on a few projects at a time, and within those projects do
+        as few tasks as is reasonable at any given time.
+    -   Prioritise small, incremental improvements over bigger,
+        irregular improvements.
+-   Value ideas or requests, but you don't need to commit to them. This
+    helps fight against "what about this..." or "help with that...".
+    Keep focused on what you or your team want to achieve.
+
+## Conclusion
+
+While most talks weren't particularly relevant to me, I did find the
+ones that were interesting to be very useful. So overall, it was a
+worthwhile conference to attend. Would I attend again? I'm not too sure,
+it may still be too heavily corporate focused and too specific to those
+environments to be of relevance for me at this point.
