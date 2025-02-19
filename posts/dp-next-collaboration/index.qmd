@@ -37,7 +37,7 @@ This is the summary of the project:
 > [DP-Next](https://dp-next.github.io)
 
 Work Package 1 is focused on both the general management of the DP-Next
-project as well as in implementing and ensuring the research follows
+project as well as on ensuring the research follows
 open and reproducible practices. My role in this work package is on the
 second part. While I have a variety of tasks to complete, many of them
 have a direct overlap with what we do in the Seedcase Project or can
@@ -48,7 +48,7 @@ DP-Next project! This is a very exciting opportunity for us as it will
 be our first collaboration, and the first time we'll be using our tools
 and training to enable and support a larger, multi-center project.
 
-We have many things to still discuss with our involvement, but the tasks
+We have many things still to discuss about our involvement, but the tasks
 we will very likely be contributing with are:
 
 -   Setting up and building the data infrastructure
@@ -57,7 +57,7 @@ we will very likely be contributing with are:
 -   Training DP-Next members on more technical tools and practices, such
     as in using Git and GitHub
 
-The DP-Next project doesn't official start until September 2025, so we
+The DP-Next project doesn't officially start until September 2025, so we
 still have some planning and discussing to do before settling on our
 tasks and involvement. We're also super excited to be working on a
 project that is spread across all of Denmark and to the Faroe Islands
@@ -65,4 +65,4 @@ and Greenland, which will give us the opportunity to spread awareness of
 many of the practices Seedcase aims to promote and develop.
 
 We'll post regular updates and lessons learned as we begin our
-collaboration in later in the year! :tada:
+collaboration later in the year! :tada:
