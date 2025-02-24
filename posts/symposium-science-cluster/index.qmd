@@ -40,7 +40,7 @@ Since one of the main aims of the Seedcase Project is to develop
 software that simplifies doing research data engineering and building up
 data infrastructures, we felt that we fit in to the "data management and
 infrastructure" section that they list. We submitted [an
-abstract](/outreach/events/science-cluster-2024/index.qmd) and I gave a
+abstract](/posts/science-cluster-2024/index.qmd) and I gave a
 poster presentation about the Seedcase Project. This post shares some
 general impressions and experiences I had from attending this symposium.
 These are honest, if sometimes critical, reflections on what I saw and
@@ -106,7 +106,7 @@ made a few assumptions about the symposium that were not met:
     fairly common in other conferences as well. This relates to the
     previous point: so often in research, we focus on the data
     collection and the analytics, but we don't focus on the data
-    engineering and infrastructure needed to support them. Even 
+    engineering and infrastructure needed to support them. Even
     within grant applications, we write
     about what data we will collect and how we'll analyze it, but we
     don't write about how we will store, manage, organize, and share
