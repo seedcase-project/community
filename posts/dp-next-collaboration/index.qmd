@@ -1,0 +1,68 @@
+---
+title: "Collaboration with the DP-Next project :tada:"
+description: |
+    The Novo Nordisk Foundation's annual Steno National Collaborative Grant for 2024
+    was awarded to Steno Aarhus for a project called DP-Next. We at Seedcase will
+    be collaborating with them on their data infrastructure, engineering, and the (technical)
+    training aspects of the project.
+author:
+- Luke W. Johnston
+date: "2025-02-19"
+categories:
+  - collaborations
+  - external projects
+---
+
+Novo Nordisk Foundation has a series of grants aimed at encouraging
+collaboration across [Steno](https://steno.dk/) centers called [Steno
+National Collaborative
+Grant](https://novonordiskfonden.dk/en/grant/steno-national-collaborative-grant/).
+Last year, the [grant](https://novonordiskfonden.dk/en/grant-recipient/)
+was awarded to a project titled *Sustainable Type 2 Diabetes Prevention
+for the 21st Century* ([DP-Next](https://dp-next.github.io)), lead by
+[Daniel Witte](https://www.stenoaarhus.dk/kontakt/daniel-R-witte/) at
+Steno Diabetes Center Aarhus, where I am the lead on part of [Work
+Package 1](https://dp-next.github.io/wp1-ros).
+
+This is the summary of the project:
+
+> "DP-Next is a project aimed at developing a sustainably effective
+> strategy for prevention of Type 2 Diabetes […] We call it DP-Next
+> because we intend to develop the next generation of Diabetes
+> Prevention strategies.
+>
+> We aim to use \[modern or underutilised methods and resources\] to
+> design and deliver a sustainably effective strategy for prevention of
+> T2D in Denmark, Greenland and the Faroe Islands." ---
+> [DP-Next](https://dp-next.github.io)
+
+Work Package 1 is focused on both the general management of the DP-Next
+project as well as on ensuring that the research follows
+open and reproducible practices. My role in this work package is on the
+second part. While I have a variety of tasks to complete, many of them
+have a direct overlap with what we do in the Seedcase Project or can
+make heavy use of the expertise we've been developing in Seedcase.
+
+So, because of this, we in Seedcase will be collaborating with the
+DP-Next project! This is a very exciting opportunity for us as it will
+be our first collaboration, and the first time we'll be using our tools
+and training to enable and support a larger, multi-center project.
+
+We have many things still to discuss about our involvement, but the tasks
+we will very likely be contributing with are:
+
+-   Setting up and building the data infrastructure
+-   Designing the data structure and pipeline
+-   Processing and structuring data after collection
+-   Training DP-Next members on more technical tools and practices, such
+    as in using Git and GitHub
+
+The DP-Next project doesn't officially start until September 2025, so we
+still have some planning and discussing to do before settling on our
+tasks and involvement. We're also super excited to be working on a
+project that is spread across all of Denmark and to the Faroe Islands
+and Greenland, which will give us the opportunity to spread awareness of
+many of the practices Seedcase aims to promote and develop.
+
+We'll post regular updates and lessons learned as we begin our
+collaboration later in the year! :tada:
