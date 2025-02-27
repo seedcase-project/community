@@ -3,7 +3,7 @@ title: "Collaboration with the DP-Next project :tada:"
 description: |
     The Novo Nordisk Foundation's annual Steno National Collaborative Grant for 2024
     was awarded to Steno Aarhus for a project called DP-Next. We at Seedcase will
-    be collaborating with them on their data infrastructure, engineering, and (technical)
+    be collaborating with them on their data infrastructure, engineering, and the (technical)
     training aspects of the project.
 author:
 - Luke W. Johnston
@@ -27,7 +27,7 @@ Package 1](https://dp-next.github.io/wp1-ros).
 This is the summary of the project:
 
 > "DP-Next is a project aimed at developing a sustainably effective
-> strategy for prevention of Type 2 Diabetes... We call it DP-Next
+> strategy for prevention of Type 2 Diabetes […] We call it DP-Next
 > because we intend to develop the next generation of Diabetes
 > Prevention strategies.
 >
@@ -37,7 +37,7 @@ This is the summary of the project:
 > [DP-Next](https://dp-next.github.io)
 
 Work Package 1 is focused on both the general management of the DP-Next
-project as well as on ensuring the research follows
+project as well as on ensuring that the research follows
 open and reproducible practices. My role in this work package is on the
 second part. While I have a variety of tasks to complete, many of them
 have a direct overlap with what we do in the Seedcase Project or can
