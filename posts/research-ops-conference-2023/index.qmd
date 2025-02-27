@@ -14,9 +14,9 @@ categories:
 ::: callout-important
 I attended the online [ReOps Conference](https://reopsconference.com/)
 from November 16-17, 2023. I wrote some notes from the conference that I
-had intended to wrote up and share as a post, but it was always low
-priority so never got around to it. We've been making some good
-progress, so I've gotten some time to finally write up a post on my
+had intended to write up and share as a post, but it was always low
+priority so I never got around to it. We've been making some good
+progress on the Seedcase Project, so I've gotten some time to finally write up a post on my
 experiences from this conference.
 :::
 
@@ -27,7 +27,7 @@ mainly about (or at least started in) user research in largely corporate
 settings. Confusingly, there is also the field of [operations
 research](https://en.wikipedia.org/wiki/Operations_research), which is
 the math and science of management and decision-making that arose during
-World War II. The community agreed on definition of ResearchOps is:
+World War II. The community agreed on the following definition of ResearchOps:
 
 > "ResearchOps is the people, mechanisms, and strategies that set user
 > research in motion. It provides the roles, tools and processes needed
@@ -42,7 +42,7 @@ corporate settings, needs, and experiences so I didn't get much out of
 them. However, there were a few talks that I found interesting and
 relevant to our work. Here are some notes from those talks:
 
-## Unlocking Research Operations: Implementation and impact within established UR teams
+## Unlocking research operations: Implementation and impact within established UR teams
 
 This talk, by Rachel Mare of the Scottish government Research Ops team,
 went into how they integrated ResearchOps into their existing user
@@ -62,8 +62,8 @@ For getting buy-in from senior management, she suggested the following:
 -   Do as much research as possible on the actual problem you hope to
     solve with ResearchOps.
 -   Bring clear, tangible solutions when discussing with them, not just
-    the problems that exist.
--   Senior management listens strongly to cost-benefit analysis, so do
+    point out the problems that exist.
+-   Senior management listens strongly to cost-benefit analyses, so do
     one before meeting with them.
 
 She also described some practical challenges and considerations they had
@@ -75,7 +75,7 @@ to face before implementing ResearchOps as well as during it:
 -   For any new tool or process, research into what the benefits are and
     how they can lower the cost for doing work.
 
-## Make Work Visible: ReOps from Side Hustle to Sustainability
+## Make work visible: ReOps from side hustle to sustainability
 
 I really enjoyed Lauren Galanter's talk on some really tangible and
 practical things to do to implement ResearchOps in an organisation. I
