@@ -1,0 +1,61 @@
+---
+title: "A brief introduction to functional programming"
+description: |
+  Functional programming is a programming style. This
+  short introduces the basics of functional programming, its advantages,
+  and how it differs from more imperative programming (like Object Oriented Programming).
+author: "Kris Beicher"
+date: "19-03-2025"
+# date-modified: ""
+categories: 
+  - python
+  - functional programming
+---
+
+## Motivation for this micro-lesson
+
+-   This lesson aims to introduce the basics of functional programming to
+    those who are new to programming or have only worked with imperative
+    programming languages. We will cover the basics of functional
+    programming, its advantages, and how it differs from Object Oriented Programming.
+
+## Assumed knowledge of reader
+
+-   Basic programming knowledge
+-   Basic Python knowledge
+-   Basic understanding of how functions work
+
+## Necessary software
+
+-   Python editor of choice
+
+## Learning goal
+
+The goal with this learning short is for the reader to understand the basics of functional programming and how it differs from imperative programming. And to be able to answer the following questions:
+
+- What is an immutable data structure?
+- What is a side effect in programming?
+- What is a pure function?
+- What is a higher-order function?
+- How can I use Filter, Map, and Reduce in Python?
+- What does the lambda keyword do in Python?
+
+## Take home messages
+
+-   SIMPLE MESSAGE
+
+- Functional programming is a programming paradigm that mainly relies on immutable data structures and mathematical functions to perform computation thus trying to avoid side effects.
+
+## Lesson content
+
+### SECTION HEADER
+
+## Summary
+
+- BRIEF SUMMARY
+
+## Additional resources
+
+-   [Functional Programming in Python (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
+-   [Functional Programming Cheatsheet (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
+-   [Functional Programming in Python - online course (RealPython)](https://realpython.com/courses/functional-programming-python/)
