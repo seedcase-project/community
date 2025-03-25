@@ -1,0 +1,69 @@
+---
+title: "Things learned from the Basic Python Course at Teknologisk Institut"
+description: "Some thoughts and experiences I had about the Basic Python Course at Teknologisk Institut that I took some time in 2024."
+author: "Kristiane Beicher"
+date: "2024-09-20"
+categories:
+  - learning
+  - experiences
+  - programming
+---
+
+::: callout-caution
+Some time ago I attended the [Basic Python
+Course](https://www.teknologisk.dk/kurser/grundlaeggende-python-programmering/k91466)
+at Teknologisk Institut in Aarhus, Denmark. I realized that I forgotten
+to write a post about my experience with taking it. So, here it is!
+:::
+
+## Course Overview
+
+The main points the course covered were the following:
+
+-   Data types: Integers, floats, strings, and lists
+-   Control flows: `if`, `for`, and `while` functions
+-   Data structures: Lists, tuples, dictionaries, and sets
+-   Modules and packages: Using `import` and `from`
+-   Input and output: Including formatting the output
+-   Reading and writing: To different file types
+-   Errors and exceptions: `try`, `except`, and `finally`
+-   Classes and objects: Defining them, including their properties like
+    scope, inheritance, and polymorphism
+-   Standard libraries: Including `os`, `sys`, and `datetime`
+-   Regular expressions: What they are and very basics on using them
+
+## Experiences
+
+I had some knowledge of Python before attending the course, but I wanted
+to get a better understanding of the basics. The course was a good
+starting point for me, as I felt like a lot of the knowledge that was
+rattling around in my head got slotted into a more sensible structure.
+There were a large number of smaller exercises, which helped me to get a
+better understanding of the concepts that were being taught.
+
+The structure in general was introducing a new concept, giving us a bit
+of time to solve the exercises, and then seeing the solution on screen
+which the instructor had written while waiting for us to finish. This
+was a good way to learn, as it gave me the opportunity to try and solve
+the exercises myself, but also to see how the instructor would solve
+them. It also meant that you could just look up to see the solution if
+you got stuck, which helped a lot with cutting down on time spent on
+tangents that wouldn't lead anywhere.
+
+The instructor was very enthusiastic and quite knowledgable, he has
+worked with Python for many years, and his main job is as a consultant
+programmer, not a teacher. This meant that he had a lot of real-world
+experience to draw on, and he was able to give us a lot of good advice
+on how to structure our code, and how to solve problems in a Pythonic
+way.
+
+## Key Takeaways
+
+I think the course came at precisely the right time for me to get the
+most out of it. I had some knowledge of Python, and it really helped me
+to get my existing knowledge structured in a more sensible way, as well
+as giving me some slightly more advanced concepts to build on. I feel
+like I have a better understanding of how Python is structured and how
+good code should be written. I also feel like I have a better
+understanding of how to solve problems in a Pythonic way. And I know
+what Pythonic means now!

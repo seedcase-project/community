@@ -5,7 +5,7 @@ description: |
   how to create one, and how to install one. No Python knowledge needed.
 author: Luke W. Johnston
 date: 2023-07-25
-date-modified: last-modified
+# date-modified: ""
 categories: 
   - python
   - packaging
@@ -41,9 +41,9 @@ categories:
 
 ## Learning goal
 
-> At the end, you will be able to identify if a folder and files inside
-> are setup as a Python package. You will also be able to create a basic
-> Python package yourself.
+-   At the end, you will be able to identify if a folder and files
+    inside are setup as a Python package. You will also be able to
+    create a basic Python package yourself.
 
 ## Take home messages
 

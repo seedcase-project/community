@@ -1,0 +1,61 @@
+---
+title: "Experiences from taking the Advanced Python course at Teknologisk Institut"
+description: "Some thoughts and experiences I had on the Advanced Python course at Teknologisk Institut that I took from September 4-5, 2024."
+author:
+- Kristiane Beicher
+date: "2024-09-20"
+categories:
+  - learning
+  - experiences
+  - programming
+---
+
+We (me and Signe) attended the [Advanced Python
+Course](https://www.teknologisk.dk/kurser/videregaaende-python-programmering/k91467)
+at Teknologisk Institut in Aarhus, Denmark from September 4-5, 2024.
+
+In this blog post, I will to share my experiences and key takeaways from
+the course.
+
+## Course Overview
+
+These were the main points the course covered:
+
+-   Data structures
+-   Functions, lambda functions, decorators
+-   Classes, objects, inheritance, and exceptions
+-   File systems, formats, and data handling
+-   Organizing code and testing
+
+## Kris' experiences
+
+### General impressions
+
+-   It was nice to continue build on some of the knowledge from the
+    basic course.
+-   The exercises were quite challenging and did require that you have a
+    good grasp of Python, which made it feel like there needed to be
+    another course between the basic and advanced courses.
+-   There was a good balance between theory and practice.
+
+### Key Takeaways
+
+The jump from basic to advanced was quite big in terms of pre-requisite
+knowledge and skill. At certain points during the course, it was much
+larger and much more apparent as I struggled a bit with following along.
+I enjoyed that there were a good number of exercises interspersed
+throughout the course, which made the time seem like it was flying by.
+The instructor was very experienced with Python, and was able to answer
+our queries.
+
+We also got some nice confirmation that a lot of the things we are
+currently doing (or planning on implementing) in Seedcase are consistent
+with best practices. There wasn't anything from the course that we
+thought we would immediately (or shortly) implement in our work, but
+definitely things that we will keep doing and build on!
+
+::: content-hidden
+TODO: Add Signe's thoughts below as a separate section.
+
+## Signe's experiences
+:::

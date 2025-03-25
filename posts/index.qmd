@@ -2,11 +2,12 @@
 title: Posts
 listing:
   - id: posts
+    categories: true
     contents: .
     exclude:
         exclude-from-listing: true
     type: default
-    sort: "title"
+    sort: "date desc"
     fields:
       - "title"
       - "author"
