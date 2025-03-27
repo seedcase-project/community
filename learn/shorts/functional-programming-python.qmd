@@ -7,14 +7,21 @@ description: |
 author: "Kris Beicher"
 date: "2025-03-19"
 # date-modified: ""
-categories: 
+categories:
   - python
   - functional programming
 ---
 
 ## Motivation for this micro-lesson
 
--   This lesson aims to introduce the basics of functional programming to those who are new to programming or have only worked with imperative programming languages. We will focus on practical applications of functional programming concepts in Python, particularly the use of higher-order functions like `filter`, `map`, and `reduce`. By the end of this lesson, learners will have hands-on experience applying these techniques to write more concise and expressive code.
+-   This lesson aims to introduce the basics of functional programming
+    to those who are new to programming or have only worked with
+    imperative programming languages. We will focus on practical
+    applications of functional programming concepts in Python,
+    particularly the use of higher-order functions like `filter`, `map`,
+    and `reduce`. By the end of this lesson, learners will have hands-on
+    experience applying these techniques to write more concise and
+    expressive code.
 
 ## Assumed knowledge of reader
 
@@ -28,16 +35,21 @@ categories:
 
 ## Learning goal
 
-The goal of this lesson is for the reader to gain practical experience using functional programming techniques in Python. By the end, the reader should be able to answer the following questions:
+The goal of this lesson is for the reader to gain practical experience
+using functional programming techniques in Python. By the end, the
+reader should be able to answer the following questions:
 
-- How can I use `filter`, `map`, and `reduce` in Python?
-- What does the `lambda` keyword do in Python?
+-   How can I use `filter`, `map`, and `reduce` in Python?
+-   What does the `lambda` keyword do in Python?
 
 ## Take home messages
 
-- Functional programming in Python allows for more concise and readable code by leveraging built-in higher-order functions.
-- The use of `filter`, `map`, and `reduce` enables efficient data transformations without modifying original data structures.
-- The `lambda` keyword allows for the creation of anonymous functions, making functional programming more expressive and flexible.
+-   Functional programming in Python allows for more concise and
+    readable code by leveraging built-in higher-order functions.
+-   The use of `filter`, `map`, and `reduce` enables efficient data
+    transformations without modifying original data structures.
+-   The `lambda` keyword allows for the creation of anonymous functions,
+    making functional programming more expressive and flexible.
 
 ## Lesson content
 
@@ -45,98 +57,159 @@ The goal of this lesson is for the reader to gain practical experience using fun
 
 #### **`filter`**
 
-This is a built-in function in Python that takes a function and an iterable as arguments and returns an iterator over the elements of the iterable for which the function returns `True`.
+This is a built-in function in Python that takes a function and an
+iterable as arguments and returns an iterator over the elements of the
+iterable for which the function returns `True`.
 
 ##### Syntax:
-```python
+
+``` python
 filter(function, iterable)
 ```
-The `function` should return `True` or `False` for each element in `iterable`. Only elements for which `function` returns `True` are included in the output.
+
+The `function` should return `True` or `False` for each element in
+`iterable`. Only elements for which `function` returns `True` are
+included in the output.
 
 For example:
 
-```python
+``` python
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)
 ```
 
-In the example above, the `filter` function is used to filter out the even numbers from the list of numbers. The lambda function is used to define the condition for filtering, in this case, checking if the number produces a remainder of 0 when divided by 2. The `filter` function on its own returns what is called an iterator, so in order for us to see the result, we need to convert it to a list. We do the same below with the `map` function.
+In the example above, the `filter` function is used to filter out the
+even numbers from the list of numbers. The lambda function is used to
+define the condition for filtering, in this case, checking if the number
+produces a remainder of 0 when divided by 2. The `filter` function on
+its own returns what is called an iterator, so in order for us to see
+the result, we need to convert it to a list. We do the same below with
+the `map` function.
 
 #### **`map`**
 
-This is a built-in function in Python that takes a function and an iterable as arguments and returns an iterator over the results of applying the function to the elements of the iterable.
+This is a built-in function in Python that takes a function and an
+iterable as arguments and returns an iterator over the results of
+applying the function to the elements of the iterable.
 
 ##### Syntax:
-```python
+
+``` python
 map(function, iterable)
 ```
-The `function` is applied to each element of `iterable`, and the results are returned as an iterator.
+
+The `function` is applied to each element of `iterable`, and the results
+are returned as an iterator.
 
 For example:
 
-```python
+``` python
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 squared_numbers = list(map(lambda x: x ** 2, numbers))
 print(squared_numbers)
 ```
 
-In this example, the `map` function is used to square each number in the list of numbers. The lambda function is used to define the operation to be applied to each element of the list, in this case by squaring it. The `map` function returns an iterator, so we convert it to a list to see the result.
+In this example, the `map` function is used to square each number in the
+list of numbers. The lambda function is used to define the operation to
+be applied to each element of the list, in this case by squaring it. The
+`map` function returns an iterator, so we convert it to a list to see
+the result.
 
 #### **`reduce`**
 
-This is a function in the `functools` module in Python that takes a function and an iterable as arguments and returns a single value by applying the function cumulatively to the elements of the iterable.
+This is a function in the `functools` module in Python that takes a
+function and an iterable as arguments and returns a single value by
+applying the function cumulatively to the elements of the iterable.
 
 ##### Syntax:
-```python
+
+``` python
 reduce(function, iterable)
 ```
-The `function` takes two arguments and is applied cumulatively to the elements of `iterable` to reduce them to a single value.
 
-It is slightly different from the first two functions in that it isn't built into Python but is available in the `functools` module.
+The `function` takes two arguments and is applied cumulatively to the
+elements of `iterable` to reduce them to a single value.
+
+It is slightly different from the first two functions in that it isn't
+built into Python but is available in the `functools` module.
 
 For example:
 
-```python
+``` python
 from functools import reduce
 numbers = [1, 2, 3, 4, 5]
 sum_of_numbers = reduce(lambda x, y: x + y, numbers)
 print(sum_of_numbers)
 ```
 
-In this final example, the `reduce` function is used to calculate the sum of the numbers in the list. The lambda function defines how the elements of the list should be combined, in this case by adding them together. As the `reduce` function returns a single value, we can print it directly.
+In this final example, the `reduce` function is used to calculate the
+sum of the numbers in the list. The lambda function defines how the
+elements of the list should be combined, in this case by adding them
+together. As the `reduce` function returns a single value, we can print
+it directly.
 
 ### What does the lambda keyword do in Python?
 
-The `lambda` keyword in Python is used to create what is called anonymous functions (i.e. not named, and therefore bound to the place where they are defined). In functional programming, the `lambda` function is often used to define simple functions that are used only once.
+The `lambda` keyword in Python is used to create what is called
+anonymous functions (i.e. not named, and therefore bound to the place
+where they are defined). In functional programming, the `lambda`
+function is often used to define simple functions that are used only
+once.
 
 ##### Syntax:
-```python
+
+``` python
 lambda arguments: expression
-```   
-A `lambda` function can take any number of arguments but must have only a single expression, which is evaluated and returned.
+```
 
-In the `filter` example above, the lambda function (`lambda x: x % 2 == 0`) is used to define the condition for filtering the list of numbers. The argument `x` represents each element of the list, and the expression `x % 2 == 0` checks if the element is even. The lambda function used in the `map` example (`lambda x: x ** 2`) is used in much the same way, with a single argument and a simple expression.
+A `lambda` function can take any number of arguments but must have only
+a single expression, which is evaluated and returned.
 
-In the `reduce` example, the lambda function (`lambda x, y: x + y`) takes two arguments and returns their sum. The first argument represents the accumulated value, and the second argument represents the next element of the list. The lambda function is applied to each pair of elements in the list until a single value is returned.
+In the `filter` example above, the lambda function
+(`lambda x: x % 2 == 0`) is used to define the condition for filtering
+the list of numbers. The argument `x` represents each element of the
+list, and the expression `x % 2 == 0` checks if the element is even. The
+lambda function used in the `map` example (`lambda x: x ** 2`) is used
+in much the same way, with a single argument and a simple expression.
+
+In the `reduce` example, the lambda function (`lambda x, y: x + y`)
+takes two arguments and returns their sum. The first argument represents
+the accumulated value, and the second argument represents the next
+element of the list. The lambda function is applied to each pair of
+elements in the list until a single value is returned.
 
 ### Functional Programming-Adjacent Tools
 
-Python provides several tools that, while not purely functional, facilitate a transition to functional programming principles:
+Python provides several tools that, while not purely functional,
+facilitate a transition to functional programming principles:
 
-- **List Comprehensions & Generator Expressions** – Provide a concise syntax for transforming data iterables, though they are not strictly functional due to potential side effects.
-- **`functools` Module** – Contains functions like `reduce`, `partial`, and `lru_cache` that enable functional-style programming.
-- **`itertools` Module** – Provides utilities for efficient iteration, supporting lazy evaluation and functional transformations.
-- **`namedtuple` and `dataclass`** – Facilitate immutable data structures, aligning with functional programming’s emphasis on immutability.
+-   **List Comprehensions & Generator Expressions** – Provide a concise
+    syntax for transforming data iterables, though they are not strictly
+    functional due to potential side effects.
+-   **`functools` Module** – Contains functions like `reduce`,
+    `partial`, and `lru_cache` that enable functional-style programming.
+-   **`itertools` Module** – Provides utilities for efficient iteration,
+    supporting lazy evaluation and functional transformations.
+-   **`namedtuple` and `dataclass`** – Facilitate immutable data
+    structures, aligning with functional programming’s emphasis on
+    immutability.
 
 ## Summary
 
-- `filter`, `map`, and `reduce` allow for functional-style processing of collections in Python, making transformations and filtering more efficient.
-- The `lambda` keyword enables the creation of small, anonymous functions that can be used inline for simple operations.
-- These functional programming concepts help write more concise, expressive, and readable code.
+-   `filter`, `map`, and `reduce` allow for functional-style processing
+    of collections in Python, making transformations and filtering more
+    efficient.
+-   The `lambda` keyword enables the creation of small, anonymous
+    functions that can be used inline for simple operations.
+-   These functional programming concepts help write more concise,
+    expressive, and readable code.
 
 ## Additional resources
 
--   [Functional Programming in Python (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
--   [Functional Programming Cheatsheet (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
--   [Functional Programming in Python - online course (RealPython)](https://realpython.com/courses/functional-programming-python/)
+-   [Functional Programming in Python
+    (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
+-   [Functional Programming Cheatsheet
+    (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
+-   [Functional Programming in Python - online course
+    (RealPython)](https://realpython.com/courses/functional-programming-python/)
