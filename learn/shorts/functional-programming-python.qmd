@@ -1,9 +1,9 @@
 ---
-title: "A brief introduction to functional programming techniques"
+title: "A brief introduction to functional programming techniques in Python"
 description: |
-  Functional programming is a programming style. This
-  short introduces the basics of functional programming, its advantages,
-  and how it differs from more imperative programming (like Object Oriented Programming).
+  Functional programming is a specific approach to programming. This
+  short introduces the basics of functional programming in Python, its advantages,
+  and how it differs from more imperative programming like object oriented programming.
 author: "Kris Beicher"
 date: "2025-03-19"
 # date-modified: ""
