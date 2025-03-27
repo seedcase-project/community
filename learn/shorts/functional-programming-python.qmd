@@ -5,7 +5,7 @@ description: |
   short introduces the basics of functional programming, its advantages,
   and how it differs from more imperative programming (like Object Oriented Programming).
 author: "Kris Beicher"
-date: "19-03-2025"
+date: "2025-03-19"
 # date-modified: ""
 categories: 
   - python
