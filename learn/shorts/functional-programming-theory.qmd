@@ -14,7 +14,13 @@ categories:
 
 ## Motivation for this micro-lesson
 
--   This lesson aims to introduce the basics of functional programming to those who are new to programming or have only worked with imperative programming languages. We will cover the fundamentals of functional programming, its advantages, and how it differs from Object-Oriented Programming. By the end of this lesson, learners should be comfortable with core functional programming concepts and understand why this paradigm is useful.
+-   This lesson aims to introduce the basics of functional programming
+    to those who are new to programming or have only worked with
+    imperative programming languages. We will cover the fundamentals of
+    functional programming, its advantages, and how it differs from
+    Object-Oriented Programming. By the end of this lesson, learners
+    should be comfortable with core functional programming concepts and
+    understand why this paradigm is useful.
 
 ## Assumed knowledge of reader
 
@@ -28,30 +34,46 @@ categories:
 
 ## Learning goal
 
-The goal with this learning short is for the reader to understand the basics of functional programming and how it differs from imperative programming. And to be able to answer the following questions:
+The goal with this learning short is for the reader to understand the
+basics of functional programming and how it differs from imperative
+programming. And to be able to answer the following questions:
 
-- What is an immutable data structure?
-- What is a side effect in programming?
-- What is a pure function?
-- What is a higher-order function?
+-   What is an immutable data structure?
+-   What is a side effect in programming?
+-   What is a pure function?
+-   What is a higher-order function?
 
 ## Take-home messages
 
-- Functional programming is a programming paradigm that mainly relies on the concept of immutable data and mathematical functions to perform computations, thus trying to avoid side effects.
-- Avoiding side effects can lead to more predictable and maintainable code.
-- Functional programming encourages breaking down problems into small, reusable functions, promoting clarity and testability.
+-   Functional programming is a programming paradigm that mainly relies
+    on the concept of immutable data and mathematical functions to
+    perform computations, thus trying to avoid side effects.
+-   Avoiding side effects can lead to more predictable and maintainable
+    code.
+-   Functional programming encourages breaking down problems into small,
+    reusable functions, promoting clarity and testability.
 
 ## Lesson content
 
 ### What is an immutable data structure?
 
-An immutable data structure is a data structure that cannot be changed after it is created. In Python, tuples are an example of an immutable data structure. Once a tuple is created, it cannot be changed. This is in contrast to lists, which are mutable.
+An immutable data structure is a data structure that cannot be changed
+after it is created. In Python, tuples are an example of an immutable
+data structure. Once a tuple is created, it cannot be changed. This is
+in contrast to lists, which are mutable.
 
-In the context of functional programming, keeping data structures immutable is preferred because they help avoid side effects. The code written should strive to avoid changing the data it is working with. Instead, it should create new data structures based on the existing ones. This makes the code easier to reason about and less prone to bugs.
+In the context of functional programming, keeping data structures
+immutable is preferred because they help avoid side effects. The code
+written should strive to avoid changing the data it is working with.
+Instead, it should create new data structures based on the existing
+ones. This makes the code easier to reason about and less prone to bugs.
 
-For example, using immutable data structures ensures that functions do not introduce subtle bugs due to unintended modifications. Consider the difference between modifying a list in place versus creating a new list with modified values:
+For example, using immutable data structures ensures that functions do
+not introduce subtle bugs due to unintended modifications. Consider the
+difference between modifying a list in place versus creating a new list
+with modified values:
 
-```python
+``` python
 # Mutable list modification
 my_list = [1, 2, 3]
 my_list.append(4)  # This modifies the original list
@@ -63,13 +85,20 @@ new_tuple = my_tuple + (4,)  # This creates a new tuple instead of modifying the
 
 ### What is a side effect in programming?
 
-A side effect is any change in the state of the system that is observable outside the called function other than the return value. This can include modifying a variable outside the function, printing to the console, or modifying a data structure.
+A side effect is any change in the state of the system that is
+observable outside the called function other than the return value. This
+can include modifying a variable outside the function, printing to the
+console, or modifying a data structure.
 
-Side effects can make code harder to understand, as they introduce hidden dependencies and make it difficult to predict the behavior of the code. Functional programming aims to minimize side effects by using immutable data structures and pure functions.
+Side effects can make code harder to understand, as they introduce
+hidden dependencies and make it difficult to predict the behavior of the
+code. Functional programming aims to minimize side effects by using
+immutable data structures and pure functions.
 
-For example, the following function has a side effect because it modifies an external variable:
+For example, the following function has a side effect because it
+modifies an external variable:
 
-```python
+``` python
 counter = 0
 
 def increment():
@@ -79,27 +108,35 @@ def increment():
 
 A functional programming approach would avoid modifying external state:
 
-```python
+``` python
 def increment(counter):
     return counter + 1  # No side effects, purely functional
 ```
 
 ### What is a pure function?
 
-A pure function is a fundamental concept in functional programming, it is basically a function that has no side effects and always returns the same output for the same input. This means that a the ideal pure function does not modify any external state and does not depend on any external state.
+A pure function is a fundamental concept in functional programming, it
+is basically a function that has no side effects and always returns the
+same output for the same input. This means that a the ideal pure
+function does not modify any external state and does not depend on any
+external state.
 
-Pure functions are easier to test, reason about, and parallelize, as they do not have hidden dependencies or side effects. They are also easier to reuse, as they can be called with the same arguments and will always return the same result.
+Pure functions are easier to test, reason about, and parallelize, as
+they do not have hidden dependencies or side effects. They are also
+easier to reuse, as they can be called with the same arguments and will
+always return the same result.
 
 For example, the following function is pure:
 
-```python
+``` python
 def add(a, b):
     return a + b  # No side effects, always returns the same output for the same input
 ```
 
-By contrast, the following function is impure because it modifies an external variable:
+By contrast, the following function is impure because it modifies an
+external variable:
 
-```python
+``` python
 total = 0
 
 def add_to_total(n):
@@ -109,11 +146,15 @@ def add_to_total(n):
 
 ### What is a higher-order function?
 
-A higher-order function is a function which will take one or more existing functions as arguments, and/or a function which returns a new function as its result. Higher-order functions are a powerful concept in functional programming. Examples of higher-order functions in Python include `map`, `filter`, and `reduce`.
+A higher-order function is a function which will take one or more
+existing functions as arguments, and/or a function which returns a new
+function as its result. Higher-order functions are a powerful concept in
+functional programming. Examples of higher-order functions in Python
+include `map`, `filter`, and `reduce`.
 
 Example of a higher-order function using `map`:
 
-```python
+``` python
 def square(x):
     return x * x
 
@@ -124,7 +165,7 @@ print(squared_numbers)  # Output: [1, 4, 9, 16]
 
 Example of a higher-order function returning a function:
 
-```python
+``` python
 def multiply_by(n):
     return lambda x: x * n  # Returns a new function
 
@@ -132,19 +173,30 @@ double = multiply_by(2)
 print(double(5))  # Output: 10
 ```
 
-Higher-order functions allow for greater abstraction and modularity, making code more concise and expressive.
+Higher-order functions allow for greater abstraction and modularity,
+making code more concise and expressive.
 
 ## Summary
 
-- **Immutable data structures** prevent unintended modifications and help maintain predictable behavior in functional programming.
-- **Side effects** should be minimized to create more predictable and maintainable code.
-- **Pure functions** always return the same output for the same input and have no side effects, making them easier to test and reason about.
-- **Higher-order functions** allow functions to be passed as arguments or returned as results, promoting code reuse and abstraction.
+-   **Immutable data structures** prevent unintended modifications and
+    help maintain predictable behavior in functional programming.
+-   **Side effects** should be minimized to create more predictable and
+    maintainable code.
+-   **Pure functions** always return the same output for the same input
+    and have no side effects, making them easier to test and reason
+    about.
+-   **Higher-order functions** allow functions to be passed as arguments
+    or returned as results, promoting code reuse and abstraction.
 
-By understanding these concepts, learners will have a solid foundation in functional programming and be able to apply these principles to write cleaner, more maintainable code.
+By understanding these concepts, learners will have a solid foundation
+in functional programming and be able to apply these principles to write
+cleaner, more maintainable code.
 
 ## Additional resources
 
--   [Functional Programming in Python (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
--   [Functional Programming Cheatsheet (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
--   [Functional Programming in Python - online course (RealPython)](https://realpython.com/courses/functional-programming-python/)
+-   [Functional Programming in Python
+    (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
+-   [Functional Programming Cheatsheet
+    (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
+-   [Functional Programming in Python - online course
+    (RealPython)](https://realpython.com/courses/functional-programming-python/)
