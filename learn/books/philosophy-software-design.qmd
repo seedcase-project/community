@@ -56,10 +56,13 @@ knowledge workers like programmers face daily.
 
 The greatest limitation in writing software, and really in any knowledge
 work, is our human ability and capacity to understand the systems we are
-creating. Complexity, which is anything related to the structure of the
-code or text that makes it hard to understand and modify, is managed by
-effective design. But complexity isn't a single thing, it is a
+creating. Complexity is anything related to the structure of the
+code or text that makes it hard to understand and modify. In other words,
+when there is a high cognitive load on the people trying to learn about or understand the system.
+Nor is complexity a single thing, it is a
 consequence of many small little choices that accumulate over time.
+Managing complexity is done by
+effective design.
 
 Very often, complexity is very easy to identify as the reader of a
 system or code, but not as obvious to the person or people who wrote it.
@@ -71,8 +74,8 @@ if you may think otherwise.
 There are two approaches to reducing complexity:
 
 1.  Remove complexity by making your code simpler and more obvious.
-2.  Encapsulate the complexity in a way that exposure to the complexity
-    is less and may not happen all at once. This is called [modular
+2.  Encapsulate the complexity in a way that there is less exposure to the complexity
+    and that exposure to it doesn't happen all at once. This is called [modular
     design](#modular-design).
 
 ### Symptoms of unmanaged complexity
@@ -117,7 +120,7 @@ Dependencies
     it's own. The code connects to code in another package or location.
     Dependencies are fundamental to software. While dependencies
     contribute to greater complexity, it is impossible to remove all
-    dependencies nor do we want to. One major purpose of creating
+    dependencies, nor do we want to. One major purpose of creating
     software is to build upon (depend on) other software. And when we
     design software, we intentionally include them. But, too many
     dependencies or dependencies that aren't clearly expressed, cause
@@ -164,7 +167,7 @@ Tactical programming
 
 Strategic programming
 
-:   This approach is recognizing that writing code that works, on it's
+:   This approach is recognizing that writing code that works on it's
     own isn't enough. The goal shouldn't be only working code.
     "Strategic" programming is producing great design *and* working
     code. This is an investment mindset where you anticipate things to
@@ -281,13 +284,13 @@ idea is known as "pulling complexity down".
 
 The interface contains two bits of information: the formal and the informal. The
 formal parts are those explicitly defined in the code like its API that
-includes it's "signature" (e.g. the function name and parameters) as well as the type of errors it outputs.
+includes it's "signature" (e.g. the function name and parameters) as well as the type of errors it can trigger.
 The informal part includes the
 high-level behaviour. For instance, a function that deletes a file
 named by the parameter or if there are constraints or dependencies on
 how the interface is used.
 
-A module can be different "depths", with a spectrum between "deep" and "shallow":
+A module can also have different "depths", with a spectrum between "deep" and "shallow":
 
 - Deep: These have powerful functionality but simple interfaces. They
 exemplify abstraction. These have a low cost because of the simple interface and a high benefit from the powerful functionality.
