@@ -26,11 +26,8 @@ categories:
 
 -   Basic programming knowledge, such as that there are different ways of doing the same thing.
 -   Able to read very basic Python code, as simple Python is used to show examples. 
--   Basic understanding of how functions work
+-   Basic knowledge on what functions are, such as they do actions.
 
-## Necessary software
-
--   Python editor of choice
 
 ## Learning goal
 
@@ -47,7 +44,7 @@ programming. And to be able to answer the following questions:
 
 -   Functional programming is a programming paradigm that mainly relies
     on the concept of immutable data and mathematical functions to
-    perform computations, thus trying to avoid side effects.
+    perform computations.
 -   Avoiding side effects can lead to more predictable and maintainable
     code.
 -   Functional programming encourages breaking down problems into small,
@@ -117,7 +114,7 @@ def increment(counter):
 
 A pure function is a fundamental concept in functional programming, it
 is basically a function that has no side effects and always returns the
-same output for the same input. This means that a the ideal pure
+same output for the same input. This means that an ideal pure
 function does not modify any external state and does not depend on any
 external state.
 
@@ -166,11 +163,12 @@ print(squared_numbers)  # Output: [1, 4, 9, 16]
 Example of a higher-order function returning a function:
 
 ``` python
+# Returns a new function
 def multiply_by(n):
-    return lambda x: x * n  # Returns a new function
+    return lambda x: x * n 
 
 double = multiply_by(2)
-print(double(5))  # Output: 10
+double(5)
 ```
 
 Higher-order functions allow for greater abstraction and modularity,
