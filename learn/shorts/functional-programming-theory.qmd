@@ -25,7 +25,7 @@ categories:
 ## Assumed knowledge of reader
 
 -   Basic programming knowledge, such as that there are different ways of doing the same thing.
--   Basic Python knowledge
+-   Able to read very basic Python code, as simple Python is used to show examples. 
 -   Basic understanding of how functions work
 
 ## Necessary software
