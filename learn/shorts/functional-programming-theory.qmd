@@ -24,7 +24,7 @@ categories:
 
 ## Assumed knowledge of reader
 
--   Basic programming knowledge
+-   Basic programming knowledge, such as that there are different ways of doing the same thing.
 -   Basic Python knowledge
 -   Basic understanding of how functions work
 
