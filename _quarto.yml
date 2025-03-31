@@ -30,10 +30,10 @@ website:
       contents:
         - auto: guides
 
-# format:
-#   seedcase-theme-html:
-    # include-before-body:
-      # - "includes/site-counter.html"
+format:
+  seedcase-theme-html:
+    include-before-body:
+      - "includes/site-counter.html"
 
 editor:
   markdown:
