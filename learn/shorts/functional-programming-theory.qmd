@@ -1,0 +1,282 @@
+---
+title: "A brief introduction to functional programming"
+description: |
+  Functional programming is a programming style. This
+  short introduces the basics of functional programming, its advantages,
+  and how it differs from more imperative programming (like Object Oriented Programming).
+author: "Kris Beicher"
+date: "2025-03-19"
+# date-modified: ""
+categories:
+  - python
+  - functional programming
+---
+
+## Motivation for this micro-lesson
+
+The Seedcase Team is constantly striving to work towards a more
+functional, easy to overview and reusable way of not only communicating,
+but also writing code. As part of this we've written a couple of
+learning shorts which delve into the basics of functional programming as
+this is the programming paradigm that most closely (in our opinion)
+matches our ethos. This first learning short is an introduction to the
+theory behind functional programming, and how it differs from more
+imperative programming styles. There follows a second learning short
+which is a practical introduction to functional programming in Python,
+where we show how to implement the theory in practice.
+
+## Assumed knowledge of reader
+
+-   Basic programming knowledge, such as that there are different ways
+    of doing the same thing.
+-   Able to read very basic Python code, as simple Python is used to
+    show examples. For instance, what a tuple or list is.
+-   Basic knowledge on what functions are, such as they do actions.
+
+## Learning goal
+
+At the end of this you'll be able to describe the basic principles of
+functional programming. You'll know the difference between declarative
+and imperative programming, and how functional programming fits into
+this.
+
+You'll also be able to describe the basic principles of functional
+programming, such as immutability, pure functions, side effects,
+recursivity, and higher-order functions.
+
+## Take-home messages
+
+-   Functional programming is a programming paradigm that mainly relies
+    on the concept of immutable data and mathematical functions to
+    perform computations.
+-   Avoiding side effects can lead to more predictable and maintainable
+    code.
+-   Functional programming encourages breaking down problems into small,
+    reusable functions, promoting clarity and testability.
+
+## Lesson content
+
+### What is functional programming?
+
+Functional programming is a paradigm where the programmer strives to
+write their code in a way that makes it easier to understand and
+maintain. It is based on the idea of using functions to transform data,
+rather than using mutable state and side effects. Functional programming
+is a declarative programming paradigm, which means that it focuses on
+what to do rather than how to do it.
+
+This is in contrast to imperative programming, which focuses on how to
+perform tasks using statements that change a program's state. Functional
+programming is based on the concept of mathematical functions, which are
+mappings from inputs to outputs. In functional programming, functions
+are first-class citizens, meaning they can be passed as arguments,
+returned as values, and assigned to variables. This allows for greater
+abstraction and modularity in code.
+
+One of the key components of functional programming is that the data you
+work with should be kept immutable. This means that once a data
+structure is created, it cannot be changed. Instead of modifying
+existing data structures, new structures are created and used going
+forward. This is in contrast to imperative programming (like OOP) where
+data structures are often mutable and can be changed in place. This
+immutability helps to avoid side effects, which are changes in the state
+of the system that are observable outside the called function other than
+the return value.
+
+### What is an immutable data structure?
+
+An immutable data structure is a data structure that cannot be changed
+after it is created.
+
+In the context of functional programming, keeping data structures
+immutable is preferred because they help avoid side effects. The code
+written should strive to avoid changing the data it is working with.
+Instead, it should create new data structures based on the existing
+ones. This makes the code easier to reason about and less prone to bugs.
+
+For example, using immutable data structures ensures that functions do
+not introduce subtle bugs due to unintended modifications. Consider the
+difference between modifying a list in place versus creating a new list
+with modified values:
+
+``` python
+# Mutable list modification
+my_list = [1, 2, 3]
+my_list.append(4)
+
+# Immutable approach using tuples
+my_tuple = (1, 2, 3)
+new_tuple = my_tuple + (4,)
+```
+
+### What is a pure function?
+
+A pure function is a fundamental concept in functional programming, it
+is basically a function that has no side effects and always returns the
+same output for the same input. This means that an ideal pure function
+does not modify any external state and does not depend on any external
+state.
+
+Pure functions are easier to test, reason about, and parallelize, as
+they do not have hidden dependencies or side effects. They are also
+easier to reuse, as they can be called with the same arguments and will
+always return the same result.
+
+For example, the following function is pure:
+
+``` python
+def add(a, b):
+    return a + b
+```
+
+By contrast, the following function is impure because it modifies an
+external variable:
+
+``` python
+total = 0
+
+def add_to_total(n):
+    global total
+    total += n
+```
+
+### What is a side effect in programming?
+
+A side effect is any change in the state of the system that is
+observable outside the called function other than the return value. This
+can include modifying a variable outside the function, printing to the
+console, or modifying a data structure.
+
+Side effects can make code harder to understand, as they introduce
+hidden dependencies and make it difficult to predict the behavior of the
+code. Functional programming aims to minimize side effects by using
+immutable data structures and pure functions.
+
+For example, the following function has a side effect because it
+modifies an external variable:
+
+``` python
+counter = 0
+
+def increment():
+    global counter
+    counter += 1
+```
+
+A functional programming approach would avoid modifying external state:
+
+``` python
+def increment(counter):
+    return counter + 1
+```
+
+### What is a higher-order function?
+
+A higher-order function (also called a functional) is a function which
+will do one of the following:
+
+-   take one or more existing functions as arguments,
+-   return a new function as its result or uses the input function for its output action.
+
+Higher-order functions are a powerful concept in functional programming.
+Examples of higher-order functions in Python include `map`, `filter`,
+and `reduce`. They are predictable in their outcome, if we look at for
+instance the `map` and `filter` functions, they take a function as an
+argument, apply it to the set of items in the other argument, and always return the same output for the same
+input. This makes them easier to reason about and test. The function
+`reduce` is a higher-order function that takes a function and a sequence
+as arguments and applies the function cumulatively to the items in the
+sequence, reducing it to a single value.
+
+An example of a higher-order function using `map`:
+
+``` python
+def square(x):
+    return x * x
+
+numbers = [1, 2, 3, 4]
+squared_numbers = list(map(square, numbers))
+```
+
+```{mermaid}
+%%{init: {"flowchart": {"htmlLabels": false}} }%%
+flowchart TB
+    D(("Function:<br><br>x times x"))
+    Two(2)
+    Three(3)
+    Five(5)
+    Twos(4)
+    Threes(9)
+    Fives(25)
+
+    subgraph map ["map()"]
+        subgraph input [Input list]
+            Two
+            Three
+            Five
+        end
+
+        Two ---> D
+        Three ---> D
+        Five ---> D
+        D ---> Twos
+        D ---> Threes
+        D ---> Fives
+
+        subgraph output [Output list]
+            Twos
+            Threes
+            Fives
+        end
+    end
+
+style map fill:transparent
+style input fill:transparent
+style output fill:transparent
+style D fill:transparent
+style Two fill:#4f72a6
+style Three fill:#3c95b0
+style Five fill:#b6c5dc
+style Twos fill:#8d9e60
+style Threes fill:#b0bc91
+style Fives fill:#dce1ce
+```
+
+Example of a higher-order function returning a function:
+
+``` python
+# Returns a new function
+def multiply_by(n):
+    return lambda x: x * n
+
+# Create the function double by calling the higher-order function
+double = multiply_by(2)
+```
+
+Higher-order functions allow for greater abstraction and modularity,
+making code more concise and expressive.
+
+## Summary
+
+-   **Immutable data structures** prevent unintended modifications and
+    help maintain predictable behavior in functional programming.
+-   **Side effects** should be minimized to create more predictable and
+    maintainable code.
+-   **Pure functions** always return the same output for the same input
+    and have no side effects, making them easier to test and reason
+    about.
+-   **Higher-order functions** allow functions to be passed as arguments
+    or returned as results, promoting code reuse and abstraction.
+
+By understanding these concepts, learners will have a solid foundation
+in functional programming and be able to apply these principles to write
+cleaner, more maintainable code.
+
+## Additional resources
+
+-   [Functional Programming in Python
+    (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
+-   [Functional Programming Cheatsheet
+    (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
+-   [Functional Programming in Python - online course
+    (RealPython)](https://realpython.com/courses/functional-programming-python/)
