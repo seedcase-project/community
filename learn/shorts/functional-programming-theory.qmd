@@ -106,7 +106,7 @@ my_list.append(4)
 
 # Immutable approach using tuples
 my_tuple = (1, 2, 3)
-new_tuple = my_tuple + (4,) 
+new_tuple = my_tuple + (4,)
 ```
 
 ### What is a pure function?
@@ -126,7 +126,7 @@ For example, the following function is pure:
 
 ``` python
 def add(a, b):
-    return a + b  
+    return a + b
 ```
 
 By contrast, the following function is impure because it modifies an
@@ -137,7 +137,7 @@ total = 0
 
 def add_to_total(n):
     global total
-    total += n  
+    total += n
 ```
 
 ### What is a side effect in programming?
@@ -159,7 +159,7 @@ modifies an external variable:
 counter = 0
 
 def increment():
-    global counter 
+    global counter
     counter += 1
 ```
 
@@ -167,7 +167,7 @@ A functional programming approach would avoid modifying external state:
 
 ``` python
 def increment(counter):
-    return counter + 1  
+    return counter + 1
 ```
 
 ### What is a higher-order function?
@@ -195,55 +195,45 @@ def square(x):
     return x * x
 
 numbers = [1, 2, 3, 4]
-squared_numbers = list(map(square, numbers))  
+squared_numbers = list(map(square, numbers))
 ```
 
 ```{mermaid}
 %%{init: {"flowchart": {"htmlLabels": false}} }%%
-flowchart LR
+flowchart TB
+    D(("Function:<br><br>x times x"))
+    Two(2)
+    Three(3)
+    Five(5)
+    Twos(4)
+    Threes(9)
+    Fives(25)
 
-D["`<br><br><br><br><br>function: 
-<br><br><br>
-x times x<br><br>
-<br>
-<br>
-<br><br><br><br><br>`"]
-Two[2]
-Three[3]
-Five[5]
-Twos[4]
-Threes[9]
-Fives[25]
+    subgraph map ["map()"]
+        subgraph input [Input list]
+            Two
+            Three
+            Five
+        end
 
-    Two ---> D
-    Three ---> D
-    Five ---> D
-    D ---> Twos
-    D ---> Threes
-    D ---> Fives
+        Two ---> D
+        Three ---> D
+        Five ---> D
+        D ---> Twos
+        D ---> Threes
+        D ---> Fives
 
-    subgraph map ["map(list, function)"]
-
-    subgraph orig [Original list]
-    Two
-    Three
-    Five
-    end
-    end
-
-    subgraph result[Result]
-    subgraph new [New List]
-    Twos
-    Threes
-    Fives
-    end
+        subgraph output [Output list]
+            Twos
+            Threes
+            Fives
+        end
     end
 
-style map fill:lightgrey
-style result fill:lightgrey
-style D fill:lightgrey
-style orig fill:white
-style new fill:white
+style map fill:transparent
+style input fill:transparent
+style output fill:transparent
+style D fill:transparent
 style Two fill:#4f72a6
 style Three fill:#3c95b0
 style Five fill:#b6c5dc
@@ -257,7 +247,7 @@ Example of a higher-order function returning a function:
 ``` python
 # Returns a new function
 def multiply_by(n):
-    return lambda x: x * n 
+    return lambda x: x * n
 
 # Create the function double by calling the higher-order function
 double = multiply_by(2)
