@@ -30,7 +30,7 @@ where we show how to implement the theory in practice.
 -   Basic programming knowledge, such as that there are different ways
     of doing the same thing.
 -   Able to read very basic Python code, as simple Python is used to
-    show examples.
+    show examples. For instance, what a tuple or list is.
 -   Basic knowledge on what functions are, such as they do actions.
 
 ## Learning goal
@@ -58,7 +58,7 @@ recursivity, and higher-order functions.
 
 ### What is functional programming?
 
-Functional programming is a paradigm where the programmer strive to
+Functional programming is a paradigm where the programmer strives to
 write their code in a way that makes it easier to understand and
 maintain. It is based on the idea of using functions to transform data,
 rather than using mutable state and side effects. Functional programming
@@ -172,17 +172,17 @@ def increment(counter):
 
 ### What is a higher-order function?
 
-A higher-order function (also called a functionals) is a function which
-will done one of teh following:
+A higher-order function (also called a functional) is a function which
+will do one of the following:
 
 -   take one or more existing functions as arguments,
--   return a new function as its result.
+-   return a new function as its result or uses the input function for its output action.
 
 Higher-order functions are a powerful concept in functional programming.
 Examples of higher-order functions in Python include `map`, `filter`,
 and `reduce`. They are predictable in their outcome, if we look at for
 instance the `map` and `filter` functions, they take a function as an
-argument and apply it to and always return the same output for the same
+argument, apply it to the set of items in the other argument, and always return the same output for the same
 input. This makes them easier to reason about and test. The function
 `reduce` is a higher-order function that takes a function and a sequence
 as arguments and applies the function cumulatively to the items in the
