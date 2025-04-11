@@ -31,7 +31,7 @@ categories:
 
 ## Necessary software
 
--   Python editor of choice
+-   Python
 
 ## Learning goal
 
@@ -61,7 +61,6 @@ This is a built-in function in Python that takes a function and an
 iterable as arguments and returns an iterator over the elements of the
 iterable for which the function returns `True`.
 
-##### Syntax:
 
 ``` python
 filter(function, iterable)
