@@ -13,11 +13,11 @@ format:
 ## Agenda
 
 1.  Who am I?
-1.  What is GitHub?
-1.  What can it be used for?
-1.  Why use GitHub?
-1.  Examples :eyes:
-1.  GitHub workshop, May 26
+2.  What is GitHub?
+3.  What can it be used for?
+4.  Why use GitHub?
+5.  Examples :eyes:
+6.  GitHub workshop, May 26
 
 . . .
 
@@ -25,7 +25,8 @@ If you have questions, don't hesitate to ask :raising_hand_woman:
 :raising_hand: :raising_hand_man:
 
 ::: notes
-Aim: *Brief* introduction to GitHub and how it can be useful for projects within SDCA
+Aim: *Brief* introduction to GitHub and how it can be useful for
+projects within SDCA
 
 Questions: This is a new topic for many and there *can* be some
 GitHub-related lingo. I will try to explain everything as we go along,
@@ -48,7 +49,6 @@ I spent 95 % of my work time using GitHub :raised_hands:
     packaging and documenting research data
 :::
 
-
 ## What is GitHub?
 
 ::::: columns
@@ -66,20 +66,23 @@ I spent 95 % of my work time using GitHub :raised_hands:
 :::::
 
 ::: notes
--   Website: At its core, it's a website. If you open up your browser and type in "GitHub.com", you
-    will be taken GitHub
--   Stores files: GitHub is a place where you can store and share
-    files related to a project, like the website. Each project can be thought of as a folder on your computer, but instead
-    of being on your computer, it's on the internet. You can access it
-    from anywhere with an internet connection.
--   Central to GitHub is that it uses a version control system called "Git"
+-   Website: At its core, it's a website. If you open up your browser
+    and type in "GitHub.com", you will be taken GitHub
+-   Stores files: GitHub is a place where you can store and share files
+    related to a project, like the website. Each project can be thought
+    of as a folder on your computer, but instead of being on your
+    computer, it's on the internet. You can access it from anywhere with
+    an internet connection.
+-   Central to GitHub is that it uses a version control system called
+    "Git"
     -   In Danish: "versionsstyring"
     -   Git: Track changes to files and folders over time (who made the
         changes, when + a message describing the changes)
-    -   The name "GitHub": A "hub" (central place) for storing and sharing files related to a project, using Git to track changes
+    -   The name "GitHub": A "hub" (central place) for storing and
+        sharing files related to a project, using Git to track changes
 :::
 
-## What can GitHub be used for? 
+## What can GitHub be used for?
 
 -   Storing and sharing files
 -   Creating websites
@@ -89,7 +92,8 @@ I spent 95 % of my work time using GitHub :raised_hands:
     -   Project management
 
 ::: notes
-- Store/share files like documents, images, code for your data analyses
+-   Store/share files like documents, images, code for your data
+    analyses
 :::
 
 ## Why use GitHub?
@@ -99,11 +103,16 @@ I spent 95 % of my work time using GitHub :raised_hands:
 -   Transparency and openness
 
 ::: notes
--  Everything in one place: 
-    - No need to email files around or having multiple versions of the same file
-    - Eases collaboration bc you work on a single file/folder in a single central location
--  Tracking changes: You can see who did what when + revert to previous versions of files if needed
--  Transparency: On GitHub, everything is open and accessible to everyone (unless you make it private). This means that anyone can see your work, and you can see other people's work.
+-   Everything in one place:
+    -   No need to email files around or having multiple versions of the
+        same file
+    -   Eases collaboration bc you work on a single file/folder in a
+        single central location
+-   Tracking changes: You can see who did what when + revert to previous
+    versions of files if needed
+-   Transparency: On GitHub, everything is open and accessible to
+    everyone (unless you make it private). This means that anyone can
+    see your work, and you can see other people's work.
 
 I think this is where I need some help. The *motivation*, the *why is
 this important to researchers*
@@ -132,13 +141,15 @@ Show:
 
 ## GitHub-intro workshop, May 26 {.incremental}
 
--  Gentle introduction to using GitHub for managing and working with files
--  Registration (before May 22): Mail from Louise
--  Pre-workshop tasks
+-   Gentle introduction to using GitHub for managing and working with
+    files
+-   Registration (before May 22): Mail from Louise
+-   Pre-workshop tasks
 
 ::: notes
-Pre-workshop tasks: 1-2 hours to complete. Mostly reading to build a common foundation for the workshop and get familiar with the concepts we'll apply during the workshop.
+Pre-workshop tasks: 1-2 hours to complete. Mostly reading to build a
+common foundation for the workshop and get familiar with the concepts
+we'll apply during the workshop.
 :::
 
 ## Questions?
-
