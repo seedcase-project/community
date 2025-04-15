@@ -9,4 +9,17 @@ categories:
 ---
 
 [**Link to
-presentation**](/posts/github-intro-tvaers-2025/slides/github-intro-presentation.html)
+presentation**](/posts/github-intro-tvaers-2025/slides.html)
+
+<div>
+```{=html}
+<style>
+  .slide-deck {
+    border: 3px solid #203C6E;
+    width: 100%;
+    height: 425px;
+  }
+</style>
+<iframe class="slide-deck" src="/posts/github-intro-tvaers-2025/slides.html"></iframe>
+```
+</div>

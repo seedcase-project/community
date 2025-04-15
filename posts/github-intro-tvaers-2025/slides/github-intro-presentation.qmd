@@ -4,6 +4,7 @@ subtitle: "Tværs Gruppemøde, April 2025"
 author: "Signe Kirk Brødbæk"
 format: 
     revealjs:
+        theme: default
         slide-number: true
         from: markdown+emoji
         logo: /_extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
@@ -42,7 +43,7 @@ but if you have questions, don't hesitate to ask.
 
 . . .
 
-I spent 95 % of my work time using GitHub :raised_hands:
+I spend 95 % of my work time using GitHub :raised_hands:
 
 ::: notes
 -   Seedcase Project: open source software (Python packages) for
@@ -53,7 +54,7 @@ I spent 95 % of my work time using GitHub :raised_hands:
 
 ::::: columns
 ::: {.column width="70%"}
--   A website: GitHub.com
+-   A website: [github.com](https://github.com)
 -   Stores files related to projects
 -   Uses version control (*Git*) to track file changes
     -   *Git* + *Hub*
@@ -67,7 +68,7 @@ I spent 95 % of my work time using GitHub :raised_hands:
 
 ::: notes
 -   Website: At its core, it's a website. If you open up your browser
-    and type in "GitHub.com", you will be taken GitHub
+    and type in "GitHub.com", you will be taken to GitHub
 -   Stores files: GitHub is a place where you can store and share files
     related to a project, like the website. Each project can be thought
     of as a folder on your computer, but instead of being on your
@@ -139,7 +140,7 @@ Show:
     -   Project board
 :::
 
-## GitHub-intro workshop, May 26 {.incremental}
+## GitHub Intro workshop, May 26
 
 -   Gentle introduction to using GitHub for managing and working with
     files
