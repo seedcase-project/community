@@ -14,33 +14,37 @@ categories:
 
 ## Motivation for this micro-lesson
 
--   This lesson aims to introduce the basics of functional programming
-    to those who are new to programming or have only worked with
-    imperative programming languages. We will focus on practical
-    applications of functional programming concepts in Python,
-    particularly the use of higher-order functions like `filter`, `map`,
-    and `reduce`. By the end of this lesson, learners will have hands-on
-    experience applying these techniques to write more concise and
-    expressive code.
+The Seedcase Team is constantly striving to work towards a more
+functional, easy to overview and reusable way of not only communicating,
+but also writing code. As part of this we've written a couple of
+learning shorts which delve into the basics of functional programming as
+this is the programming paradigm that most closely (in our opinion)
+matches our ethos. This second learning short is a continuation of [A
+brief introduction to functional
+programming](!--TODO%20insert%20link--), in which we discussed the
+basics of functional programming, its advantages, and how it differs
+from more imperative programming like object oriented programming. In
+this short, we will focus on the practical aspects of functional
+programming in Python without going into too much programming detail.
 
 ## Assumed knowledge of reader
 
--   Basic programming knowledge
--   Basic Python knowledge
--   Basic understanding of how functions work
+-   Basic programming knowledge, such as that there are different ways
+    of doing the same thing.
+-   Basic Python knowledge.
+-   Basic understanding of how functions work, such as they do actions.
 
 ## Necessary software
 
--   Python
+-   IDE that will run Python code.
 
 ## Learning goal
 
-The goal of this lesson is for the reader to gain practical experience
-using functional programming techniques in Python. By the end, the
-reader should be able to answer the following questions:
-
--   How can I use `filter`, `map`, and `reduce` in Python?
--   What does the `lambda` keyword do in Python?
+At the end of this you will be able to start writing Python code in a
+functional programming style. You will be able to use the built-in
+functions `filter`, `map`, and the `reduce` function from `functools` to
+process collections of data and understand how to use the `lambda`
+keyword to create small anonymous functions.
 
 ## Take home messages
 
@@ -53,14 +57,25 @@ reader should be able to answer the following questions:
 
 ## Lesson content
 
-### How can I use Filter, Map, and Reduce in Python?
+Functional programming is a programming paradigm that treats computation
+as the evaluation of mathematical functions and avoids changing state or
+mutable data. In Python, while it’s not a purely functional language,
+many functional programming features are built-in and easy to use. This
+style encourages writing clean, concise, and expressive code—especially
+when working with data transformations.
 
-#### **`filter`**
+In this lesson, we will cover three built-in functions in Python that
+are commonly used in functional programming: `filter`, `map`, and
+`reduce`. We will also discuss the `lambda` keyword, which allows for
+the creation of small anonymous functions. These functions are often
+used in conjunction with `filter`, `map`, and `reduce` to create more
+concise and readable code.
+
+### **`filter`**
 
 This is a built-in function in Python that takes a function and an
 iterable as arguments and returns an iterator over the elements of the
 iterable for which the function returns `True`.
-
 
 ``` python
 filter(function, iterable)
@@ -86,13 +101,11 @@ its own returns what is called an iterator, so in order for us to see
 the result, we need to convert it to a list. We do the same below with
 the `map` function.
 
-#### **`map`**
+### **`map`**
 
 This is a built-in function in Python that takes a function and an
 iterable as arguments and returns an iterator over the results of
 applying the function to the elements of the iterable.
-
-##### Syntax:
 
 ``` python
 map(function, iterable)
@@ -104,8 +117,11 @@ are returned as an iterator.
 For example:
 
 ``` python
+def square(x):
+    return x ** 2
+
 numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-squared_numbers = list(map(lambda x: x ** 2, numbers))
+squared_numbers = list(map(square, numbers))
 print(squared_numbers)
 ```
 
@@ -120,8 +136,6 @@ the result.
 This is a function in the `functools` module in Python that takes a
 function and an iterable as arguments and returns a single value by
 applying the function cumulatively to the elements of the iterable.
-
-##### Syntax:
 
 ``` python
 reduce(function, iterable)
