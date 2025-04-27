@@ -21,11 +21,6 @@ exclude-from-listing: true
 5.  Examples :eyes:
 6.  GitHub workshop, May 26
 
-. . .
-
-If you have questions, don't hesitate to ask :raising_hand_woman:
-:raising_hand: :raising_hand_man:
-
 ::: notes
 Aim: *Brief* introduction to GitHub and how it can be useful for
 projects within SDCA
