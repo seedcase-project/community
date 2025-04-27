@@ -37,26 +37,26 @@ but if you have questions, don't hesitate to ask.
 
 ## Who am I?
 
--   The Seedcase Project
+-   Primarily working on the Seedcase Project
 -   Develop teaching material and teach workshops
 -   R-package: Open-Source Diabetes Classifier
 -   Admin for `steno-aarhus` on GitHub
-
-. . .
-
-I spend 95 % of my work time using GitHub :raised_hands:
 
 ::: notes
 -   Seedcase Project: open source software (Python packages) for
     packaging and documenting research data
 :::
 
+. . .
+
+I spend 95 % of my work time using GitHub :raised_hands:
+
 ## What is GitHub?
 
 ::::: columns
 ::: {.column width="70%"}
 -   A website: [github.com](https://github.com)
--   Stores files related to projects
+-   Stores files in *repositories*
 -   Uses version control (*Git*) to track file changes
     -   *Git* + *Hub*
 :::
@@ -71,8 +71,8 @@ I spend 95 % of my work time using GitHub :raised_hands:
 -   Website: At its core, it's a website. If you open up your browser
     and type in "GitHub.com", you will be taken to GitHub
 -   Stores files: GitHub is a place where you can store and share files
-    related to a project, like the website. Each project can be thought
-    of as a folder on your computer, but instead of being on your
+    related to a project, like a website, in a "repository" (meaning "storage" or "place to keep things", in Danish: "opbevare"). 
+    - A repository is like a folder on your computer, but instead of being on your
     computer, it's on the internet. You can access it from anywhere with
     an internet connection.
 -   Central to GitHub is that it uses a version control system called
@@ -81,17 +81,17 @@ I spend 95 % of my work time using GitHub :raised_hands:
     -   Git: Track changes to files and folders over time (who made the
         changes, when + a message describing the changes)
     -   The name "GitHub": A "hub" (central place) for storing and
-        sharing files related to a project, using Git to track changes
+        sharing files, using Git to track changes
 :::
 
 ## What can GitHub be used for?
 
--   Storing and sharing files
+-   Storing and sharing files (while tracking changes)
 -   Creating websites
 -   Collaboration
-    -   Communication (to-do lists, discussions)
     -   Reviews: Giving and receiving feedback
-    -   Project management
+    -   Communication (tasks, to-do lists, discussions)
+    -   Project management (project boards)
 
 ::: notes
 -   Store/share files like documents, images, code for your data
@@ -127,7 +127,7 @@ Show:
 
 -   The `steno-aarhus` organisation
 
--   Simple example: A website repository (evakom or prodiap)
+-   Simple example: A website repository (prodiap)
 
     -   Files and folders
     -   Version control (commits)
@@ -145,11 +145,11 @@ Show:
 
 -   Gentle introduction to using GitHub for managing and working with
     files
--   Registration (before May 22): Mail from Louise
+-   Registration: Mail from Louise
 -   Pre-workshop tasks
 
 ::: notes
-Pre-workshop tasks: 1-2 hours to complete. Mostly reading to build a
+Pre-workshop tasks: Around 1 hour to complete. Mostly reading to build a
 common foundation for the workshop and get familiar with the concepts
 we'll apply during the workshop.
 :::
