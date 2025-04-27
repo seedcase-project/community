@@ -61,8 +61,8 @@ I spend 95 % of my work time using GitHub :raised_hands:
 :::
 
 ::: {.column width="30%"}
-![](./images/logo-github.svg){width="70%"}
-![](./images/logo-text-github.svg){width="70%"}
+![](/posts/github-intro-tvaers-2025/logo-github.svg){width="70%"}
+![](/posts/github-intro-tvaers-2025/logo-text-github.svg){width="70%"}
 :::
 :::::
 
