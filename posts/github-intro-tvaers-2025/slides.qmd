@@ -100,24 +100,22 @@ I spend 95 % of my work time using GitHub :raised_hands:
 
 ## Why use GitHub?
 
--   Everything related to your project in one place
+-   Everything related to your project in one place (files, tasks,
+    discussions, feedback, project management)
 -   Changes are tracked
--   Transparency and openness
+-   Everything is open and accessible to everyone (unless you make it private)
+-   Eases collaboration
 
 ::: notes
 -   Everything in one place:
-    -   No need to email files around or having multiple versions of the
-        same file
-    -   Eases collaboration bc you work on a single file/folder in a
-        single central location
+    -   Files stored in the same place as your tasks, discussions,
+        feedback, and project management
+    -   No need to email files around or having multiple versions of the same  file
 -   Tracking changes: You can see who did what when + revert to previous
     versions of files if needed
 -   Transparency: On GitHub, everything is open and accessible to
     everyone (unless you make it private). This means that anyone can
     see your work, and you can see other people's work.
-
-I think this is where I need some help. The *motivation*, the *why is
-this important to researchers*
 :::
 
 ## Examples: [GitHub.com](https://github.com) :eyes:
