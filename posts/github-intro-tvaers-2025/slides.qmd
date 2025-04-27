@@ -9,6 +9,7 @@ format:
         from: markdown+emoji
         logo: /_extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
         footer: "Tværs Gruppemøde, April 2025"
+exclude-from-listing: true
 ---
 
 ## Agenda
