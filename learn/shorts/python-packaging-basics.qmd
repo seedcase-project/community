@@ -166,14 +166,14 @@ folder. Check that you are in the folder by running:
 pwd
 ```
 
-Which stands for **p**rint **w**orking **d**irectory. If it is not in
+Which stands for print working directory. If it is not in
 the package folder, use this Terminal command to move into it:
 
 ``` {.bash filename="Terminal"}
 cd ~/Desktop/packagename
 ```
 
-The `cd` command stands for **c**hange **d**irectory. You will need to
+The `cd` command stands for change directory. You will need to
 replace `packagename` with the name you called your package. Once in the
 package directory, you can install the package by running:
 
