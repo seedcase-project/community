@@ -1,0 +1,83 @@
+---
+title: ""
+description: ""
+author: "Luke W. Johnston"
+date: "2025-04-28"
+categories:
+  - accessibility
+  - quarto
+  - website
+---
+
+Quarto is quite simple in what it can produces for HTML pages. And this is a good thing, both for making content and for accessibility.
+
+## Correct attributes for HTML elements
+
+https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Accessibility/HTML
+
+"semantic HTML"
+
+- With Markdown, the semantics are part of writing it. So by using Markdown, the correct HTML elements, with attributes, are automatically used.
+
+- Websites built with Quarto Markdown are built in a way that automatically adds HTML attributes that both help with building the websites from Markdown but that also help with accessibility. For example, embedding an image or video will automatically use the correct HTML elements and attributes that make it accessible. 
+
+Another example is adding HTML buttons, which can be done easily and correctly with Quarto Markdown. Quarto comes with built-in syntax for easily making buttons that are converted correctly into accessible HTML elements that allow for interaction with the mouse, keyboard, or voice command.
+
+
+quarto creates simple HTML output. Markdown generates simple HTML markup, and simple HTML markup can be easily read by assistive technology.
+
+
+- Automatically generates to mobile-friendly HTML pages. This is important for accessibility, as many people use mobile devices to access the web. Quarto Markdown automatically generates responsive HTML pages that adapt to different screen sizes and orientations.
+
+Interactivity:
+
+- Interactive elements are tricky to get right for accessibility, since you have to be able to see. Static elements make it easier for things like screen readers to work correctly.
+
+- It is extremely difficult to make interactive elements in Quarto as it is just not built for those purposes. It is possible by using external tools like using specific packages from JavaScript, R, or Python.
+
+- Links to other pages are standard though.
+
+Animations:
+
+- Like with interactive elements, animations are tricky to do well and don't work at all for those who are visually impaired. 
+
+- It is quite difficult to include animations with Quarto Markdown, which is good for making accessibl.
+
+Themes:
+
+- Quarto themes use the widely used Bootswatch themes. They are built in a way that maximizes accessibility.
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Colors_and_Luminance
+
+Quarto builds websites that have minimal elements and that focus on the content. This is important for accessibility, as it makes it easier for people with disabilities to navigate and use the website.
+
+Navigating from a Quarto built website predictable and clear, with either the navbar or the sidebar containing everything that is available to navigate to. This is important for accessibility, as it makes it easier for people with disabilities to find the information they need.
+
+Difficult to open links in new tabs. This is a good thing for accessibility, as it prevents people from accidentally opening links in new tabs and losing their place on the website. This is stated in WCAG.
+
+## What *any* website generator can't do
+
+Things that *require* a human to do.
+
+- Blockquotes being used for quotes from sources, rather than just for highlighting text.
+- Using tables for showing comparison text.
+- Using (effective) alternative text for images.
+- Using clear and plain language.
+- Providing transcripts for audio and video content. This is at the discretion of the video or audio creation tools. YouTube for example has a built-in tool to create transcripts, but the creator must enable it.
+
+Link rot
+
+
+## Resources
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/Guides/Understanding_WCAG
+
+https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA
+
+https://www.w3.org/WAI/tips/designing/
+
+https://blog.greeden.me/en/2024/12/10/markdown-writing-with-web-accessibility-in-mind/
+
+https://www.smashingmagazine.com/2021/09/improving-accessibility-of-markdown/
+
+https://www.w3.org/WAI/fundamentals/accessibility-principles/
