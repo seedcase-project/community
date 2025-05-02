@@ -1,12 +1,7 @@
 [files]
 extend-exclude = [
   "*.css",
-  "*.svg",
   ".quarto/*",
   "_site/*",
 ]
-
-[default.extend-words]
-# Trusted research environment
-TRE = "TRE"
 
