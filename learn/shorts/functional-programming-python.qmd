@@ -19,13 +19,13 @@ functional, easy to overview and reusable way of not only communicating,
 but also writing code. As part of this we've written a couple of
 learning shorts which delve into the basics of functional programming as
 this is the programming paradigm that most closely (in our opinion)
-matches our ethos. This second learning short is a continuation of [A
+matches our ethos and needs. This second learning short is a continuation of [A
 brief introduction to functional
-programming](!--TODO%20insert%20link--), in which we discussed the
+programming](functional-programming-theory.qmd), in which we discussed the
 basics of functional programming, its advantages, and how it differs
 from more imperative programming like object oriented programming. In
 this short, we will focus on the practical aspects of functional
-programming in Python without going into too much programming detail.
+programming in Python without going into too much theoretical or conceptual detail.
 
 ## Assumed knowledge of reader
 
@@ -42,7 +42,7 @@ programming in Python without going into too much programming detail.
 
 At the end of this you will be able to start writing Python code in a
 functional programming style. You will be able to use the built-in
-functions `filter`, `map`, and the `reduce` function from `functools` to
+functions `filter()`, `map()`, and the `reduce()` function from `functools` to
 process collections of data and understand how to use the `lambda`
 keyword to create small anonymous functions.
 
@@ -50,7 +50,7 @@ keyword to create small anonymous functions.
 
 -   Functional programming in Python allows for more concise and
     readable code by leveraging built-in higher-order functions.
--   The use of `filter`, `map`, and `reduce` enables efficient data
+-   The use of `filter()`, `map()`, and `reduce()` enables efficient data
     transformations without modifying original data structures.
 -   The `lambda` keyword allows for the creation of anonymous functions,
     making functional programming more expressive and flexible.
@@ -60,18 +60,18 @@ keyword to create small anonymous functions.
 Functional programming is a programming paradigm that treats computation
 as the evaluation of mathematical functions and avoids changing state or
 mutable data. In Python, while it’s not a purely functional language,
-many functional programming features are built-in and easy to use. This
-style encourages writing clean, concise, and expressive code—especially
+many functional programming features are built-in. This
+style encourages writing clean, concise, and expressive code---especially
 when working with data transformations.
 
 In this lesson, we will cover three built-in functions in Python that
-are commonly used in functional programming: `filter`, `map`, and
-`reduce`. We will also discuss the `lambda` keyword, which allows for
+are commonly used in functional programming: `filter()`, `map()`, and
+`reduce()`. We will also discuss the `lambda` keyword, which allows for
 the creation of small anonymous functions. These functions are often
-used in conjunction with `filter`, `map`, and `reduce` to create more
+used in conjunction with `filter()`, `map()`, and `reduce()` to create more
 concise and readable code.
 
-### **`filter`**
+### `filter()`
 
 This is a built-in function in Python that takes a function and an
 iterable as arguments and returns an iterator over the elements of the
@@ -93,10 +93,10 @@ even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
 print(even_numbers)
 ```
 
-In the example above, the `filter` function is used to filter out the
-even numbers from the list of numbers. The lambda function is used to
+In the example above, the `filter()` function is used to filter out the
+even numbers from the list of numbers. The `lambda` function is used to
 define the condition for filtering, in this case, checking if the number
-produces a remainder of 0 when divided by 2. The `filter` function on
+produces a remainder of 0 when divided by 2. The `filter()` function on
 its own returns what is called an iterator, so in order for us to see
 the result, we need to convert it to a list. We do the same below with
 the `map` function.
