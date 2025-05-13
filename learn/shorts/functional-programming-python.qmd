@@ -184,31 +184,32 @@ list, and the expression `x % 2 == 0` checks if the element is even. The
 `lambda` function used in the `map()` example (`lambda x: x ** 2`) is used
 in much the same way, with a single argument and a simple expression.
 
-In the `reduce` example, the lambda function (`lambda x, y: x + y`)
+In the `reduce()` example, the `lambda` function (`lambda x, y: x + y`)
 takes two arguments and returns their sum. The first argument represents
 the accumulated value, and the second argument represents the next
-element of the list. The lambda function is applied to each pair of
+element of the list. The `lambda` function is applied to each pair of
 elements in the list until a single value is returned.
 
-### Functional Programming-Adjacent Tools
+### Functional programming-adjacent tools
 
 Python provides several tools that, while not purely functional,
 facilitate a transition to functional programming principles:
 
--   **List Comprehensions & Generator Expressions** – Provide a concise
-    syntax for transforming data iterables, though they are not strictly
-    functional due to potential side effects.
--   **`functools` Module** – Contains functions like `reduce`,
-    `partial`, and `lru_cache` that enable functional-style programming.
--   **`itertools` Module** – Provides utilities for efficient iteration,
+-   **List comprehensions & generator expressions**: Provide a
+    syntax for transforming data iterables that might be more familiar to those
+    used to loops and object-oriented programming. It is not a functional programming
+    tool, though can help transition to those concepts.
+-   **`functools` module**: Contains functions like `reduce()`,
+    `partial()`, and `lru_cache()` that enable functional-style programming.
+-   **`itertools` module**: Provides utilities for efficient iteration,
     supporting lazy evaluation and functional transformations.
--   **`namedtuple` and `dataclass`** – Facilitate immutable data
+-   **`namedtuple` and `dataclass`**: Facilitate immutable data
     structures, aligning with functional programming’s emphasis on
     immutability.
 
 ## Summary
 
--   `filter`, `map`, and `reduce` allow for functional-style processing
+-   `filter()`, `map()`, and `reduce()` allow for functional-style processing
     of collections in Python, making transformations and filtering more
     efficient.
 -   The `lambda` keyword enables the creation of small, anonymous
