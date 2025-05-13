@@ -98,10 +98,10 @@ even numbers from the list of numbers. The `lambda` function is used to
 define the condition for filtering, in this case, checking if the number
 produces a remainder of 0 when divided by 2. The `filter()` function on
 its own returns what is called an iterator, so in order for us to see
-the result, we need to convert it to a list. We do the same below with
-the `map` function.
+the result, we need to convert it to a list with `list()`. We do the same below with
+the `map()` function.
 
-### **`map`**
+### `map()`
 
 This is a built-in function in Python that takes a function and an
 iterable as arguments and returns an iterator over the results of
@@ -125,13 +125,13 @@ squared_numbers = list(map(square, numbers))
 print(squared_numbers)
 ```
 
-In this example, the `map` function is used to square each number in the
-list of numbers. The lambda function is used to define the operation to
+In this example, the `map()` function is used to square each number in the
+list of numbers. The `lambda` function is used to define the operation to
 be applied to each element of the list, in this case by squaring it. The
-`map` function returns an iterator, so we convert it to a list to see
+`map()` function returns an iterator, so we convert it to a list to see
 the result.
 
-#### **`reduce`**
+#### `reduce()`
 
 This is a function in the `functools` module in Python that takes a
 function and an iterable as arguments and returns a single value by
@@ -156,21 +156,19 @@ sum_of_numbers = reduce(lambda x, y: x + y, numbers)
 print(sum_of_numbers)
 ```
 
-In this final example, the `reduce` function is used to calculate the
-sum of the numbers in the list. The lambda function defines how the
+In this final example, the `reduce()` function is used to calculate the
+sum of the numbers in the list. The `lambda` function defines how the
 elements of the list should be combined, in this case by adding them
-together. As the `reduce` function returns a single value, we can print
+together. As the `reduce()` function returns a single value, we can print
 it directly.
 
-### What does the lambda keyword do in Python?
+### What does the `lambda` keyword do in Python?
 
 The `lambda` keyword in Python is used to create what is called
 anonymous functions (i.e. not named, and therefore bound to the place
 where they are defined). In functional programming, the `lambda`
 function is often used to define simple functions that are used only
 once.
-
-##### Syntax:
 
 ``` python
 lambda arguments: expression
@@ -179,11 +177,11 @@ lambda arguments: expression
 A `lambda` function can take any number of arguments but must have only
 a single expression, which is evaluated and returned.
 
-In the `filter` example above, the lambda function
+In the `filter()` example above, the `lambda` function
 (`lambda x: x % 2 == 0`) is used to define the condition for filtering
 the list of numbers. The argument `x` represents each element of the
 list, and the expression `x % 2 == 0` checks if the element is even. The
-lambda function used in the `map` example (`lambda x: x ** 2`) is used
+`lambda` function used in the `map()` example (`lambda x: x ** 2`) is used
 in much the same way, with a single argument and a simple expression.
 
 In the `reduce` example, the lambda function (`lambda x, y: x + y`)
