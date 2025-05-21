@@ -99,7 +99,7 @@ resistance or lack of understanding from others. Her main points were:
         of work on a specific set of tasks.
     -   Use a [Kanban board](https://en.wikipedia.org/wiki/Kanban_board)
         to put work up and show what's in progress and what's done,
-        availabe in tools like
+        available in tools like
         [JIRA](https://www.atlassian.com/software/jira) or [GitHub
         Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects).
     -   Using the Kanban board, limit the amount of items in the "work
