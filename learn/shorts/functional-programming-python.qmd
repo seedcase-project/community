@@ -5,7 +5,7 @@ description: |
   short introduces the basics of functional programming in Python, its advantages,
   and how it differs from more imperative programming like object oriented programming.
 author: "Kris Beicher"
-date: "2025-03-19"
+date: "2025-05-21"
 # date-modified: ""
 categories:
   - python
@@ -14,8 +14,8 @@ categories:
 
 ## Motivation for this micro-lesson
 
-The Seedcase Team is constantly striving to work towards a more
-functional, easy to overview and reusable way of not only communicating,
+We're striving to incorporate more
+functional, easier to develop, reuse, and maintain way of not only communicating,
 but also writing code. As part of this we've written a couple of
 learning shorts which delve into the basics of functional programming as
 this is the programming paradigm that most closely (in our opinion)
@@ -37,14 +37,15 @@ conceptual detail.
 
 ## Necessary software
 
--   IDE that will run Python code.
+-   Python.
+-   An [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) like [VS Code](https://code.visualstudio.com/) that will run Python code.
 
 ## Learning goal
 
 At the end of this you will be able to start writing Python code in a
 functional programming style. You will be able to use the built-in
 functions `filter()`, `map()`, and the `reduce()` function from
-`functools` to process collections of data and understand how to use the
+`functools` to process collections of data and how to use the
 `lambda` keyword to create small anonymous functions.
 
 ## Take home messages
