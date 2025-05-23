@@ -1,14 +1,14 @@
 ---
 title: "An brief introduction to automation using GitHub Actions"
 description: |
-  The GitHub Actions feature is a powerful way of running code or a series of tasks on an 
+  The GitHub Actions feature is a powerful way of running code or a series of tasks on an
   independent and fresh computing environment. You can use these to
   automate tasks, run tasks on a schedule, test your code, or perform any number
   of tasks that you'd rather have a computer handle instead of doing manually.
 author: "Luke W. Johnston"
 date: "2024-05-21"
 # date-modified: ""
-categories: 
+categories:
   - github actions
   - automation
   - servers
@@ -88,7 +88,7 @@ has to be kept in the `.github/workflows/` folder of the repository and
 the file must be a [YAML](https://en.wikipedia.org/wiki/YAML) file
 (ending in `.yml` or `.yaml`):
 
-```         
+```
 reponame/
 └── .github/
     └── workflows/
@@ -296,7 +296,7 @@ repository, we need to give the workflow some permissions to be able to
 write to that branch. We'll add that by using the `permissions` section:
 
 ``` yaml
-permissions: 
+permissions:
     contents: write
     pages: write
 ```
@@ -356,12 +356,12 @@ second version `v2`). Lastly, we want to run Quarto to build the website
 and publish it to the `gh-pages` branch:
 
 ``` yaml
-      - name: Publish to GitHub Pages (and render) 
+      - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 Because we will be saving the built website to the `gh-pages` branch, we
@@ -386,7 +386,7 @@ on:
   push:
     branches:
       - main
-permissions: 
+permissions:
     contents: write
     pages: write
 jobs:
@@ -397,12 +397,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-      - name: Publish to GitHub Pages (and render) 
+      - name: Publish to GitHub Pages (and render)
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
 
 With these few lines of code, we now have a GitHub Actions workflow that
