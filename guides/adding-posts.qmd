@@ -81,12 +81,12 @@ Regardless, in both routes the steps are:
         the commands to run for that:
 
         ``` bash
-        # Create and move to a new branch. 
-        # Call the branch any name you want, 
+        # Create and move to a new branch.
+        # Call the branch any name you want,
         # I'll use the `adding-new-post`.
         git checkout -b adding-new-post
         # Replace `NEW_FILE` with the actual name of the file
-        git add NEW_FILE 
+        git add NEW_FILE
         # Add a short message about what you are committing
         git commit -m "New post about BRIEF_DESCRIPTION"
         # Push the changes up to GitHub
@@ -94,13 +94,13 @@ Regardless, in both routes the steps are:
         # Switch to the main branch
         git checkout main
         ```
-        
+
         After pushing up the GitHub, you will need to go to the
         repository and create a new Pull Request from your newly pushed
         branch.
-    
+
     -   No matter if you want to add a file directly on GitHub or via the command line, you can find more guidance in the [GitHub Docs](https://docs.github.com/en/repositories/working-with-files/managing-files/adding-a-file-to-a-repository).
-        
+
 
 6.  You are all done! That's it :smile:
 

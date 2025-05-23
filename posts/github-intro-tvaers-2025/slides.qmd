@@ -2,7 +2,7 @@
 title: "Introduction to GitHub"
 subtitle: "Tværs Gruppemøde, April 2025"
 author: "Signe Kirk Brødbæk"
-format: 
+format:
     revealjs:
         theme: default
         slide-number: true
@@ -66,7 +66,7 @@ I spend 95 % of my work time using GitHub :raised_hands:
 -   Website: At its core, it's a website. If you open up your browser
     and type in "GitHub.com", you will be taken to GitHub
 -   Stores files: GitHub is a place where you can store and share files
-    related to a project, like a website, in a "repository" (meaning "storage" or "place to keep things", in Danish: "opbevare"). 
+    related to a project, like a website, in a "repository" (meaning "storage" or "place to keep things", in Danish: "opbevare").
     - A repository is like a folder on your computer, but instead of being on your
     computer, it's on the internet. You can access it from anywhere with
     an internet connection.

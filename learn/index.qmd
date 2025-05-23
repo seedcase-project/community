@@ -5,7 +5,7 @@ listing:
     contents: shorts
     type: default
     sort: "title"
-    fields: 
+    fields:
       - "title"
       - "author"
       - "description"

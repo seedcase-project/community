@@ -6,7 +6,7 @@ description: |
 author: Luke W. Johnston
 date: 2023-07-25
 # date-modified: ""
-categories: 
+categories:
   - python
   - packaging
   - introduction
@@ -70,7 +70,7 @@ files that look a bit like this:
 
 <!-- Created with: https://tree.nathanfriend.io/ -->
 
-```         
+```
 packagename/
 ├── packagename/
 │   ├── ___init___.py
