@@ -1,0 +1,63 @@
+---
+title: "Collaboration with the ON-LiMiT project :tada:"
+description: |
+    The Novo Nordisk Foundation has given researchers across different research
+    centers, such as Steno Aarhus, a grant to run a large study to see how
+    lifestyle changes can help with diabetes remission and management.  Like
+    with DP-Next, the Seedcase eam will be collaborating with them on their
+    data infrastructure, engineering, and architectural needs.
+author:
+- Luke W. Johnston
+date: "2025-05-28"
+categories:
+  - collaborations
+  - external projects
+---
+
+Novo Nordisk Foundation has given a
+[grant](https://novonordiskfonden.dk/en/news/new-study-seeks-answers-on-the-role-of-diet-and-exercise-in-diabetes-remission/)
+to several centers, including [Steno Diabetes Center
+Aarhus](https://www.stenoaarhus.dk/), to conduct a large study on how
+lifestyle changes can help people with diabetes. This is the summary of
+the project:
+
+> "ON LiMiT (Optimal Non-pharmacological LifeStyle Modifications in
+> people with Type 2 diabetes), is a large randomized controlled
+> intervention study, conducted in collaboration with the Steno Diabetes
+> Centre in Aarhus, Odense and Copenhagen, as well as the University of
+> Copenhagen and Bispebjerg Hospital.
+>
+> The trial aims to investigate whether it is possible to achieve and
+> maintain remission of type 2 diabetes through weight loss and
+> lifestyle changes." --- [ON-LiMiT](https://onlimit.dk) (translated
+> from Danish)
+
+Because of the size and scope of this project, and their own ambitions,
+especially around the types and volume of data they will collect, they
+were looking for collaborators to help with the data infrastructure,
+organisation, and management side of things. Since the Seedcase Project
+aims to do just that, they connected with us to see how we can work
+together.
+
+In the end, they (and DP-Next) decided on collaborating with us! And, we
+officially have our team member Kris as their data architect. She'll be
+the main contact point between the two projects' data needs and our team
+:tada:
+
+Another exciting collaboration project! And because both DP-Next and
+ON-LiMiT are aiming to work closely together with their data collection
+protocols, it will mean we can have similar pipelines and
+infrastructures for both projects :grin: Which means what we learn
+and build in one project can be fairly easily applied to the other.
+
+With the ON-LiMiT project, we will be working mostly on:
+
+-   Setting up and building the data infrastructure
+-   Designing the data structure and pipeline
+-   Processing and structuring data after collection
+-   Structuring the data to make it easier for later sharing and
+    analysis
+
+Like the DP-Next project, ON-LiMiT doesn't officially start until
+September 2025, but they will be collecting data almost immediately. So
+there's lots to do before hand! But still very exciting :grin:
