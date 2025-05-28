@@ -55,7 +55,7 @@ just like a well-equipped lab.
 When we talk about sensitive data, we're talking about information that
 belongs to real people – people like you and me. We call them "data
 subjects". These are the folks whose data is being used for research
-inside a TRE. We want them to feel safe and comfortable knowing their
+inside a TREE. We want them to feel safe and comfortable knowing their
 information is being handled with care.
 
 Then there are the researchers themselves – the scientists and experts
