@@ -1,0 +1,233 @@
+---
+title: "A brief introduction to functional programming techniques in Python"
+description: |
+  Functional programming is a specific approach to programming. This
+  short introduces the basics of functional programming in Python, its advantages,
+  and how it differs from more imperative programming like object oriented programming.
+author: "Kris Beicher"
+date: "2025-05-21"
+# date-modified: ""
+categories:
+  - python
+  - functional programming
+---
+
+## Motivation for this micro-lesson
+
+We're striving to incorporate more
+functional, easier to develop, reuse, and maintain way of not only communicating,
+but also writing code. As part of this we've written a couple of
+learning shorts which delve into the basics of functional programming as
+this is the programming paradigm that most closely (in our opinion)
+matches our ethos and needs. This second learning short is a
+continuation of [A brief introduction to functional
+programming](functional-programming-theory.qmd), in which we discussed
+the basics of functional programming, its advantages, and how it differs
+from more imperative programming like object oriented programming. In
+this short, we will focus on the practical aspects of functional
+programming in Python without going into too much theoretical or
+conceptual detail.
+
+## Assumed knowledge of reader
+
+-   Basic programming knowledge, such as that there are different ways
+    of doing the same thing.
+-   Basic Python knowledge.
+-   Basic understanding of how functions work, such as they do actions.
+
+## Necessary software
+
+-   Python.
+-   An [IDE](https://en.wikipedia.org/wiki/Integrated_development_environment) like [VS Code](https://code.visualstudio.com/) that will run Python code.
+
+## Learning goal
+
+At the end of this you will be able to start writing Python code in a
+functional programming style. You will be able to use the built-in
+functions `filter()`, `map()`, and the `reduce()` function from
+`functools` to process collections of data and how to use the
+`lambda` keyword to create small anonymous functions.
+
+## Take home messages
+
+-   Functional programming in Python allows for more concise and
+    readable code by leveraging built-in higher-order functions.
+-   The use of `filter()`, `map()`, and `reduce()` enables efficient
+    data transformations without modifying original data structures.
+-   The `lambda` keyword allows for the creation of anonymous functions,
+    making functional programming more expressive and flexible.
+
+## Lesson content
+
+Functional programming is a programming paradigm that treats computation
+as the evaluation of mathematical functions and avoids changing state or
+mutable data. In Python, while it’s not a purely functional language,
+many functional programming features are built-in. This style encourages
+writing clean, concise, and expressive code---especially when working
+with data transformations.
+
+In this lesson, we will cover three built-in functions in Python that
+are commonly used in functional programming: `filter()`, `map()`, and
+`reduce()`. We will also discuss the `lambda` keyword, which allows for
+the creation of small anonymous functions. These functions are often
+used in conjunction with `filter()`, `map()`, and `reduce()` to create
+more concise and readable code.
+
+### `filter()`
+
+This is a built-in function in Python that takes a function and an
+iterable as arguments and returns an iterator over the elements of the
+iterable for which the function returns `True`.
+
+``` python
+filter(function, iterable)
+```
+
+The `function` should return `True` or `False` for each element in
+`iterable`. Only elements for which `function` returns `True` are
+included in the output.
+
+For example:
+
+``` python
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print(even_numbers)
+```
+
+In the example above, the `filter()` function is used to filter out the
+even numbers from the list of numbers. The `lambda` function is used to
+define the condition for filtering, in this case, checking if the number
+produces a remainder of 0 when divided by 2. The `filter()` function on
+its own returns what is called an iterator, so in order for us to see
+the result, we need to convert it to a list with `list()`. We do the
+same below with the `map()` function.
+
+### `map()`
+
+This is a built-in function in Python that takes a function and an
+iterable as arguments and returns an iterator over the results of
+applying the function to the elements of the iterable.
+
+``` python
+map(function, iterable)
+```
+
+The `function` is applied to each element of `iterable`, and the results
+are returned as an iterator.
+
+For example:
+
+``` python
+def square(x):
+    return x ** 2
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+squared_numbers = list(map(square, numbers))
+print(squared_numbers)
+```
+
+In this example, the `map()` function is used to square each number in
+the list of numbers. The `lambda` function is used to define the
+operation to be applied to each element of the list, in this case by
+squaring it. The `map()` function returns an iterator, so we convert it
+to a list to see the result.
+
+#### `reduce()`
+
+This is a function in the `functools` module in Python that takes a
+function and an iterable as arguments and returns a single value by
+applying the function cumulatively to the elements of the iterable.
+
+``` python
+reduce(function, iterable)
+```
+
+The `function` takes two arguments and is applied cumulatively to the
+elements of `iterable` to reduce them to a single value.
+
+It is slightly different from the first two functions in that it isn't
+built into Python but is available in the `functools` module, and it
+doesn't require the use of `list()` to convert the iterator to a list.
+
+For example:
+
+``` python
+from functools import reduce
+numbers = [1, 2, 3, 4, 5]
+sum_of_numbers = reduce(lambda x, y: x + y, numbers)
+print(sum_of_numbers)
+```
+
+In this final example, the `reduce()` function is used to calculate the
+sum of the numbers in the list. The `lambda` function defines how the
+elements of the list should be combined, in this case by adding them
+together. As the `reduce()` function returns a single value, we can
+print it directly.
+
+### What does the `lambda` keyword do in Python?
+
+The `lambda` keyword in Python is used to create what is called
+anonymous functions (i.e. not named, and therefore bound to the place
+where they are defined). In functional programming, the `lambda`
+function is often used to define simple functions that are used only
+once.
+
+``` python
+lambda arguments: expression
+```
+
+A `lambda` function can take any number of arguments but must have only
+a single expression, which is evaluated and returned.
+
+In the `filter()` example above, the `lambda` function
+(`lambda x: x % 2 == 0`) is used to define the condition for filtering
+the list of numbers. The argument `x` represents each element of the
+list, and the expression `x % 2 == 0` checks if the element is even. The
+`lambda` function used in the `map()` example (`lambda x: x ** 2`) is
+used in much the same way, with a single argument and a simple
+expression.
+
+In the `reduce()` example, the `lambda` function (`lambda x, y: x + y`)
+takes two arguments and returns their sum. The first argument represents
+the accumulated value, and the second argument represents the next
+element of the list. The `lambda` function is applied to each pair of
+elements in the list until a single value is returned.
+
+### Functional programming-adjacent tools
+
+Python provides several tools that, while not purely functional,
+facilitate a transition to functional programming principles:
+
+-   **List comprehensions & generator expressions**: Provide a syntax
+    for transforming data iterables that might be more familiar to those
+    used to loops and object-oriented programming. It is not a
+    functional programming tool, though can help transition to those
+    concepts.
+-   **`functools` module**: Contains functions like `reduce()`,
+    `partial()`, and `lru_cache()` that enable functional-style
+    programming.
+-   **`itertools` module**: Provides utilities for efficient iteration,
+    supporting lazy evaluation and functional transformations.
+-   **`namedtuple` and `dataclass`**: Facilitate immutable data
+    structures, aligning with functional programming’s emphasis on
+    immutability.
+
+## Summary
+
+-   `filter()`, `map()`, and `reduce()` allow for functional-style
+    processing of collections in Python, making transformations and
+    filtering more efficient.
+-   The `lambda` keyword enables the creation of small, anonymous
+    functions that can be used inline for simple operations.
+-   These functional programming concepts help write more concise,
+    expressive, and readable code.
+
+## Additional resources
+
+-   [Functional Programming in Python
+    (Codecademy)](https://www.codecademy.com/article/functional-programming-in-python)
+-   [Functional Programming Cheatsheet
+    (Codecademy)](https://www.codecademy.com/learn/learn-advanced-python/modules/functional-programming/cheatsheet)
+-   [Functional Programming in Python - online course
+    (RealPython)](https://realpython.com/courses/functional-programming-python/)

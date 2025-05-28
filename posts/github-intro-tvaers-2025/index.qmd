@@ -1,7 +1,7 @@
 ---
 title: "GitHub presentation for Tværs Gruppemøde, April 2025"
 description: "A presentation introducing GitHub and what it can be used for in a research context. Presented at the Tværs Gruppemøde in April 2025."
-author: 
+author:
   - "Signe Kirk Brødbæk"
 date: "2025-04-28"
 categories:
