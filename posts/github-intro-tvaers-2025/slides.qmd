@@ -1,0 +1,150 @@
+---
+title: "Introduction to GitHub"
+subtitle: "Tværs Gruppemøde, April 2025"
+author: "Signe Kirk Brødbæk"
+format:
+    revealjs:
+        theme: default
+        slide-number: true
+        from: markdown+emoji
+        logo: /_extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
+        footer: "Tværs Gruppemøde, April 2025"
+exclude-from-listing: true
+---
+
+## Agenda
+
+1.  Who am I?
+2.  What is GitHub?
+3.  What can it be used for?
+4.  Why use GitHub?
+5.  Examples :eyes:
+6.  GitHub workshop, May 26
+
+::: notes
+Aim: *Brief* introduction to GitHub and how it can be useful for
+projects within SDCA
+
+Questions: This is a new topic for many and there *can* be some
+GitHub-related lingo. I will try to explain everything as we go along,
+but if you have questions, don't hesitate to ask.
+:::
+
+## Who am I?
+
+-   Primarily working on the Seedcase Project
+-   Develop teaching material and teach workshops
+-   R-package: Open-Source Diabetes Classifier
+-   Admin for `steno-aarhus` on GitHub
+
+::: notes
+-   Seedcase Project: open source software (Python packages) for
+    packaging and documenting research data
+:::
+
+. . .
+
+I spend 95 % of my work time using GitHub :raised_hands:
+
+## What is GitHub?
+
+::::: columns
+::: {.column width="70%"}
+-   A website: [github.com](https://github.com)
+-   Stores files in *repositories*
+-   Uses version control (*Git*) to track file changes
+    -   *Git* + *Hub*
+:::
+
+::: {.column width="30%"}
+![](/posts/github-intro-tvaers-2025/logo-github.svg){width="70%"}
+![](/posts/github-intro-tvaers-2025/logo-text-github.svg){width="70%"}
+:::
+:::::
+
+::: notes
+-   Website: At its core, it's a website. If you open up your browser
+    and type in "GitHub.com", you will be taken to GitHub
+-   Stores files: GitHub is a place where you can store and share files
+    related to a project, like a website, in a "repository" (meaning "storage" or "place to keep things", in Danish: "opbevare").
+    - A repository is like a folder on your computer, but instead of being on your
+    computer, it's on the internet. You can access it from anywhere with
+    an internet connection.
+-   Central to GitHub is that it uses a version control system called
+    "Git"
+    -   In Danish: "versionsstyring"
+    -   Git: Track changes to files and folders over time (who made the
+        changes, when + a message describing the changes)
+    -   The name "GitHub": A "hub" (central place) for storing and
+        sharing files, using Git to track changes
+:::
+
+## What can GitHub be used for?
+
+-   Storing and sharing files (while tracking changes)
+-   Creating websites
+-   Collaboration
+    -   Reviews: Giving and receiving feedback
+    -   Communication (tasks, to-do lists, discussions)
+    -   Project management (project boards)
+
+::: notes
+-   Store/share files like documents, images, code for your data
+    analyses
+:::
+
+## Why use GitHub?
+
+-   Everything related to your project in one place (files, tasks,
+    discussions, feedback, project management)
+-   Changes are tracked
+-   Everything is open and accessible to everyone (unless you make it private)
+-   Eases collaboration
+
+::: notes
+-   Everything in one place:
+    -   Files stored in the same place as your tasks, discussions,
+        feedback, and project management
+    -   No need to email files around or having multiple versions of the same  file
+-   Tracking changes: You can see who did what when + revert to previous
+    versions of files if needed
+-   Transparency: On GitHub, everything is open and accessible to
+    everyone (unless you make it private). This means that anyone can
+    see your work, and you can see other people's work.
+:::
+
+## Examples: [GitHub.com](https://github.com) :eyes:
+
+::: notes
+Show:
+
+-   The `steno-aarhus` organisation
+
+-   Simple example: A website repository (prodiap)
+
+    -   Files and folders
+    -   Version control (commits)
+    -   Issues
+
+-   Collaborative example: A Seedcase repository
+
+    -   Files and folders
+    -   Issues
+    -   Pull requests + feedback (find a nice example beforehand)
+    -   Project board
+:::
+
+## GitHub Intro workshop, May 26
+
+-   Gentle introduction to using GitHub for managing and working with
+    files
+-   Registration: Mail from Louise
+-   Pre-workshop tasks
+
+::: notes
+Pre-workshop tasks: Around 1 hour to complete. Mostly reading to build a
+common foundation for the workshop and get familiar with the concepts
+we'll apply during the workshop.
+:::
+
+## Questions?

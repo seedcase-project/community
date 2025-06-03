@@ -1,0 +1,25 @@
+---
+title: "GitHub presentation for Tværs Gruppemøde, April 2025"
+description: "A presentation introducing GitHub and what it can be used for in a research context. Presented at the Tværs Gruppemøde in April 2025."
+author:
+  - "Signe Kirk Brødbæk"
+date: "2025-04-28"
+categories:
+  - presentation
+---
+
+[**Link to
+presentation**](/posts/github-intro-tvaers-2025/slides.html)
+
+<div>
+```{=html}
+<style>
+  .slide-deck {
+    border: 1px solid #b8b8b8;
+    width: 100%;
+    height: 425px;
+  }
+</style>
+<iframe class="slide-deck" src="/posts/github-intro-tvaers-2025/slides.html"></iframe>
+```
+</div>

@@ -117,4 +117,4 @@ consultants again, I would want us to do a few things differently:
     which was too long. We should have hired them for 2-3 months.
 -   Hire them to help us design rather than build a solution, something
     that is as simple as possible and that considers our constraints
-    ands our needs.
+    and our needs.
