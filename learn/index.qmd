@@ -10,6 +10,15 @@ listing:
       - "author"
       - "description"
       - "date"
+  - id: books
+    contents: books
+    type: default
+    sort: "date desc"
+    fields:
+      - "title"
+      - "author"
+      - "description"
+      - "date"
 ---
 
 ## Learning shorts
@@ -35,3 +44,6 @@ and useful. The main motivation for these documents are:
 2.  To consolidate the document author's learning and insights from the
     book.
 3.  To have as a resource and reference for future purposes.
+
+::: {#books}
+:::
