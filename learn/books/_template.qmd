@@ -1,0 +1,34 @@
+---
+title: ""
+description: |
+  Text
+author: ""
+date: ""
+# date-modified: ""
+categories:
+  - text
+---
+
+## Summary of book
+
+BRIEF SUMMARY
+
+## Assumed knowledge of reader
+
+-   ASSUMED KNOWLEDGE
+
+## Take home messages
+
+-   SIMPLE MESSAGE
+
+## Insights and learnings
+
+### SECTION HEADER
+
+## Summary
+
+- BRIEF SUMMARY
+
+## Additional resources
+
+-   LINKS USED OR FOR FURTHER LEARNING

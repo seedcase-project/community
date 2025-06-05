@@ -1,0 +1,592 @@
+---
+title: "Insights from *Philosophy of Software Design*"
+description: |
+  This book is a very readable and good overview on designing software systems.
+  It covers some general principles to reduce complexity such as by managing
+  dependencies and using modular design.
+author: "Luke W. Johnston"
+date: "2025-06-05"
+# date-modified: ""
+categories:
+  - software design
+  - programming
+---
+
+## Summary of book
+
+*Philosophy of Software Design* by John Ousterhout is a book that
+provides a set of principles and techniques for writing code that is
+easy to understand, easy to maintain, and easy to adapt. The book is
+based on the premise that the primary goal of software design is to
+reduce complexity. It provides a set of guidelines for achieving this
+goal, including the use of abstractions, the importance of simplicity,
+and the value of incremental design.
+
+Software design is the process of creating a plan for a software system
+that describes how the system will be structured and how it will
+function. Much like designs for buildings or bridges, software designs
+are created before the system is built and serve as a blueprint for the
+construction of the system. Good software design is essential for
+creating systems that are reliable, maintainable, and adaptable. Unlike
+buildings or bridges, however, software systems are not static. They are
+constantly changing and evolving, and their designs must be able to
+accommodate these changes.
+
+## Assumed knowledge of reader
+
+While this book is about software, I'll aim to write the content to be
+more accessible and less dependent on external technical knowledge. Even
+still, I need to make some assumptions:
+
+-   You have a general understanding of programming, such as the
+    concepts of functions, classes, and variables.
+-   You have some familiarity with iterative software development
+    processes, such as agile development.
+
+## Take home messages
+
+-   Design is about reducing complexity.
+-   A complex system is only complex because of our human (in)ability
+    and capacity to understand the system.
+-   Symptoms of complexity include change amplification, higher
+    cognitive load, and unknown unknowns.
+-   Complexity is caused by dependencies and obscurities.
+-   Design thinking is more of a strategic mindset than a tactical one.
+-   Good design is modular, readable, consistent, and as simple as
+    possible.
+-   A modular design has an interface and an implementation, that can be
+    deep or shallow where depth is when the interface is simpler than
+    the implementation.
+-   Include design throughout the software lifecycle and regularly
+    revisit it.
+-   Use documentation-driven design and development to help clarify and
+    structure the design, by first writing the how-to documentation,
+    then the interface documentation, and finally the implementation
+    comments.
+-   Exceptions and errors are a major source of complexity, so try to
+    avoid writing code that needs them.
+
+## Insights and learnings
+
+The sections below are things I've learned and taken notes on from the
+book. Things that I've found insightful, useful, or just interesting.
+I've organised the notes into groupings that made sense to me, but the
+book is not strictly organised in this way. This summary is (naturally)
+paraphrased from the book into my own words and interpretations, so it
+may not accurately reflect the author's intent, but does reflect my
+understanding of it.
+
+The core topic of the book is about reducing complexity in software
+design. The most fundamental problem in computer science and software
+engineering (and many other areas) is *problem decomposition*, by taking
+a complex problem and breaking it down into smaller, more manageable
+pieces. This is the central aim to effective design and one that
+knowledge workers like programmers face daily.
+
+### Complexity
+
+The greatest limitation in writing software, and really in any knowledge
+work, is our human ability and capacity to understand the systems we are
+creating. Complexity is anything related to the structure of the code or
+text that makes it hard to understand and modify. In other words, when
+people who try to learn or understand a system experience a high degree
+of cognitive load. Nor is complexity a single thing, it is a consequence
+of many small little choices that accumulate over time. Managing
+complexity is done by effective design.
+
+Very often, complexity is very easy to identify as the reader of a
+system or code, but not as obvious to the person or people who wrote it.
+So a useful basic metric for complexity is asking someone who has some
+basic knowledge of software (and potentially of the problem domain) to
+read your code or design. If they find it complex, it is complex, even
+if you may think otherwise.
+
+There are two approaches to reducing complexity:
+
+1.  Remove complexity by making your code simpler and more obvious.
+2.  Encapsulate the complexity in a way that there is less exposure to
+    the complexity and that exposure to it doesn't happen all at once.
+    This is called [modular design](#modular-design).
+
+### Symptoms of unmanaged complexity
+
+There are a few symptoms that indicate a system that has unmanaged
+complexity and isn't designed well:
+
+Change amplification
+
+:   A simple change requires modifying code in many different locations,
+    because the code is highly interconnected.
+
+Higher cognitive load
+
+:   It takes a longer time for a developer to complete a task as they
+    need to know more about the system, how to navigate it, and
+    understand it enough to know how to make changes.
+
+Unknown unknowns
+
+:   It's harder to tell what code needs to be changed or what
+    information is needed in order to complete a task, because there are
+    a lot of unknowns about the system.
+
+::: callout-tip
+Having more lines of code in a system doesn't necessarily mean it is
+more complex. Sometimes, more descriptive code is used in a way that
+adds lines of code but that enhances readability, which then reduces
+cognitive load.
+:::
+
+### Causes of complexity
+
+There are many non-technical reasons for complexity, such as work
+culture, deadlines, lack of experience, or pressure to deliver. This
+book covered the technical reasons for complexity, which are
+dependencies and obscurities.
+
+Dependencies
+
+:   A dependency is when code can't be understood and/or changed only on
+    it's own. The code connects to code in another package or even
+    another file within the same software codebase. Dependencies are
+    fundamental to software. While dependencies contribute to greater
+    complexity, it is impossible to remove all dependencies, nor do we
+    want to. One major purpose of creating software is to build upon
+    (depend on) other software. And when we design software, we
+    intentionally include them. But, too many dependencies or
+    dependencies that aren't clearly expressed, cause excessive
+    complexity and issues. So be conscious and very careful about what
+    you do depend on and why.
+
+Obscurity
+
+:   Obscurity is when important information about some code or
+    functionality is hidden or not obvious. Usually it is related to
+    when it isn't obvious that a dependency exists. But inconsistency
+    can also contribute to obscurity. When code is inconsistent, like
+    when the same name is used for different purposes, it's harder to
+    understand and predict. And usually, obscurity comes from not enough
+    documentation and/or comments about a specific set of functionality.
+
+### Tactical vs strategic programming
+
+Something that contributes to complexity via dependencies and
+obscurities is doing things in a "tactical" way rather a "strategic"
+one. This "tactical" approach is unfortunately very common in many areas
+of work, not just software development. Organizations often fall into
+this "tactical" thinking trap because it gives "seemingly good"
+short-term results. So it can lead to many groups or teams writing code
+in a "tactical" way, though groups can fall into this thinking on their
+own without the inherent pressure from the organization's thinking.
+
+Tactical programming
+
+:   This approach is when you write code to solve a problem, but don't
+    think about how the code fits into the larger system and how it
+    connects with other code in a coherent sense. It's a result of a
+    short-term focus to get some code or functionality to work. Often,
+    this is because of pressure from a deadline or of a culture that
+    values writing code faster ("higher velocity") rather than smarter.
+    It comes when planning for the future isn't a priority, which in
+    some cases is fine and necessary.
+
+:   The consequence is that code slowly becomes more complicated,
+    tangled, and harder to maintain. In other words, technical debt
+    accumulates. Essentially, you borrow time from the future to save
+    time in the present. But you always have to pay it back, and there
+    is always "interest". Just like financial debt!
+
+Strategic programming
+
+:   This approach is recognizing that writing code that works on it's
+    own isn't enough. The goal shouldn't be only working code.
+    "Strategic" programming is producing great design *and* working
+    code. This is an investment mindset where you anticipate things to
+    be a bit slower in the short term, but that it pays back in the long
+    term.
+
+:   Strategic programming can be proactive or reactive. An example of a
+    proactive strategy is to create multiple, alternative design choices
+    before deciding on one, or it might be prioritizing writing good
+    documentation. A reactive strategy is recognizing that no matter how
+    much you plan and design, there will always be mistakes and
+    unforeseen problems, and so you anticipate returning to and revising
+    the design.
+
+:   As you may have guessed, good software design comes from "strategic"
+    thinking. But you need to consistently be strategic and think of
+    "investing" as a task for *now*, not later.
+
+::: callout-tip
+The book suggests spending about 10-20% of development time on strategic
+programming. Expect that when starting a project there will initially be
+more strategic programming (so higher development times), but that later
+on developing the project will be faster and importantly have less
+maintenance time.
+:::
+
+### Components of good design to manage complexity
+
+The main goal of good design is to reduce complexity and increase
+abstraction, which means that an entity has a simplified "container"
+around it to omit unnecessary implementation details. With good design,
+there will be less areas in the codebase that are affected with each new
+or modified design decision. That way, changes in the design don't also
+require too extensive changes in the code. A key component to good
+design is having a modular design. This is such a large topic, it has
+it's own section [below](#modular-design). Aside from that, other
+components of good design are:
+
+Consistency
+
+:   This is a key feature of good design. Things like naming, coding
+    style, the [interfaces](#modular-design), or design patterns should
+    all be consistent. Ideally a good design follows existing,
+    widely-used conventions. Even if there are issues with a particular
+    convention, it is always better to follow one than to not use one.
+    If you have internal conventions for your system, always follow that
+    convention---and make sure to document that convention! Always
+    follow existing conventions rather than remake new ones. This is
+    especially important for existing projects or software.
+
+Readability
+
+:   Good design enhances and enables readability. Software and code
+    should be designed for ease of reading, *not writing*. Part of good
+    readability is in how well the design abstracts away the complex and
+    complicated details. Always design for abstractions, *not features*.
+
+:   Code should be obvious to a relatively knowledgeable reader. It is
+    obvious when you don't need to read code multiple times or require
+    going to other locations in the codebase to understand. Or when a
+    reader doesn't spend a lot of time or energy to understand a
+    particular piece of code. If a reader who is relatively familiar
+    with the language says your code is not obvious, *it isn't obvious*.
+    Even if you as the writer think it is!
+
+:   Some ways to improve readability and make the code more obvious are
+    to:
+
+    -   Use a style guide, or even better use automatic linters and
+        formatters.
+    -   Use white space, blank lines, and comment separators to split
+        code into logical sections.
+    -   Use comments to describe code that isn't as obvious.
+
+Simplicity
+
+:   The design and code are simple when there are less things to
+    consider or worry about when using it or modifying it. There should
+    be less things that matter. For example, when a function has as few
+    parameters as possible and still fulfil its functionality. The less
+    that matters, the easier it is to understand. For things that do
+    matter, try to minimize the number of places where they do matter,
+    for instance by avoiding adding to global configuration options or
+    incorporating them in other functions.
+
+### Modular design: Interfaces and implementations {#modular-design}
+
+Modular design is a core feature of good design. A module is any unit of
+code that has an **interface** and an **implementation**. This is not
+the same as a [Python
+module](https://docs.python.org/3/tutorial/modules.html). Ideally, but
+not practically, each module should be *completely independent* from the
+other modules. Realistically though, as with the note about dependencies
+above, a module will have some dependencies on other modules. But the
+goal of good modular design is to reduce the number of dependencies and
+simplify the dependencies that do exist.
+
+-   Interface: This is what developers, users, and other code "sees" and
+    interacts with. It is the API (application programming interface,
+    like a screen on a cell phone). The interface describes the "what"
+    and the "why" of the module. It is an abstraction of the
+    implementation.
+
+-   Implementation: This is the code that does what the interface
+    describes it does. It is the "how" and contains the actions to
+    achieve the goals of the interface.
+
+A well designed module is one where the interface is much simpler than
+its implementation and where it does one thing well, with a clean
+abstraction. An interface should always be simpler than its
+implementation, otherwise there is no point in making the software in
+the first place since there will be no abstraction. The interface should
+be as easy for your users as possible, even if it's harder for you to
+develop. This idea is known as "pulling complexity down".
+
+The interface contains two bits of information: the formal and the
+informal. The formal parts are those explicitly defined in the code like
+its API that includes it's "signature" (e.g. the function name and
+parameters) as well as the type of errors it can trigger. The informal
+part includes the high-level behaviour. For instance, a function that
+deletes a file named by the parameter or if there are constraints or
+dependencies on how the interface is used, all of which happen outside
+of the code.
+
+### Modular design: Deep vs shallow
+
+A module can also have different "depths", with a spectrum between
+"deep" and "shallow":
+
+-   Deep: These modules have powerful and extensive functionality but at
+    the same time simple interfaces. They exemplify abstraction. These
+    have a low cost because of the simple interface and a high benefit
+    from the powerful functionality.
+
+-   Shallow: These have less extensive functionality along with a less
+    than simple interface. Their cost-to-benefit ratio is higher.
+
+::: callout-caution
+A shallow module is, in general, a red flag. More (user-exposed)
+functions and classes in a module can increase cognitive load on the
+user or developer. Modules should provide the functionality necessary
+for the needs, but still be as simple as possible.
+:::
+
+A deep module hides information. Information leaking is when a design
+decision is reflected in multiple modules. This creates a dependency
+between the modules. When a change happens to the design decision,
+multiple modules must be changed. If a piece of information about the
+decision is reflected in the interface, the interface must change (e.g.
+`read_json()` but later decide to read from YAML, so that function must
+change to `read_yaml()`). So simpler interfaces tend to hide information
+better. Information leakage is an important red flag, and requires some
+careful consideration about it's place in the software design.
+
+One cause of information leakage is temporal decomposition, which is the
+time order when operations occur. When designing modules, consider and
+focus on the knowledge needed to perform the task, not the order that
+the tasks occur in. However, it isn't always possible to avoid this
+temporal decomposition, since some tasks must naturally occur in a
+specific order or before or after other tasks.
+
+::: callout-tip
+The author suggests that when designing modules to aim to make:
+
+-   Deeper modules first and then break them up as needed into smaller
+    more conceptually distinct functions. But to not sacrifice depth
+    only to have less lines of code in the module.
+
+-   General-purpose modules and avoid considering or building around
+    special-cases too much. This is because special-cases tend to be
+    more complex, are harder to understand, and ultimately are harder to
+    make clean designs for. General-purpose code tends to be easier to
+    understand and maintain. An easy way of having simpler code is to
+    just not have special cases.
+
+-   For specialised code, push it down into the abstraction. For
+    instance, write specialised code that reads from a specific device,
+    but hide that specialised code in the general-purpose code and try
+    not to expose it to the user.
+:::
+
+### Design workflow
+
+Software is not a static product. Dependencies that change because of
+things like bug fixes, new technologies that get developed, and needs
+that change make it impossible to "just" create a product and be
+completely done with it. Because of this, the design will need to be
+changed to reflect these external factors. Which means that design needs
+to be part of the full lifecycle.
+
+Using an incremental process, via an agile development approach, design
+your software initially for a smaller subset of what you'd like the
+software to do. Then, with each iteration, you will very likely find
+problems with the initial design. Which you then can revise and improve
+on for the next iteration. Addressing the problems earlier and when your
+software is still smaller and less complex means that the later design
+and development stages will be a bit easier as you've learned more about
+the problems in the domain.
+
+Incorporating design throughout the development lifecycle means that you
+mostly seek out or find areas of improvement. And because it is part of
+the lifecycle, you also naturally spend time and effort on it. Designing
+is hard and the first design will not be the best or even capable of
+fulfilling the needs. So as you iteratively develop the software, try to
+intentionally design things multiple times and in different ways. Take
+time to design some alternatives so that you as a team can discuss and
+consider each and find what works better at that point in time.
+
+::: callout-tip
+The author suggestions thinking about questions like the below when
+designing software:
+
+-   What is the simplest interface that will cover all your current
+    needs?
+-   What are the fewest number of interfaces?
+-   What different situations could this software or functionality be
+    used in?
+-   Can you replace potential special-purpose functions with a single
+    general-purpose function?
+-   Is this API easy to use for your current needs? Is it too simple and
+    general-purpose that it actually doesn't fit your needs very well?
+:::
+
+### Documentation-driven design and development
+
+One approach to designing software is using the documentation-driven
+design and development approach. This done by "writing the comments
+first", by writing the usage guide and help documents of the
+functionality of your software, before you write the code itself.
+
+A few big advantages to this approach are that:
+
+-   It helps clarify and make more explicit and tangible how the
+    software will actually be used. This is a great way to test out how
+    usable your software is before you even write the code.
+-   The documentation is also a communication tool to the team so that
+    everyone is aligned on what they will be building and how it will be
+    used.
+-   Writing documentation first ensures that there is documentation at
+    all. It's no secret that many developers don't write documentation
+    and a lot of software either entirely lacks documentation, is
+    heavily out of date, or is just poorly written to the point of being
+    unusable.
+-   It helps encourage and structure design thinking, which is a
+    strategic programming skill that will help you and your team write
+    better and more maintainable software in the long term.
+
+So, there are many benefits to this approach. Documentation and comments
+are the only way to truly capture the abstraction in a way that other
+humans can understand. Code, while powerful, can not express as fully as
+natural language can to other humans. So, if the documentation you write
+is long, complicated, or difficult to understand and reason about, this
+is probably a good indication that the software design is too complex
+and for you to revisit the design.
+
+The process can look a bit like this:
+
+1.  Write a Markdown how-to guide on how a user will use a particular
+    piece of functionality of the software, written as if it is already
+    implemented.
+2.  Write the interface comments (e.g. Python docstrings), but leave the
+    implementation empty (don't write any code).
+3.  Write the documentation for the signature of the object (method,
+    class, or function), for example the function parameters. Again,
+    don't write any actual code.
+4.  Fill in the body of the object by adding implementation comments
+    that describe some of the steps the code will take. Again, don't
+    write any code yet.
+5.  Iterate over these documentation a few times, refining and editing,
+    until the basic structure is right.
+
+### Design of documentation and comments
+
+The purpose of interface-level documentation and comments is to help
+users understand the code and how to use it. It is not to explain the
+implementation details or how the code works. The interface is the
+abstraction that users interact with, so it should be as simple and
+clear as possible. Users should be able to understand the abstraction by
+reading the interface and other documentation of the software.
+
+Meanwhile, the aim of implementation comments is to help readers, likely
+developers, understand what the code is doing. The comments should
+describe things that aren't obvious from the code, like if there is some
+concise, tricky, or rarer bits of code. Comments shouldn't repeat what
+the code says. It should have more why and what than the how. The code
+communicates the how, since it will do the action.
+
+::: callout-tip
+The saying "good code is self-documenting" isn't useful, as we don't
+expect or assume the user has to read the code of the implementation in
+order to use and understand the software. If users must read the code,
+then there is no abstraction.
+:::
+
+::: callout-important
+A red flag to watch for is if implementation documentation is written in
+the interface documentation. These two forms of documentation should not
+mix, as they are intended for completely different readers.
+:::
+
+The way code is written is also a form of documentation, such as what
+and how to name variables and functions. It is part of the abstraction.
+In general, for variables found in both the interface (the parameters)
+and the implementation, use nouns rather than verbs. The method or
+function name should be a verb, as it describes an action. And a name is
+good if it has two properties: consistency and precision.
+
+-   Consistency is when the name is used for the same purposes
+    throughout the codebase and isn't used to mean different things.
+-   Precision is when the name is specific and unambiguous. It describes
+    what the entity does or is.
+
+Consistency in how the name is used is incredibly important. If a name
+is used, use that always for those actions/nouns/concepts. When making a
+name for the entity, use a common name for the purpose, never use the
+common name for another purpose than the given purpose, and make sure
+the name is narrow enough that all objects have the same behaviour.
+Every word in the name should provide useful information, but it isn't
+necessary that the name contains the type of the entity (e.g. a name for
+a function with the word `function` in it's name). If a reader finds the
+naming difficult, it is difficult. The writer has a familiarity bias and
+can't be relied on for it's readability.
+
+::: callout-tip
+Like with code, try not to duplicate documentation. Instead, link to
+other sources as needed.
+:::
+
+::: callout-important
+A red flag for naming is if you struggle to find the right name for an
+entity, it likely means the entity is too complex or doesn't have a
+clean design. So consider revisiting the design and simplifying it.
+:::
+
+### Exceptions and error handling
+
+Exception handling is one of the worst sources of complexity in software
+and is a big topic that is highly dependent on the language. In general,
+try to reduce the number of places where exceptions must be handled.
+Ideally, you want to remove ore minimise situations that lead to or have
+a need for exceptions. If you do need to use them, handle them as close
+to the source as possible. Defensive programming is a good practice to
+follow in general, but it is possible to be overly-defensive.
+
+The reason exceptions are a major source of complexity is because they
+are a part of the interface. So by naturally having more exceptions, the
+interface becomes more complex. Making an exception is easy but handling
+them is a lot harder, which is where the complexity comes from. Try as
+best you can to avoid writing code that requires errors or exception
+handling to even be necessary.
+
+::: callout-tip
+If you are able to, aggregate the exceptions into one and give them back
+all at once as is appropriate or relevant.
+:::
+
+## Summary of review and insights
+
+This book is a very readable and good overview on designing software
+systems. It covers some general principles to follow, such as reducing
+complexity, managing dependencies, and using modular design. Below is a
+summary of some of the key points.
+
+Design of software is a fundamental and necessary part of developing
+reliable, maintainable, and usable software. The main goal of design is
+to reduce complexity, which is a consequence of our human ability and
+capacity to understand the systems we create. There are a few symptoms
+of complexity, the most important one being higher cognitive load
+experienced by the reader or user of the software. The main cause of
+complexity is dependencies, both internal and external.
+
+To help manage complexity, design software with a strategic mindset by
+thinking about the long-term. A good design is modular, readable,
+consistent, and as simple as needed.
+
+A modular design has an interface and an implementation, that can be
+deep or shallow. A design that hides information and abstracts away the
+complexity is a good design, where the interface is simpler than the
+implementation.
+
+Software is continually evolving, so design needs to be part of the
+whole lifecycle. Include it in the iterative development process and use
+documentation-driven design and development to help clarify and
+structure the design. Start with writing the documentation for the
+how-to guide, then the interface documentation, and then finally the
+implementation comments. Always be consistent in language and try to be
+as precise as possible.
+
+Lastly, exceptions and errors are a major source of complexity. As much
+as possible, avoid writing code that needs them. If you do, they should
+be part of and described in the interface.
