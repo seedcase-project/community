@@ -555,7 +555,7 @@ If you are able to, aggregate the exceptions into one and give them back
 all at once as is appropriate or relevant.
 :::
 
-## Summary
+## Summary of review and insights
 
 This book is a very readable and good overview on designing software
 systems. It covers some general principles to follow, such as reducing
