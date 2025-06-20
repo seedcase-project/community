@@ -29,7 +29,7 @@ the project:
 >
 > The trial aims to investigate whether it is possible to achieve and
 > maintain remission of type 2 diabetes through weight loss and
-> lifestyle changes." --- [ON-LiMiT](https://onlimit.dk) (translated
+> lifestyle changes." --- [ON-LiMiT](https://github.com/on-limit-study) (translated
 > from Danish)
 
 Because of the size and scope of this project, and their own ambitions,
