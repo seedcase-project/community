@@ -20,8 +20,8 @@ The brief:
 -   Highlight how open science principles shaped this work
 :::
 
- Hi, I’m Signe, a software engineer at Aarhus University and Steno
-Diabetes Center Aarhus. I’m here to tell you about a project I work on
+Hi, I'm Signe, a software engineer at Aarhus University and Steno
+Diabetes Center Aarhus. I'm here to tell you about a project I work on
 called Seedcase.
 
 ## So, what is Seedcase?
@@ -41,7 +41,7 @@ to explore, reuse, and contribute to.
 The core of Seedcase is a set of Python packages. We want to simplify
 the process of going from messy raw data to structured and documented
 Data Packages and make it findable via a website. **Data Package** is a
-format we’ve adopted from the Frictionless Data Package Standard that's
+format we've adopted from the Frictionless Data Package Standard that's
 designed to make data FAIR: Findable, Accessible, Interoperable, and
 Reusable.
 
@@ -50,17 +50,17 @@ helps you create Data Packages by simplifying the process of structuring
 and checking your tabular data and metadata according to the Data
 Package standard.
 
-We’ve also planned:
+We've also planned:
 
 -   A metadata checker, **check-datapackage**, which ensures your data
     and metadata are consistent and complete. We plan to release this as
     a standalone package to support any project using the Data Package
-    standard—promoting reuse beyond our own tooling.
+    standard, to promote reuse beyond our own tooling.
 
--   A template project, **DataPackage-template**, to help new users
+-   A template project, **template-data-package**, to help new users
     getting started with building their Data Package. This includes the
     recommended structure and dependencies of Data Packages following
-    the approach promoted by Sprout.
+    the approach built by Sprout.
 
 -   Now that we have a structured Data Package, we also want to make it
     findable. For this, we’ll create a metadata website generator,
@@ -68,17 +68,17 @@ We’ve also planned:
     shareable website. This makes it easier for others to discover and
     understand your dataset, without the need to download anything.
 
-## What’s next?
+## What's next?
 
-This fall, we’ll be collaborating with two large research projects at
+This fall, we'll be collaborating with two large research projects at
 Steno Diabetes Center Aarhus to test and apply our tools in real-world
-settings. These partnerships will be a key milestone—seeing our open
+settings. These partnerships will be a key milestone by seeing our open
 infrastructure used to help researchers structure their data more
 transparently.
 
-Lastly, while I’m presenting today, Seedcase is a team effort. We’re two
-software engineers, a database administrator, and a team lead—all
+Lastly, while I'm presenting today, Seedcase is a team effort. We're two
+software engineers, a database administrator, and a team lead---all are
 committed to building open tools for open science.
 
-Thanks for listening—and feel free to check us out or contribute on
+Thanks for listening! And feel free to check us out or contribute on
 GitHub!
