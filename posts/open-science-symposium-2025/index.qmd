@@ -30,11 +30,13 @@ Seedcase is a data infrastructure initiative focused on building open,
 scalable tools for working with research data. From the start, our work
 has been grounded in open science principles. Everything we build is
 open source and developed in the open on GitHub under our GitHub
-organisation. We also rely on other open source tools for our work, and
-we actively document not just our software, but our processes, values,
-and design decisions, following a documentation-driven development
-approach. This documentation is published openly as websites for anyone
-to explore, reuse, and contribute to.
+organisation. We also rely on other open source tools for our work, such
+as the Parquet data format and the Frictionless Data Package standard.
+Lastly, we actively document not just our software, but our processes,
+values, and design decisions, following a documentation-driven
+development approach. This documentation, both internally and externally
+facing is published openly as websites for anyone to explore, reuse, and
+contribute to.
 
 ## What are we actually building?
 
