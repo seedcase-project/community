@@ -9,9 +9,15 @@ categories:
 ---
 
 ::: callout-note
-**Note:** This is the transcript of the flashtalk presented at the [Open
-Science in Health Research: From Principles to Practice Seminar](https://health.medarbejdere.au.dk/en/display/artikel/open-science-aabner-muligheder), in June
-2025.
+This is the transcript of the flashtalk presented at the [Open Science
+in Health Research: From Principles to Practice
+Seminar](https://health.medarbejdere.au.dk/en/display/artikel/open-science-aabner-muligheder),
+in June 2025.
+
+The brief:
+
+-   You will have 3 minutes to present your project/resource
+-   Highlight how open science principles shaped this work
 :::
 
 Hi, I’m Signe, a software engineer at Aarhus University and Steno
