@@ -1,0 +1,77 @@
+---
+title: "Flashtalk for Open Science Seminar, June 2025"
+description: "A 3 minute flashtalk introducing our work in the Seedcase Project. Presented at the Open Science in Health Research: From Principles to Practice Seminar, June 2025."
+author:
+  - "Signe Kirk Brødbæk"
+date: "2025-06-26"
+categories:
+  - presentation
+---
+
+::: callout-note
+**Note:** This is the transcript of the flashtalk presented at the [Open
+Science in Health Research: From Principles to Practice Seminar](https://health.medarbejdere.au.dk/en/display/artikel/open-science-aabner-muligheder), in June
+2025.
+:::
+
+Hi, I’m Signe, a software engineer at Aarhus University and Steno
+Diabetes Center Aarhus. I’m here to tell you about a project I work on called
+Seedcase.
+
+## So, what is Seedcase?
+
+Seedcase is a data infrastructure initiative focused on building open,
+scalable tools for working with research data. From the start, our work
+has been grounded in open science principles. Everything we build is
+open source and developed in the open on GitHub under our GitHub
+organisation. We also rely on other open source
+tools for our work, and we actively document not just our software, but our
+processes, values, and design decisions, following a documentation-driven
+development approach. This documentation is published openly as websites
+for anyone to explore, reuse, and contribute to.
+
+## What are we actually building?
+
+The core of Seedcase is a set of Python packages. We want to simplify
+the process of going from messy raw data to structured and documented
+Data Packages and make it findable via a website. **Data Package** is a format we’ve adopted from the Frictionless Data
+Package Standard that's designed to make data
+FAIR: Findable, Accessible, Interoperable, and Reusable.
+
+So, our first
+package, **Sprout**, which will soon be published to PyPI, helps you
+create Data Packages by simplifying the process of structuring and
+checking your tabular data and metadata according to the Data Package
+standard.
+
+We’ve also planned:
+
+-   A metadata checker, **check-datapackage**, which ensures your data
+    and metadata are consistent and complete. We plan to release this as
+    a standalone package to support any project using the Data Package
+    standard—promoting reuse beyond our own tooling.
+
+-   A template project, **DataPackage-template**, to help new users
+    getting started with building their Data Package. This includes the
+    recommended structure and dependencies of Data Packages following the approach promoted by Sprout.
+
+-   Now that we have a structured Data Package, we also want to make it
+    findable. For this, we’ll create a metadata website generator,
+    **Flower**, which lets researchers turn metadata into a simple,
+    shareable website. This makes it easier for others to discover and
+    understand your dataset, without the need to download anything.
+
+## What’s next?
+
+This fall, we’ll be collaborating with two large research projects at
+Steno Diabetes Center Aarhus to test and apply our tools in real-world
+settings. These partnerships will be a key milestone—seeing our open
+infrastructure used to help researchers structure their data more
+transparently.
+
+Lastly, while I’m presenting today, Seedcase is a team effort. We’re two
+software engineers, a database administrator, and a team lead—all
+committed to building open tools for open science.
+
+Thanks for listening—and feel free to check us out or contribute on
+GitHub!
