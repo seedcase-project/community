@@ -1,6 +1,9 @@
 ---
 title: "Flashtalk for Open Science Seminar, June 2025"
-description: "A 3 minute flashtalk introducing our work in the Seedcase Project. Presented at the Open Science in Health Research: From Principles to Practice Seminar, June 2025."
+description: |
+    A 3 minute flashtalk introducing our work in the Seedcase Project.
+    Presented at the Open Science in Health Research: From Principles
+    to Practice Seminar, June 2025.
 author:
   - "Signe Kirk Brødbæk"
 date: "2025-06-26"
