@@ -33,7 +33,7 @@ of what it is and why you might want to use it. Sprout's "tagline" is:
 The package is designed to help create a standardised and organised
 structure for storing and describing research data, by bundling it up
 into a [data
-package](https://decisions.seedcase-project.org/why-frictionless-data/). The data package format facilitates findability, accessibility, interoperability, and reusability (FAIR) of data.
+package](https://decisions.seedcase-project.org/why-frictionless-data/). The Data Package format facilitates findability, accessibility, interoperability, and reusability (FAIR) of data.
 We've tried to use modern data engineering and management practices, the
 practices of which were determined through writing [decisions
 records](https://decisions.seedcase-project.org/). Sprout helps to
@@ -82,23 +82,23 @@ nor use a new graphical interface just to use it. It's just code.
 We've included an extensive
 [guide](https://sprout.seedcase-project.org/docs/guide/) on how to setup
 and use Sprout. But here's a quick walkthrough of some of the features
-of using Sprout to create a data package. This won't cover how to install
+of using Sprout to create a Data Package. This won't cover how to install
 it, as that is well described in the guide. Instead this will show you some
-of the code itself for creating these data packages, but won't go into
+of the code itself for creating these Data Packages, but won't go into
 much detail.
 
 One of the first things you will need to do is to create the basis of a
-new data package, the `datapackage.json` file. Since working with JSON
+new Data Package, the `datapackage.json` file. Since working with JSON
 files can be very tedious and an unpleasant experience, Sprout provides
 functionality to more easily create and modify this file. Within this
-`datapackage.json` file are "properties" that describe the data package,
+`datapackage.json` file are "properties" that describe the Data Package,
 such as its name, title, description, and contributors, as well as the
 [data
 resources](https://sprout.seedcase-project.org/docs/guide/resources/)
 that are part of the package.
 
-To create this new data package, you might create a new Python script in
-your data package folder called, for example, `main.py`, and then write
+To create this new Data Package, you might create a new Python script in
+your Data Package folder called, for example, `main.py`, and then write
 the following code:
 
 ``` {.python filename="main.py"}
@@ -113,7 +113,7 @@ properties = sp.PackageProperties(
     description=sp.dedent("""
         # Data from a 2021 study on diabetes prevalence
 
-        This data package contains data from a study conducted in 2021 on the
+        This Data Package contains data from a study conducted in 2021 on the
         *prevalence* of diabetes in various populations. The data includes:
 
         - demographic information
