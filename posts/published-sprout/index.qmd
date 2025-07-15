@@ -10,11 +10,11 @@ categories:
   - programming
 ---
 
-On July 3rd, 2025, we finally published our first release of our first
+On July 3rd, 2025, we finally published the first release of our first
 Python package to [PyPI](https://pypi.org/project/seedcase-sprout) since
 we officially started the Seedcase Project in early 2022. We published
 the package [Seedcase Sprout](https://sprout.seedcase-project.org),
-which is the first of our planned four packages. Of the four packages,
+which is the first of our planned packages. Of the packages,
 Sprout is the one that forms the foundation to the rest of the packages,
 as well as being the most complex and difficult one to build. But we're
 now done[^1]!! :tada:
@@ -28,7 +28,7 @@ While we have a dedicated website for
 [Sprout](https://sprout.seedcase-project.org), here's a quick overview
 of what it is and why you might want to use it. Sprout's "tagline" is:
 
-> Grow structured, organised, and usable data
+> Grow structured, organised, and FAIR data
 
 The package is designed to help create a standardised and organised
 structure for storing and describing research data, by bundling it up
@@ -215,7 +215,7 @@ The most important lessons we learned was that:
     create different designs so that we can compare them and see which
     one is the best fit for the package. We hope that this will mean
     that we do less rewrites later on (though we can't completely avoid
-    that). And to include lots of time to really critique and discuss
+    that since developing and trying out the workflows of the package often uncovers details or sparks ideas that weren't apparent during the initial brainstorming phase). And to include lots of time to really critique and discuss
     the design, so we can be more confident and aligned in the design we
     do eventually choose.
 
