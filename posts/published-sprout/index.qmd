@@ -14,10 +14,10 @@ On July 3rd, 2025, we finally published the first release of our first
 Python package to [PyPI](https://pypi.org/project/seedcase-sprout) since
 we officially started the Seedcase Project in early 2022. We published
 the package [Seedcase Sprout](https://sprout.seedcase-project.org),
-which is the first of our planned packages. Of the packages,
-Sprout is the one that forms the foundation to the rest of the packages,
-as well as being the most complex and difficult one to build. But we're
-now done[^1]!! :tada:
+which is the first of our planned packages. Of the packages, Sprout is
+the one that forms the foundation to the rest of the packages, as well
+as being the most complex and difficult one to build. But we're now
+done[^1]!! :tada:
 
 [^1]: Well, only for the first official release, software is never truly
     done, is it? :wink:
@@ -32,10 +32,12 @@ of what it is and why you might want to use it. Sprout's "tagline" is:
 
 The package is designed to help create a standardised and organised
 structure for storing and describing research data, by bundling it up
-into a [data
-package](https://decisions.seedcase-project.org/why-frictionless-data/). The Data Package format facilitates findability, accessibility, interoperability, and reusability (FAIR) of data.
-We've tried to use modern data engineering and management practices, the
-practices of which were determined through writing [decisions
+into a [Data
+Package](https://decisions.seedcase-project.org/why-frictionless-data/).
+The Data Package format facilitates findability, accessibility,
+interoperability, and reusability (FAIR) of data. We've tried to use
+modern data engineering and management practices, the practices of which
+were determined through writing [decisions
 records](https://decisions.seedcase-project.org/). Sprout helps to
 ensure and enforce that your research data is well-designed,
 discoverable, well-documented, and ultimately more easily (re)usable for
@@ -50,8 +52,8 @@ over individual steps in a data processing, cleaning, describing, and
 organising workflow.
 
 Since it's a Python package, it is built to be "code-first", meaning
-that you use it within custom Python scripts to help you build your data
-packages. That way, you can integrate it into your own code and make it
+that you use it within custom Python scripts to help you build your Data
+Packages. That way, you can integrate it into your own code and make it
 fit to your needs.
 
 ## Why use it?
@@ -82,10 +84,10 @@ nor use a new graphical interface just to use it. It's just code.
 We've included an extensive
 [guide](https://sprout.seedcase-project.org/docs/guide/) on how to setup
 and use Sprout. But here's a quick walkthrough of some of the features
-of using Sprout to create a Data Package. This won't cover how to install
-it, as that is well described in the guide. Instead this will show you some
-of the code itself for creating these Data Packages, but won't go into
-much detail.
+of using Sprout to create a Data Package. This won't cover how to
+install it, as that is well described in the guide. Instead this will
+show you some of the code itself for creating these Data Packages, but
+won't go into much detail.
 
 One of the first things you will need to do is to create the basis of a
 new Data Package, the `datapackage.json` file. Since working with JSON
@@ -93,8 +95,8 @@ files can be very tedious and an unpleasant experience, Sprout provides
 functionality to more easily create and modify this file. Within this
 `datapackage.json` file are "properties" that describe the Data Package,
 such as its name, title, description, and contributors, as well as the
-[data
-resources](https://sprout.seedcase-project.org/docs/guide/resources/)
+[Data
+Resources](https://sprout.seedcase-project.org/docs/guide/resources/)
 that are part of the package.
 
 To create this new Data Package, you might create a new Python script in
@@ -136,13 +138,14 @@ This code will then create the `datapackage.json` file in the current
 folder, while also checking to make sure that the properties are correct
 and structured properly following the Data Package Standard.
 
-The most helpful part of Sprout is when you need to add data resources
+The most helpful part of Sprout is when you need to add Data Resources
 to the package. Especially when it comes to setting up the metadata. To
 help pre-fill in some of the metadata based on the data itself, Sprout
-has the `extract_field_properties()` function. This function
-provides a starting point for the metadata by extracting metadata about the data "fields" (also called columns or variables) from
-the data itself. So you can import the data
-using Polars and extract the field properties from the data like so:
+has the `extract_field_properties()` function. This function provides a
+starting point for the metadata by extracting metadata about the data
+"fields" (also called columns or variables) from the data itself. So you
+can import the data using Polars and extract the field properties from
+the data like so:
 
 ``` {.python filename="main.py"}
 raw_data = pl.read_csv("path/to/data.csv")
@@ -173,15 +176,15 @@ including how to install it.
 
 ## Journey to first release
 
-Aside from our main goal of having a package that works as
-designed, we also had a few other goals we wanted to achieve before
-publishing our first release of Seedcase Sprout to PyPI:
+Aside from our main goal of having a package that works as designed, we
+also had a few other goals we wanted to achieve before publishing our
+first release of Seedcase Sprout to PyPI:
 
 -   Ensure we meet best practices for formatting, security,
     documentation, and testing.
 -   Have an automated release process in place.
--   Include documentation on the design of Sprout as well as a guide on how to use
-    it.
+-   Include documentation on the design of Sprout as well as a guide on
+    how to use it.
 -   Have a high test coverage (\>90%).
 -   Have a comprehensive, documented/explicit build process for local
     development and checks.
@@ -197,13 +200,23 @@ throughout the development of Sprout, that lead to some major rewrites
 of the code. But in the end, the final product is something we're quite
 proud of and happy about!
 
-After that, the other main challenges were just learning all the
-different things involved in building a well-designed, well-tested, secure,
-reliable, and well-documented Python package. One where we can develop
-and release continuously with every new change. The fact that we can be
-fairly certain that any new pull request that has changes to the code
-will be well tested and will automatically release to PyPI is an amazing
-feeling, as it simplifies that whole process so much!
+After that, the second biggest challenge was just learning all the
+different things involved in building a well-designed, well-tested,
+secure, reliable, and well-documented Python package. One where we can
+develop and release continuously with every new change. The fact that we
+can be fairly certain that any new pull request that has changes to the
+code will be well tested and will automatically release to PyPI is an
+amazing feeling, as it simplifies that whole process so much!
+
+And lastly, the final challenge was simply setting up and agreeing on a
+common development workflow for the team. For example, agreeing on and
+setting up using [Conventional
+Commits](https://decisions.seedcase-project.org/why-conventional-commits/index.html),
+[atomic pull
+requests](https://decisions.seedcase-project.org/why-atomic-commits-and-prs/index.html),
+[GitHub
+Project](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+boards with iterations following an Agile-like workflow.
 
 ### Lessons learned
 
@@ -215,9 +228,11 @@ The most important lessons we learned was that:
     create different designs so that we can compare them and see which
     one is the best fit for the package. We hope that this will mean
     that we do less rewrites later on (though we can't completely avoid
-    that since developing and trying out the workflows of the package often uncovers details or sparks ideas that weren't apparent during the initial brainstorming phase). And to include lots of time to really critique and discuss
-    the design, so we can be more confident and aligned in the design we
-    do eventually choose.
+    that since developing and trying out the workflows of the package
+    often uncovers details or sparks ideas that weren't apparent during
+    the initial brainstorming phase). And to include lots of time to
+    really critique and discuss the design, so we can be more confident
+    and aligned in the design we do eventually choose.
 
 -   An established, smooth, automated, and documented development and
     release process is so helpful as a developer. It means we can really
@@ -230,12 +245,13 @@ The most important lessons we learned was that:
 ## Next steps
 
 Our next steps are to take what we learned while building Sprout and
-make a template for creating new data packages as well as new Python
-packages. That way, for all future Python packages and data packages we
-(and others) make, we can use that as a starting point, while also keeping those
-packages updated with changes in the template. Changes such as new best
-practices in continuous integration, testing, security, or even
-improvements to how we work and develop together as a team.
+make a [template](github.com/seedcase-project/template-data-package) for
+creating new Data Packages as well as new Python packages. That way, for
+all future Python packages and Data Packages we (and others) make, we
+can use that as a starting point, while also keeping those packages
+updated with changes in the template. Changes such as new best practices
+in continuous integration, testing, security, or even improvements to
+how we work and develop together as a team.
 
 ### Our roadmap
 
