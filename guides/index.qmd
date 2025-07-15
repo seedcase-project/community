@@ -17,8 +17,10 @@ listing:
 ## Want to contribute? :tada: Read these guide entries {#contributing}
 
 ::: callout-note
-This is a guide intended for general guidelines for both the team as well as
-outside of the team.
+This is a guide intended for general guidelines for both the team as
+well as outside of the team. For a more extensive guide on contributing,
+check out our (frequently evolving)
+[guidebook](https://guidebook.seedcase-project.org/).
 :::
 
 These entries are short pages about specific topics for contributing.
