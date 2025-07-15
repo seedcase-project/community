@@ -33,7 +33,7 @@ of what it is and why you might want to use it. Sprout's "tagline" is:
 The package is designed to help create a standardised and organised
 structure for storing and describing research data, by bundling it up
 into a [data
-package](https://decisions.seedcase-project.org/why-frictionless-data/).
+package](https://decisions.seedcase-project.org/why-frictionless-data/). The data package format facilitates findability, accessibility, interoperability, and reusability (FAIR) of data.
 We've tried to use modern data engineering and management practices, the
 practices of which were determined through writing [decisions
 records](https://decisions.seedcase-project.org/). Sprout helps to
@@ -81,9 +81,9 @@ nor use a new graphical interface just to use it. It's just code.
 
 We've included an extensive
 [guide](https://sprout.seedcase-project.org/docs/guide/) on how to setup
-and use Sprout. But I'll give you a quick look at some of the features
-of using Sprout to create a data package. I won't go into how to install
-it, as that is well described in the guide. Instead I'll show you some
+and use Sprout. But here's a quick walkthrough of some of the features
+of using Sprout to create a data package. This won't cover how to install
+it, as that is well described in the guide. Instead this will show you some
 of the code itself for creating these data packages, but won't go into
 much detail.
 
@@ -134,15 +134,15 @@ sp.write_properties(properties=properties)
 
 This code will then create the `datapackage.json` file in the current
 folder, while also checking to make sure that the properties are correct
-and structured properly.
+and structured properly following the Data Package Standard.
 
 The most helpful part of Sprout is when you need to add data resources
 to the package. Especially when it comes to setting up the metadata. To
 help pre-fill in some of the metadata based on the data itself, Sprout
-has the `extract_field_properties()` function. The helpful part comes
-when you want to add data to the package and need a starting point to
-describe the data itself in the metadata. So you can import the data
-using Polars and extract the field properties from the data:
+has the `extract_field_properties()` function. This function
+provides a starting point for the metadata by extracting metadata about the data "fields" (also called columns or variables) from
+the data itself. So you can import the data
+using Polars and extract the field properties from the data like so:
 
 ``` {.python filename="main.py"}
 raw_data = pl.read_csv("path/to/data.csv")
@@ -164,7 +164,7 @@ sp.create_resource_properties_script(
 
 When you run this code, it will create a new Python script that has the
 resource properties listed, along with the pre-filled fields properties
-of the data. Once you've edited this script, you can than use `import`
+of the data. Once you've edited this script, you can then use `import`
 to import the resource properties into `main.py`.
 
 There's many other things you can do with Sprout, so check out the
@@ -173,14 +173,14 @@ including how to install it.
 
 ## Journey to first release
 
-Aside from our main goal of having a working package that works as
+Aside from our main goal of having a package that works as
 designed, we also had a few other goals we wanted to achieve before
 publishing our first release of Seedcase Sprout to PyPI:
 
 -   Ensure we meet best practices for formatting, security,
     documentation, and testing.
 -   Have an automated release process in place.
--   Include documentation on the design of Sprout as well as how to use
+-   Include documentation on the design of Sprout as well as a guide on how to use
     it.
 -   Have a high test coverage (\>90%).
 -   Have a comprehensive, documented/explicit build process for local
@@ -198,7 +198,7 @@ of the code. But in the end, the final product is something we're quite
 proud of and happy about!
 
 After that, the other main challenges were just learning all the
-different things involved in building a well-built, well-tested, secure,
+different things involved in building a well-designed, well-tested, secure,
 reliable, and well-documented Python package. One where we can develop
 and release continuously with every new change. The fact that we can be
 fairly certain that any new pull request that has changes to the code
@@ -232,7 +232,7 @@ The most important lessons we learned was that:
 Our next steps are to take what we learned while building Sprout and
 make a template for creating new data packages as well as new Python
 packages. That way, for all future Python packages and data packages we
-make, we can use that as a starting point, while also keeping those
+(and others) make, we can use that as a starting point, while also keeping those
 packages updated with changes in the template. Changes such as new best
 practices in continuous integration, testing, security, or even
 improvements to how we work and develop together as a team.
