@@ -43,12 +43,12 @@ quickly on what matters most: solving your problem. They also help with
 [configuration
 management](https://en.wikipedia.org/wiki/Configuration_management) to
 track and manage improvements in the configurations and settings we have
-made from hard lessons learned, best practices, and experience so that
+made based on hard lessons learned, best practices, and experience so that
 the [developer
 experience](https://github.blog/enterprise-software/collaboration/developer-experience-what-is-it-and-why-should-you-care/)
 is as good and as smooth as possible.
 
-For that reason, we included many features to help with practises such
+For this reason, we included many features to help with practices such
 as [continuous
 integration](https://en.wikipedia.org/wiki/Continuous_integration) and
 [continuous
@@ -60,7 +60,7 @@ As per our [design philosophy](https://design.seedcase-project.org/) of
 [building for ourselves
 first](https://design.seedcase-project.org/organisation/contribution#we-are-our-first-users),
 we designed the Template Data Package to have features and structures
-that work for us and our team. But we've also designed it be flexible
+that work for us and our team. But we've also designed it to be flexible
 enough to be used by others. At the least, you can use it as a source of
 inspiration! :grin:
 
@@ -70,7 +70,7 @@ We built this because, well, we needed it! There aren't any templates or
 tools for creating a new Data Package. And none that set it up in the
 way we need when working with our Seedcase Python packages like
 [Seedcase Sprout](https://sprout.seedcase-project.org/). So, if you want
-to create a Data Package, that has many development support and
+to create a Data Package that has many development support and
 infrastructure files, and all the organisation needed to get working on
 making your Data Package, this is the template for you! :tada:
 
@@ -78,7 +78,7 @@ making your Data Package, this is the template for you! :tada:
 
 We already have a detailed
 [guide](https://template-data-package.seedcase-project.org/docs/guide/)
-on how to setup and use it, but I'll show you the basics. How do you use
+on how to set up and use it, but I'll show you the basics. How do you use
 it? You of course need to
 [install](https://template-data-package.seedcase-project.org/docs/guide#installing)
 the needed dependencies. Then, open a terminal and run the following
@@ -125,7 +125,7 @@ way to get exposure and make it more findable, but also as a way to
 
 ## Next steps
 
-We were so enthusiastic about making the Template and how it easy it was
+We were so enthusiastic about making the Template and how easy it was
 that our next steps are to convert the
 [website](https://github.com/seedcase-project/template-website) and
 [Python
