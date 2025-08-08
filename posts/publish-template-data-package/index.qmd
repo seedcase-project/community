@@ -1,0 +1,144 @@
+---
+title: "First published release of our Template Data Package tool!"
+description: "We've taken what we've designed and built in Sprout and used that to start a template for creating new Data Packages. And we've now published it on Zenodo :tada: :tada:"
+author:
+- Luke W. Johnston
+date: "2025-08-07"
+categories:
+  - templating
+  - publishing
+---
+
+On July 28, 2025, we formally published the first release of our
+*second* Seedcase product to
+[Zenodo](https://zenodo.org/records/16737043). We published a templating
+tool for creating [Data Packages](https://datapackage.org) called, well,
+simply [*Template Data
+Package*](https://template-data-package.seedcase-project.org/). This
+template will form a strong foundation for our continuing work building
+Python packages that improve the experience of developing and managing
+Data Packages. As we expand our "universe" of packages, we'll integrate
+them into the template so that anyone who uses it can stay updated with
+our improvements and features as we add to it.
+
+## Code scaffolding and configuration management with Template Data Package
+
+We have a dedicated website for [Template Data
+Package](https://template-data-package.seedcase-project.org) that
+includes a lot more details about what it is, what features it has, and
+how to use it. But I'll briefly go over bits of it here.
+
+We built the Template to mainly help us build and manage Data Packages
+for projects that we collaborate on, such as
+[ON-LiMiT](https://onlimit.org/) or
+[DP-Next](https://dp-next.github.io/). It helped us to get a more
+"tangible" view of what a Data Package will look like and what are the
+files and folders we need to best organise and develop it.
+
+Templates are a way to
+[scaffold](https://en.wikipedia.org/wiki/Scaffolding_(programming)) new
+projects with a predefined structure and configuration, essentially
+providing boilerplate code and files so you can start working more
+quickly on what matters most: solving your problem. They also help with
+[configuration
+management](https://en.wikipedia.org/wiki/Configuration_management) to
+track and manage improvements in the configurations and settings we have
+made based on hard lessons learned, best practices, and experience so that
+the [developer
+experience](https://github.blog/enterprise-software/collaboration/developer-experience-what-is-it-and-why-should-you-care/)
+is as good and as smooth as possible.
+
+For this reason, we included many features to help with practices such
+as [continuous
+integration](https://en.wikipedia.org/wiki/Continuous_integration) and
+[continuous
+delivery](https://en.wikipedia.org/wiki/Continuous_delivery). Practices
+that ensure the code and data are as high quality as possible and are
+standardised and consistent.
+
+As per our [design philosophy](https://design.seedcase-project.org/) of
+[building for ourselves
+first](https://design.seedcase-project.org/organisation/contribution#we-are-our-first-users),
+we designed the Template Data Package to have features and structures
+that work for us and our team. But we've also designed it to be flexible
+enough to be used by others. At the least, you can use it as a source of
+inspiration! :grin:
+
+## Why use it?
+
+We built this because, well, we needed it! There aren't any templates or
+tools for creating a new Data Package. And none that set it up in the
+way we need when working with our Seedcase Python packages like
+[Seedcase Sprout](https://sprout.seedcase-project.org/). So, if you want
+to create a Data Package that has many development support and
+infrastructure files, and all the organisation needed to get working on
+making your Data Package, this is the template for you! :tada:
+
+### Example use
+
+We already have a detailed
+[guide](https://template-data-package.seedcase-project.org/docs/guide/)
+on how to set up and use it, but I'll show you the basics. How do you use
+it? You of course need to
+[install](https://template-data-package.seedcase-project.org/docs/guide#installing)
+the needed dependencies. Then, open a terminal and run the following
+command:
+
+``` bash
+uvx copier copy --trust gh:seedcase-project/template-data-package my-data-package
+```
+
+Where `my-data-package` is the name of the folder you want to create for
+your new Data Package. This will create a new folder with the template
+files and folders, and will also ask you a few questions to customise
+the template to your needs. And that's it!
+
+## Journey to first release
+
+As we developed Seedcase Sprout, along with some of the
+[example](https://github.com/seedcase-project/example-seed-beetle) Data
+Packages, we learned and designed and improved how building a Data
+Package might be done and might look like. From those experiences, we
+created the basis for the Template Data Package. After that, it was only
+a matter of learning how to use
+[copier](https://copier.readthedocs.io/en/stable/)[^1] to create the
+template.
+
+[^1]: See our [decision
+    post](https://decisions.seedcase-project.org/why-copier) for why we
+    chose Copier.
+
+Copier is a very easy to use tool, with some great documentation. It was
+so much easier to use than we expected that we were able to publish it
+in half the time we planned! We thought it would take two months (that
+included time away for all the vacations that the team was taking over
+the summer). But it only ended up being a month :tada: It also helped
+that we have learned a lot from building Seedcase Sprout, so our
+workflow and development process is much more streamlined and efficient
+now.
+
+So! The Template Data Package is "formally" published on
+[Zenodo](https://doi.org/10.5281/zenodo.16540439), though it is actually
+only installable and usable from GitHub. We published it on Zenodo as a
+way to get exposure and make it more findable, but also as a way to
+"stamp" it as a formal release.
+
+## Next steps
+
+We were so enthusiastic about making the Template and how easy it was
+that our next steps are to convert the
+[website](https://github.com/seedcase-project/template-website) and
+[Python
+package](https://github.com/seedcase-project/template-python-package)
+templates into copier templates as well! So hopefully by the end of the
+summer, we will have templates for creating new Python packages and
+websites as well!
+
+### Our roadmap
+
+We use [GitHub
+Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
+for our roadmap, so that we as a team are all aware of the next steps,
+what the focuses will be for a given month, and to communicate our
+progress to others. Curious about it? Check it out
+[here](https://github.com/orgs/seedcase-project/projects/22/views/1).
