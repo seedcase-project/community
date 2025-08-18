@@ -36,15 +36,14 @@ for projects that we collaborate on, such as
 files and folders we need to best organise and develop it.
 
 Templates are a way to
-[scaffold](https://en.wikipedia.org/wiki/Scaffold_(programming)) new
-projects with a predefined structure and configuration, essentially
+fprojects with a predefined structure and configuration, essentially
 providing boilerplate code and files so you can start working more
 quickly on what matters most: solving your problem. They also help with
 [configuration
 management](https://en.wikipedia.org/wiki/Configuration_management) to
 track and manage improvements in the configurations and settings we have
-made based on hard lessons learned, best practices, and experience so that
-the [developer
+made based on hard lessons learned, best practices, and experience so
+that the [developer
 experience](https://github.blog/enterprise-software/collaboration/developer-experience-what-is-it-and-why-should-you-care/)
 is as good and as smooth as possible.
 
@@ -78,8 +77,8 @@ making your Data Package, this is the template for you! :tada:
 
 We already have a detailed
 [guide](https://template-data-package.seedcase-project.org/docs/guide/)
-on how to set up and use it, but I'll show you the basics. How do you use
-it? You of course need to
+on how to set up and use it, but I'll show you the basics. How do you
+use it? You of course need to
 [install](https://template-data-package.seedcase-project.org/docs/guide#installing)
 the needed dependencies. Then, open a terminal and run the following
 command:
