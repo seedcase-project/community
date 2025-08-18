@@ -36,7 +36,8 @@ for projects that we collaborate on, such as
 files and folders we need to best organise and develop it.
 
 Templates are a way to
-fprojects with a predefined structure and configuration, essentially
+[scaffold](https://en.wikipedia.org/wiki/Scaffold_(programming)) new
+projects with a predefined structure and configuration, essentially
 providing boilerplate code and files so you can start working more
 quickly on what matters most: solving your problem. They also help with
 [configuration
