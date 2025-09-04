@@ -32,6 +32,8 @@ website:
 
 format:
   seedcase-theme-html:
+    theme:
+      - brand
     include-before-body:
       - "includes/site-counter.html"
 
