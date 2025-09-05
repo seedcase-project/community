@@ -19,11 +19,11 @@ product is a templating tool for creating Python packages, called
 Read our announcement [post](/posts/publish-template-website/index.qmd)
 about our first platform product
 [`template-website`](https://template-website.seedcase-project.org/),
-which also explains more about what platform engineering is.
+which also includes a short description of platform engineering.
 
-As with our `template-website`, we built this tool to help us with our
+As with `template-website`, we built this tool to help us with our
 own development work. We build Python packages for (most) of our
-software, and this template tool was a way to [manage configuration
+software, and this template is a tool to manage [configuration
 drift](https://en.wikipedia.org/wiki/Configuration_management) and
 provide a
 [scaffold](https://en.wikipedia.org/wiki/Scaffold_(programming))
@@ -32,11 +32,11 @@ whenever we make a new Python package.
 Importantly, this tool helps improve our own [developer
 experience](https://github.blog/enterprise-software/collaboration/developer-experience-what-is-it-and-why-should-you-care/)
 and teamwork by ensuring we have access to and use the same development
-tooling and build processes.
+tooling and build processes across packages.
 
 ## Can others use it?
 
-As with our `template-website`, yes others can use this template too!
+As with our `template-website`, yes, others can use this template too!
 Check out our
 [guide](https://template-python-package.seedcase-project.org/docs/guide)
 for instructions on how to use it.
