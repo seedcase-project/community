@@ -1,11 +1,16 @@
-name: Build and deploy website
+name: Build website
 
 on:
   push:
-    branches: main
+    branches:
+      - main
+
+# Limit token permissions for security
+permissions: read-all
 
 jobs:
-  build-deploy-docs:
+  build-website:
     uses: seedcase-project/.github/.github/workflows/reusable-build-docs.yml@main
+
     secrets:
       netlify-token: ${{ secrets.NETLIFY_AUTH_TOKEN }}
