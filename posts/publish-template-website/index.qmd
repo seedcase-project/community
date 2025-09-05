@@ -1,0 +1,59 @@
+---
+title: "First release of our `template-website` tool!"
+description: "Taking the lessons learned from making our `template-data-package`, we've made a template for developing (and creating) websites, which we've officially released on GitHub and Zenodo :tada:"
+author:
+- Luke W. Johnston
+date: "2025-09-04"
+categories:
+  - websites
+  - templating
+  - publishing
+---
+
+On August 8, 2025, we formally published the first release of one of our
+first ["platform
+engineering"](https://en.wikipedia.org/wiki/Platform_engineering)
+products to [Zenodo](https://doi.org/10.5281/zenodo.16762059). This
+product is a templating tool for creating websites, called
+[`template-website`](https://template-website.seedcase-project.org/).
+
+Platform engineering is the practice of building and maintaining
+internal developer platforms or products that improve the [developer
+experience](https://en.wikipedia.org/wiki/User_experience#Developer_experience)
+and productivity of the team or organisation. A big part of platform
+engineering is treating the development of these internal tools as if
+they are products of their own, where the developer is the client or
+user. It helps to ensure that these internal-facing products meet a
+certain level of quality, reliability, and usability.
+
+In our case, because we develop and maintain many websites, both our own
+and also for collaborators, we spend a decent amount of time ensuring
+that changes across these websites are consistent and that our developer
+and build configurations are aligned. So, using the same tooling and
+processes we used to build our
+[`template-data-package`](/posts/publish-template-data-package/index.qmd),
+we built a template for making websites to help with developing these
+websites, [managing configuration
+drift](https://en.wikipedia.org/wiki/Configuration_management), and
+providing a
+[scaffold](https://en.wikipedia.org/wiki/Scaffold_(programming)) to use
+when we create new websites.
+
+If you want to learn more about what our `template-website` is and how
+to use it, check out its
+[website](https://template-website.seedcase-project.org/). If you want
+to know more about what templating is, check out our previous blog post
+talking about
+[`template-data-package`](/posts/publish-template-data-package/index.qmd).
+
+## Can others use it?
+
+While we built this tool for our own use, we also wanted to make it
+available for others to use. And with our focus on platform engineering,
+releasing the `template-website` as a formal product was an easy and
+natural step to make. With this template, we've aimed to have a balance
+between it being general enough to be useful in other contexts while
+also being opinionated enough to reflect our
+[design](https://design.seedcase-project.org) principles. So yes, others
+can use it too! We hope you will, or at least draw some inspiration from
+it as we have from other templating tools :relaxed: :tada:
