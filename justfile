@@ -50,7 +50,7 @@ check-commits:
 build-website:
   quarto render
 
-# Re-build the README file from the Quarto version
+# Re-build `README.md` from the Quarto version
 build-readme:
   uvx --from quarto quarto render README.qmd --to gfm
 
