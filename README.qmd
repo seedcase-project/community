@@ -4,7 +4,7 @@ metadata-files:
   - _metadata.yml
 ---
 
-# {{< meta gh.repo >}}: News and other outreach information for the Seedcase Project
+# Community: News from and other outreach information for the Seedcase Project
 
 {{< include /includes/_badges.qmd >}}
 

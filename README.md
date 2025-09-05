@@ -1,6 +1,6 @@
 
 
-# community: News and other outreach information for the Seedcase Project
+# Community: News from and other outreach information for the Seedcase Project
 
 [![Copier](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json?raw=true.svg)](https://github.com/copier-org/copier)
 [![GitHub
