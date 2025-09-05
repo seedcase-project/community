@@ -13,18 +13,20 @@ On July 28, 2025, we formally published the first release of our
 *second* Seedcase product to
 [Zenodo](https://zenodo.org/records/16737043). We published a templating
 tool for creating [Data Packages](https://datapackage.org) called, well,
-simply [`template-data-package`](https://template-data-package.seedcase-project.org/). This
-template will form a strong foundation for our continuing work building
-Python packages that improve the experience of developing and managing
-Data Packages. As we expand our "universe" of packages, we'll integrate
-them into the template so that anyone who uses it can stay updated with
-our improvements and features as we add to it.
+simply
+[`template-data-package`](https://template-data-package.seedcase-project.org/).
+This template will form a strong foundation for our continuing work
+building Python packages that improve the experience of developing and
+managing Data Packages. As we expand our "universe" of packages, we'll
+integrate them into the template so that anyone who uses it can stay
+updated with our improvements and features as we add to it.
 
 ## Code scaffolding and configuration management with `template-data-package`
 
-We have a dedicated website for [`template-data-package`](https://template-data-package.seedcase-project.org) that
-includes a lot more details about what it is, what features it has, and
-how to use it. But I'll briefly go over bits of it here.
+We have a dedicated website for
+[`template-data-package`](https://template-data-package.seedcase-project.org)
+that includes a lot more details about what it is, what features it has,
+and how to use it. But I'll briefly go over bits of it here.
 
 We built the template to mainly help us build and manage Data Packages
 for projects that we collaborate on, such as
@@ -97,8 +99,8 @@ As we developed Seedcase Sprout, along with some of the
 [example](https://github.com/seedcase-project/example-seed-beetle) Data
 Packages, we learned and designed and improved how building a Data
 Package might be done and might look like. From those experiences, we
-created the basis for the `template-data-package`. After that, it was only
-a matter of learning how to use
+created the basis for the `template-data-package`. After that, it was
+only a matter of learning how to use
 [copier](https://copier.readthedocs.io/en/stable/)[^1] to create the
 template.
 
