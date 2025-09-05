@@ -1,5 +1,5 @@
 ---
-title: "First published release of our Template Data Package tool!"
+title: "First published release of our `template-data-package` tool!"
 description: "We've taken what we've designed and built in Sprout and used that to start a template for creating new Data Packages. And we've now published it on Zenodo :tada: :tada:"
 author:
 - Luke W. Johnston
@@ -13,22 +13,20 @@ On July 28, 2025, we formally published the first release of our
 *second* Seedcase product to
 [Zenodo](https://zenodo.org/records/16737043). We published a templating
 tool for creating [Data Packages](https://datapackage.org) called, well,
-simply [*Template Data
-Package*](https://template-data-package.seedcase-project.org/). This
+simply [`template-data-package`](https://template-data-package.seedcase-project.org/). This
 template will form a strong foundation for our continuing work building
 Python packages that improve the experience of developing and managing
 Data Packages. As we expand our "universe" of packages, we'll integrate
 them into the template so that anyone who uses it can stay updated with
 our improvements and features as we add to it.
 
-## Code scaffolding and configuration management with Template Data Package
+## Code scaffolding and configuration management with `template-data-package`
 
-We have a dedicated website for [Template Data
-Package](https://template-data-package.seedcase-project.org) that
+We have a dedicated website for [`template-data-package`](https://template-data-package.seedcase-project.org) that
 includes a lot more details about what it is, what features it has, and
 how to use it. But I'll briefly go over bits of it here.
 
-We built the Template to mainly help us build and manage Data Packages
+We built the template to mainly help us build and manage Data Packages
 for projects that we collaborate on, such as
 [ON-LiMiT](https://onlimit.org/) or
 [DP-Next](https://dp-next.github.io/). It helped us to get a more
@@ -59,7 +57,7 @@ standardised and consistent.
 As per our [design philosophy](https://design.seedcase-project.org/) of
 [building for ourselves
 first](https://design.seedcase-project.org/organisation/contribution#we-are-our-first-users),
-we designed the Template Data Package to have features and structures
+we designed the `template-data-package` to have features and structures
 that work for us and our team. But we've also designed it to be flexible
 enough to be used by others. At the least, you can use it as a source of
 inspiration! :grin:
@@ -99,7 +97,7 @@ As we developed Seedcase Sprout, along with some of the
 [example](https://github.com/seedcase-project/example-seed-beetle) Data
 Packages, we learned and designed and improved how building a Data
 Package might be done and might look like. From those experiences, we
-created the basis for the Template Data Package. After that, it was only
+created the basis for the `template-data-package`. After that, it was only
 a matter of learning how to use
 [copier](https://copier.readthedocs.io/en/stable/)[^1] to create the
 template.
@@ -117,7 +115,7 @@ that we have learned a lot from building Seedcase Sprout, so our
 workflow and development process is much more streamlined and efficient
 now.
 
-So! The Template Data Package is "formally" published on
+So! The `template-data-package` is "formally" published on
 [Zenodo](https://doi.org/10.5281/zenodo.16540439), though it is actually
 only installable and usable from GitHub. We published it on Zenodo as a
 way to get exposure and make it more findable, but also as a way to
@@ -125,7 +123,7 @@ way to get exposure and make it more findable, but also as a way to
 
 ## Next steps
 
-We were so enthusiastic about making the Template and how easy it was
+We were so enthusiastic about making the template and how easy it was
 that our next steps are to convert the
 [website](https://github.com/seedcase-project/template-website) and
 [Python
