@@ -51,7 +51,7 @@ Package](/posts/publish-template-data-package/index.qmd).
 While we built this tool for our own use,
 we also wanted to make it available for others to
 use. And with our focus on platform engineering, releasing the Template Website
-as a formal product was an easy and natural step to make. 
+as a formal product was an easy and natural step to make.
 With this template, we've aimed to have a balance between it being general enough to be useful in other contexts while also
 being opinionated enough to reflect our [design](https://design.seedcase-project.org) principles.
 So yes, others can use it too! We hope you will, or at least draw some inspiration from it as we have from other templating tools :relaxed: :tada:
