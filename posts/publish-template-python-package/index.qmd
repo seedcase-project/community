@@ -1,0 +1,42 @@
+---
+title: "First release of our `template-python-package` tool!"
+description: "Shortly after releasing our `template-website`, we've now released our second 'platform' product, which we've officially released on GitHub and Zenodo :tada:"
+author:
+- Luke W. Johnston
+date: "2025-09-05"
+categories:
+  - packages
+  - templating
+  - publishing
+---
+
+On September 1, 2025, we formally published the first release of our
+second [platform](https://en.wikipedia.org/wiki/Platform_engineering)
+products to [Zenodo](https://doi.org/10.5281/zenodo.17018496). This
+product is a templating tool for creating Python packages, called
+[`template-python-package`](https://template-python-package.seedcase-project.org/).
+
+Read our announcement [post](/posts/publish-template-website/index.qmd)
+about our first platform product
+[`template-website`](https://template-website.seedcase-project.org/),
+which also includes a short description of platform engineering.
+
+As with `template-website`, we built this tool to help us with our
+own development work. We build Python packages for (most) of our
+software, and this template is a tool to manage [configuration
+drift](https://en.wikipedia.org/wiki/Configuration_management) and
+provide a
+[scaffold](https://en.wikipedia.org/wiki/Scaffold_(programming))
+whenever we make a new Python package.
+
+Importantly, this tool helps improve our own [developer
+experience](https://github.blog/enterprise-software/collaboration/developer-experience-what-is-it-and-why-should-you-care/)
+and teamwork by ensuring we have access to and use the same development
+tooling and build processes across packages.
+
+## Can others use it?
+
+As with our `template-website`, yes, others can use this template too!
+Check out our
+[guide](https://template-python-package.seedcase-project.org/docs/guide)
+for instructions on how to use it.
