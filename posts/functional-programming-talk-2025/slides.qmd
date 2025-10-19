@@ -3,9 +3,7 @@ title: "A structured approach to writing code for software and analyses"
 author:
   - "Luke Johnston"
 date: "2025-10-23"
-categories:
-  - presentation
-  - learning
+exclude-from-listing: true
 format:
     revealjs:
         theme:
