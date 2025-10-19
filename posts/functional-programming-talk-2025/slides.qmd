@@ -13,6 +13,11 @@ format:
             - theme.scss
         logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
         slide-number: true
+        min-scale: 1
+        max-scale: 1
+        width: 1920
+        height: 1080
+fig-responsive: false
 fig-align: center
 ---
 
@@ -49,14 +54,14 @@ the last section. We'll take a short break before it so you can leave.
 
 ::::: columns
 ::: column
-### Abstraction
+### *Abstraction*
 
 -   Collection of *things* ("objects").
 -   Actions ("morphisms") that transform the things.
 :::
 
 ::: {.column .fragment}
-### Composition
+### *Composition*
 
 -   Actions can combine into a new action.
 -   Combined action produces the same result as sequence of them.
@@ -71,7 +76,7 @@ the last section. We'll take a short break before it so you can leave.
 
 ## A full graph is a category {.center}
 
-A category is the composition of all objects and arrows (in the graph).
+Category = composition of all objects and arrows
 
 ```{mermaid}
 graph LR
@@ -94,57 +99,26 @@ An abstraction of anything: a number, a string, a function.
 
 ## Types (of an object) are math objects with specific properties {.center}
 
-- Necessary for correct mathematical composability.
+-   Necessary for correct mathematical composability.
 
-- You can create any type you want.
+-   You can create any type you want.
 
 ## Types are sets of values or other types {.center}
 
 ::::: columns
-::: column
+::: {.column width="48%"}
 A boolean type can only have two values:
 
 -   True
 -   False
 :::
 
-::: column
+::: {.column width="48%"}
 An integer type can have infinite values:
 
 -   Negative infinity to positive infinity
 :::
 :::::
-
-## Algebraic data types: Bigger container types {.center}
-
-- Used to hold other types.
-
-- There are two kinds: Sum types and Product types.
-
-- Really important when composing types.
-
-## Algebraic data types: Sum types {.center}
-
--   Combination is the sum of the types inside.
-
--   Example: Number of values for a set of Colours (Red, Green, Blue) is 1 + 1 + 1 = 3
-
-::: notes
-These become important later on.
-:::
-
-## Algebraic data types: Product types {.center}
-
--   Combination is the product of the types inside.
-
--   Example: Number of values for set of (Colours, Bool) is 3 \* 2 = 6.
-
-```
-Red, True
-Red, False
-Green, True
-...
-```
 
 ## Express types with `object: type` notation {.center}
 
@@ -155,12 +129,6 @@ A: Integer
 B: String
 D: Function
 ```
-
-Product/sum type:
-
-```
-C: List(A, B)
-```
 :::
 
 ::: column
@@ -169,8 +137,58 @@ Can be empty (`()`):
 ```
 y: ()
 ```
+
+Product/sum type:
+
+```
+C: List(A, B)
+```
 :::
 :::::
+
+## Algebraic data types: Bigger container types {.center}
+
+-   Holds other types or values.
+
+-   Two kinds: Sum types and product types.
+
+-   Can compose together (e.g. sum in product).
+
+::: notes
+Really important later on.
+:::
+
+## Algebraic data types: Sum types {.center}
+
+Number of possible types/values is the sum of the types/values inside.
+
+```
+Colours: Red | Green | Blue
+Bool: True | False
+```
+
+3 + 2 = 5 possible types/values
+
+::: notes
+These become important later on.
+
+Either a specific Colour or a specific Bool.
+:::
+
+## Algebraic data types: Product types {.center}
+
+Number of possible types is the product of the types inside.
+
+```
+Colours: Red | Green | Blue
+Bool: True | False
+```
+
+3 \* 2 = 6 possible types
+
+::: notes
+Can have either Red and True, Red and False, etc.
+:::
 
 ## Types are necessary for actions {.center}
 
@@ -184,15 +202,23 @@ Actions take (input) a type and output a type.
 
 -   Don't need to know how, only the input and output types.
 
+## Simplified syntax for actions {.center}
+
+Actual math syntax is more complex.
+
 ```
 f(A: Integer) -> B: String
 
 g(B: String) -> C: Boolean
 ```
 
+::: notes
+(A) is the input type, `->` is the output type.
+:::
+
 ## Actions are composable {.center}
 
-Use `.` to denote composition.
+`.` = composition.
 
 ```
 g(f(A: Integer)) -> C: Boolean
@@ -202,12 +228,16 @@ h = f . g
 h(A: Integer) -> C: Boolean
 ```
 
-Read as "f composed into g" or "f followed by g"
+"f composed into g" or "f followed by g"
+
+::: notes
+The syntax is a bit different from normal function notation, but it's
+easier to see the composition.
+:::
 
 ## Composing via piping {.center}
 
-Mathematically, you can "chain" or "pipe" functions together, so these
-are the same:
+Can "chain" or "pipe" functions via composition.
 
 ```
 g(f(A)) = f(A) . g()
@@ -219,8 +249,8 @@ Piping helps with readability.
 
 ```{mermaid}
 graph LR
-  A("A: Integer) -->|"f()"| B(B: String) -->|"g()"| C(C: Boolean)
-  A(A) -->|"h()"| C
+  A("A: Integer") -->|"f()"| B(B: String) -->|"g()"| C(C: Boolean)
+  A -->|"h()"| C
 ```
 
 ::: notes
@@ -231,8 +261,13 @@ composition of f and g.
 
 ## Functors: A type of algebraic structure {.center}
 
-A type that lets you apply an action to types inside of the type without
-changing the structure. E.g. lists are usually functors.
+-   Type that allows an action to be applied to types inside.
+
+-   But keeps the overall structure.
+
+-   E.g. lists are usually functors.
+
+## Functor example: Map over a list {.center}
 
 ```
 A: Integer
@@ -286,7 +321,7 @@ So we build small pieces of action that compose together to do larger,
 more complex action.
 :::
 
-## (De-)composition by breaking down a problem
+## (De-)composition by breaking down a problem {.center}
 
 -   Take a bigger problem
 -   Decompose (break it down) into smaller problems/pieces
@@ -314,13 +349,19 @@ Not have to imperatively state how exactly to do something, every time.
 
 ## Explicit types described in function input and output {.center}
 
+```
+f(A: Integer) -> B: String
+```
+
+## Same input always equals same output {.center}
+
+Predictable and testable.
+
 ## Functions are also types of objects {.center}
 
 Can use them in other functions.
 
-## Same input always equals same output {.center}
-
-## Higher order functions (functors) that take a function as an input {.center}
+## Higher order functions (e.g. for functors) that take a function as an input {.center}
 
 Tools like `map`, `filter`, `reduce`.
 
@@ -381,14 +422,6 @@ Same output from same input.
 
 Functions can be memoized (cached when same input is used)
 
-## Distributed/asynchronous computing: Futures and promises {.center}
-
-Abstract containers (types):
-
--   Future = A value that will be available later
-
--   Promise = How to get that value later
-
 ## Easier parallel processing with pure functions and maps
 
 ```{mermaid}
@@ -407,8 +440,16 @@ graph LR
     A1 -->|"f() in core 1"| B1
     A2 -->|"f() in core 2"| B2
 
-    classDef functor fill:white;
+    classDef functor fill:white
 ```
+
+## Distributed/asynchronous computing: Futures and promises {.center}
+
+Abstract containers (types):
+
+-   Future = A value that will be available later
+
+-   Promise = How to get that value later
 
 # Use cases in data analysis
 
@@ -418,6 +459,8 @@ explicitly recognized.
 ## Foundation of SQL is functional and declarative {.center}
 
 Design of databases and the queries are functional.
+
+## Excel spreadsheet formulas are functional {.center}
 
 ## Typical data analysis workflow {.center}
 
@@ -433,70 +476,13 @@ Decompose into small pieces/steps:
 
 -   Convert empty string to missing.
 -   Remove missing values.
--   Standardize column names.
 
 ## Cleaning stage would be a "category" {.center}
 
 -   Objects (or types) are "data at each step".
 -   Arrows are functions that transform data.
 
-## A data frame is a functor {.center}
-
--   You can apply actions to the columns without changing the data frame
-    type.
-
-## Graphically demonstrated with:
-
-```{mermaid}
-graph TB
-  A(Data: Raw) -->|"empty to missing"| B(Data: Empty as missing)
-  B -->|"remove missing"| C(Data: No missingness)
-  C -->|"standardize column names"| D(Data: Cleaned)
-```
-
-## Zoom in: Convert to missingness is a functor (map) step
-
-```{mermaid}
-graph LR
-    subgraph df1 [Data frame]
-      A1(Column 1)
-      A2(Column 2)
-    end
-    subgraph df2 [Data frame]
-      B1(Modified<br>column 1)
-      B2(Modified<br>column 2)
-    end
-
-    df1:::functor -->|"map F"| df2:::functor
-
-    A1 -->|"f()"| B1
-    A2 -->|"f()"| B2
-
-    classDef functor fill:white;
-```
-
-## Mapping a function over a list of items
-
-```{mermaid}
-graph LR
-    subgraph cat1 [List 1]
-      A1(Model<br>formula 1)
-      A2(Model<br>formula 2)
-    end
-    subgraph cat2 [List 2]
-      B1(Results 1)
-      B2(Results 2)
-    end
-
-    cat1:::functor -->|"map F(formula, data)"| cat2:::functor
-
-    A1 -->|"f()"| B1
-    A2 -->|"f()"| B2
-
-    classDef functor fill:white;
-```
-
-## In R, there are few, simple objects/types
+## In R, there are few, simple objects/types {.center}
 
 -   Most common type of objects are: `data.frame`, `vector`, `list`.
 
@@ -519,7 +505,7 @@ The `data.frame` type doesn't change, but the internal types do
 
 ## In Python, it's more complicated {.center}
 
--   Object types depend on the package you use.
+-   Object types depend on the package you're use.
 
 -   Objects (classes) are mutable.
 
@@ -531,7 +517,59 @@ at a high level. Just that some features are either not present, not
 well implemented, or difficult to use.
 :::
 
-## Functional piping is (now) common in R---makes more readable code
+## Graphically demonstrated with: {.center}
+
+::: tb-mermaid
+```{mermaid}
+graph TB
+  A(Data: Raw) -->|"empty to missing"| B(Data: Empty as missing)
+  B -->|"remove missing"| C(Data: Cleaned)
+```
+:::
+
+## Zoom in: Convert to missingness is a functor (map) step {.center}
+
+```{mermaid}
+graph LR
+    subgraph df1 [Data frame]
+      A1(Column 1)
+      A2(Column 2)
+    end
+    subgraph df2 [Data frame]
+      B1(Modified<br>column 1)
+      B2(Modified<br>column 2)
+    end
+
+    df1:::functor -->|"map F"| df2:::functor
+
+    A1 -->|"f()"| B1
+    A2 -->|"f()"| B2
+
+    classDef functor fill:white;
+```
+
+## Applying to other cases: Mapping a model function over a list of formula {.center}
+
+```{mermaid}
+graph LR
+    subgraph cat1 [List 1]
+      A1(Model<br>formula 1)
+      A2(Model<br>formula 2)
+    end
+    subgraph cat2 [List 2]
+      B1(Results 1)
+      B2(Results 2)
+    end
+
+    cat1:::functor -->|"map F(formula, data)"| cat2:::functor
+
+    A1 -->|"f()"| B1
+    A2 -->|"f()"| B2
+
+    classDef functor fill:white;
+```
+
+## Functional piping is (now) common in R---makes more readable code {.center}
 
 ``` r
 result1 = data |> clean() |> transform()
@@ -546,26 +584,24 @@ Python doesn't have a very usable piping or chaining feature, though it
 can be approximated with method chaining.
 :::
 
-## Data cleaning example in R
+## Data cleaning example in R {.center}
 
 ``` r
 removing_missing <- function(data) { ... }
 standardize_column_names <- function(data) { ... }
-
 clean_data <- function(data) {
   data |>
     remove_missing() |>
     standardize_column_names()
 }
-
 cleaned_data <- clean_data(raw_data)
 ```
 
-## targets R package: Manage complex analysis pipelines
+## `targets` R package: Manage complex analysis pipelines {.center}
 
 Requires writing functionally.
 
-``` {.r, filename="_targets.R"}
+``` {.r filename="File: _targets.R"}
 library(targets)
 # ...
 list(
@@ -579,11 +615,11 @@ list(
 Code from [targets
 documentation](https://books.ropensci.org/targets/walkthrough.html).
 
-## Easy parallel processing with furrr R package
+## Easy parallel processing with furrr R package {.center}
 
 Simple because of functional programming design:
 
-``` {.r, filename="R"}
+``` r
 library(furrr)
 plan(multisession)
 result <- future_map(
@@ -611,17 +647,17 @@ Need functional programming in Python to do
 
 ## Better testing and predictability {.center}
 
-- No state changes, no side effects.
+-   No state changes, no side effects.
 
 ## Make objects with actions, compose together {.center}
 
-- Decompose objects with clear actions on them.
+-   Decompose objects with clear actions on them.
 
 ## Put objects into containers as functors, use map {.center}
 
-- Build containers for objects to act as functors.
+-   Build containers for objects to act as functors.
 
-- Apply functions to all objects via functors.
+-   Apply functions to all objects via functors.
 
 ## Big benefit: Emphasis on objects' types {.center}
 
@@ -629,11 +665,13 @@ Need functional programming in Python to do
 
 ### Rust
 
-``` rust filename="Rust"
+``` rust
 fn add(a: i32, b: i32) -> i32 {
     a + b
 }
 ```
+
+### Python
 
 ``` python
 def add(a: int, b: int) -> int:
@@ -653,7 +691,7 @@ def keep_num_gt_zero(x: int) -> int | None:
     return None
 ```
 
-## Solve multiple output types with railway-oriented programming
+## Solve multiple output types with railway-oriented programming {.center}
 
 ```{mermaid}
 graph LR
@@ -677,13 +715,12 @@ enum Direction {
 Direction::North
 ```
 
-`Direction` can only have one value and there are four
-possible values.
+`Direction` can only have one value and there are four possible values.
 
 ::: notes
-In Rust, you create the object, which defines the type. A type doesn't need
-a value. Rust more closely follows functional
-programming, so this is the object construction.
+In Rust, you create the object, which defines the type. A type doesn't
+need a value. Rust more closely follows functional programming, so this
+is the object construction.
 :::
 
 ## Example using sum types: Enums in Rust {.center}
@@ -723,24 +760,39 @@ any formal `enum`.
 
 ## Monads: A way to handle side effects {.center}
 
-- Essentially is a sum or product type as object.
+-   Essentially is a sum or product type as object.
 
-- Must implement a flat map function (e.g. "unwraps" a container).
+-   Must implement a flat map function (e.g. "unwraps" a container).
 
-## Illustration of a monad {.center}
+## Illustration of a monad and flat map {.center}
 
 ```{mermaid}
 graph LR
-    In(Sum type:<br>Type A<br>Type B) -->|M f| Out(Type A)
+    subgraph M [Sum type]
+      A(Type A)
+      B(Type B)
+    end
+
+    M -->|M f| Out(Type A)
+    A -->|f| Out
 ```
 
-## Example: Option type in Rust
+## Example monad: Option type in Rust {.center}
 
 ``` rust
 enum Option<T> {
     Some(T),
     None,
 }
+```
+
+::: notes
+You don't need to explicitly create `enum Option`.
+:::
+
+## Example monad: Using `Option` type in Rust {.center}
+
+``` rust
 fn divide(n1: i32, n2: i32) -> Option<i32> {
     if n2 == 0 {
         None
@@ -752,10 +804,8 @@ fn add_one(n: Option<i32>) -> i32 { ... }
 ```
 
 ::: notes
-You don't need to explicitly create `enum Option`.
-
-This is really nice because it forces you to handle None cases explicitly,
-since not all functions take `Option` as an input type.
+This is really nice because it forces you to handle None cases
+explicitly, since not all functions take `Option` as an input type.
 :::
 
 ## Example: Option type in Python with `Optional` {.center}
@@ -778,7 +828,8 @@ def divide(n1: int, n2: int) -> Maybe[int]:
     return Some(n1 // n2)
 ```
 
-[`returns` package docs](https://returns.readthedocs.io/en/latest/index.html).
+[`returns` package
+docs](https://returns.readthedocs.io/en/latest/index.html).
 
 ## Example of handling errors: Result type {.center}
 
@@ -789,19 +840,66 @@ enum Result<T, E> {
     Ok(T), // Successful result
     Err(E), // Why error occurred
 }
-fn read_file(path: String) -> Result<String, IOError> {
-    // ...
-}
-// Need to convert Result to String before using it,
-// with either `?` or `expect()` or `match`
-fn process(data: String) -> String { ... }
+```
 
+## Easy to see errors by looking at function signature with `Result` {.center}
+
+``` rust
+fn read_file(path: String) -> Result<String, String> {
+    // ... Pseudo-code
+    if file_contents {
+        Ok(file_content)
+    } else {
+        Err("File not found".to_string())
+    }
+}
+```
+
+## Use `Result` as "railway" intersection {.center}
+
+Need to convert `Result` to `String` before using it.
+
+``` rust
+fn process(data: String) -> String { ... }
 read_file("file.txt")
     .expect("Didn't read file.")
     .process()
+read_file("file.txt")?.process()
+```
+
+## Explicitly handle `Result` with `match` {.center}
+
+``` rust
+let file = read_file("file.txt")
+match file {
+    Ok(content) => process(content),
+    // Crash program
+    Err(error) => panic!("{}", error),
+}
 ```
 
 ## Can use `Results` from `returns` package in Python {.center}
+
+# Summarising
+
+## Category theory {.center}
+
+-   Objects and actions
+-   Types as sets of values
+-   Sum types and product types
+-   Composition of objects and actions
+-   Functors: Functions used in a container (e.g. map)
+-   Monads: Unwrap a container (e.g. flat map)
+
+## Functional programming {.center}
+
+-   Declarative programming
+-   Design focus via composition, abstraction, flow
+-   Same input = same output, no side effects
+-   Functions are objects
+-   Objects are immutable
+-   Higher order functions (functors like `map`)
+-   Monads for side effects (e.g. `Option`, `Result`)
 
 # Resources
 
@@ -811,4 +909,4 @@ read_file("file.txt")
 -   https://en.wikipedia.org/wiki/Category_theory
 -   https://en.wikipedia.org/wiki/Monad\_(functional_programming)
 -   https://algocademy.com/blog/understanding-monads-in-functional-programming-a-comprehensive-guide/
-- https://www.turingtaco.com/functors-the-key-to-scalable-functional-code/
+-   https://www.turingtaco.com/functors-the-key-to-scalable-functional-code/

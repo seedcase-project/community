@@ -22,3 +22,5 @@ _site
 _book
 public
 site
+
+**/*.quarto_ipynb
