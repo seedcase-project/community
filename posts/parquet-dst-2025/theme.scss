@@ -1,0 +1,30 @@
+/*-- scss:defaults --*/
+
+$presentation-font-size-root: 48px !default;
+$presentation-h1-font-size: 2em !default;
+$presentation-h2-font-size: 1.5em !default;
+$code-block-font-size: 0.85em !default;
+
+/*-- scss:rules --*/
+
+.reveal .progress {
+  height: 8px;
+  color: $primary;
+  top: 0;
+}
+
+.reveal .slide-logo {
+  top: 10px;
+  left: 10px;
+  max-height: 4rem !important;
+}
+
+// Fix center align for Mermaid diagrams in RevealJS slides.
+svg {
+  display: inline-block;
+  max-width: 60% !important;
+}
+
+.tb-mermaid svg {
+  max-width: 30% !important;
+}

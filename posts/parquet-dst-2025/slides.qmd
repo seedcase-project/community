@@ -1,0 +1,227 @@
+---
+title: "Parquet data format and using it in Denmark Statistics"
+exclude-from-listing: true
+author: "Luke W. Johnston"
+date: "2025-10-24"
+format:
+    revealjs:
+        theme:
+            - brand
+            - theme.scss
+        logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
+        slide-number: true
+---
+
+# Outline for this presentation {.center}
+
+1.  Refresher: How Denmark Statistics currently stores data.
+
+2.  Intro to Parquet file format.
+
+3.  Problems that Parquet solves.
+
+# Denmark Statistics data storage
+
+## Data format: Proprietary SAS format {.center}
+
+For example, BEF register:
+
+``` text
+bef2018.sas7bdat
+bef2019.sas7bdat
+bef2020.sas7bdat
+bef2021.sas7bdat
+bef2022.sas7bdat
+```
+
+. . .
+
+Challenge: Takes many minutes to load one year of data (in R).
+
+::: notes
+This means, if you use R, or Python, or Stata, you have to load these,
+which can take many minutes per file, just to load it.
+:::
+
+## Data updates make more work for us {.center}
+
+``` text
+bef2021.sas7bdat
+bef2022.sas7bdat
+December_2023/bef2022.sas7bdat
+December_2023/bef2023.sas7bdat
+```
+
+> Can you see the issue?
+
+::: notes
+One problem, sometimes there's a new version of a year you already had.
+But you don't know what's been changed. You have to spend time checking
+what changed and if it messes things up for you. The second problem is,
+the updates are in a new folder. So trying to build an automated
+pipeline to load the data in is a bit of a pain because the structure
+changes for each update.
+:::
+
+## Metadata is confusing and poorly documented {.center}
+
+-   Variables are not consistent across years.
+
+-   Finding the metadata is difficult.
+
+-   Some variables are numeric but actually categorical.
+
+::: notes
+Metadata is a big problem. Documentation is relatively poor for most of
+the variables, it's in another location that requires you to dig into
+it. Values in some variables that are numbers but actually are
+categories... but the documentation for what those numbers mean isn't in
+the same place. So requires searching.
+:::
+
+## Use something other than SAS? Data gets duplicated {.center}
+
+E.g. Stata will create `.dta` files, doubling storage needs.
+
+# Parquet file format {.center}
+
+::: aside
+<https://parquet.apache.org/>
+:::
+
+## Parquet is a column-based data storage format {.center}
+
+Most data formats are row-based, like CSV. Newer formats tend to be
+column-based.
+
+## Row vs column-based storage {.center}
+
+::::: columns
+::: column
+### Row-based
+
+``` text
+name,sex,age
+Tim,M,30
+Jenny,F,25
+```
+:::
+
+::: {.column .fragment}
+### Column-based
+
+``` text
+name,Tim,Jenny
+sex,M,F
+age,30,25
+```
+:::
+:::::
+
+## Column-based storage has better compression {.center}
+
+``` text
+sex,M,F,F,M,M,F,F,F
+age,30,30,25,32,31,40,39,50
+diabetes,0,1,0,0,1,0,0,0
+```
+
+...becomes...
+
+``` text
+sex,M,F{2},M{2},F{3}
+age,30{2},25,32,31,40,39,50
+diabetes,0,1,0{2},1,0{3}
+```
+
+### Loading
+
+-   Computers read by lines.
+-   Per line = same data type.
+-   Only read needed columns.
+
+Only need age? Only read that line:
+
+::::: columns
+::: column
+``` text
+sex,M,F
+age,30,25
+diabetes,0,1
+```
+:::
+
+::: column
+``` text
+age,30,25
+```
+:::
+:::::
+
+## Parquet is 50-75% smaller than other formats {.center}
+
+| File type            | Size (MB)    |
+|----------------------|--------------|
+| SAS (`.sas7bdat`)    | 1.45 Gb      |
+| CSV (`.csv`)         | \~90% of SAS |
+| Stata (`.dta`)       | 745 Mb       |
+| Parquet (`.parquet`) | 398 Mb       |
+
+: File size between CSV, Parquet, Stata, and SAS for `bef` register for
+2017.
+
+## Personal experience: 500 GB SAS = 80 GB Parquet {.center}
+
+## Can partition data by a value (e.g. year) {.center}
+
+``` text
+bef/
+├── year=2018/
+│   └── part-0.parquet
+├── year=2019/
+│   └── part-0.parquet
+├── year=2020/
+│   └── part-0.parquet
+└── year=2021/
+    └── part-0.parquet
+```
+
+## Partitioned Parquet dataset can be loaded all at once {.center}
+
+Load in R with `arrow` package:
+
+``` r
+bef <- arrow::open_dataset("bef")
+```
+
+> Loads all years in fraction of a second, compared to \~5 min for one
+> year without using Parquet.
+
+## Easy connection to DuckDB engine {.center}
+
+DuckDB <https://duckdb.org/> is a recent powerful SQL engine designed
+for analytical queries.
+
+``` r
+bef <- arrow::open_dataset("bef") |>
+    arrow::to_duckdb()
+```
+
+## SAS and Python can load Parquet but not Stata {.center}
+
+(But we should be pushing for R or Python use anyway.)
+
+# Problems Parquet solves {.center}
+
+## Less space used = less money spent {.center}
+
+DST charges for storage used.
+
+## Faster loading and analysis times {.center}
+
+Parquet loads multiple files in seconds, compared to minutes for other
+formats.
+
+## Sooner that researcher is done = less money spent {.center}
+
+DST charges per user on a project.
