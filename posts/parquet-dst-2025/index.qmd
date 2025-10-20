@@ -1,0 +1,23 @@
+---
+title: "A talk on using Parquet data format in Denmark Statistics"
+description: |
+    A short presentation on what Parquet is, why it's useful, and
+    why it should be used in Denmark Statistics for faster
+    analysis and lower expenses.
+author:
+  - "Luke W. Johnston"
+date: "2025-10-24"
+categories:
+  - presentation
+  - parquet
+  - data format
+---
+
+For our in-person sessions, we're going to discuss the Denmark
+Statistics project database at Steno Diabetes Center Aarhus, how we'll
+use it in our collaborating project
+[DP-Next](https://dp-next.github.io), and how we can align efforts at
+converting the registers into Parquet format rather than in SAS format.
+
+This post contains the [slides](slides.qmd) used in the session for
+talking about Parquet.
