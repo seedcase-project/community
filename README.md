@@ -69,6 +69,16 @@ Please note that this project is released with a [Contributor Code of
 Conduct](CODE_OF_CONDUCT.md). By participating in this project you agree
 to abide by its terms.
 
+### Contributors
+
+The following people contributed by submitting pull requests :tada:
+
+[@lwjohnst86](https://github.com/lwjohnst86),
+[@signekb](https://github.com/signekb),
+[@K-Beicher](https://github.com/K-Beicher),
+[@martonvago](https://github.com/martonvago),
+[@rqding](https://github.com/rqding)
+
 ## Licensing
 
 This project is licensed under the [CC-BY-4.0 License](LICENSE.md).
