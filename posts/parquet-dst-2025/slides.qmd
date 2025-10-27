@@ -12,7 +12,7 @@ format:
         slide-number: true
 ---
 
-# Outline for this presentation {.center}
+# Outline {.center}
 
 1.  Refresher: How Denmark Statistics currently stores data.
 
@@ -85,9 +85,7 @@ E.g. Stata will create `.dta` files, doubling storage needs.
 
 # Parquet file format {.center}
 
-::: aside
 <https://parquet.apache.org/>
-:::
 
 ## Parquet is a column-based data storage format {.center}
 
@@ -134,7 +132,7 @@ age,30{2},25,32,31,40,39,50
 diabetes,0,1,0{2},1,0{3}
 ```
 
-### Loading
+## Loading data is faster {.center}
 
 -   Computers read by lines.
 -   Per line = same data type.
