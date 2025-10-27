@@ -771,8 +771,10 @@ graph LR
       B(Type B)
     end
 
-    M -->|M f| Out(Type A)
+    M::monad -->|M f| Out(Type A)
     A -->|f| Out
+
+    classDef monad fill:white;
 ```
 
 ## Example monad: Option type in Rust {.center}
