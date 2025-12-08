@@ -1,0 +1,140 @@
+---
+title: "First published release of `check-datapackage`!"
+description: "We've published our second Python package. :tada: :grin: This package checks that a Data Package is compliant with its specification."
+author:
+- Luke W. Johnston
+date: "2025-12-08"
+categories:
+  - packaging
+  - publishing
+  - programming
+---
+
+On November 27th, 2025, we published our second Python package to
+[PyPI](https://pypi.org/project/check-datapackage). This package forms
+the basis for ensuring that any metadata we create or edit for a [Data
+Package](https://decisions.seedcase-project.org/why-frictionless-data/)
+is correct and compliant with the [Data Package
+standard](https://datapackage.org). And since we are and will be working
+with and managing many Data Packages over the coming years, this is an
+important tool for us to have!
+
+## What's `check-datapackage`?
+
+As with all our packages and software tools, we have a dedicated website
+for
+[`check-datapackage`](https://check-datapackage.seedcase-project.org).
+So, rather than repeat what is already in that website, this post gives
+a very quick overview of what it is and why you might want to use it. It
+can be summarised by its tagline:
+
+> Ensure the compliance of your Data Package metadata
+
+The "only" thing it does is checks the content of a `datapackage.json`
+file against the standard. Nothing fancy. But we designed it to be
+configurable, so that if you have specific needs for your Data Package,
+you can adjust the checks accordingly. For example, if you want to
+ensure that certain fields are always present in the metadata, you can
+set up the checks to enforce that.
+
+For now, `check-datapackage` is only a few Python functions and classes
+that you can use within your own Python scripts. But in the future, we
+plan to develop a command-line interface (CLI) so that you can use it
+directly from your terminal without needing to write any code. Along
+with including a config file, we hope to incorporate `check-datapackage`
+into typical build tools or automated check workflows.
+
+## Why use it?
+
+We wanted this package to be incredibly simple and focused in its scope.
+If you install or use it, you know exactly what it does. It also doesn't
+include extra dependencies or features that you might not need. We
+wanted it lightweight and easy to use.
+
+While there are a few tools that provide some type of checks of Data
+Packages, such as the
+[frictionless-py](https://pypi.org/project/frictionless/) package, we
+didn't want all the extras that came with these packages. Nor are these
+tools easy to configure for our needs. In this regard, there were no
+tools available that fit ours needs. So we built our own package that
+does exactly what we need. And hopefully it might be useful for you too!
+
+Eventually, when we develop `check-datapackage` as a CLI, you could
+include it as a [pre-commit hook](https://pre-commit.com/) or part of
+your [continuous
+integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration)
+workflow so that every time you make changes to your Data Package
+metadata, it is automatically checked for compliance. That way, you will
+always know that everything is good with your Data Package metadata. At
+least, good according to the standard and your specific needs!
+
+### Example use
+
+We have a detailed
+[guide](https://check-datapackage.seedcase-project.org/docs/guide/) on
+how to use `check-datapackage`. But I'll briefly show how you might use
+`check-datapackage`. The main function you would use is `check()`, which
+takes as input the properties of a Data Package (i.e., the contents of
+the `datapackage.json` file) as a Python dictionary.
+
+``` python
+import check_datapackage as cdp
+
+# Normally you'd read in the `datapackage.json` file, but we'll
+# show the actual contents here as a Python dict.
+properties = {
+    "name": "woolly-dormice",
+    "id": "123-abc-123",
+    "resources": [{
+        "name": "woolly-dormice-2015",
+        "path": "data.csv",
+        "schema": {"fields": [{
+            "name": "eye-colour",
+            "type": "string",
+        }]},
+    }],
+}
+
+cdp.check(properties)
+```
+
+At a minimum, a Data Package needs to have a `resources` property. So in
+this case, there are no issues with the Data Package. But if you were to
+remove the `resources` property, which is required, and run the check
+again, there would be an issue:
+
+``` python
+del properties["resources"]
+cdp.check(properties)
+```
+
+If you want these checks to be treated as an error, you set the
+parameter `error` to `True`:
+
+``` python
+cdp.check(properties, error=True)
+```
+
+If you wanted to exclude certain checks, you can do that by using the
+`Config` and `Exclusion` classes. For example, if you wanted to ignore
+all required checks, you could do:
+
+``` python
+exclusion_required = cdp.Exclusion(type="required")
+config = cdp.Config(exclusions=[exclusion_required])
+cdp.check(properties=package_properties, config=config)
+```
+
+If you wanted the issues listed in a more human-friendly way, we have
+the `explain()` function that takes the list of issues returned by
+`check()` and formats them nicely:
+
+``` python
+issues = cdp.check(properties)
+cdp.explain(issues)
+```
+
+There's many other things you can configure in `check-datapackage`, so
+be sure to check out the
+[website](https://check-datapackage.seedcase-project.org) for more
+information!
