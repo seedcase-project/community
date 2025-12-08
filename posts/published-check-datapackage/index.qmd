@@ -12,12 +12,12 @@ categories:
 
 On November 27th, 2025, we published our second Python package to
 [PyPI](https://pypi.org/project/check-datapackage). This package forms
-the basis for ensuring that any metadata we create or edit for a [Data
+the basis for ensuring that any metadata created or edited for a [Data
 Package](https://decisions.seedcase-project.org/why-frictionless-data/)
 is correct and compliant with the [Data Package
-standard](https://datapackage.org). And since we are and will be working
+standard](https://datapackage.org). Since we are and will be working
 with and managing many Data Packages over the coming years, this is an
-important tool for us to have!
+important tool for us to have! Generally, this will be a helpful tool for anyone working with and managing Data Packages.
 
 ## What's `check-datapackage`?
 
@@ -25,16 +25,16 @@ As with all our packages and software tools, we have a dedicated website
 for
 [`check-datapackage`](https://check-datapackage.seedcase-project.org).
 So, rather than repeat what is already in that website, this post gives
-a very quick overview of what it is and why you might want to use it. It
+a very quick overview of what this package does and why you might want to use it. It
 can be summarised by its tagline:
 
 > Ensure the compliance of your Data Package metadata
 
-The "only" thing it does is checks the content of a `datapackage.json`
+The "only" thing `check-datapackage` does is to check the content of a `datapackage.json`
 file against the standard. Nothing fancy. But we designed it to be
 configurable, so that if you have specific needs for your Data Package,
-you can adjust the checks accordingly. For example, if you want to
-ensure that certain fields are always present in the metadata, you can
+you can adjust the checks accordingly. It's possible to both add checks on top of the standard or ignore certain checks from the standard. For example, if you want to
+ensure that certain fields that aren't required by the standard are always present in the metadata, you can
 set up the checks to enforce that.
 
 For now, `check-datapackage` is only a few Python functions and classes
@@ -42,11 +42,11 @@ that you can use within your own Python scripts. But in the future, we
 plan to develop a command-line interface (CLI) so that you can use it
 directly from your terminal without needing to write any code. Along
 with including a config file, we hope to incorporate `check-datapackage`
-into typical build tools or automated check workflows.
+into typical build tools and automated check workflows.
 
 ## Why use it?
 
-We wanted this package to be incredibly simple and focused in its scope.
+We wanted this package to be incredibly simple and focused.
 If you install or use it, you know exactly what it does. It also doesn't
 include extra dependencies or features that you might not need. We
 wanted it lightweight and easy to use.
@@ -56,8 +56,8 @@ Packages, such as the
 [frictionless-py](https://pypi.org/project/frictionless/) package, we
 didn't want all the extras that came with these packages. Nor are these
 tools easy to configure for our needs. In this regard, there were no
-tools available that fit ours needs. So we built our own package that
-does exactly what we need. And hopefully it might be useful for you too!
+tools available that fit ours needs. So, we built our own package that
+does exactly what we need. Hopefully, it will be useful for other people too!
 
 Eventually, when we develop `check-datapackage` as a CLI, you could
 include it as a [pre-commit hook](https://pre-commit.com/) or part of
@@ -65,23 +65,24 @@ your [continuous
 integration](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration)
 workflow so that every time you make changes to your Data Package
 metadata, it is automatically checked for compliance. That way, you will
-always know that everything is good with your Data Package metadata. At
-least, good according to the standard and your specific needs!
+always know that your Data Package metadata lives up to the standard and
+your configuration.
 
 ### Example use
 
 We have a detailed
 [guide](https://check-datapackage.seedcase-project.org/docs/guide/) on
 how to use `check-datapackage`. But I'll briefly show how you might use
-`check-datapackage`. The main function you would use is `check()`, which
+`check-datapackage`. The main function of the package is `check()`, which
 takes as input the properties of a Data Package (i.e., the contents of
-the `datapackage.json` file) as a Python dictionary.
+the `datapackage.json` file) as a Python dictionary and checks it against the standard.
 
 ``` python
 import check_datapackage as cdp
 
 # Normally you'd read in the `datapackage.json` file, but we'll
-# show the actual contents here as a Python dict.
+# show the actual contents here as a Python dict. Can use
+# the `read_json()` helper function to read in `datapackage.json`
 properties = {
     "name": "woolly-dormice",
     "id": "123-abc-123",
@@ -115,9 +116,9 @@ parameter `error` to `True`:
 cdp.check(properties, error=True)
 ```
 
-If you wanted to exclude certain checks, you can do that by using the
-`Config` and `Exclusion` classes. For example, if you wanted to ignore
-all required checks, you could do:
+If you want to exclude certain checks, you can do that by using the
+`Config` and `Exclusion` classes. For example, if you want to exclude
+all required checks, you can define the exclusion, add it to the configuration, and pass it to the check function like so:
 
 ``` python
 exclusion_required = cdp.Exclusion(type="required")
@@ -125,7 +126,7 @@ config = cdp.Config(exclusions=[exclusion_required])
 cdp.check(properties=package_properties, config=config)
 ```
 
-If you wanted the issues listed in a more human-friendly way, we have
+If you want the issues listed in a more human-friendly way, you can use
 the `explain()` function that takes the list of issues returned by
 `check()` and formats them nicely:
 
@@ -134,7 +135,7 @@ issues = cdp.check(properties)
 cdp.explain(issues)
 ```
 
-There's many other things you can configure in `check-datapackage`, so
+There's many other checks you can configure with `check-datapackage`, so
 be sure to check out the
 [website](https://check-datapackage.seedcase-project.org) for more
 information!
