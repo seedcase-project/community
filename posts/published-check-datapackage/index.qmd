@@ -32,7 +32,7 @@ to use it. It can be summarised by its tagline:
 > Ensure the compliance of your Data Package metadata
 
 The "only" thing `check-datapackage` does is to check the content of a
-`datapackage.json` file against the standard. Nothing fancy. But we
+`datapackage.json` file against the Data Package standard. Nothing fancy. But we
 designed it to be configurable, so that if you have specific needs for
 your Data Package, you can adjust the checks accordingly. It's possible
 to both add checks on top of the standard or ignore certain checks from
@@ -49,8 +49,7 @@ into typical build tools and automated check workflows.
 
 ## Why use it?
 
-We wanted this package to be incredibly simple and focused. If you
-install or use it, you know exactly what it does. It also doesn't
+We wanted this package to be incredibly simple and focused. It also doesn't
 include extra dependencies or features that you might not need. We
 wanted it lightweight and easy to use.
 
@@ -76,7 +75,7 @@ your configuration.
 
 We have a detailed
 [guide](https://check-datapackage.seedcase-project.org/docs/guide/) on
-how to use `check-datapackage`. But I'll briefly show how you might use
+how to use `check-datapackage`. But we'll briefly show how you might use
 `check-datapackage`. The main function of the package is `check()`,
 which takes as input the properties of a Data Package (i.e., the
 contents of the `datapackage.json` file) as a Python dictionary and
