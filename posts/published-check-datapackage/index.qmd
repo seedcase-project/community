@@ -85,7 +85,7 @@ checks it against the standard.
 import check_datapackage as cdp
 
 # Normally you'd read in the `datapackage.json` file, but we'll
-# show the actual contents here as a Python dict. Can use
+# show the actual contents here as a Python dict. You can use
 # the `read_json()` helper function to read in `datapackage.json`
 properties = {
     "name": "woolly-dormice",
