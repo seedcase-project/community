@@ -32,13 +32,14 @@ to use it. It can be summarised by its tagline:
 > Ensure the compliance of your Data Package metadata
 
 The "only" thing `check-datapackage` does is to check the content of a
-`datapackage.json` file against the Data Package standard. Nothing fancy. But we
-designed it to be configurable, so that if you have specific needs for
-your Data Package, you can adjust the checks accordingly. It's possible
-to both add checks on top of the standard or ignore certain checks from
-the standard. For example, if you want to ensure that certain fields
-that aren't required by the standard are always present in the metadata,
-you can set up the checks to enforce that.
+`datapackage.json` file against the Data Package standard. Nothing
+fancy. But we designed it to be configurable, so that if you have
+specific needs for your Data Package, you can adjust the checks
+accordingly. It's possible to both add checks on top of the standard or
+ignore certain checks from the standard. For example, if you want to
+ensure that certain fields that aren't required by the standard are
+always present in the metadata, you can set up the checks to enforce
+that.
 
 For now, `check-datapackage` is only a few Python functions and classes
 that you can use within your own Python scripts. But in the future, we
@@ -49,9 +50,9 @@ into typical build tools and automated check workflows.
 
 ## Why use it?
 
-We wanted this package to be incredibly simple and focused. It also doesn't
-include extra dependencies or features that you might not need. We
-wanted it lightweight and easy to use.
+We wanted this package to be incredibly simple and focused. It also
+doesn't include extra dependencies or features that you might not need.
+We wanted it lightweight and easy to use.
 
 While there are a few tools that provide some type of checks of Data
 Packages, such as the
