@@ -30,7 +30,7 @@ project](https://dp-next.github.io/) to develop and build up their data
 infrastructure, collection processes, and storage capacity. But we're
 also aiming to build up the technical expertise of people in the group.
 So when DP-Next officially started in September 2025, we planned to run
-the workshop for their members as well.
+the workshop for the DP-Next people as well.
 
 Since they are spread across all the Steno centers in Denmark, Faroe
 Islands, and Greenland, we ran the workshop online. This was the first
@@ -39,7 +39,7 @@ different options and ways for doing this effectively. We ended up using
 [Gather](https://gather.town/) to virtually host the workshop.
 
 On September 9th, 2025, we ran the workshop online for the DP-Next
-members. We had 11 participants, who were a mix of PhD students and
+people. We had 11 participants, who were a mix of PhD students and
 postdocs from each of the Steno centers. As with the in-person workshop,
 participants gave very positive feedback and they also enjoyed the
 online platform.
