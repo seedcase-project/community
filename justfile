@@ -12,13 +12,14 @@ list-todos:
   grep -R -n \
     --exclude="*.code-snippets" \
     --exclude-dir=.quarto \
-    --exclude-dir=_site \
     --exclude=justfile \
+    --exclude=_site \
     "TODO" *
 
 # Update the Quarto seedcase-theme extension
 update-quarto-theme:
-  quarto add seedcase-project/seedcase-theme --no-prompt
+  # # Add theme if it doesn't exist, update if it does
+  quarto update seedcase-project/seedcase-theme --no-prompt
 
 # Install the pre-commit hooks
 install-precommit:
