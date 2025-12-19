@@ -30,7 +30,9 @@ project](https://dp-next.github.io/) to develop and build up their data
 infrastructure, collection processes, and storage capacity. But we're
 also aiming to build up the technical expertise of people in the group.
 So when DP-Next officially started in September 2025, we planned to run
-the workshop for the DP-Next people as well.
+the workshop for the DP-Next people as well. This is partly the aim of
+Seedcase as well as [Work Package 1](https://dp-next.github.io/wp1-ros/)
+of DP-Next.
 
 Since they are spread across all the Steno centers in Denmark, Faroe
 Islands, and Greenland, we ran the workshop online. This was the first
