@@ -18,7 +18,7 @@ On December 10th, 2025, we finally published our first R package to
 [CRAN](https://cran.r-project.org/)! :tada:
 
 The package is called
-[`osdc`](https://cran.r-project.org/web/packages/osdc/index.html), or
+[osdc](https://cran.r-project.org/web/packages/osdc/index.html), or
 "Open Source Diabetes Classifier", and it is our first package that
 we've built in collaboration with an external researcher, [Anders Aasted
 Isaksen](https://www.stenoaarhus.dk/kontakt/anders-aasted-isaksen/). He
@@ -44,7 +44,7 @@ The package has two aims (as described in the package
 
 ## Who is it for and why use it?
 
-The main reason for building the `osdc` package was to provide a tool
+The main reason for building the osdc package was to provide a tool
 for researchers doing diabetes research with Danish register data to classify diabetes. There
 are no Danish registers that fully captures the different ways that a
 person could be classified with diabetes, as administrative diagnosis
@@ -57,7 +57,7 @@ been packaged into reusable tools. Which has lead to many researchers
 having different "in-house" solutions for their group or organisation that
 other groups can't really use effectively. We wanted to change that.
 
-So, we built the `osdc` package with all the necessary details for
+So, we built the osdc package with all the necessary details for
 researchers to classify diabetes status in their own Danish
 register data. For example, the package provides a list of which registers and
 variables are needed with the use of the `registers()` function. Other
