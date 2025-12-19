@@ -10,13 +10,13 @@ categories:
   - github
 ---
 
-Early in 2025 we received several requests at Steno Aarhus from colleagues and collaborators to run a
-workshop on how to use GitHub for managing and working with files. Steno
-Aarhus has been making increasing efforts to integrate use of GitHub
-into the organisation overall and into individual research projects. But
-many researchers and staff are still unfamiliar with how to use GitHub
-effectively. So in early 2025, we started developing a [gentle
-introductory workshop to using
+Early in 2025 we received several requests at Steno Aarhus from
+colleagues and collaborators to run a workshop on how to use GitHub for
+managing and working with files. Steno Aarhus has been making increasing
+efforts to integrate use of GitHub into the organisation overall and
+into individual research projects. But many researchers and staff are
+still unfamiliar with how to use GitHub effectively. So in early 2025,
+we started developing a [gentle introductory workshop to using
 GitHub](https://github-intro.rostools.org).
 
 We finished developing the material and ran the workshop on May 26th,
@@ -28,16 +28,15 @@ feedback from participants (see below for some plots of the feedback).
 We are collaborating with the [DP-Next
 project](https://dp-next.github.io/) to develop and build up their data
 infrastructure, collection processes, and storage capacity. But we're
-also aiming to build up the technical expertise of people in the group. So
-when DP-Next officially started in September 2025, we planned to run the
-workshop for their members as well.
+also aiming to build up the technical expertise of people in the group.
+So when DP-Next officially started in September 2025, we planned to run
+the workshop for their members as well.
 
 Since they are spread across all the Steno centers in Denmark, Faroe
-Islands, and Greenland, we ran the workshop online. This
-was the first time we've ever ran a workshop online, so we had to
-investigate different options and ways for doing this effectively. We
-ended up using [Gather](https://gather.town/) to virtually host the
-workshop.
+Islands, and Greenland, we ran the workshop online. This was the first
+time we've ever ran a workshop online, so we had to investigate
+different options and ways for doing this effectively. We ended up using
+[Gather](https://gather.town/) to virtually host the workshop.
 
 On September 9th, 2025, we ran the workshop online for the DP-Next
 members. We had 11 participants, who were a mix of PhD students and
@@ -47,10 +46,12 @@ online platform.
 
 ## Participant demographics
 
-The figure below shows some basic
-demographics about the participants of the two workshops. The first
-workshop most participants used
-she/her pronouns with diverse formal positions. In the second workshop, the pronoun distribution of she/her and he/him were more even with almost half of the participants being PhD students. No participants preferred other pronouns to she/her and he/him.
+The figure below shows some basic demographics about the participants of
+the two workshops. The first workshop most participants used she/her
+pronouns with diverse formal positions. In the second workshop, the
+pronoun distribution of she/her and he/him were more even with almost
+half of the participants being PhD students. No participants preferred
+other pronouns to she/her and he/him.
 
 ::: column-page
 ![Some basic demographics of the participants who registered for the two
@@ -62,10 +63,10 @@ fig-alt="A series of bar plots showing an overview of who the participants were,
 
 While we collect anonymous [qualitative
 feedback](https://github.com/rostools/samwise/tree/main/inst/extdata/surveys/gh_intro)
-via free-form text in the surveys from participants after each workshop, we also
-collect quantitative feedback. We have a series of statements that
-participants respond to on a Likert-scale, from "Strongly disagree" to
-"Strongly agree". The two plots below show the quantitative feedback
+via free-form text in the surveys from participants after each workshop,
+we also collect quantitative feedback. We have a series of statements
+that participants respond to on a Likert-scale, from "Strongly disagree"
+to "Strongly agree". The two plots below show the quantitative feedback
 from participants of both the in-person and online workshops. Overall,
 the feedback was very positive, with the vast majority of participants
 agreeing or strongly agreeing with the statements provided.
