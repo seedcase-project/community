@@ -1,10 +1,10 @@
 ---
-title: "Published our first, externally collaborated R package called `osdc`"
+title: "Published our first externally collaborated R package, osdc"
 description: |
-    We've been collaborating with a researcher at Steno Aarhus on building an
-    R package called `osdc` over the last 2 years. This package, titled
+    Over the last two year, we've collaborated with a researcher at Steno Aarhus on building an
+    R package called osdc. This package, titled
     *Open Source Diabetes Classifier*, classifies diabetes status in the
-    Danish registers. And finally, we've published it to CRAN! :tada:
+    Danish registers. And finally, we've published it to CRAN!
 author:
 - Luke W. Johnston
 date: "2025-12-18"
@@ -25,8 +25,8 @@ Isaksen](https://www.stenoaarhus.dk/kontakt/anders-aasted-isaksen/). He
 developed an algorithm to classify type 1 and type 2 diabetes using
 Danish registers as data sources, and we worked together to turn this
 algorithm into an R package that others can use. We started the
-collaboration back in 2023, and after a lot of work and iterations and
-designing, we finally got it to a stage that we could publish a first
+collaboration back in 2023, and after a lot of work,
+we finally got it to a stage that we could publish a first
 version to CRAN.
 
 The package has two aims (as described in the package
@@ -45,31 +45,31 @@ The package has two aims (as described in the package
 ## Who is it for and why use it?
 
 The main reason for building the `osdc` package was to provide a tool
-for researchers doing diabetes research with Danish register data. There
+for researchers doing diabetes research with Danish register data to classify diabetes. There
 are no Danish registers that fully captures the different ways that a
 person could be classified with diabetes, as administrative diagnosis
-data is not always complete nor accurate. So researchers have had to
+data is not always complete nor accurate. So, researchers have had to
 develop different algorithms to get a better idea of who has diabetes in
 the Danish registers.
 
 However, these algorithms have not been open source, and they have not
 been packaged into reusable tools. Which has lead to many researchers
-having "in-house" solutions for their group or organisation, but that
+having different "in-house" solutions for their group or organisation that
 other groups can't really use effectively. We wanted to change that.
 
-So we built the `osdc` package with all the necessary details for
-researchers to easily classify diabetes status in their own Danish
-register data. That includes providing a list of which registers and
+So, we built the `osdc` package with all the necessary details for
+researchers to classify diabetes status in their own Danish
+register data. For example, the package provides a list of which registers and
 variables are needed with the use of the `registers()` function. Other
-that a few other helper functions, the main function of the package is
+than a few other helper functions, the main function of the package is
 `classify_diabetes()`, which takes all the required registers and
 outputs a data frame with a list of individuals, their diabetes status,
 and the date when the classification was made.
 
-Aside from those functions, there's also a function that lists all the
-specific criteria used in the algorithm in the function `algorithm()`.
-This makes it very easy for others to assess how exactly we classified
+Aside from those functions, the package provides an `algorithm()` function that lists all the
+specific criteria used in the algorithm.
+This makes it easier for others to assess how exactly the algorithm classifies
 diabetes.
 
-Anyway, next step is to start using them in collaborating projects that
+The next step is to start using the osdc package in collaborating projects that
 use Denmark Statistics and register data :tada:
