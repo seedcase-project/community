@@ -1,0 +1,96 @@
+---
+title: "Developed and ran a new GitHub intro workshop"
+description: "After receiving several requests, we developed a workshop with a gentle GitHub introduction to help build digital technical capacity and support more effective research collaboration."
+author:
+- Luke W. Johnston
+date: "2025-12-16"
+categories:
+  - workshop
+  - training
+  - github
+---
+
+Early in 2025 we received several requests at Steno Aarhus from
+colleagues and collaborators to run a workshop on how to use GitHub for
+managing and working with files. Steno Aarhus has been making increasing
+efforts to integrate use of GitHub into the organisation overall and
+into individual research projects. But many researchers and staff are
+still unfamiliar with how to use GitHub effectively. So in early 2025,
+we started developing a [gentle introductory workshop to using
+GitHub](https://github-intro.rostools.org).
+
+We finished developing the material and ran the workshop on May 26th,
+2025 in-person at Steno Aarhus for staff and researchers. We had 24
+participants attend the workshop, which were more people than we
+anticipated! The workshop was very well received, with very positive
+feedback from participants (see below for some plots of the feedback).
+
+We are collaborating with the [DP-Next
+project](https://dp-next.github.io/) to develop and build up their data
+infrastructure, collection processes, and storage capacity. But we're
+also aiming to build up the technical expertise of people in the group.
+So when DP-Next officially started in September 2025, we planned to run
+the workshop for the DP-Next people as well. This is partly the aim of
+Seedcase as well as [Work Package 1](https://dp-next.github.io/wp1-ros/)
+of DP-Next.
+
+Since they are spread across all the Steno centers in Denmark, Faroe
+Islands, and Greenland, we ran the workshop online. This was the first
+time we've ever ran a workshop online, so we had to investigate
+different options and ways for doing this effectively. We ended up using
+[Gather](https://gather.town/) to virtually host the workshop.
+
+On September 9th, 2025, we ran the workshop online for the DP-Next
+people. We had 11 participants, who were a mix of PhD students and
+postdocs from each of the Steno centers. As with the in-person workshop,
+participants gave very positive feedback and they also enjoyed the
+online platform.
+
+## Participant demographics
+
+The figure below shows some basic demographics about the participants of
+the two workshops. The first workshop most participants used she/her
+pronouns with diverse formal positions. In the second workshop, the
+pronoun distribution of she/her and he/him were more even with almost
+half of the participants being PhD students. No participants preferred
+other pronouns to she/her and he/him.
+
+::: column-page
+![Some basic demographics of the participants who registered for the two
+workshops.](overview.svg){#fig-demographics
+fig-alt="A series of bar plots showing an overview of who the participants were, such as their preferred pronoun and their position."}
+:::
+
+## Quantitative feedback
+
+While we collect anonymous [qualitative
+feedback](https://github.com/rostools/samwise/tree/main/inst/extdata/surveys/gh_intro)
+via free-form text in the surveys from participants after each workshop,
+we also collect quantitative feedback. We have a series of statements
+that participants respond to on a Likert-scale, from "Strongly disagree"
+to "Strongly agree". The two plots below show the quantitative feedback
+from participants of both the in-person and online workshops. Overall,
+the feedback was very positive, with the vast majority of participants
+agreeing or strongly agreeing with the statements provided.
+
+:::: column-page
+::: {#fig-feedback layout-ncol="1"}
+![May 26th in-person workshop.](feedback-2025-05-26.svg){#fig-in-person
+fig-alt="Bar plots showing the quantitative feedback from participants in the May 26 workshop, with each plot showing the responses to a single question."}
+
+![September 9th virtual workshop.](feedback-2025-09-09.svg){#fig-virtual
+fig-alt="Bar plots showing the quantitative feedback from participants of the September 9 virtual workshop, with each plot showing the responses to a single question."}
+
+Quantitative feedback from participants of the two workshops.
+:::
+::::
+
+## Next steps
+
+We will probably run this workshop again next year, but we also want to
+develop and run a workshop on how to collaborate effectively as a team
+using GitHub, which we've [already
+started](https://github.com/rostools/git4cats) working on. We're quite
+excited about that one as we think a lot of people could benefit from
+learning more effective practices at collaborating and developing
+something together. We hope to run that workshop in mid-2026 :tada:
