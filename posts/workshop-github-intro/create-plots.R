@@ -1,6 +1,6 @@
 # pak::pak("rostools/samwise", ask = FALSE)
 
-library(tidyverse)
+library(tidyverse, quietly = TRUE)
 library(samwise)
 
 overview <- read_surveys("gh_intro", "overview")
@@ -15,7 +15,6 @@ plot_overview_community <- function(data) {
       rows = vars(question),
       scales = "free",
       space = "free_y",
-      axes = "all_y",
       labeller = ggplot2::label_wrap_gen(width = 10)
     ) +
     theme(
@@ -27,7 +26,9 @@ save_plot_feedback <- function(data) {
   ggsave(
     filename = glue::glue("feedback-{unique(data$date)}.svg"),
     plot = plot_feedback(data) +
-      scale_x_continuous(breaks = seq(0, 12, by = 2))
+      scale_x_continuous(breaks = seq(0, 12, by = 2)),
+    width = 12,
+    height = 6
   )
 }
 
@@ -42,7 +43,9 @@ feedback |>
 
 ggsave(
   filename = "overview.svg",
-  plot = plot_overview_community(overview)
+  plot = plot_overview_community(overview),
+  width = 12,
+  height = 6
 )
 
 feedback |>
