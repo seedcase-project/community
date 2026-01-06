@@ -1,7 +1,7 @@
 ---
 title: "Published our first externally collaborated R package, osdc"
 description: |
-    Over the last two year, we've collaborated with a researcher at Steno Aarhus on building an
+    Over the last two years, we've collaborated with a researcher at Steno Aarhus on building an
     R package called osdc. This package, titled
     *Open Source Diabetes Classifier*, classifies diabetes status in the
     Danish registers. And finally, we've published it to CRAN!
