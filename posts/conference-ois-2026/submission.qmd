@@ -37,12 +37,12 @@ individual researchers sometimes are capable of implementing FAIR and
 open practices on their own, the availability of software and data
 engineering resources and tools greatly facilitates the adoption of
 these practices. Unfortunately, there is a lack of systemic structures
-to incentivise researchers, organizations, and funding agencies to
+to incentivise researchers, organisations, and funding agencies to
 appreciate the importance of software and data engineering in research
 contexts and to dedicate sufficient resources to implementing them in
 practice. A major consequence from this incentive misalignment is that
 researchers trying to adhere to FAIR and open practices face
-organizational and technical challenges with managing, sharing,
+organisational and technical challenges with managing, sharing,
 building, and using research data, which in turn hampers scientific
 progress.
 
@@ -50,7 +50,7 @@ In the Seedcase Project (\<seedcase-project.org\>), we aim to resolve
 part of the aforementioned issues by developing a framework that
 facilitates the creation and management of FAIR research data. To reach
 this goal, we are developing a set of interoperable and modular tools
-that together constitute a modern, organized, and robust framework.
+that together constitute a modern, organised, and robust framework.
 
 In addition to publishing the data engineering tools, we also publish
 our internal developer tools, documentation, and guides to effective
