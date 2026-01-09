@@ -1,5 +1,5 @@
 ---
-title: "The Seedcase Project: A data engineering framework and tools for building and managing open and FAIR research data"
+title: "The Seedcase Project: Data engineering tools for building and managing open and FAIR research data"
 author:
   - name: Kristiane Beicher
     orcid: "https://orcid.org/0000-0001-7556-9566"
@@ -50,8 +50,18 @@ In the Seedcase Project (\<seedcase-project.org\>), we aim to resolve
 part of the aforementioned issues by developing a framework that
 facilitates the creation and management of FAIR research data. To reach
 this goal, we are developing a set of interoperable and modular tools
-that together constitute a modern, organized, and robust framework. The
-tools we've published so far include:
+that together constitute a modern, organized, and robust framework.
+
+In addition to publishing the data engineering tools, we also publish
+our internal developer tools, documentation, and guides to effective
+collaborative practices. Through these publications, we contribute to
+our ultimate goal of helping researchers do "better science in less
+time", not only in an academic settings in Denmark but also in industry
+and across the globe. Our progress towards this goal can be found in our
+roadmap at \<seedcase-project.org/roadmap/\> which lists all of our
+products and their development status.
+
+The data engineering tools we've published so far include:
 
 -   Sprout (\<sprout.seedcase-project.org\>): A Python package that
     helps create and manage a standardised and organised structure for
@@ -69,7 +79,7 @@ tools we've published so far include:
     for creating a new Data Package following the Seedcase structure
     with the necessary files and configurations in place.
 
-Tools that are planned or in early development:
+While the tools that are planned or in early development include:
 
 -   Flower (\<flower.seedcase-project.org\>): A Python package and
     command-line tool to generate and display your `datapackage.json`
@@ -79,15 +89,6 @@ Tools that are planned or in early development:
     Package through a machine-readable set of instructions.
 -   Garden: A planned tool to manage and track research projects using a
     Data Package
-
-In addition to publishing data engineering tools, we also publish our
-internal developer tools, documentation, and guides to effective
-collaborative practices. Through these publications, we contribute to
-our ultimate goal of helping researchers do "better science in less
-time", not only in an academic settings in Denmark but also in industry
-and across the globe. Our progress towards this goal can be found in our
-roadmap at \<seedcase-project.org/roadmap/\> which lists all of our
-products and their development status.
 
 This project is funded by a Novo Nordisk Foundation grant (number
 NNF21OC0069462).
