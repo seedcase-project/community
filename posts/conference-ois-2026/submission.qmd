@@ -32,39 +32,38 @@ and contingency factors. Possible topics include but are not limited to:
 :::
 
 FAIR and open practices are beneficial for science as they encourage
-reproducible, transparent, and shareable data practices.
-While individual researchers sometimes are capable of implementing FAIR
-and open practices on their own, the availability of software and data
+reproducible, transparent, and shareable data practices. While
+individual researchers sometimes are capable of implementing FAIR and
+open practices on their own, the availability of software and data
 engineering resources and tools greatly facilitates the adoption of
-these practices.
-Unfortunately, there is a lack of systemic structures to incentivise
-researchers, organizations, and funding agencies to appreciate the
-importance of software and data engineering in research contexts and to
-dedicate sufficient resources to implementing them in practice.
-A major consequence from this incentive misalignment is that researchers
-trying to adhere to FAIR and open practices face organizational and
-technical challenges with managing, sharing, building, and using
-research data, which in turn hampers scientific progress.
+these practices. Unfortunately, there is a lack of systemic structures
+to incentivise researchers, organizations, and funding agencies to
+appreciate the importance of software and data engineering in research
+contexts and to dedicate sufficient resources to implementing them in
+practice. A major consequence from this incentive misalignment is that
+researchers trying to adhere to FAIR and open practices face
+organizational and technical challenges with managing, sharing,
+building, and using research data, which in turn hampers scientific
+progress.
 
 In the Seedcase Project (\<seedcase-project.org\>), we aim to resolve
 part of the aforementioned issues by developing a framework that
 facilitates the creation and management of FAIR research data. To reach
-this goal, we are developing a set of interoperable and modular tools that together
-constitute a modern, organized, and robust framework.
-The tools we've published so far include:
+this goal, we are developing a set of interoperable and modular tools
+that together constitute a modern, organized, and robust framework. The
+tools we've published so far include:
 
 -   Sprout (\<sprout.seedcase-project.org\>): A Python package that
-    helps create and manage a standardised and organised
-    structure for storing and describing research data as a Data Package. Using modern
-    data engineering and management practices, Sprout promotes
-    research data that are well designed, discoverable,
-    well documented, and ultimately (re)usable for later analyses.
-    This package is built around the Data Package standard
-    (\<datapackage.org\>).
--   `check-datapackage` (\<check-datapackage.seedcase-project.org\>):
-    A Python package that checks your Data Package's metadata against
-    the Data Package standard to ensure that a Data Package's metadata is compliant
-    with the standard.
+    helps create and manage a standardised and organised structure for
+    storing and describing research data as a Data Package. Using modern
+    data engineering and management practices, Sprout promotes research
+    data that are well designed, discoverable, well documented, and
+    ultimately (re)usable for later analyses. This package is built
+    around the Data Package standard (\<datapackage.org\>).
+-   `check-datapackage` (\<check-datapackage.seedcase-project.org\>): A
+    Python package that checks your Data Package's metadata against the
+    Data Package standard to ensure that a Data Package's metadata is
+    compliant with the standard.
 -   Template Data Package
     (\<template-data-package.seedcase-project.org\>): This is a template
     for creating a new Data Package following the Seedcase structure
