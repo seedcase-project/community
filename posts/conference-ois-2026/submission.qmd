@@ -82,13 +82,13 @@ The data engineering tools we've published so far include:
 While the tools that are planned or in early development include:
 
 -   Flower (\<flower.seedcase-project.org\>): A Python package and
-    command-line tool to generate and display your `datapackage.json`
+    command-line tool to generate and display the `datapackage.json`
     file in a human-friendly way. In early development.
 -   Propagate: A planned tool to make it easier to submit and process
     reproducible requests for a subset of data from a larger Data
     Package through a machine-readable set of instructions.
--   Garden: A planned tool to manage and track research projects using a
-    Data Package
+-   Garden: A planned tool to manage and track research projects that use a particular
+    Data Package.
 
 This project is funded by a Novo Nordisk Foundation grant (number
 NNF21OC0069462).
