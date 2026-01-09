@@ -33,7 +33,7 @@ and contingency factors. Possible topics include but are not limited to:
 
 FAIR and open practices are beneficial for science as they encourage
 reproducible, transparent, and shareable data practices. While
-individual researchers sometimes are capable of implementing FAIR and
+individual researchers are sometimes capable of implementing FAIR and
 open practices on their own, the availability of software and data
 engineering resources and tools greatly facilitates the adoption of
 these practices. Unfortunately, there is a lack of systemic structures
@@ -58,7 +58,7 @@ collaborative practices. Through these publications, we contribute to
 our ultimate goal of helping researchers do "better science in less
 time", not only in an academic settings in Denmark but also in industry
 and across the globe. Our progress towards this goal can be found in our
-roadmap at \<seedcase-project.org/roadmap/\> which lists all of our
+roadmap at \<seedcase-project.org/roadmap/\> that lists all of our
 products and their development status.
 
 The data engineering tools we've published so far include:
@@ -72,7 +72,7 @@ The data engineering tools we've published so far include:
     around the Data Package standard (\<datapackage.org\>).
 -   `check-datapackage` (\<check-datapackage.seedcase-project.org\>): A
     Python package that checks a Data Package's metadata against the
-    Data Package standard to ensure that a Data Package's metadata is
+    Data Package standard to ensure that the Data Package's metadata is
     compliant with the standard.
 -   Template Data Package
     (\<template-data-package.seedcase-project.org\>): A template for
