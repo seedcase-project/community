@@ -71,13 +71,13 @@ The data engineering tools we've published so far include:
     ultimately (re)usable for later analyses. This package is built
     around the Data Package standard (\<datapackage.org\>).
 -   `check-datapackage` (\<check-datapackage.seedcase-project.org\>): A
-    Python package that checks your Data Package's metadata against the
+    Python package that checks a Data Package's metadata against the
     Data Package standard to ensure that a Data Package's metadata is
     compliant with the standard.
 -   Template Data Package
-    (\<template-data-package.seedcase-project.org\>): This is a template
-    for creating a new Data Package following the Seedcase structure
-    with the necessary files and configurations in place.
+    (\<template-data-package.seedcase-project.org\>): A template for
+    creating a new Data Package that follows the Seedcase structure with
+    the necessary files and configurations in place.
 
 While the tools that are planned or in early development include:
 
@@ -87,8 +87,8 @@ While the tools that are planned or in early development include:
 -   Propagate: A planned tool to make it easier to submit and process
     reproducible requests for a subset of data from a larger Data
     Package through a machine-readable set of instructions.
--   Garden: A planned tool to manage and track research projects that use a particular
-    Data Package.
+-   Garden: A planned tool to manage and track research projects that
+    use a particular Data Package.
 
 This project is funded by a Novo Nordisk Foundation grant (number
 NNF21OC0069462).
