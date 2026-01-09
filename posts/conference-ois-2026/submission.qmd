@@ -31,64 +31,64 @@ and contingency factors. Possible topics include but are not limited to:
     scientific research
 :::
 
-Across much of science, we suffer from a lack of software and data
-engineering resources, skills, and research-specific tools. This has
-negative impacts on our abilities to generate reliable results and be
-productive and effective as researchers. Part of the issue is a lack of
-a general awareness by researchers, funding agencies, and organizations
-on the importance of software and data engineering in research, as well
-as a lack of systemic incentive structures to dedicate resources and
-time to these software and data practices. A major consequence is that
-we face many organizational and technical challenges with managing,
-sharing, building, and using research data, not least of which is it
-impairs our ability to follow FAIR and open science practices.
+FAIR and open practices are beneficial for science as they encourage
+reproducible, transparent, and shareable data practices.
+While individual researchers sometimes are capable of implementing FAIR
+and open practices on their own, the availability of software and data
+engineering resources and tools greatly facilitates the adoption of
+these practices.
+Unfortunately, there is a lack of systemic structures to incentivise
+researchers, organizations, and funding agencies to appreciate the
+importance of software and data engineering in research contexts and to
+dedicate sufficient resources to implementing them in practice.
+A major consequence from this incentive misalignment is that researchers
+trying to adhere to FAIR and open practices face organizational and
+technical challenges with managing, sharing, building, and using
+research data, which in turn hampers scientific progress.
 
-Through the Seedcase Project (\<seedcase-project.org\>), we aim to
-resolve some of these issues. We are currently building a framework to
-make building and managing FAIR research data that is easier, modern,
-organized, and robust. We plan to achieve this by developing a series of
-loosely coupled tools that work together within a specific framework.
-The tools we've published are:
+In the Seedcase Project (\<seedcase-project.org\>), we aim to resolve
+part of the aforementioned issues by developing a framework that
+facilitates the creation and management of FAIR research data. To reach
+this goal, we are developing a set of interoperable and modular tools that together
+constitute a modern, organized, and robust framework.
+The tools we've published so far include:
 
--   Sprout (\<sprout.seedcase-project.org\>): A Python package that is
-    designed to help create and manage a standardised and organised
-    structure for storing and describing research data. Using modern
-    data engineering and management practices, Sprout helps to ensure
-    and enforce that research data are well-designed, discoverable,
-    well-documented, and ultimately more (re)usable for later analyses.
+-   Sprout (\<sprout.seedcase-project.org\>): A Python package that
+    helps create and manage a standardised and organised
+    structure for storing and describing research data as a Data Package. Using modern
+    data engineering and management practices, Sprout promotes
+    research data that are well designed, discoverable,
+    well documented, and ultimately (re)usable for later analyses.
     This package is built around the Data Package standard
     (\<datapackage.org\>).
--   `check-datapackages` (\<check-datapackages.seedcase-project.org\>):
+-   `check-datapackage` (\<check-datapackage.seedcase-project.org\>):
     A Python package that checks your Data Package's metadata against
-    the Data Package standard, to ensure that your metadata is compliant
+    the Data Package standard to ensure that a Data Package's metadata is compliant
     with the standard.
 -   Template Data Package
     (\<template-data-package.seedcase-project.org\>): This is a template
-    for creating a new Data Package following the Seedcase structure.
-    Use this template to quickly get started with a new Data Package
-    with all the necessary files and configurations in place, including
-    for developing the Data Package.
+    for creating a new Data Package following the Seedcase structure
+    with the necessary files and configurations in place.
 
-The tools we are actively developing or will develop in the near future
-include:
+Tools that are planned or in early development:
 
 -   Flower (\<flower.seedcase-project.org\>): A Python package and
     command-line tool to generate and display your `datapackage.json`
-    file in a human-friendly way. This is early in development.
+    file in a human-friendly way. In early development.
 -   Propagate: A planned tool to make it easier to submit and process
     reproducible requests for a subset of data from a larger Data
     Package through a machine-readable set of instructions.
 -   Garden: A planned tool to manage and track research projects using a
     Data Package
 
-Not only do we publish these data engineering tools, we also publish our
-internal developer tools and documentation. Our roadmap at
-\<seedcase-project.org/roadmap/\> lists all of our external and internal
+In addition to publishing data engineering tools, we also publish our
+internal developer tools, documentation, and guides to effective
+collaborative practices. Through these publications, we contribute to
+our ultimate goal of helping researchers do "better science in less
+time", not only in an academic settings in Denmark but also in industry
+and across the globe. Our progress towards this goal can be found in our
+roadmap at \<seedcase-project.org/roadmap/\> which lists all of our
 products and their development status.
-
-Ultimately, we work towards helping researchers do "better science in
-less time", not only those in academic settings in Denmark but also in
-industry and across the globe.
 
 This project is funded by a Novo Nordisk Foundation grant (number
 NNF21OC0069462).
