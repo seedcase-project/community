@@ -20,7 +20,7 @@ From: https://ois-research-conference.org/ois-research-conference-2026/
 
 Submission word limit: 250-500.
 
-Words in document: 497
+Words in document: 491
 
 Submitting to track 1: Open and collaborative approaches along the
 entire scientific research process, including opportunities, challenges,
