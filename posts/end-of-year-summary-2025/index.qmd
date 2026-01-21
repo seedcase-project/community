@@ -1,0 +1,201 @@
+---
+title: "End of year summary for 2025"
+toc-depth: 1
+author: Luke W. Johnston
+date: 2026-01-20
+---
+
+::: callout-note
+We need to submit annual reports to Novo Nordisk Foundation as part of
+our grant agreement. Since I need to write something anyway, I might as
+well make it public and share it with anyone interested in our work over
+the years. It's also a good way to reflect on what we've done and any
+challenges, some expectations for the upcoming year, and what we've
+learned. Plus, it's easier to find when I have to make further reports
+over the years.
+:::
+
+## Major activities
+
+This last year was an incredibly productive year for us. It felt like all
+our work building up the foundations in 2024 paid off in 2025
+as we officially published two Python packages, three template tools,
+one R package, and developed a new workshop that we ran twice! Plus,
+we presented our work for the first time at a seminar. We also hired
+a consultant to work with us on building software and creating teaching
+materials.
+
+The two projects collaborating with us also started up in 2025,
+which lead to much more activity working with them. In particular,
+our initial work with them has been to help them set up their general digital infrastructure,
+their websites, and their data management plans.
+
+Overall, it was a very big year for us.
+
+### New member! :person:
+
+We hired a consultant, [Joel Ostblom](https://joelostblom.com/), to work
+with us on developing our software and in creating teaching materials.
+He has extensive expertise from working as a professor at the University
+of British Columbia in Canada building and running courses, as well as
+being an active contributor to the open source packages [altair](https://altair-viz.github.io/)
+and [vega](https://github.com/vega).
+He started working with us in October, 2025 to contribute his expertise
+as we expand the number of software packages we build and shifting to building
+training materials for workshops. We're excited to have him on board!
+
+### Published Sprout! :package:
+
+In July we officially published our first Python package,
+[Sprout](https://sprout.seedcase-project.org/). Sprout is a package
+that helps create and manage a standardised and organised structure for
+storing and describing research data as a Data Package. I wrote a
+[post](https://community.seedcase-project.org/posts/published-sprout/)
+about it that goes into more detail.
+
+### Published a template for Data Packages :card_file_box:
+
+Since we'll be creating and developing many Data Packages for
+our collaborators, we created a template tool to make it easier
+to create new Data Packages that follow the Seedcase structure.
+We also needed something to keep these future Data Packages consistent
+with our current practices, as we continually update the template.
+So in end of July we published our first template tool,
+[Template Data Package](https://template-data-package.seedcase-project.org/).
+That way, the same tool we use, others can too when they need to create
+a Data Package.
+I've written a [post](https://community.seedcase-project.org/posts/publish-template-data-package/)
+about it.
+
+### Published a template for websites :link:
+
+Across our project, we have nearly 11 different websites. Combined with
+the websites of our collaborators, which we also help build and maintain,
+we have a lot of websites to manage and track. So to make it easier to
+create new websites and to keep existing websites consistent
+with our current practices, we created
+[Template Website](https://template-website.seedcase-project.org/),
+which we published in August. See my [post](https://community.seedcase-project.org/posts/publish-template-website/)
+for more details.
+
+### Published a template for Python packages :toolbox:
+
+While we had only created and developed on Python package at this point,
+we knew we would be creating many more in the near future. As with the
+Data Packages and websites, we created and published [Template Python Package](https://template-python-package.seedcase-project.org/)
+in September
+to make this whole process easier for us. See my [post](https://community.seedcase-project.org/posts/publish-template-python-package/)
+for more details.
+
+### Published `check-datapackage`! :white_check_mark:
+
+### New collaborations
+
+Some of the more exciting news this year is two new collaborations we
+have with newly funded and large research projects. The first is the
+[DP-Next](https://dp-next.github.io/) project, which is funded under the
+Steno National Collaborative Grant from Novo Nordisk Foundation. This
+project aims to develop a sustainably effective strategy for prevention
+of type 2 diabetes. The second is the
+[ON-LiMiT](https://steno-aarhus.github.io/ON-LiMiT/) project, which is
+funded by the NovoNordiskFonden. It is a large trial to investigate the
+effects of lifestyle interventions on remission of diabetes.
+
+In these projects, our main tasks will revolve around the data
+infrastructure and engineering aspects, as well as upskilling in
+technical skills. Both projects will be collecting data, and with our
+contributions, we hope to make it easier for them to collect, manage,
+and share their data in a sustainable and effective way. As for the
+training, we'll be training them in modern iterative and collaborative
+project development practices.
+
+While our role in DP-Next was incorporated within the grant application,
+we are still discussing and defining our role in ON-LiMiT.
+
+## Challenges faced
+
+We've had less major challenges to deal with in 2024, but there were a
+few that impacts our progress.
+
+### Deleted all work done with software consultants
+
+The biggest challenge we faced in 2024 was that some of the design
+decisions we made in 2022 and 2023 were not the best for our needs. For
+example, we had thought about and decided on building a web app as the
+implementation choice for our needs on creating data infrastructures. We
+decided on Django, a powerful, but complex web framework, to build the
+web app. This decision was made in late 2022, so when we started working
+with the software consultants in 2023, we had already been building the
+basics of a web app.
+
+As we were working with the software consultants, we focused on writing
+code and building the app. Since the consultants regularly build web
+apps for clients, they considered this a good choice. However, after we
+finished working with the software consultants and we had some time to
+reflect on what we built, on the code, on the design, and importantly,
+what our core needs and available resources were, we realized this was
+not the best choice for us. The big challenges here were:
+
+-   We had a lot to learn for building web apps and using Django, which
+    took a lot of time away from focusing on the core design and
+    functionality.
+-   Building web apps that have user interfaces means we also have to
+    design how it looks. This is a whole other skill set that we didn't
+    have and it also takes time away from the main functionality.
+-   We regularly encountered issues with Django, like with its
+    "migrations" and timezone problems. Issues that we had no expertise
+    in solving.
+-   Django and web apps, for us, were over-engineering for our needs.
+
+All of these challenges meant that we had to switch directions and focus
+more simply on building Python packages so that we can have code-based
+approaches to building a modern research data infrastructure.
+
+### Building a custom solution because of a dependency issue
+
+When we started building our first Seedcase Python package and using the
+Frictionless Data Package standard, we encountered a problem with the
+frictionless Python package that we depended on. We had hoped to make
+use of the frictionless package to help us with creating Data Packages.
+However, we quickly realized that the package didn't do what we expected
+it to do and the code/documentation on it wasn't well developed.
+
+As a result, we had to make a major pivot to build our own solution.
+This took and is still taking a fair amount of time and effort to build.
+But while this challenge prolongs our expected time to first minimally
+viable product, it does allow us to build and publish our own solution
+as a Python package that others can make us of as well.
+
+### Research institutions are not designed for software development
+
+This is a challenge that we've been facing since the beginning of our
+work. Research institutions are just not designed to support developing
+software. We have no support, no role models, no training, and no
+infrastructure to help us build software and resolve issues that come
+up. Which means we constantly are on our own to figure things out and
+resolve issues, which takes a good chunk of time.
+
+While this does mean we struggle a lot with doing sometimes seemingly
+basic things, it also highlights a massive need within research for the
+skills and knowledge we are building up. Software for the needs of
+research is very different from the needs of industry, but we in
+academia don't have awareness or access to resources to help.
+
+As a consequence, many groups at Steno Aarhus seek out our advice,
+support, expertise, and help with their needs. For instance, we're
+helping build an [R package](https://github.com/steno-aarhus/osdc) to
+make it easier to classify diabetes status in the Danish registers. Or,
+many groups in Steno Aarhus now need to build websites to communicate
+their projects, and these
+[websites](https://steno-aarhus.github.io/research/directory.html) are
+built on GitHub using the approaches and methods we've been advocating
+for and using for our own websites.
+
+## Summary
+
+Overall, 2024 was a good year that has really laid the foundation for us
+in building our products. It looks like 2025 will be the year we start
+seeing tangible outputs to our efforts! And, even with the challenges
+and struggles, what we're seeing more and more is: There is a massive
+need for the types of skills and knowledge we have and are building,
+that is only now starting be to realized and recognized!
