@@ -7,7 +7,7 @@ format:
         theme: default
         slide-number: true
         from: markdown+emoji
-        logo: /_extensions/seedcase-project/seedcase-theme/logos/navbar-logo-seedcase-project.svg
+        logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase/navbar.svg
         footer: "Tværs Gruppemøde, April 2025"
 exclude-from-listing: true
 ---
