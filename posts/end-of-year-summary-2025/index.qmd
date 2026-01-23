@@ -172,7 +172,7 @@ working as a single team within the Seedcase Project to now being a
 group made up of several sub-teams working on different projects. This
 required us to change how we managed, communicated, and tracked tasks
 and work, which was a bit of a source of friction and trial-and-error
-until we found some processes and workflows that worked for us. We're 
+until we found some processes and workflows that worked for us. We're
 still refining these workflows and expect that we'll keep developing and revising them the forthcoming year.
 
 ## Summary
