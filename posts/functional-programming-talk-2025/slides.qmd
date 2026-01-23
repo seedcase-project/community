@@ -9,7 +9,7 @@ format:
         theme:
             - brand
             - theme.scss
-        logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase-logo.svg
+        logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg
         slide-number: true
         min-scale: 1
         max-scale: 1
