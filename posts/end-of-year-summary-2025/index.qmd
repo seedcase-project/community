@@ -50,6 +50,17 @@ wrote a
 [post](https://community.seedcase-project.org/posts/workshop-github-intro/)
 about that also includes some figures of the feedback we received.
 
+### Presented at our first seminar! :microphone:
+
+Signe presented on our work in the Seedcase Project at a seminar, [Open
+Science in Health Research: From Principles to
+Practice](https://health.medarbejdere.au.dk/en/display/artikel/open-science-aabner-muligheder),
+in June. The seminar was hosted at Aarhus University and included
+researchers and practitioners on open science from across Europe. See
+her
+[post](https://community.seedcase-project.org/posts/open-science-symposium-2025/)
+about it, as well as the slides she used in her presentation.
+
 ### Published Sprout! :package:
 
 In July we officially published our first Python package,
@@ -59,7 +70,7 @@ storing and describing research data as a Data Package. I wrote a
 [post](https://community.seedcase-project.org/posts/published-sprout/)
 about it that goes into more detail.
 
-### Published a template for Data Packages :card_file_box:
+### Published a template for Data Packages :toolbox:
 
 Since we'll be creating and developing many Data Packages for our
 collaborators, we decided to create a template tool to make it easier to
@@ -74,7 +85,7 @@ I've written a
 [post](https://community.seedcase-project.org/posts/publish-template-data-package/)
 about it.
 
-### Published a template for websites :link:
+### Published a template for websites :toolbox:
 
 Across the Seedcase Project, we have nearly 11 different websites.
 Combined with the websites of our collaborators, which we also help
@@ -113,7 +124,7 @@ contribute his expertise as we expand the number of software packages we
 build and as we shift to developing training materials for workshops.
 We're excited to have him on board!
 
-### Published `check-datapackage`! :white_check_mark:
+### Published `check-datapackage`! :package:
 
 We initially had planned four packages related to developing and
 managing Data Packages. However, in the process of building Sprout, we
@@ -130,7 +141,7 @@ the
 [post](https://community.seedcase-project.org/posts/published-check-datapackage/)
 I wrote about this.
 
-### Published `osdc` R package! :abacus:
+### Published `osdc` R package! :package:
 
 Since 2023, we've been collaborating with [Anders Aasted
 Isaksen](https://www.stenoaarhus.dk/kontakt/anders-aasted-isaksen/) on
