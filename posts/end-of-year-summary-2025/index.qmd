@@ -26,23 +26,23 @@ seminar and we hired another consultant to work with us on building
 software and creating teaching materials.
 
 The two projects we're collaborating with also started up in 2025, which
-lead to much more activity working with them. In particular, our initial
+lead to more collaborative activities. In particular, our initial
 work with them has been to help them set up their general digital
 infrastructure, their websites, and their data management plans.
 
-Overall, it was a very good year for us :tada:
+Overall, 2025 was a very good year for us :tada:
 
 ### Developed and ran a new workshop :open_book:
 
 In early 2025, we received several requests to run a workshop on GitHub,
-since we use it almost exclusively in our work. So we developed a
+since we use it almost exclusively in our work. So, we developed a
 workshop that introduces researchers to GitHub and how to use it for
-their projects. The workshop is a gentle [introduction to
-GitHub](https://github-intro.rostools.org). In the end of May we ran the
+their projects. The workshop is a *very* gentle [introduction to
+GitHub](https://github-intro.rostools.org). In the end of May, we ran the
 workshop for the first time and in-person for staff, researchers, and
 doctors working at [Steno Diabetes Center
 Aarhus](https://www.stenoaarhus.dk/). We had 24 participants attend the
-workshop. Then we ran it again, but virtually for 11 PhD students and
+workshop. Then, we ran it again, this time virtually, for 11 PhD students and
 researchers who are or will be working on the
 [DP-Next](https://dp-next.github.io/) project (whom we collaborate with)
 in September. We received great feedback from both workshops, which I
@@ -69,8 +69,8 @@ current practices, and we do that by continually updating the template
 and synching it with the Data Packages created from it. So in the end of
 July we published our first template tool, [Template Data
 Package](https://template-data-package.seedcase-project.org/). We
-published it so that others can too when they need to create a Data
-Package. I've written a
+published it so that others can use it to create a Data
+Package as well. I've written a
 [post](https://community.seedcase-project.org/posts/publish-template-data-package/)
 about it.
 
@@ -78,7 +78,7 @@ about it.
 
 Across the Seedcase Project, we have nearly 11 different websites.
 Combined with the websites of our collaborators, which we also help
-build and maintain, we have a lot of websites to manage and track. So to
+build and maintain (e.g., the GitHub organisations [`onlimit-study`](https://github.com/onlimit-study/), [`dp-next`](https://github.com/dp-next), and [`steno-aarhus`](https://github.com/steno-aarhus), we have a lot of websites to manage and track. So, to
 make it easier to create new websites and to keep existing websites
 consistent with our current practices, we created [Template
 Website](https://template-website.seedcase-project.org/), which we
@@ -96,7 +96,7 @@ in September to make this whole process easier for us. See my
 [post](https://community.seedcase-project.org/posts/publish-template-python-package/)
 for more details.
 
-### New member! :person:
+### New team member! :busts_in_silhouette:
 
 We hired a new consultant, [Joel Ostblom](https://joelostblom.com/), in
 October to work with us on developing our software and in creating
@@ -130,14 +130,14 @@ I wrote about this.
 
 Since 2023, we've been collaborating with [Anders Aasted
 Isaksen](https://www.stenoaarhus.dk/kontakt/anders-aasted-isaksen/) on
-converting his diabetes classification algorithm into an R package so
+converting his register-based diabetes classification algorithm into an R package so
 that others across Denmark can also use it. The package is used to
 classify diabetes status using the Danish registers. And finally, after
 a lot of work and many iterations, we officially published the
-[`osdc`](https://steno-aarhus.github.io/osdc/) R package in December
+Open Source Diabetes Classifier, [`osdc`](https://steno-aarhus.github.io/osdc/), R package in December
 :tada: I wrote a
 [post](https://community.seedcase-project.org/posts/published-osdc/)
-that has more details.
+that has more details on this.
 
 ### Collaborating projects officially started!
 
@@ -149,7 +149,7 @@ collaboration with them began in September. And since then, we've been
 working with them to build up their websites, set up (some of) their
 digital infrastructures like with GitHub and
 [GenomeDK](https://genome.au.dk/), provide some formal and informal
-training, and help with their data collection, processing, and
+training, like the Introduction to GitHub workshop, and help with their data collection, processing, and
 management plans.
 
 ## Challenges faced
@@ -172,16 +172,15 @@ working as a single team within the Seedcase Project to now being a
 group made up of several sub-teams working on different projects. This
 required us to change how we managed, communicated, and tracked tasks
 and work, which was a bit of a source of friction and trial-and-error
-until we found some processes and workflows that worked for us. Which
-we're still refining on.
+until we found some processes and workflows that worked for us. We're 
+still refining these workflows and expect that we'll keep developing and revising them the forthcoming year.
 
 ## Summary
 
-We had an great year with many tangible outputs! And we're excited about
+2025 was a great year for us in the Seedcase Project with many tangible outputs! And we're excited about
 what 2026 will bring, especially as our collaborating projects start
-collecting data and we can start helping them with data processing and
-organising.
-
+collecting data and we can start helping them more with data processing and
+organising, and in developing the remaining planned Seedcase Python packages.
 What's the next steps for us? Check out our [high-level
 roadmap](https://seedcase-project.org/roadmap/) as well as our [more
 detailed project
