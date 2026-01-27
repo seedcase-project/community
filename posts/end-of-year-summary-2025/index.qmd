@@ -1,0 +1,206 @@
+---
+title: "End of year summary for 2025"
+toc-depth: 1
+author: Luke W. Johnston
+date: 2026-01-20
+---
+
+::: callout-note
+We need to submit annual reports to Novo Nordisk Foundation as part of
+our grant agreement. Since I need to write something anyway, I might as
+well make it public and share it with anyone interested in our work over
+the years. It's also a good way to reflect on what we've done and any
+challenges, some expectations for the upcoming year, and what we've
+learned. Plus, it's easier to find when I have to make further reports
+over the years.
+:::
+
+## Major activities
+
+This last year was an incredibly productive year for us in terms of
+tangible outputs. It felt like all our work building up the foundations
+in 2024 paid off in 2025 as we officially published two Python packages,
+three template tools, one R package, and developed a new workshop that
+we ran twice! Plus, we presented our work for the first time at a
+seminar and we hired another consultant to work with us on building
+software and creating teaching materials.
+
+The two projects we're collaborating with also started up in 2025, which
+lead to more collaborative activities. In particular, our initial work
+with them has been to help them set up their general digital
+infrastructure, their websites, and their data management plans.
+
+Overall, 2025 was a very good year for us :tada:
+
+### Developed and ran a new workshop :open_book:
+
+In early 2025, we received several requests to run a workshop on GitHub,
+since we use it almost exclusively in our work. So, we developed a
+workshop that introduces researchers to GitHub and how to use it for
+their projects. The workshop is a *very* gentle [introduction to
+GitHub](https://github-intro.rostools.org). In the end of May, we ran
+the workshop for the first time and in-person for staff, researchers,
+and doctors working at [Steno Diabetes Center
+Aarhus](https://www.stenoaarhus.dk/). We had 24 participants attend the
+workshop. Then, we ran it again, this time virtually, for 11 PhD
+students and researchers who are or will be working on the
+[DP-Next](https://dp-next.github.io/) project (whom we collaborate with)
+in September. We received great feedback from both workshops, which I
+wrote a
+[post](https://community.seedcase-project.org/posts/workshop-github-intro/)
+about that also includes some figures of the feedback we received.
+
+### Presented at our first seminar! :microphone:
+
+Signe presented on our work in the Seedcase Project at a seminar, [Open
+Science in Health Research: From Principles to
+Practice](https://health.medarbejdere.au.dk/en/display/artikel/open-science-aabner-muligheder),
+in June. The seminar was hosted at Aarhus University and included
+researchers and practitioners on open science from across Europe. See
+her
+[post](https://community.seedcase-project.org/posts/open-science-symposium-2025/)
+about it, as well as the slides she used in her presentation.
+
+### Published Sprout! :package:
+
+In July we officially published our first Python package,
+[Sprout](https://sprout.seedcase-project.org/). Sprout is a package that
+helps create and manage a standardised and organised structure for
+storing and describing research data as a Data Package. I wrote a
+[post](https://community.seedcase-project.org/posts/published-sprout/)
+about it that goes into more detail.
+
+### Published a template for Data Packages :toolbox:
+
+Since we'll be creating and developing many Data Packages for our
+collaborators, we decided to create a template tool to make it easier to
+create new Data Packages that follow the Seedcase structure. We also
+needed some way to keep these future Data Packages consistent with our
+current practices, and we do that by continually updating the template
+and synching it with the Data Packages created from it. So in the end of
+July we published our first template tool, [Template Data
+Package](https://template-data-package.seedcase-project.org/). We
+published it so that others can use it to create a Data Package as well.
+I've written a
+[post](https://community.seedcase-project.org/posts/publish-template-data-package/)
+about it.
+
+### Published a template for websites :toolbox:
+
+Across the Seedcase Project, we have nearly 11 different websites.
+Combined with the websites of our collaborators, which we also help
+build and maintain (e.g., the GitHub organisations
+[`onlimit-study`](https://github.com/onlimit-study/),
+[`dp-next`](https://github.com/dp-next), and
+[`steno-aarhus`](https://github.com/steno-aarhus), we have a lot of
+websites to manage and track. So, to make it easier to create new
+websites and to keep existing websites consistent with our current
+practices, we created [Template
+Website](https://template-website.seedcase-project.org/), which we
+published in August. See my
+[post](https://community.seedcase-project.org/posts/publish-template-website/)
+for more details.
+
+### Published a template for Python packages :toolbox:
+
+While we had only created and developed one Python package at this
+point, we knew we would be creating many more in the near future. As
+with the Data Packages and websites, we created and published [Template
+Python Package](https://template-python-package.seedcase-project.org/)
+in September to make this whole process easier for us. See my
+[post](https://community.seedcase-project.org/posts/publish-template-python-package/)
+for more details.
+
+### New team member! :busts_in_silhouette:
+
+We hired a new consultant, [Joel Ostblom](https://joelostblom.com/), in
+October to work with us on developing our software and in creating
+teaching materials. He has extensive expertise from working as a
+professor at the University of British Columbia in Canada building and
+running data science courses, as well as being an active contributor to
+the open source packages [altair](https://altair-viz.github.io/) and
+[vega](https://github.com/vega). He started working with us to
+contribute his expertise as we expand the number of software packages we
+build and as we shift to developing training materials for workshops.
+We're excited to have him on board!
+
+### Published `check-datapackage`! :package:
+
+We initially had planned four packages related to developing and
+managing Data Packages. However, in the process of building Sprout, we
+needed some way of checking that a Data Package complied with the Data
+Package standard. Since there were no similar packages available that
+did those checks, at least none that fit our needs, we decided to take a
+small detour to create and publish a Python package that fit our needs.
+We also knew that others might find a package like this useful, so this
+detour was as much for our needs as for others. So in the end of
+November we published
+[`check-datapackage`](https://check-datapackage.seedcase-project.org/),
+which ensures that a Data Package is compliant with the standard. See
+the
+[post](https://community.seedcase-project.org/posts/published-check-datapackage/)
+I wrote about this.
+
+### Published `osdc` R package! :package:
+
+Since 2023, we've been collaborating with [Anders Aasted
+Isaksen](https://www.stenoaarhus.dk/kontakt/anders-aasted-isaksen/) on
+converting his register-based diabetes classification algorithm into an
+R package so that others across Denmark can also use it. The package is
+used to classify diabetes status using the Danish registers. And
+finally, after a lot of work and many iterations, we officially
+published the Open Source Diabetes Classifier,
+[`osdc`](https://steno-aarhus.github.io/osdc/), R package in December
+:tada: I wrote a
+[post](https://community.seedcase-project.org/posts/published-osdc/)
+that has more details on this.
+
+### Collaborating projects officially started!
+
+The two projects we are collaborating with,
+[DP-Next](https://dp-next.github.io/) and
+[ON-LiMiT](https://onlimit.org), officially started in 2025. While both
+had officially started in some way in late 2024, our actual
+collaboration with them began in September. And since then, we've been
+working with them to build up their websites, set up (some of) their
+digital infrastructures like with GitHub and
+[GenomeDK](https://genome.au.dk/), provide some formal and informal
+training, like the Introduction to GitHub workshop, and help with their
+data collection, processing, and management plans.
+
+## Challenges faced
+
+We haven't had any major challenges to deal with in 2025. The biggest
+"friction" points were mainly around coordinating and prioritizing work
+between our own internal projects and the work we do for our
+collaborators.
+
+### Managing more projects and being firm in prioritisation
+
+As we officially started our collaborations with DP-Next and ON-LiMiT,
+there were a lot more projects and tasks to keep track of and manage. At
+least my time spent in planning and organizing our work increased quite
+a bit in 2025. We've had to be firmer with how we prioritise work and
+keeping our focus on the most important tasks at any given time.
+
+This increase in projects and tasks has also caused us to go from
+working as a single team within the Seedcase Project to now being a
+group made up of several sub-teams working on different projects. This
+required us to change how we managed, communicated, and tracked tasks
+and work, which was a bit of a source of friction and trial-and-error
+until we found some processes and workflows that worked for us. We're
+still refining these workflows and expect that we'll keep developing and
+revising them the forthcoming year.
+
+## Summary
+
+2025 was a great year for us in the Seedcase Project with many tangible
+outputs! And we're excited about what 2026 will bring, especially as our
+collaborating projects start collecting data and we can start helping
+them more with data processing and organising, and in developing the
+remaining planned Seedcase Python packages. What's the next steps for
+us? Check out our [high-level
+roadmap](https://seedcase-project.org/roadmap/) as well as our [more
+detailed project
+roadmap](https://github.com/orgs/seedcase-project/projects/22/views/1)
+(which changes more often than the high-level one).
