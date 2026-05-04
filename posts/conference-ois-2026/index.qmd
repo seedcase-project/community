@@ -9,10 +9,10 @@ stumbled on the [Open Innovation in Science: Research Conference
 2026](https://ois-research-conference.org), which aligned very well to
 what we do. The conference focuses on bringing together people who want
 to adopt or already use open and collaborative approaches in science,
-especially focosing on innovation activities between industry and
+with a focus on innovation activities between industry and
 academia. So we sent a [submission](submission.qmd) and were accepted to
 present a poster at the conference.
 
-This poster is what we presented at the conference.
+We presented the poster below at the conference.
 
 ![Poster presented at the conference.](poster.svg)
