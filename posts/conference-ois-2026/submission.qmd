@@ -46,7 +46,7 @@ organisational and technical challenges with managing, sharing,
 building, and using research data, which in turn hampers scientific
 progress.
 
-In the Seedcase Project (\<seedcase-project.org\>), we aim to resolve
+In the Seedcase Project (<https://seedcase-project.org>), we aim to resolve
 part of the aforementioned issues by developing a framework that
 facilitates the creation and management of FAIR research data. To reach
 this goal, we are developing a set of interoperable and modular tools
@@ -58,30 +58,30 @@ collaborative practices. Through these publications, we contribute to
 our ultimate goal of helping researchers do "better science in less
 time", not only in an academic settings in Denmark but also in industry
 and across the globe. Our progress towards this goal can be found in our
-roadmap at \<seedcase-project.org/roadmap/\> that lists all of our
+roadmap at <https://seedcase-project.org/roadmap/> that lists all of our
 products and their development status.
 
 The data engineering tools we've published so far include:
 
--   Sprout (\<sprout.seedcase-project.org\>): A Python package that
+-   Sprout (<https://sprout.seedcase-project.org>): A Python package that
     helps create and manage a standardised and organised structure for
     storing and describing research data as a Data Package. Using modern
     data engineering and management practices, Sprout promotes research
     data that are well designed, discoverable, well documented, and
     ultimately (re)usable for later analyses. This package is built
-    around the Data Package standard (\<datapackage.org\>).
--   `check-datapackage` (\<check-datapackage.seedcase-project.org\>): A
+    around the Data Package standard (<https://datapackage.org>).
+-   `check-datapackage` (<https://check-datapackage.seedcase-project.org>): A
     Python package that checks a Data Package's metadata against the
     Data Package standard to ensure that the Data Package's metadata is
     compliant with the standard.
 -   Template Data Package
-    (\<template-data-package.seedcase-project.org\>): A template for
+    (<https://template-data-package.seedcase-project.org>): A template for
     creating a new Data Package that follows the Seedcase structure with
     the necessary files and configurations in place.
 
 While the tools that are planned or in early development include:
 
--   Flower (\<flower.seedcase-project.org\>): A Python package and
+-   Flower (<https://flower.seedcase-project.org>): A Python package and
     command-line tool to generate and display the `datapackage.json`
     file in a human-friendly way. In early development.
 -   Propagate: A planned tool to make it easier to submit and process
