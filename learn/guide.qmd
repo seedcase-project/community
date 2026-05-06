@@ -1,11 +1,7 @@
 ---
-title: "Writing a learning short for micro-learning"
+title: "Writing a learning short"
 description: "Learning shorts as a useful teaching tool when sharing knowledge and teaching others. This post briefly describes what a learning short is and how to write one."
 date: "2024-05-15"
-categories:
-    - contributing
-    - teaching
-    - microlearning
 ---
 
 Part of the aim of the Seedcase Project isn't just to build software;
@@ -53,25 +49,25 @@ You can refer to existing shorts to use as a guide and for inspiration
 for how to write the individual sections. We won't go into too much
 detail for each section, but will highlight a few:
 
--   **Learning goal**: This is the most important part of the short,
-    aimed to inform the reader of what knowledge or skill will they
-    gain. It should be as simple and short as needed to convey the
-    learning goal. It should be written in a form based on [Bloom's
-    Taxonomy](https://bloomstaxonomy.net/) (or a similar structure).
--   **Lesson content**: This is the main part of the short, where the
-    core teaching content is written. It should be broken down into
-    sections (with several headers denoted by `###`). Try to make use of
-    visual aids like images, diagrams, and tables to help explain the
-    content. If it is code based, make sure to show the actual code.
+- **Learning goal**: This is the most important part of the short,
+  aimed to inform the reader of what knowledge or skill will they
+  gain. It should be as simple and short as needed to convey the
+  learning goal. It should be written in a form based on [Bloom's
+  Taxonomy](https://bloomstaxonomy.net/) (or a similar structure).
+- **Lesson content**: This is the main part of the short, where the
+  core teaching content is written. It should be broken down into
+  sections (with several headers denoted by `###`). Try to make use of
+  visual aids like images, diagrams, and tables to help explain the
+  content. If it is code based, make sure to show the actual code.
 
 ## Resources used for this post
 
--   [A Beginner's Guide: What Is Instructional
-    Design?](https://www.growthengineering.co.uk/instructional-design/)
--   [What is Microlearning: The Complete
-    Guide](https://www.growthengineering.co.uk/what-is-microlearning/)
--   [How to Create an Effective Learning
-    Campaign](https://www.growthengineering.co.uk/learning-campaigns/)
--   [Experiential Learning in Instructional Design and Technology:
-    Chapter
-    2](https://pressbooks.pub/experientiallearningininstructionaldesignandtechnology/chapter/2-1-best-practices-in-online-learning/)
+- [A Beginner's Guide: What Is Instructional
+  Design?](https://www.growthengineering.co.uk/instructional-design/)
+- [What is Microlearning: The Complete
+  Guide](https://www.growthengineering.co.uk/what-is-microlearning/)
+- [How to Create an Effective Learning
+  Campaign](https://www.growthengineering.co.uk/learning-campaigns/)
+- [Experiential Learning in Instructional Design and Technology:
+  Chapter
+  2](https://pressbooks.pub/experientiallearningininstructionaldesignandtechnology/chapter/2-1-best-practices-in-online-learning/)
