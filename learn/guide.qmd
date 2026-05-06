@@ -19,6 +19,13 @@ described prerequisite knowledge.
 This post describes a bit more about learning shorts and how to write
 one.
 
+::: callout-note
+This is a guide intended for general guidelines for both the team as
+well as outside of the team. For a more extensive guide on contributing,
+check out our (frequently evolving)
+[guidebook](https://guidebook.seedcase-project.org/).
+:::
+
 ## What is a learning short?
 
 A learning short is based on the concept of
