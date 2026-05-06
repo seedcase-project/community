@@ -12,7 +12,6 @@ website:
     logo-alt: "Seedcase Community logo: Main page"
     pinned: true
     left:
-      - guides/index.qmd
       - posts/index.qmd
       - learn/index.qmd
     tools:
