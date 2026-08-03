@@ -1,11 +1,8 @@
 # Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
-_commit: 0.17.10
+_commit: 0.30.5
 _src_path: gh:seedcase-project/template-website
-author_family_name: Johnston
-author_given_name: Luke
-github_board_number: '18'
+for_seedcase: true
 github_repo: community
 github_user: seedcase-project
 hosting_provider: netlify
-is_seedcase_website: true
-review_team: '@seedcase-project/developers'
+website_format: website
