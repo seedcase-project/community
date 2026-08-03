@@ -23,15 +23,12 @@ listing:
 
 ## Learning shorts
 
-Below is a list of learning shorts on things the Seedcase team has
-learned and want to share both internally and externally.
+Below is a list of learning shorts on things the Seedcase team has learned and
+want to share both internally and externally.
 
 ::: callout-tip
-Read our
-[Learning shorts
-guide](/learn/guide.qmd) on
-what learning shorts are, what they are used for, and how to write them.
-
+Read our [Learning shorts guide](/learn/guide.qmd) on what learning shorts are,
+what they are used for, and how to write them.
 :::
 
 ::: {#shorts}
@@ -39,16 +36,15 @@ what learning shorts are, what they are used for, and how to write them.
 
 ## Learning and insights from books
 
-Books are a fantastic source of advanced learning, insights, and
-inspiration. These posts are condensed summaries of the books with
-take-home messages and insights that the author has found interesting
-and useful. The main motivation for these documents are:
+Books are a fantastic source of advanced learning, insights, and inspiration.
+These posts are condensed summaries of the books with take-home messages and
+insights that the author has found interesting and useful. The main motivation
+for these documents are:
 
-1.  The content of the book is interesting and useful enough to share
-    with others, like the rest of the Seedcase team.
-2.  To consolidate the document author's learning and insights from the
-    book.
-3.  To have as a resource and reference for future purposes.
+1. The content of the book is interesting and useful enough to share with
+   others, like the rest of the Seedcase team.
+2. To consolidate the document author's learning and insights from the book.
+3. To have as a resource and reference for future purposes.
 
 ::: {#books}
 :::

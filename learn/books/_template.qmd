@@ -15,11 +15,11 @@ BRIEF SUMMARY
 
 ## Assumed knowledge of reader
 
--   ASSUMED KNOWLEDGE
+- ASSUMED KNOWLEDGE
 
 ## Take home messages
 
--   SIMPLE MESSAGE
+- SIMPLE MESSAGE
 
 ## Insights and learnings
 
@@ -31,4 +31,4 @@ BRIEF SUMMARY
 
 ## Additional resources
 
--   LINKS USED OR FOR FURTHER LEARNING
+- LINKS USED OR FOR FURTHER LEARNING

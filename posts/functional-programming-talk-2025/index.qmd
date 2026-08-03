@@ -14,7 +14,7 @@ categories:
 
 We've decided to incorporate more structured peer learning times into our
 in-person meetings. So for our [October
-2025](https://team.seedcase-project.org/events/2025-10-in-person/)
-meeting, I decided to give a talk on functional programming.
+2025](https://team.seedcase-project.org/events/2025-10-in-person/) meeting, I
+decided to give a talk on functional programming.
 
 The slides can be found [here](./slides.qmd).

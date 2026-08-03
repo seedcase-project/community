@@ -1,6 +1,7 @@
 ---
 title: Community
-subtitle: Content targeted outwards, to those external to the project like the public or other researchers.
+subtitle: Content targeted outwards, to those external to the project like the
+  public or other researchers.
 toc: false
 image: images/home.svg
 about:
@@ -8,7 +9,8 @@ about:
   image-width: 25em
   image-shape: rectangle
   image-title: Image from Storyset
-  image-alt: Illustration of a woman using a megaphone, with an envelope behind her and icons around her about different outreach activities.
+  image-alt: Illustration of a woman using a megaphone, with an envelope behind
+    her and icons around her about different outreach activities.
 ---
 
 ## Image from [Freepik](https://www.freepik.com) {.appendix}
