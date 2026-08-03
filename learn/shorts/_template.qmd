@@ -11,23 +11,23 @@ categories:
 
 ## Motivation for this micro-lesson
 
--   REASONS
+- REASONS
 
 ## Assumed knowledge of reader
 
--   ASSUMED KNOWLEDGE
+- ASSUMED KNOWLEDGE
 
 ## Necessary software
 
--   SOFTWARE NEEDED
+- SOFTWARE NEEDED
 
 ## Learning goal
 
--   GOAL
+- GOAL
 
 ## Take home messages
 
--   SIMPLE MESSAGE
+- SIMPLE MESSAGE
 
 ## Lesson content
 
@@ -39,4 +39,4 @@ categories:
 
 ## Additional resources
 
--   LINKS USED OR FOR FURTHER LEARNING
+- LINKS USED OR FOR FURTHER LEARNING

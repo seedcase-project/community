@@ -5,37 +5,37 @@ author:
 date: "2025-10-23"
 exclude-from-listing: true
 format:
-    revealjs:
-        theme:
-            - brand
-            - theme.scss
-        logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg
-        slide-number: true
-        min-scale: 1
-        max-scale: 1
-        width: 1920
-        height: 1080
+  revealjs:
+    theme:
+      - brand
+      - theme.scss
+    logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg
+    slide-number: true
+    min-scale: 1
+    max-scale: 1
+    width: 1920
+    height: 1080
 fig-responsive: false
 fig-align: center
 ---
 
 # Outline
 
--   Simple introduction to category theory
+- Simple introduction to category theory
 
--   Category theory in computers: Functional programming
+- Category theory in computers: Functional programming
 
--   Benefits of functional programming
+- Benefits of functional programming
 
--   Example use cases in data analysis
+- Example use cases in data analysis
 
--   Example use cases in software development
+- Example use cases in software development
 
 ::: notes
-The first three sections are a bit more abstract and conceptual. But
-I'll connect them later on when going into the practical use cases. For
-those who aren't interested in doing software development, you can skip
-the last section. We'll take a short break before it so you can leave.
+The first three sections are a bit more abstract and conceptual. But I'll
+connect them later on when going into the practical use cases. For those who
+aren't interested in doing software development, you can skip the last section.
+We'll take a short break before it so you can leave.
 :::
 
 # Category theory
@@ -44,33 +44,33 @@ the last section. We'll take a short break before it so you can leave.
 
 ## What is category theory? {.center}
 
--   Branch of mathematics.
--   Deals with abstract objects and connection between.
--   Used in many fields of math and programming.
+- Branch of mathematics.
+- Deals with abstract objects and connection between.
+- Used in many fields of math and programming.
 
 ## Based on abstractions and compositions {.center}
 
-::::: columns
-::: column
+::: columns
+::::: column
 ### *Abstraction*
 
--   Collection of *things* ("objects").
--   Actions ("morphisms") that transform the things.
-:::
+- Collection of *things* ("objects").
+- Actions ("morphisms") that transform the things.
+:::::
 
-::: {.column .fragment}
+::::: {.column .fragment}
 ### *Composition*
 
--   Actions can combine into a new action.
--   Combined action produces the same result as sequence of them.
-:::
+- Actions can combine into a new action.
+- Combined action produces the same result as sequence of them.
 :::::
+:::
 
 ## Similar to Graph Theory {.center}
 
--   Graphs have nodes and edges.
+- Graphs have nodes and edges.
 
--   Categories have objects and arrows (called "morphisms").
+- Categories have objects and arrows (called "morphisms").
 
 ## A full graph is a category {.center}
 
@@ -89,47 +89,47 @@ An abstraction of anything: a number, a string, a function.
 
 ## Objects can contain other objects {.center}
 
--   A vector: Contains sub-objects of numbers or strings.
+- A vector: Contains sub-objects of numbers or strings.
 
--   A data frame: Contains sub-objects of vectors.
+- A data frame: Contains sub-objects of vectors.
 
--   A list/collection: Contains sub-objects of any type.
+- A list/collection: Contains sub-objects of any type.
 
 ## Types (of an object) are math objects with specific properties {.center}
 
--   Necessary for correct mathematical composability.
+- Necessary for correct mathematical composability.
 
--   You can create any type you want.
+- You can create any type you want.
 
 ## Types are sets of values or other types {.center}
 
-::::: columns
-::: {.column width="48%"}
+::: columns
+::::: {.column width="48%"}
 A boolean type can only have two values:
 
--   True
--   False
-:::
+- True
+- False
+:::::
 
-::: {.column width="48%"}
+::::: {.column width="48%"}
 An integer type can have infinite values:
 
--   Negative infinity to positive infinity
-:::
+- Negative infinity to positive infinity
 :::::
+:::
 
 ## Express types with `object: type` notation {.center}
 
-::::: columns
-::: column
+::: columns
+::::: column
 ```
 A: Integer
 B: String
 D: Function
 ```
-:::
+:::::
 
-::: column
+::::: column
 Can be empty (`()`):
 
 ```
@@ -141,16 +141,16 @@ Product/sum type:
 ```
 C: List(A, B)
 ```
-:::
 :::::
+:::
 
 ## Algebraic data types: Bigger container types {.center}
 
--   Holds other types or values.
+- Holds other types or values.
 
--   Two kinds: Sum types and product types.
+- Two kinds: Sum types and product types.
 
--   Can compose together (e.g. sum in product).
+- Can compose together (e.g. sum in product).
 
 ::: notes
 Really important later on.
@@ -194,11 +194,11 @@ Actions take (input) a type and output a type.
 
 ## Actions are math transformations {.center}
 
--   Transform one object to another object.
+- Transform one object to another object.
 
--   Action will always produce same type.
+- Action will always produce same type.
 
--   Don't need to know how, only the input and output types.
+- Don't need to know how, only the input and output types.
 
 ## Simplified syntax for actions {.center}
 
@@ -229,8 +229,8 @@ h(A: Integer) -> C: Boolean
 "f composed into g" or "f followed by g"
 
 ::: notes
-The syntax is a bit different from normal function notation, but it's
-easier to see the composition.
+The syntax is a bit different from normal function notation, but it's easier to
+see the composition.
 :::
 
 ## Composing via piping {.center}
@@ -252,18 +252,18 @@ graph LR
 ```
 
 ::: notes
-If A goes to C via B with the use of f and g, then there must also be an
-arrow from A to C directly via another function h, which is the
-composition of f and g.
+If A goes to C via B with the use of f and g, then there must also be an arrow
+from A to C directly via another function h, which is the composition of f and
+g.
 :::
 
 ## Functors: A type of algebraic structure {.center}
 
--   Type that allows an action to be applied to types inside.
+- Type that allows an action to be applied to types inside.
 
--   But keeps the overall structure.
+- But keeps the overall structure.
 
--   E.g. lists are usually functors.
+- E.g. lists are usually functors.
 
 ## Functor example: Map over a list {.center}
 
@@ -304,30 +304,30 @@ graph LR
 
 Complex is only a problem for our limited human minds. Solved with:
 
--   (De-)Composition
--   Abstraction
--   Predictability
+- (De-)Composition
+- Abstraction
+- Predictability
 
 ::: notes
 The core of programming is abstraction and composition.
 
-We use composition because it helps us manage complexity, as our human
-minds are limited by working memory, which can only hold a few pieces of
-information at a time.
+We use composition because it helps us manage complexity, as our human minds are
+limited by working memory, which can only hold a few pieces of information at a
+time.
 
-So we build small pieces of action that compose together to do larger,
-more complex action.
+So we build small pieces of action that compose together to do larger, more
+complex action.
 :::
 
 ## (De-)composition by breaking down a problem {.center}
 
--   Take a bigger problem
--   Decompose (break it down) into smaller problems/pieces
--   Solve each smaller piece
--   Compose (combine) those pieces together
--   Solve the bigger problem
--   Abstract away details of smaller pieces
--   Focus on general relationships between pieces
+- Take a bigger problem
+- Decompose (break it down) into smaller problems/pieces
+- Solve each smaller piece
+- Compose (combine) those pieces together
+- Solve the bigger problem
+- Abstract away details of smaller pieces
+- Focus on general relationships between pieces
 
 ## Abstraction: Hide complexity and details {.center}
 
@@ -335,15 +335,15 @@ Not have to imperatively state how exactly to do something, every time.
 
 ## Immutability is an implicit assumption in category theory {.center}
 
--   Existing objects don't change when doing an action.
+- Existing objects don't change when doing an action.
 
--   Otherwise, the math won't work.
+- Otherwise, the math won't work.
 
 ## No side effects allowed in "pure" functions {.center}
 
--   E.g. changing values of an existing type.
+- E.g. changing values of an existing type.
 
--   Can only output one type.
+- Can only output one type.
 
 ## Explicit types described in function input and output {.center}
 
@@ -370,36 +370,35 @@ Tools like `map`, `filter`, `reduce`.
 Can construct mathematically provable programs.
 
 ::: notes
-Though not provable that the values are correct, just that the input
-types and output types, the actions and compositions, and the flows are
-correct.
+Though not provable that the values are correct, just that the input types and
+output types, the actions and compositions, and the flows are correct.
 :::
 
 ## Declarative (vs imperative) programming {.center}
 
--   Humans naturally think declaratively.
+- Humans naturally think declaratively.
 
--   Computers operate imperatively.
+- Computers operate imperatively.
 
-> "What do you want your program to produce?" vs "How do you want your
-> program to produce it?"
+> "What do you want your program to produce?" vs "How do you want your program
+> to produce it?"
 
 ::: notes
-The computers at the base need to be imperatively instructed how to do
-specific tasks.
+The computers at the base need to be imperatively instructed how to do specific
+tasks.
 :::
 
 ## Low-level languages abstract away the imperative steps {.center}
 
-So that we can work declaratively (e.g. we don't write in assembly or
-machine code).
+So that we can work declaratively (e.g. we don't write in assembly or machine
+code).
 
 ## Declarative allows us to focus on what we want to solve and the goal {.center}
 
--   Closer match between mental model of the design of solution to
-    problem and the implementation.
+- Closer match between mental model of the design of solution to problem and the
+  implementation.
 
--   Action on the object, e.g. "buy groceries" or "pick up the kids".
+- Action on the object, e.g. "buy groceries" or "pick up the kids".
 
 ## Declarative tends to need less code, is more readable {.center}
 
@@ -408,8 +407,8 @@ Less code = easier to maintain and read.
 ## Functional design pattern that can be used in many languages {.center}
 
 ::: notes
-You can take this design and framework for solving problems and use it
-in many languages.
+You can take this design and framework for solving problems and use it in many
+languages.
 :::
 
 ## Predictability and testability {.center}
@@ -445,9 +444,9 @@ graph LR
 
 Abstract containers (types):
 
--   Future = A value that will be available later
+- Future = A value that will be available later
 
--   Promise = How to get that value later
+- Promise = How to get that value later
 
 # Use cases in data analysis
 
@@ -464,36 +463,35 @@ Design of databases and the queries are functional.
 
 Decompose into small pieces/steps:
 
--   Clean data
--   Apply transformations
--   Model data
--   Extract results
--   Visualize results
+- Clean data
+- Apply transformations
+- Model data
+- Extract results
+- Visualize results
 
 ## Keep decomposing, e.g. within cleaning data {.center}
 
--   Convert empty string to missing.
--   Remove missing values.
+- Convert empty string to missing.
+- Remove missing values.
 
 ## Cleaning stage would be a "category" {.center}
 
--   Objects (or types) are "data at each step".
--   Arrows are functions that transform data.
+- Objects (or types) are "data at each step".
+- Arrows are functions that transform data.
 
 ## In R, there are few, simple objects/types {.center}
 
--   Most common type of objects are: `data.frame`, `vector`, `list`.
+- Most common type of objects are: `data.frame`, `vector`, `list`.
 
--   Are algebraic data types (e.g. `data.frame` and `list` are product
-    types).
+- Are algebraic data types (e.g. `data.frame` and `list` are product types).
 
--   Are functors (can apply function to internal types).
+- Are functors (can apply function to internal types).
 
--   Are (mostly) immutable.
+- Are (mostly) immutable.
 
 ::: notes
-Nice thing with R is that there are only a few core object types to keep
-track of.
+Nice thing with R is that there are only a few core object types to keep track
+of.
 
 The object/type is almost always `data.frame`: A collection of column
 objects/types
@@ -503,16 +501,16 @@ The `data.frame` type doesn't change, but the internal types do
 
 ## In Python, it's more complicated {.center}
 
--   Object types depend on the package you're use.
+- Object types depend on the package you're use.
 
--   Objects (classes) are mutable.
+- Objects (classes) are mutable.
 
--   Functional programming features are mostly an afterthought.
+- Functional programming features are mostly an afterthought.
 
 ::: notes
-But that doesn't mean that you can't design things in a functional way
-at a high level. Just that some features are either not present, not
-well implemented, or difficult to use.
+But that doesn't mean that you can't design things in a functional way at a high
+level. Just that some features are either not present, not well implemented, or
+difficult to use.
 :::
 
 ## Graphically demonstrated with: {.center}
@@ -569,7 +567,7 @@ graph LR
 
 ## Functional piping is (now) common in R---makes more readable code {.center}
 
-``` r
+```r
 result1 = data |> clean() |> transform()
 result2 = transform(clean(data))
 identical(result1, result2)
@@ -578,13 +576,13 @@ identical(result1, result2)
 Python doesn't have piping.
 
 ::: notes
-Python doesn't have a very usable piping or chaining feature, though it
-can be approximated with method chaining.
+Python doesn't have a very usable piping or chaining feature, though it can be
+approximated with method chaining.
 :::
 
 ## Data cleaning example in R {.center}
 
-``` r
+```r
 removing_missing <- function(data) { ... }
 standardize_column_names <- function(data) { ... }
 clean_data <- function(data) {
@@ -599,7 +597,7 @@ cleaned_data <- clean_data(raw_data)
 
 Requires writing functionally.
 
-``` {.r filename="File: _targets.R"}
+```r {filename="File: _targets.R"}
 library(targets)
 # ...
 list(
@@ -617,7 +615,7 @@ documentation](https://books.ropensci.org/targets/walkthrough.html).
 
 Simple because of functional programming design:
 
-``` r
+```r
 library(furrr)
 plan(multisession)
 result <- future_map(
@@ -639,23 +637,23 @@ Need functional programming in Python to do
 
 (Not objects in object-oriented programming.)
 
--   Then build up actions around those objects.
+- Then build up actions around those objects.
 
--   Helps build the foundation of the software.
+- Helps build the foundation of the software.
 
 ## Better testing and predictability {.center}
 
--   No state changes, no side effects.
+- No state changes, no side effects.
 
 ## Make objects with actions, compose together {.center}
 
--   Decompose objects with clear actions on them.
+- Decompose objects with clear actions on them.
 
 ## Put objects into containers as functors, use map {.center}
 
--   Build containers for objects to act as functors.
+- Build containers for objects to act as functors.
 
--   Apply functions to all objects via functors.
+- Apply functions to all objects via functors.
 
 ## Big benefit: Emphasis on objects' types {.center}
 
@@ -663,7 +661,7 @@ Need functional programming in Python to do
 
 ### Rust
 
-``` rust
+```rust
 fn add(a: i32, b: i32) -> i32 {
     a + b
 }
@@ -671,7 +669,7 @@ fn add(a: i32, b: i32) -> i32 {
 
 ### Python
 
-``` python
+```python
 def add(a: int, b: int) -> int:
     return a + b
 ```
@@ -682,7 +680,7 @@ Python types are not enforced. R doesn't have these type annotations.
 
 Keeps it simple and predictable. So this isn't functional in Python:
 
-``` python
+```python
 def keep_num_gt_zero(x: int) -> int | None:
     if x > 0:
         return x
@@ -703,7 +701,7 @@ graph LR
 
 ## Example using sum types: Enums in Rust {.center}
 
-``` rust
+```rust
 enum Direction {
     North,
     South,
@@ -716,14 +714,14 @@ Direction::North
 `Direction` can only have one value and there are four possible values.
 
 ::: notes
-In Rust, you create the object, which defines the type. A type doesn't
-need a value. Rust more closely follows functional programming, so this
-is the object construction.
+In Rust, you create the object, which defines the type. A type doesn't need a
+value. Rust more closely follows functional programming, so this is the object
+construction.
 :::
 
 ## Example using sum types: Enums in Rust {.center}
 
-``` rust
+```rust
 enum GameResult {
     \\ Integer
     Score(i8),
@@ -738,7 +736,7 @@ Either score or lost, but not both.
 
 ## Sum types: Enums in Python {.center}
 
-``` python
+```python
 from enum import Enum
 class Direction(Enum):
     North = "North"
@@ -750,17 +748,16 @@ class Direction(Enum):
 Need to add a value to the enum in Python.
 
 ::: notes
-Weakly/dynamic typed languages aren't very good at handling some of the
-more powerful features of functional programming, but you can still make
-a lot of use of the concepts of functional programming. R does not have
-any formal `enum`.
+Weakly/dynamic typed languages aren't very good at handling some of the more
+powerful features of functional programming, but you can still make a lot of use
+of the concepts of functional programming. R does not have any formal `enum`.
 :::
 
 ## Monads: A way to handle side effects {.center}
 
--   Essentially is a sum or product type as object.
+- Essentially is a sum or product type as object.
 
--   Must implement a flat map function (e.g. "unwraps" a container).
+- Must implement a flat map function (e.g. "unwraps" a container).
 
 ## Illustration of a monad and flat map {.center}
 
@@ -779,7 +776,7 @@ graph LR
 
 ## Example monad: Option type in Rust {.center}
 
-``` rust
+```rust
 enum Option<T> {
     Some(T),
     None,
@@ -792,7 +789,7 @@ You don't need to explicitly create `enum Option`.
 
 ## Example monad: Using `Option` type in Rust {.center}
 
-``` rust
+```rust
 fn divide(n1: i32, n2: i32) -> Option<i32> {
     if n2 == 0 {
         None
@@ -804,13 +801,13 @@ fn add_one(n: Option<i32>) -> i32 { ... }
 ```
 
 ::: notes
-This is really nice because it forces you to handle None cases
-explicitly, since not all functions take `Option` as an input type.
+This is really nice because it forces you to handle None cases explicitly, since
+not all functions take `Option` as an input type.
 :::
 
 ## Example: Option type in Python with `Optional` {.center}
 
-``` python
+```python
 from typing import Optional
 def divide(n1: int, n2: int) -> Optional[int]:
     if n2 == 0:
@@ -820,7 +817,7 @@ def divide(n1: int, n2: int) -> Optional[int]:
 
 ## Or use `Maybe` from `returns` package {.center}
 
-``` python
+```python
 from returns.maybe import Maybe, Some, Nothing
 def divide(n1: int, n2: int) -> Maybe[int]:
     if n2 == 0:
@@ -828,14 +825,13 @@ def divide(n1: int, n2: int) -> Maybe[int]:
     return Some(n1 // n2)
 ```
 
-[`returns` package
-docs](https://returns.readthedocs.io/en/latest/index.html).
+[`returns` package docs](https://returns.readthedocs.io/en/latest/index.html).
 
 ## Example of handling errors: Result type {.center}
 
 At least two possible values: Success and its type or Error
 
-``` rust
+```rust
 enum Result<T, E> {
     Ok(T), // Successful result
     Err(E), // Why error occurred
@@ -844,7 +840,7 @@ enum Result<T, E> {
 
 ## Easy to see errors by looking at function signature with `Result` {.center}
 
-``` rust
+```rust
 fn read_file(path: String) -> Result<String, String> {
     // ... Pseudo-code
     if file_contents {
@@ -859,7 +855,7 @@ fn read_file(path: String) -> Result<String, String> {
 
 Need to convert `Result` to `String` before using it.
 
-``` rust
+```rust
 fn process(data: String) -> String { ... }
 read_file("file.txt")
     .expect("Didn't read file.")
@@ -869,7 +865,7 @@ read_file("file.txt")?.process()
 
 ## Explicitly handle `Result` with `match` {.center}
 
-``` rust
+```rust
 let file = read_file("file.txt")
 match file {
     Ok(content) => process(content),
@@ -884,29 +880,29 @@ match file {
 
 ## Category theory {.center}
 
--   Objects and actions
--   Types as sets of values
--   Sum types and product types
--   Composition of objects and actions
--   Functors: Functions used in a container (e.g. map)
--   Monads: Unwrap a container (e.g. flat map)
+- Objects and actions
+- Types as sets of values
+- Sum types and product types
+- Composition of objects and actions
+- Functors: Functions used in a container (e.g. map)
+- Monads: Unwrap a container (e.g. flat map)
 
 ## Functional programming {.center}
 
--   Declarative programming
--   Design focus via composition, abstraction, flow
--   Same input = same output, no side effects
--   Functions are objects
--   Objects are immutable
--   Higher order functions (functors like `map`)
--   Monads for side effects (e.g. `Option`, `Result`)
+- Declarative programming
+- Design focus via composition, abstraction, flow
+- Same input = same output, no side effects
+- Functions are objects
+- Objects are immutable
+- Higher order functions (functors like `map`)
+- Monads for side effects (e.g. `Option`, `Result`)
 
 # Resources
 
--   https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
--   https://kindafunctional.com/index.html
--   https://en.wikipedia.org/wiki/Functional_programming
--   https://en.wikipedia.org/wiki/Category_theory
--   https://en.wikipedia.org/wiki/Monad\_(functional_programming)
--   https://algocademy.com/blog/understanding-monads-in-functional-programming-a-comprehensive-guide/
--   https://www.turingtaco.com/functors-the-key-to-scalable-functional-code/
+- https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
+- https://kindafunctional.com/index.html
+- https://en.wikipedia.org/wiki/Functional_programming
+- https://en.wikipedia.org/wiki/Category_theory
+- https://en.wikipedia.org/wiki/Monad\_(functional_programming)
+- https://algocademy.com/blog/understanding-monads-in-functional-programming-a-comprehensive-guide/
+- https://www.turingtaco.com/functors-the-key-to-scalable-functional-code/

@@ -5,7 +5,7 @@ listing:
     categories: true
     contents: .
     exclude:
-        exclude-from-listing: true
+      exclude-from-listing: true
     type: default
     sort: "date desc"
     fields:
@@ -18,7 +18,6 @@ listing:
 These short posts are on diverse topics, often things we've learned, content
 we've presented at conferences, or experiences from attending events like a
 conference or course.
-
 
 ::: {#posts}
 :::
