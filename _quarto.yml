@@ -14,13 +14,13 @@ website:
     left:
       - posts/index.qmd
       - learn/index.qmd
-    tools:
-      - icon: house
+    right:
+      - text: "<img src='/_extensions/seedcase-project/seedcase-theme/logos/seedcase/a-part-of.svg' alt='Main Seedcase website' height='30px'>"
         href: "https://seedcase-project.org"
-        aria-label: "House icon: Main Seedcase Project home page"
+    tools:
       - icon: github
         href: "https://github.com/seedcase-project/community"
-        aria-label: "GitHub icon: Source code"
+        aria-label: "GitHub icon: Source repository"
   sidebar:
     - id: guides
       pinned: true
@@ -30,15 +30,8 @@ website:
 
 format:
   seedcase-theme-html:
-    theme:
-      - brand
     include-before-body:
       - "includes/site-counter.html"
-
-editor:
-  markdown:
-    wrap: 72
-    canonical: true
 
 execute:
   echo: false
