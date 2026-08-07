@@ -1,0 +1,58 @@
+---
+title: "Another platform template tool, t-squared, released!"
+description: >-
+  We've made several templates so far, and there are more we can see that need
+  to be made. Which meant that we needed something to manage all these
+  templates. Enter: t-squared :tada: We've published it on Zenodo (but also
+  through GitHub releases) :tada:
+author:
+  - Luke W. Johnston
+date: "2026-08-07"
+categories:
+  - templating
+  - publishing
+  - platform
+---
+
+On April 25, 2026, we formally published the first release of another platform
+template tool to [Zenodo](https://zenodo.org/records/21769840). This template is
+called t-squared, since it's a template for our templates! Surprisingly, one of
+the most useful tools that we've made for ourselves and others has been
+templates. So we made this tool to make it easier to create, develop, and manage
+all our other templates.
+
+## Managing templates with a template
+
+[t-squared's website](https://t-squared.seedcase-project.org) has more details
+about what it has and how to use it. But, briefly, t-squared has all the
+features we've learned and refined to make developing templates easier and
+faster. For example, templates created from t-squared have files and
+instructions for continuous release practices, a basic structure and guides for
+a Quarto website, and an extensive build pipeline to ensure that we create as
+good a template as possible.
+
+## Why use it?
+
+Our [design philosophy](https://design.seedcase-project.org/) is to [build for
+ourselves
+first](https://design.seedcase-project.org/organisation/contribution#we-are-our-first-users)
+means that because we actually use t-squared regularly, we also continually
+improve on it. The downside to this design principle is that some features of
+t-squared are suited to our needs. But! We do design it to be useful enough for
+others as well! At the least, t-squared can be a source of inspiration for you!
+:grin:
+
+## Using t-squared
+
+We already have a detailed
+[guide](https://t-squared.seedcase-project.org/docs/guide/) on how to set up and
+use it, but I'll show you the basics. How do you use it? You of course need to
+[install](https://t-squared.seedcase-project.org/docs/guide#installing) the
+needed dependencies. Then, open a terminal and run the following command:
+
+```bash {filename="Terminal"}
+uvx copier copy --trust gh:seedcase-project/t-squared my-template
+```
+
+Where `my-template` is the name of the folder you want to create for your new
+template. Copier will ask a few questions, but otherwise, that's it!
