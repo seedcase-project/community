@@ -1,3 +1,9 @@
 gh:
-  repo: community
   org: seedcase-project
+  repo: community
+
+tagline: "News and outward-facing communication from Seedcase"
+
+links:
+  github: "https://github.com/seedcase-project/community"
+  site: "https://community.seedcase-project.org"
