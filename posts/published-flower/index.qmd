@@ -51,14 +51,14 @@ There are (so far) two commands in Flower: `build` and `view`. You can run it
 fairly easily with [uv](https://docs.astral.sh/uv/) to see the help docs for
 them:
 
-```bash
+```bash {filename="Terminal"}
 uvx seedcase-flower
 ```
 
 `build` is the core of the package, which is what will actually convert the
 metadata into something human-friendly:
 
-```bash
+```bash {filename="Terminal"}
 uvx seedcase-flower build --help
 ```
 
@@ -66,7 +66,7 @@ uvx seedcase-flower build --help
 package hasn't yet made a website but have used some type of metadata file like
 `datapackage.json`:
 
-```bash
+```bash {filename="Terminal"}
 uvx seedcase-flower view --help
 ```
 
