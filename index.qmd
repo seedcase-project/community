@@ -13,4 +13,4 @@ about:
     her and icons around her about different outreach activities.
 ---
 
-## Illustration by [Storyset](https://storyset.com/illustrations/email-campaign) {.appendix}
+## Illustration by [Storyset](https://storyset.com/) {.appendix}
