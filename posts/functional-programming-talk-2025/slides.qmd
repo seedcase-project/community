@@ -568,8 +568,8 @@ graph LR
 ## Functional piping is (now) common in R---makes more readable code {.center}
 
 ```r
-result1 = data |> clean() |> transform()
-result2 = transform(clean(data))
+result1 <- data |> clean() |> transform()
+result2 <- transform(clean(data))
 identical(result1, result2)
 ```
 
@@ -583,8 +583,12 @@ approximated with method chaining.
 ## Data cleaning example in R {.center}
 
 ```r
-removing_missing <- function(data) { ... }
-standardize_column_names <- function(data) { ... }
+removing_missing <- function(data) {
+  ...
+}
+standardize_column_names <- function(data) {
+  ...
+}
 clean_data <- function(data) {
   data |>
     remove_missing() |>
@@ -738,6 +742,8 @@ Either score or lost, but not both.
 
 ```python
 from enum import Enum
+
+
 class Direction(Enum):
     North = "North"
     South = "South"
@@ -809,6 +815,8 @@ not all functions take `Option` as an input type.
 
 ```python
 from typing import Optional
+
+
 def divide(n1: int, n2: int) -> Optional[int]:
     if n2 == 0:
         return None
@@ -819,6 +827,8 @@ def divide(n1: int, n2: int) -> Optional[int]:
 
 ```python
 from returns.maybe import Maybe, Some, Nothing
+
+
 def divide(n1: int, n2: int) -> Maybe[int]:
     if n2 == 0:
         return Nothing
@@ -833,7 +843,7 @@ At least two possible values: Success and its type or Error
 
 ```rust
 enum Result<T, E> {
-    Ok(T), // Successful result
+    Ok(T),  // Successful result
     Err(E), // Why error occurred
 }
 ```

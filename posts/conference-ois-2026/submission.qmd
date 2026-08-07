@@ -18,7 +18,7 @@ exclude-from-listing: true
 ---
 
 ::: content-hidden
-From: https://ois-research-conference.org/ois-research-conference-2026/
+From: <https://ois-research-conference.org/ois-research-conference-2026/>
 
 Submission word limit: 250-500.
 

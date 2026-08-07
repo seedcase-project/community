@@ -75,15 +75,13 @@ Servers are very powerful, large computers that is used to run complex and
 intensive computations, and often are used to run tasks for websites. For
 example, all of the Internet is found on servers across the world.
 
-<!-- TODO: Include a diagram or something here? -->
-
 In the case of GitHub Actions, the server is GitHub's server, and the
 instructions for the tasks to do are kept in a specific file (the workflow
 file). In order for GitHub to know about and use this file, it has to be kept in
 the `.github/workflows/` folder of the repository and the file must be a
 [YAML](https://en.wikipedia.org/wiki/YAML) file (ending in `.yml` or `.yaml`):
 
-```
+```text
 reponame/
 └── .github/
     └── workflows/

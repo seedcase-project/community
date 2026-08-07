@@ -30,7 +30,7 @@ and their data management plans.
 
 Overall, 2025 was a very good year for us :tada:
 
-### Developed and ran a new workshop :open_book:
+### :open_book: Developed and ran a new workshop
 
 In early 2025, we received several requests to run a workshop on GitHub, since
 we use it almost exclusively in our work. So, we developed a workshop that
@@ -46,7 +46,7 @@ September. We received great feedback from both workshops, which I wrote a
 [post](https://community.seedcase-project.org/posts/workshop-github-intro/)
 about that also includes some figures of the feedback we received.
 
-### Presented at our first seminar! :microphone:
+### :microphone: Presented at our first seminar!
 
 Signe presented on our work in the Seedcase Project at a seminar, [Open Science
 in Health Research: From Principles to
@@ -56,7 +56,7 @@ and practitioners on open science from across Europe. See her
 [post](https://community.seedcase-project.org/posts/open-science-symposium-2025/)
 about it, as well as the slides she used in her presentation.
 
-### Published Sprout! :package:
+### :package: Published Sprout!
 
 In July we officially published our first Python package,
 [Sprout](https://sprout.seedcase-project.org/). Sprout is a package that helps
@@ -65,7 +65,7 @@ describing research data as a Data Package. I wrote a
 [post](https://community.seedcase-project.org/posts/published-sprout/) about it
 that goes into more detail.
 
-### Published a template for Data Packages :toolbox:
+### :toolbox: Published a template for Data Packages
 
 Since we'll be creating and developing many Data Packages for our collaborators,
 we decided to create a template tool to make it easier to create new Data
@@ -79,7 +79,7 @@ written a
 [post](https://community.seedcase-project.org/posts/publish-template-data-package/)
 about it.
 
-### Published a template for websites :toolbox:
+### :toolbox: Published a template for websites
 
 Across the Seedcase Project, we have nearly 11 different websites. Combined with
 the websites of our collaborators, which we also help build and maintain (e.g.,
@@ -93,7 +93,7 @@ August. See my
 [post](https://community.seedcase-project.org/posts/publish-template-website/)
 for more details.
 
-### Published a template for Python packages :toolbox:
+### :toolbox: Published a template for Python packages
 
 While we had only created and developed one Python package at this point, we
 knew we would be creating many more in the near future. As with the Data
@@ -103,7 +103,7 @@ make this whole process easier for us. See my
 [post](https://community.seedcase-project.org/posts/publish-template-python-package/)
 for more details.
 
-### New team member! :busts_in_silhouette:
+### :busts_in_silhouette: New team member
 
 We hired a new consultant, [Joel Ostblom](https://joelostblom.com/), in October
 to work with us on developing our software and in creating teaching materials.
@@ -115,7 +115,7 @@ started working with us to contribute his expertise as we expand the number of
 software packages we build and as we shift to developing training materials for
 workshops. We're excited to have him on board!
 
-### Published `check-datapackage`! :package:
+### :package: Published `check-datapackage`
 
 We initially had planned four packages related to developing and managing Data
 Packages. However, in the process of building Sprout, we needed some way of
@@ -130,7 +130,7 @@ ensures that a Data Package is compliant with the standard. See the
 [post](https://community.seedcase-project.org/posts/published-check-datapackage/)
 I wrote about this.
 
-### Published `osdc` R package! :package:
+### :package: Published `osdc` R package
 
 Since 2023, we've been collaborating with [Anders Aasted
 Isaksen](https://www.stenoaarhus.dk/kontakt/anders-aasted-isaksen/) on
@@ -143,7 +143,7 @@ December :tada: I wrote a
 [post](https://community.seedcase-project.org/posts/published-osdc/) that has
 more details on this.
 
-### Collaborating projects officially started!
+### Collaborating projects officially started
 
 The two projects we are collaborating with,
 [DP-Next](https://dp-next.github.io/) and [ON-LiMiT](https://onlimit.org),

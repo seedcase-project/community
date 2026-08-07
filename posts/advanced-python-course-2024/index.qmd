@@ -53,9 +53,3 @@ doing (or planning on implementing) in Seedcase are consistent with best
 practices. There wasn't anything from the course that we thought we would
 immediately (or shortly) implement in our work, but definitely things that we
 will keep doing and build on!
-
-::: content-hidden
-TODO: Add Signe's thoughts below as a separate section.
-
-## Signe's experiences
-:::

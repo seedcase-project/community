@@ -22,7 +22,7 @@ exclude-from-listing: true
 
 ::: content-hidden
 From:
-https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/
+<https://sciencecluster.dk/event/cross-cluster-collaboration-data-science-for-planetary-and-human-health/>
 
 Instructions:
 

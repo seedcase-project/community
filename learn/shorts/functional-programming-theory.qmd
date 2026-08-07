@@ -126,6 +126,7 @@ variable:
 ```python
 total = 0
 
+
 def add_to_total(n):
     global total
     total += n
@@ -148,6 +149,7 @@ external variable:
 
 ```python
 counter = 0
+
 
 def increment():
     global counter
@@ -185,6 +187,7 @@ An example of a higher-order function using `map`:
 ```python
 def square(x):
     return x * x
+
 
 numbers = [1, 2, 3, 4]
 squared_numbers = list(map(square, numbers))
@@ -240,6 +243,7 @@ Example of a higher-order function returning a function:
 # Returns a new function
 def multiply_by(n):
     return lambda x: x * n
+
 
 # Create the function double by calling the higher-order function
 double = multiply_by(2)

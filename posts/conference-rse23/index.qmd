@@ -81,9 +81,8 @@ project, making TREs even better in the future.
 The conference was all about Python tools. I got to see lots of cool tools and
 packages powered by Python that really amazed us.
 
-- [Carrot-CDM](https://hdruk.github.io/CaRROT-Docs/CaRROT-CDM/About/):
-  Carrot-CDM is a powerful Python tool designed to simplify the transformation
-  of messy health datasets into the organized [OHDSI Common Data
+- Carrot-CDM: Carrot-CDM is a powerful Python tool designed to simplify the
+  transformation of messy health datasets into the organized [OHDSI Common Data
   Model](https://www.ohdsi.org/data-standardization/) (CDM) format. Using a
   command line interface, it extracts input datasets, applies mapping rules
   defined in a JSON file, and then outputs the transformed data in TSV format,

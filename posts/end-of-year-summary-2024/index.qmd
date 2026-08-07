@@ -19,7 +19,7 @@ have to make further reports over the years.
 This past year has been a pretty productive year for us and we're making a lot
 more progress now. These are some events or changes that have happened in 2024.
 
-### New team member!
+### New team member
 
 We hired another research software engineer, Marton Vago, who started in May,
 2024. :tada: He has been a great addition to the team and has helped us move
@@ -177,9 +177,8 @@ expertise, and help with their needs. For instance, we're helping build an [R
 package](https://github.com/steno-aarhus/osdc) to make it easier to classify
 diabetes status in the Danish registers. Or, many groups in Steno Aarhus now
 need to build websites to communicate their projects, and these
-[websites](https://steno-aarhus.github.io/research/directory.html) are built on
-GitHub using the approaches and methods we've been advocating for and using for
-our own websites.
+[websites](https://steno-aarhus.github.io/) are built on GitHub using the
+approaches and methods we've been advocating for and using for our own websites.
 
 ## Summary
 
