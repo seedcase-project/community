@@ -88,9 +88,9 @@ Package, the `datapackage.json` file. Since working with JSON files can be very
 tedious and an unpleasant experience, Sprout provides functionality to more
 easily create and modify this file. Within this `datapackage.json` file are
 "properties" that describe the Data Package, such as its name, title,
-description, and contributors, as well as the [Data
-Resources](https://sprout.seedcase-project.org/docs/guide/resources/) that are
-part of the package.
+description, and contributors, as well as the [data
+resources](https://sprout.seedcase-project.org/docs/guide/resource-metadata/)
+that are part of the package.
 
 To create this new Data Package, you might create a new Python script in your
 Data Package folder called, for example, `main.py`, and then write the following
@@ -121,7 +121,7 @@ properties = sp.PackageProperties(
             email="lwjohnst@gmail.com",
             roles=["creator"],
         )
-    ]
+    ],
 )
 # Save to the `datapackage.json` file in the current folder.
 sp.write_properties(properties=properties)

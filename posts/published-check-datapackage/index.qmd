@@ -85,14 +85,20 @@ import check_datapackage as cdp
 properties = {
     "name": "woolly-dormice",
     "id": "123-abc-123",
-    "resources": [{
-        "name": "woolly-dormice-2015",
-        "path": "data.csv",
-        "schema": {"fields": [{
-            "name": "eye-colour",
-            "type": "string",
-        }]},
-    }],
+    "resources": [
+        {
+            "name": "woolly-dormice-2015",
+            "path": "data.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "eye-colour",
+                        "type": "string",
+                    }
+                ]
+            },
+        }
+    ],
 }
 
 cdp.check(properties)

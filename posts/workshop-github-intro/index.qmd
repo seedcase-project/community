@@ -57,7 +57,8 @@ students. No participants preferred other pronouns to she/her and he/him.
 ::: column-page
 ![Some basic demographics of the participants who registered for the two
 workshops.](overview.svg){#fig-demographics
-fig-alt="A series of bar plots showing an overview of who the participants were, such as their preferred pronoun and their position."}
+fig-alt="A series of bar plots showing an overview of who the participants were,
+such as their preferred pronoun and their position."}
 :::
 
 ## Quantitative feedback
@@ -76,11 +77,14 @@ statements provided.
 ::::: {#fig-feedback layout-ncol="1"}
 ![May 26th in-person
 workshop.](feedback-2025-05-26.svg){#fig-in-person
-fig-alt="Bar plots showing the quantitative feedback from participants in the May 26 workshop, with each plot showing the responses to a single question."}
+fig-alt="Bar plots showing the quantitative feedback from participants in the
+May 26 workshop, with each plot showing the responses to a single question."}
 
 ![September 9th virtual
 workshop.](feedback-2025-09-09.svg){#fig-virtual
-fig-alt="Bar plots showing the quantitative feedback from participants of the September 9 virtual workshop, with each plot showing the responses to a single question."}
+fig-alt="Bar plots showing the quantitative feedback from participants of the
+September 9 virtual workshop, with each plot showing the responses to a single
+question."}
 
 Quantitative feedback from participants of the two workshops.
 :::::

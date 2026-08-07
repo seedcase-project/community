@@ -63,11 +63,12 @@ within Denmark. While it was good to get a general overview, we were left with
 the impression that lots of activities were discussions in working groups, but
 not much in more visible and tangible activities.
 
-For instance, we in the Seedcase Project follow the "making work visible"
-[principle](https://seedcase-project.org/about/principles), which we achieve by
-putting as much communication, tasks, and documentation on GitHub or websites as
-possible. A good example of this is that we put (most) major decisions as posts
-on a [website](https://decisions.seedcase-project.org/).
+For instance, we in the Seedcase Project follow the ["making work visible"
+principle](https://design.seedcase-project.org/organisation/collaboration),
+which we achieve by putting as much communication, tasks, and documentation on
+GitHub or websites as possible. A good example of this is that we put (most)
+major decisions as posts on a
+[website](https://decisions.seedcase-project.org/).
 
 While discussions are necessary, it helps to have *something to discussion on*.
 In this case, some design document or diagram, or some prototype of a workflow

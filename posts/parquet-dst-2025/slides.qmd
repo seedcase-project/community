@@ -200,7 +200,7 @@ analytical queries.
 
 ```r
 bef <- arrow::open_dataset("bef") |>
-    arrow::to_duckdb()
+  arrow::to_duckdb()
 ```
 
 ## SAS and Python can load Parquet but not Stata {.center}

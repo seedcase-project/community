@@ -67,7 +67,7 @@ that look a bit like this:
 
 <!-- Created with: https://tree.nathanfriend.io/ -->
 
-```
+```text
 packagename/
 ├── packagename/
 │   ├── ___init___.py
