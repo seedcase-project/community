@@ -1,0 +1,74 @@
+---
+title: "First published release of Flower!"
+description: >-
+  We've published our third, core Python package :tada: :grin: This package
+  turns the machine-readable and structured metadata in a data package into a
+  format that is easier for humans to view and use, such as a website.
+author:
+  - Luke W. Johnston
+date: "2026-08-07"
+categories:
+  - packaging
+  - publishing
+  - programming
+---
+
+On March 25th, 2026, we published our third Python package,
+[Flower](https://pypi.org/project/seedcase-flower), to PyPI. This package
+converts a data package's structured, machine-readable metadata to something
+more suited to humans, for example as a website. This is one of our first
+packages that non-data engineer people might interact with and use (compared to
+our other two packages, [Sprout](https://sprout.seedcase-project.org) or
+[`check-datapackge`](https://check-datapackage.seedcase-project.org)). The
+output of Flower is (ideally) one of the first ways that researchers interact
+with a data package from a research study.
+
+## What is Flower?
+
+[Flower's dedicated website](https://check-datapackage.seedcase-project.org) has
+more details about it, but very simply, Flower is a command-line tool that takes
+a metadata file, like [`datapackage.json`](https://datapackage.org), and
+converts it into human-readable files like Markdown. These Markdown files can
+than be used to convert into HTML or PDF files, for easier sharing with
+researchers or those who may use the data in the data package. We hope that
+Flower will help with the issue that researchers frequently face when working
+with data: lack of documentation about what the data they're working on means.
+
+## Why use it?
+
+Aligning with our general principles of keeping tools simple and focused, we
+kept Flower sharply focused on output a human-readable document from
+machine-readable metadata. It's also highly customisable, so if our current
+styles don't fit your needs, you aren't restricted. We will also continue to add
+more styles and improve on the existing ones.
+
+What to see what some of those styles look like? [Check out our "Examples"
+page](https://flower.seedcase-project.org/docs/examples/)!
+
+## Commands in Flower
+
+There are (so far) two commands in Flower: `build` and `view`. You can run it
+fairly easily with [uv](https://docs.astral.sh/uv/) to see the help docs for
+them:
+
+```bash {filename="Terminal"}
+uvx seedcase-flower
+```
+
+`build` is the core of the package, which is what will actually convert the
+metadata into something human-friendly:
+
+```bash {filename="Terminal"}
+uvx seedcase-flower build --help
+```
+
+`view` is a command to quickly view the metadata if the owner of the data
+package hasn't yet made a website but have used some type of metadata file like
+`datapackage.json`:
+
+```bash {filename="Terminal"}
+uvx seedcase-flower view --help
+```
+
+We do have some plans to make a more interact terminal-based viewer for those
+more advanced users.
