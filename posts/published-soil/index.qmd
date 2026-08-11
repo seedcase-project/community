@@ -17,13 +17,13 @@ categories:
 On April 17th, 2026, we released a package,
 [Soil](https://pypi.org/project/seedcase-soil/), to PyPI. We made this package
 because we were ending up writing the same internal code multiple times in our
-other packages. So rather than continue to repeat ourselves, we put all these
+other packages. So rather than continue to repeat ourselves, we put all the
 duplicate code into its own package! While right now the "target user" is firmly
-us, we've noticed that some functions we've made have the potentially to be
-converted into their own standalone package that is intended for others to also
-use.
+us, we've noticed that some functions we've made have the potential to be
+converted into their own standalone package intended for others to use
+as well (e.g. some of the functionals like `fmap()`).
 
 Soil is our first Python package that is intentionally and fully built as a
 platform package. It has [its own website](https://soil.seedcase-project.org),
-but we've kept it intentionally simple and mainly list the functions that are
+but we've kept it intentionally simple, and it mainly lists the functions that are
 found within it.
