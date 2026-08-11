@@ -41,6 +41,7 @@ check-urls:
     --verbose \
     --extensions md,qmd \
     --exclude "github\.com" \
+    --exclude "zenodo\.org" \
     --exclude "creativecommons\.org" \
     --exclude-path "_badges.qmd"
 

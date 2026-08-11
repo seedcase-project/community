@@ -309,13 +309,12 @@ A module can also have different "depths", with a spectrum between "deep" and
 
 - Shallow: These have less extensive functionality along with a less than simple
   interface. Their cost-to-benefit ratio is higher.
-
-::: callout-caution
-A shallow module is, in general, a red flag. More (user-exposed) functions and
-classes in a module can increase cognitive load on the user or developer.
-Modules should provide the functionality necessary for the needs, but still be
+  ::: callout-caution
+  A shallow module is, in general, a red flag. More (user-exposed) functions and
+  classes in a module can increase cognitive load on the user or developer.
+  Modules should provide the functionality necessary for the needs, but still be
 as simple as possible.
-:::
+  :::
 
 A deep module hides information. Information leaking is when a design decision
 is reflected in multiple modules. This creates a dependency between the modules.
