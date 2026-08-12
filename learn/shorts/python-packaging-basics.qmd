@@ -88,14 +88,12 @@ the:
   is empty, all code is included.
 - `pyproject.toml` file in the parent folder. This file contains the necessary
   metadata for Python to properly install the Python package on your computer,
-  metadata like version number, title, description, and dependencies.
-  ::: callout-tip
-  The file `pyproject.toml` is the current way of declaring package metadata (see
-  [PEP 621](https://peps.python.org/pep-0621/)). Before you needed to use the
-  [`setuptools`](https://setuptools.pypa.io/en/latest/index.html) package and use
-  a file called `setup.py` instead (or a similar name). So you may see this file
-used in other, older packages.
-  :::
+  metadata like version number, title, description, and dependencies. :::
+  callout-tip The file `pyproject.toml` is the current way of declaring package
+  metadata (see [PEP 621](https://peps.python.org/pep-0621/)). Before you needed
+  to use the [`setuptools`](https://setuptools.pypa.io/en/latest/index.html)
+  package and use a file called `setup.py` instead (or a similar name). So you
+  may see this file used in other, older packages. :::
 
 You might notice the duplicate `packagename/` folder names being used, one for
 the parent folder and the other as a sub-folder. While technically only the
