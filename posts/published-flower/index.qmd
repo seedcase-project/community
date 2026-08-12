@@ -70,5 +70,5 @@ package hasn't yet made a website but have used some type of metadata file like
 uvx seedcase-flower view --help
 ```
 
-We do have plans to make an interactive terminal-based viewer for those
-who prefer working in the terminal.
+We do have plans to make an interactive terminal-based viewer for those who
+prefer working in the terminal.
