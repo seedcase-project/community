@@ -913,6 +913,6 @@ match file {
 - https://kindafunctional.com/index.html
 - https://en.wikipedia.org/wiki/Functional_programming
 - https://en.wikipedia.org/wiki/Category_theory
-- https://en.wikipedia.org/wiki/Monad\_(functional_programming)
+- <https://en.wikipedia.org/wiki/Monad_(functional_programming)>
 - https://algocademy.com/blog/understanding-monads-in-functional-programming-a-comprehensive-guide/
 - https://www.turingtaco.com/functors-the-key-to-scalable-functional-code/
