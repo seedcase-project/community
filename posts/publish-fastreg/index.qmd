@@ -1,0 +1,88 @@
+---
+title: "Published our R package fastreg"
+description: |
+    Continuing and formalising the prior work by Luke, we've built an R package
+    to standardise and parallelise the conversion of large Danish register SAS
+    files to Parquet. And finally, we've published it to CRAN!
+author:
+  - Signe Kirk Brødbæk
+date: "2026-08-12"
+categories:
+  - packaging
+  - publishing
+  - programming
+---
+
+Earlier this year, we published our second R package to
+[CRAN](https://CRAN.R-project.org/package=fastreg). The package,
+[fastreg](https://dp-next.github.io/fastreg/), continues Luke's earlier work,
+previously known as "DataPrep", to convert large Danish register SAS files to
+the [Apache Parquet](https://parquet.apache.org/) format.
+
+The package's purpose, as described on the package
+[website](https://dp-next.github.io/fastreg/), is to simplify the process of
+converting the large Danish registers into the more modern
+[Parquet](https://parquet.apache.org/) format as well as to simplify reading
+these Parquet files in R. By converting data from SAS to the more modern and
+efficient Parquet format, the package reduces storage costs and aims to improve
+performance in data analysis workflows.
+
+::: callout-note
+Luke gave a presentation on fastreg at Steno Diabetes Center Aarhus and Aarhus
+University in June 2026. The slides for that presentation can be found
+[here](https://slides.lwjohnst.com/s/2026-06-23/#/title-slide).
+
+Luke also gave a similar presentation on [using Parquet data format in Denmark
+Statistics](/posts/parquet-dst-2025/index.qmd) last year.
+:::
+
+## Who is it for and why use it?
+
+The main reason for building the fastreg package was to provide a tool for data
+managers and researchers who work with Danish register data to convert the
+increasingly larger SAS files provided by Statistics Denmark (DST) to Parquet.
+
+This conversion has multiple benefits:
+
+1. Parquet is smaller on disk. Parquet's efficient compression significantly
+   reduces disk space, especially for large datasets. This is especially
+   beneficial since DST charges for storage space.
+2. Parquet is faster to read. The columnar layout speeds up analytical queries
+   that only need a subset of columns. In addition, fastreg converts the
+   registers into year-based Hive-partitioned datasets and provides
+   [functionality](#functionality) to more easily read a register in R.
+3. Parquet works well with modern tools like DuckDB and Arrow in R
+   ([DuckDB](https://r.duckdb.org/) and
+   [Arrow](https://arrow.apache.org/docs/r/)) and Python (
+   [DuckDB](https://duckdb.org/docs/current/clients/python/overview) and
+   [pyarrow](https://arrow.apache.org/docs/python/parquet.html)).
+
+One drawback of this conversion that we've become aware of is that researchers
+working in, e.g., Stata can't load the Parquet files on the Statistics Denmark
+servers.
+
+## Functionality
+
+fastreg provides functionality to:
+
+- convert a single SAS register file to Parquet
+- convert multiple SAS registers in parallel with a targets pipeline
+- read converted registers
+
+You can find an overview of the functions in the [reference
+documentation](https://dp-next.github.io/fastreg/reference/index.html) and a
+guide on how to [Get
+started](https://dp-next.github.io/fastreg/articles/fastreg.html) on the fastreg
+website.
+
+## Next steps
+
+The next step is to train the data managers at Steno Diabetes Center Aarhus how
+to convert their register SAS files using the targets template---e.g., in their
+[Register Project
+Database](https://steno-aarhus.github.io/registers-project-database/) and the
+[DARTER](https://steno-aarhus.github.io/darter-project/) project.
+
+After the conversion, we've discussed using the converted Parquet files with
+[osdc](/posts/published-osdc/index.qmd) to create a diabetes population in the
+Register Project Database.
