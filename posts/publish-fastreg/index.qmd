@@ -1,7 +1,7 @@
 ---
 title: "Published our R package fastreg"
 description: |
-    Continuing and formalising the prior work by Luke, we've built an R package
+    Continuing and formalising prior work on DST, we've built an R package
     to standardise and parallelise the conversion of large Danish register SAS
     files to Parquet. And finally, we've published it to CRAN!
 author:
@@ -16,7 +16,7 @@ categories:
 Earlier this year, we published our second R package to
 [CRAN](https://CRAN.R-project.org/package=fastreg). The package,
 [fastreg](https://dp-next.github.io/fastreg/), continues Luke's earlier work,
-previously known as "DataPrep", to convert large Danish register SAS files to
+previously known as "dstDataPrep", to convert large Danish register SAS files to
 the [Apache Parquet](https://parquet.apache.org/) format.
 
 The package's purpose, as described on the package
@@ -48,7 +48,7 @@ This conversion has multiple benefits:
    reduces disk space, especially for large datasets. This is especially
    beneficial since DST charges for storage space.
 2. Parquet is faster to read. The columnar layout speeds up analytical queries
-   that only need a subset of columns. In addition, fastreg converts the
+   that only need a subset of columns. With fastreg, it also converts the
    registers into year-based Hive-partitioned datasets and provides
    [functionality](#functionality) to more easily read a register in R.
 3. Parquet works well with modern tools like DuckDB and Arrow in R
@@ -57,7 +57,7 @@ This conversion has multiple benefits:
    [DuckDB](https://duckdb.org/docs/current/clients/python/overview) and
    [pyarrow](https://arrow.apache.org/docs/python/parquet.html)).
 
-One drawback of this conversion that we've become aware of is that researchers
+One drawback of this conversion we've become aware of is that researchers
 working in, e.g., Stata can't load the Parquet files on the Statistics Denmark
 servers.
 
@@ -78,7 +78,7 @@ website.
 ## Next steps
 
 The next step is to train the data managers at Steno Diabetes Center Aarhus how
-to convert their register SAS files using the targets template---e.g., in their
+to convert their register SAS files using the [targets](https://books.ropensci.org/targets/) template---e.g., in their
 [Register Project
 Database](https://steno-aarhus.github.io/registers-project-database/) and the
 [DARTER](https://steno-aarhus.github.io/darter-project/) project.
