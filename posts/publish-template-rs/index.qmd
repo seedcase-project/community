@@ -1,0 +1,37 @@
+---
+title: "First release of our next platform tool, template-rs"
+description: >-
+  Before creating our first Rust package, we made a template for it! The
+  template-rs template contains many of our common tools that we use in
+  developing projects, but also Rust-specific ones.
+author:
+  - Luke W. Johnston
+date: "2025-08-07"
+categories:
+  - templating
+  - publishing
+---
+
+After we [decided to use
+Rust](https://decisions.seedcase-project.org/why-rust-for-building-software) to
+build our software, the first thing we did was create a template for our
+soon-to-be Rust packages. So on July 6th, 2026, we formally released the next
+template in our series of platform template tools,
+[template-rs](https://template-rs.seedcase-project.org), to
+[Zenodo](https://zenodo.org/records/21791499). At the time, we didn't have any
+Rust packages to apply this template too, but we right away used it to set up
+our first [Rust package](https://propagate.seedcase-project.org).
+
+Continuing our tradition of creating templates, we used our template's template
+[t-squared](https://t-squared.seedcase-project.org) to create
+[template-rs](https://template-rs.seedcase-project.org). Unlike our other
+templates where we had first built projects before creating a template, we
+didn't know exactly what we'd need or use in template-rs for the future Rust
+packages. So our first release is fairly simple and mostly uses some of our
+general tools that we've use in our other templates, but with less Rust-specific
+setups.
+
+And like our other templates, template-rs will mainly contain things that work
+for us. But that is still generic enough that others could benefit from it too.
+Check out the [website](https://template-rs.seedcase-project.org) for more
+details.
