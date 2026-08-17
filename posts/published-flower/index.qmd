@@ -17,7 +17,7 @@ categories:
 On March 25th, 2026, we published our third Python package,
 [Flower](https://pypi.org/project/seedcase-flower), to PyPI. This package
 converts a data package's structured, machine-readable metadata to something
-more suited to humans, Markdown files, that can be displayed on e.g.,a website.
+more suited to humans, Markdown files, that can be displayed on e.g., a website.
 This is our first package that non-data engineers might interact with and use
 (compared to our other two packages,
 [Sprout](https://sprout.seedcase-project.org) or
