@@ -1,0 +1,29 @@
+---
+title: "First release of our 'platform' package, Soil"
+description: >-
+  With more Python packages, there are some common commands we use across
+  several of them. So we made Soil to act as a package to hold all that common
+  functionality. It is very much an internal package right now, though we may
+  eventually split out functionality that others may also find useful.
+author:
+  - Luke W. Johnston
+date: "2026-08-10"
+categories:
+  - packaging
+  - publishing
+  - programming
+---
+
+On April 17th, 2026, we released a package,
+[Soil](https://pypi.org/project/seedcase-soil/), to PyPI. We made this package
+because we were ending up writing the same internal code multiple times in our
+other packages. So rather than continue to repeat ourselves, we put all the
+duplicate code into its own package! While right now the "target user" is firmly
+us, we've noticed that some functions we've made have the potential to be
+converted into their own standalone package intended for others to use as well
+(e.g. some of the functionals like `fmap()`).
+
+Soil is our first Python package that is intentionally and fully built as a
+platform package. It has [its own website](https://soil.seedcase-project.org),
+but we've kept it intentionally simple, and it mainly lists the functions that
+are found within it.
