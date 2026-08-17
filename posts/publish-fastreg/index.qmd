@@ -78,7 +78,8 @@ website.
 ## Next steps
 
 The next step is to train the data managers at Steno Diabetes Center Aarhus how
-to convert their register SAS files using the [targets](https://books.ropensci.org/targets/) template---e.g., in their
+to convert their register SAS files using the
+[targets](https://books.ropensci.org/targets/) template---e.g., in their
 [Register Project
 Database](https://steno-aarhus.github.io/registers-project-database/) and the
 [DARTER](https://steno-aarhus.github.io/darter-project/) project.
