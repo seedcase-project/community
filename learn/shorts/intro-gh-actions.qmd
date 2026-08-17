@@ -199,16 +199,17 @@ parts:
   section, you don't need to use the `uses` section. The default code that you
   can use in the `run` section is
   [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) code.
-  ::: callout-tip
-  This `GITHUB_TOKEN` is a special token that GitHub provides to workflows that
-  allows them to interact with the GitHub API. It is automatically created and
-  available to all workflows, but you need to provide it to the workflow in order
-  to use it. You give it to the workflow by using `${{ secrets.GITHUB_TOKEN }}` in
-  the `env` section. Here, the `${{ }}` is a way to tell GitHub to "inject" the
-  value of the `secrets` object, which also contains the `GITHUB_TOKEN` into the
-  workflow. The `.` is what tells GitHub to look inside the `secrets` object for
+
+::: callout-tip
+This `GITHUB_TOKEN` is a special token that GitHub provides to workflows that
+allows them to interact with the GitHub API. It is automatically created and
+available to all workflows, but you need to provide it to the workflow in order
+to use it. You give it to the workflow by using `${{ secrets.GITHUB_TOKEN }}` in
+the `env` section. Here, the `${{ }}` is a way to tell GitHub to "inject" the
+value of the `secrets` object, which also contains the `GITHUB_TOKEN` into the
+workflow. The `.` is what tells GitHub to look inside the `secrets` object for
 the `GITHUB_TOKEN` value.
-  :::
+:::
 
 An example of a job (called `checkout-repository`) with one step (to checkout a
 repository by cloning it), could look like:
