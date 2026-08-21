@@ -2,9 +2,8 @@
 title: "First published release of Flower!"
 description: >-
   We've published our third, core Python package :tada: :grin: This package
-  turns the machine-readable and structured metadata from a data package into
-  a
- format that is easier for humans to view and use.
+  turns the machine-readable and structured metadata from a data package into a
+  format that is easier for humans to view and use.
 author:
   - Luke W. Johnston
 date: "2026-08-07"
