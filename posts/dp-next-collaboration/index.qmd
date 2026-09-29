@@ -27,7 +27,7 @@ Center Aarhus, where I am the lead on part of [Work Package
 This is the summary of the project:
 
 > "DP-Next is a project aimed at developing a sustainably effective strategy for
-> prevention of Type 2 Diabetes […] We call it DP-Next because we intend to
+> prevention of Type 2 Diabetes [...] We call it DP-Next because we intend to
 > develop the next generation of Diabetes Prevention strategies.
 >
 > We aim to use \[modern or underutilised methods and resources\] to design and
