@@ -21,9 +21,9 @@ more progress now. These are some events or changes that have happened in 2024.
 
 ### New team member
 
-We hired another research software engineer, Marton Vago, who started in May,
-2024. :tada: He has been a great addition to the team and has helped us move
-forward in many ways with his knowledge and experience!
+We hired another research software engineer, Fruzsina Vago, who started in May,
+2024. :tada: She has been a great addition to the team and has helped us move
+forward in many ways with her knowledge and experience!
 
 ### End of training by software consultants
 
