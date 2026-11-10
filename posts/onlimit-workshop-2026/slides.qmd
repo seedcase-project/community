@@ -1,0 +1,234 @@
+---
+title: End-to-end data development lifecycle for ON-LiMiT data packages
+author:
+  - "Luke Johnston"
+date: "2026-11-12"
+exclude-from-listing: true
+format:
+  revealjs:
+    theme:
+      - brand
+      - theme.scss
+    logo: /_extensions/seedcase-project/seedcase-theme/logos/seedcase/icon.svg
+    slide-number: true
+    min-scale: 1
+    max-scale: 1
+    width: 1920
+    height: 1080
+fig-responsive: false
+fig-align: center
+---
+
+# Aims
+
+- Background on problems and on Seedcase
+- Describe data lifecycle (within GenomeDK)
+- Focus on operational and procedural side
+- Share future plans
+
+# Problems with data in research
+
+::: notes
+How many have done data analysis at some point in their career? Or who have
+talked with people who do data analysis and hear them complain/get frustrated?
+:::
+
+## Anyone ever... spent way too much time getting data ready for analysis? {.center}
+
+## Anyone ever... had no idea what a particular column name meant? {.center}
+
+## Anyone ever... had questions about data that only past researchers could answer? {.center}
+
+## Data processing and cleaning takes far too long {.center}
+
+## Data processing and cleaning is rarely documented {.center}
+
+# Working on fixes in Seedcase
+
+<https://seedcase-project.org>
+
+## Use practices from software development lifecycle {.center}
+
+But also from data engineering
+
+## Develop FAIR-compliant data {.center}
+
+Findable, Accessible, Interoperable, Reuse
+
+## Reproducibly create usable data from raw data {.center}
+
+## Extract and display metadata as website {.center}
+
+## Build formal, versioned packages of data {.center}
+
+## Develop software tools to simplify work {.center}
+
+## Build data packages with collaborators {.center}
+
+Currently with ON-LiMiT and DP-Next
+
+# Seedcase and ON-LiMiT
+
+## From raw data to analysis-ready {.center}
+
+```{mermaid}
+%%| label: onlimit-data-package
+
+flowchart LR
+  redcap[("REDCap")]
+  myfood24[("MyFood24")]
+  others[("...<br>other<br>sources")]
+
+  package_source["Data package<br>development"]
+  data_package[(Data package)]
+  website[Website]
+
+  subset1[("Data subset:<br> Research analysis 1")]
+  subset2[("Data subset:<br> Research analysis 2")]
+
+  redcap & others & myfood24 -->
+    package_source -->
+    data_package & website
+
+  data_package --> subset1 & subset2
+```
+
+## Building the critical metadata {.center}
+
+```{mermaid}
+%%| label: metadata-lifecycle
+
+flowchart TB
+  raw[("Raw (meta)data<br>source")]
+  new_version[Create<br>new version]
+  data_package[(Data package)]
+  website[Rebuild<br>website]
+
+  subgraph metadata ["Steps for metadata"]
+    extract[Extracting] -->
+      clean[Cleaning] <-->
+      edit[Editing] & check[Checking]
+
+    edit <--> check
+
+    check -->
+      build[Building]
+  end
+
+  raw -->
+    metadata -->
+    new_version --> data_package & website
+
+  new_version -->|repeat| metadata
+
+  style metadata fill:none
+```
+
+## Raw-to-ready data pipeline {.center}
+
+```{mermaid}
+%%| label: data-lifecycle
+
+flowchart TB
+  raw[("Raw data<br>source")]
+  new_version[Create<br>new version]
+  data_package[(Data package)]
+
+  subgraph data ["Steps for data"]
+    split[Splitting] <-->
+      join[Joining] <-->
+      clean[Cleaning] <-->
+      reshape[Reshaping]
+    split <--> clean
+    clean <-->
+      check <-->
+      reshape
+    check[Checking] -->
+      build[Building]
+  end
+
+  raw -->
+    data -->
+    new_version -->
+    data_package
+
+  new_version -->|repeat| data
+
+  style data fill:none
+```
+
+## Build reproducible, versioned packages {.center}
+
+```
+feasibility-data_v1.0.0.zip/
+├── datapackage.json
+├── README.md
+├── LICENSE.md
+├── CHANGELOG.md
+└── resources/
+    ├── sociodemographics.parquet
+    ├── ...
+    └── blood.parquet
+```
+
+# Relevant operational and procedural aspects
+
+## Need strong coordination from end-to-end {.center}
+
+To create analysis-ready data
+
+## Some things make sense for data collection {.center}
+
+... but not for later analysis (as we experienced in feasibility)
+
+## Data package website as "first stop" {.center}
+
+<https://onlimit-study.github.io/feasibility-data/>
+
+## Data request flow {.center}
+
+```{mermaid}
+%%| label: request-flow
+
+flowchart LR
+  request_page["Data request<br>webpage"]
+  recipe["Generated<br>request 'recipe'"]
+  create_subset["Run create<br>subset command"]
+  subset_data[("Requested data<br>subset")]
+
+  request_page -->|Select columns<br>and rows| recipe
+  recipe -->|Email<br>recipe| create_subset
+  create_subset -->|Generate<br>subset| subset_data
+```
+
+## GenomeDK and ON-LiMiT {.center}
+
+::: columns
+::::: column
+### Data package location
+
+Restricted access
+
+```
+sdca-onlimit-study/
+└── main-data/
+    └── releases/
+        └── main-data_v1.0.0.zip
+```
+:::::
+::::: column
+### Analysis project location
+
+Researcher access
+
+```
+sdca-onlimit-analyses/
+└── project1/
+    └── main-data-<timestamp>.tar
+```
+:::::
+:::
+
+## Workshop on doing analysis in GenomeDK {.center}
+
+Being developed in DP-Next project
