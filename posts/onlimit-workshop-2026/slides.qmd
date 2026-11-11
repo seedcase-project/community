@@ -75,7 +75,7 @@ flowchart LR
   myfood24[("MyFood24")]
   others[("...<br>other<br>sources")]
 
-  package_source["Data package<br>development"]
+  package_source["Data package<br>development:<br>metadata and<br>data"]
   data_package[(Data package)]
   website[Website with metadata]
 
@@ -101,14 +101,10 @@ flowchart TB
   website[Rebuild<br>website]
 
   subgraph metadata ["Steps for metadata"]
-    extract[Extracting] -->
-      clean[Cleaning] <-->
-      edit[Editing] & check[Checking]
-
-    edit <--> check
-
-    check -->
-      build[Building]
+    extract[Extracting] ~~~
+      clean[Cleaning]
+    edit[Editing] ~~~
+      check[Checking]
   end
 
   raw -->
@@ -131,16 +127,11 @@ flowchart TB
   data_package[(Data package)]
 
   subgraph data ["Steps for data"]
-    split[Splitting] <-->
-      join[Joining] <-->
-      clean[Cleaning] <-->
-      reshape[Reshaping]
-    split <--> clean
-    clean <-->
-      check <-->
-      reshape
-    check[Checking] -->
-      build[Building]
+    split[Splitting] ~~~
+      join[Joining]
+    clean[Cleaning] ~~~
+      pivot[Pivoting]
+    check[Checking]
   end
 
   raw -->
