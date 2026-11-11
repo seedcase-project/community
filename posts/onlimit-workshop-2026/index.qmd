@@ -1,5 +1,5 @@
 ---
-title: "A talk on building their data packages to the ON-LiMiT collaborators"
+title: "A talk on building the ON-LiMiT data packages to the ON-LiMiT collaborators"
 description: >
   A 30 minute talk to the ON-LiMiT collaborator workshop day, focused on the
   practical and operational side of building data packages within the ON-LiMiT
