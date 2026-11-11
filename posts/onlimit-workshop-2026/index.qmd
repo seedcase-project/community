@@ -1,0 +1,22 @@
+---
+title: "A talk on building the ON-LiMiT data packages to the ON-LiMiT collaborators"
+description: >
+  A 30 minute talk to the ON-LiMiT collaborator workshop day, focused on the
+  practical and operational side of building data packages within the ON-LiMiT
+  study.
+author:
+  - "Luke W. Johnston"
+date: "2026-11-10"
+categories:
+  - presentation
+  - data package
+  - onlimit-study
+---
+
+I presented a description of and brief walkthrough on how we're building the
+data package for the ON-LiMiT study during their workshop. The focus of the
+workshop was on the operational and procedural side of work for ON-LiMiT
+collaborators. So the talk was also mainly focused on the operational side of
+things.
+
+The slides can be found [here](./slides.qmd).
